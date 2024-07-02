@@ -1,0 +1,420 @@
+1
+00:00:00,270 --> 00:00:00,780
+All right.
+
+2
+00:00:00,780 --> 00:00:03,810
+So before we go on to installation, we're about to do that.
+
+3
+00:00:03,810 --> 00:00:08,670
+We need to start by talking about the two options for how we interact with Git.
+
+4
+00:00:08,670 --> 00:00:15,030
+We can use the terminal, a text based interface, and we can use graphical user interfaces.
+
+5
+00:00:15,480 --> 00:00:22,590
+So since it was originally created and still to this day, get is largely or primarily a terminal based
+
+6
+00:00:22,590 --> 00:00:24,990
+tool, a text based interface.
+
+7
+00:00:25,380 --> 00:00:31,140
+It's used mostly by developers and has been for a long time, and most developers are comfortable using
+
+8
+00:00:31,140 --> 00:00:32,189
+the command line.
+
+9
+00:00:32,430 --> 00:00:36,630
+So it's not the most user friendly experience, it's certainly not the most beautiful, but it's at
+
+10
+00:00:36,630 --> 00:00:37,560
+the core of Git.
+
+11
+00:00:37,560 --> 00:00:40,350
+It's what Git was really built to do originally.
+
+12
+00:00:40,350 --> 00:00:47,400
+With that said, as its popularity has increased, so have a number of GIS graphical user interfaces,
+
+13
+00:00:47,550 --> 00:00:54,720
+applications, pieces of software you download that make it easier or at least more visual, more graphical
+
+14
+00:00:54,720 --> 00:00:56,160
+to interact with git.
+
+15
+00:00:56,160 --> 00:01:01,710
+There are quite a few of these different applications out there, these different GIs for all different
+
+16
+00:01:01,710 --> 00:01:02,460
+platforms.
+
+17
+00:01:02,460 --> 00:01:08,910
+Some of the more common ones are GitHub desktop source Tree Tower Git, Kraken, UN Git.
+
+18
+00:01:08,910 --> 00:01:12,270
+There's actually a whole list here on the Git website.
+
+19
+00:01:12,890 --> 00:01:14,520
+You can see quite a few of them.
+
+20
+00:01:15,220 --> 00:01:16,370
+Some of them are free.
+
+21
+00:01:16,390 --> 00:01:17,540
+Some of them are not.
+
+22
+00:01:17,560 --> 00:01:18,790
+Some of them you have to buy.
+
+23
+00:01:18,820 --> 00:01:20,440
+Some of them are subscriptions.
+
+24
+00:01:20,590 --> 00:01:26,920
+They have different tiers, but they all have the same goal to help visualize and not just like visually
+
+25
+00:01:26,920 --> 00:01:32,620
+show you stuff, but help you interact with gadgets using your mouse and buttons instead of using the
+
+26
+00:01:32,620 --> 00:01:33,280
+terminal.
+
+27
+00:01:33,850 --> 00:01:39,220
+So just as a quick example here, I have a git project open using my terminal.
+
+28
+00:01:39,550 --> 00:01:45,340
+If I want to see a history of all the different people who have collaborated or all the different check
+
+29
+00:01:45,340 --> 00:01:46,810
+points, here they all are.
+
+30
+00:01:46,840 --> 00:01:48,680
+This is what it looks like in my terminal.
+
+31
+00:01:48,700 --> 00:01:51,860
+This is a graphical user interface.
+
+32
+00:01:51,880 --> 00:01:52,960
+It's a lot prettier.
+
+33
+00:01:52,960 --> 00:01:54,830
+It's the exact same project.
+
+34
+00:01:54,850 --> 00:01:56,710
+2048 is the name of it.
+
+35
+00:01:57,860 --> 00:02:02,720
+This is much prettier and in some ways a lot easier to understand.
+
+36
+00:02:02,750 --> 00:02:08,720
+However, it may not be faster in all situations for somebody who's well versed with the terminal,
+
+37
+00:02:08,720 --> 00:02:11,090
+with the command line, who's already using it day to day.
+
+38
+00:02:11,120 --> 00:02:12,980
+This is still fastest.
+
+39
+00:02:12,980 --> 00:02:14,450
+It's what's most comfortable.
+
+40
+00:02:14,480 --> 00:02:16,460
+It takes time to get to that point.
+
+41
+00:02:16,640 --> 00:02:22,970
+And I'm not telling you one way or the other is better, but using a terminal is going to be expected
+
+42
+00:02:22,970 --> 00:02:28,550
+of you if you are a developer or if you plan on being a developer and you can do things in one line
+
+43
+00:02:28,550 --> 00:02:34,250
+of code here, one command that might take three or four button clicks, but at the same time, this
+
+44
+00:02:34,250 --> 00:02:39,860
+opens the doors to all sorts of people to use, get and interact with it who aren't super command line
+
+45
+00:02:39,860 --> 00:02:40,280
+savvy.
+
+46
+00:02:40,490 --> 00:02:43,160
+This is a pretty terrible interface, objectively.
+
+47
+00:02:43,430 --> 00:02:48,520
+So I'll just quickly run through sort of the pros and cons using these graphical user interfaces.
+
+48
+00:02:48,530 --> 00:02:50,900
+There's a much lower barrier of entry that's always great.
+
+49
+00:02:50,900 --> 00:02:54,410
+Friendlier to use can be a much more positive experience.
+
+50
+00:02:54,410 --> 00:03:00,410
+And for some users who are experienced with the command line, they still may prefer the visual experience
+
+51
+00:03:00,410 --> 00:03:01,220
+of a guy.
+
+52
+00:03:01,520 --> 00:03:07,100
+Now some of the cons are that there's a lot of magic involved with the graphical user interfaces.
+
+53
+00:03:07,100 --> 00:03:12,050
+Some of them really obfuscate or they abstract away what's happening behind the scenes.
+
+54
+00:03:12,050 --> 00:03:17,960
+So you may not really understand what your button clicks are doing, and that can work for you 99% of
+
+55
+00:03:17,960 --> 00:03:18,290
+the time.
+
+56
+00:03:18,290 --> 00:03:20,510
+But then when things go wrong, it can be a problem.
+
+57
+00:03:20,960 --> 00:03:28,340
+Also, these guys lead can lead to users being dependent on one piece of software because they do change
+
+58
+00:03:28,340 --> 00:03:29,690
+one gooey to the next.
+
+59
+00:03:29,690 --> 00:03:34,940
+Even if they are similar, they have different buttons, different approaches, different labels for
+
+60
+00:03:34,940 --> 00:03:37,370
+things, different windows and all of that.
+
+61
+00:03:37,490 --> 00:03:41,780
+So, you know, I'm very pro gooey, to be honest with you.
+
+62
+00:03:42,170 --> 00:03:45,800
+However, the command line has a lot going for it as well.
+
+63
+00:03:45,800 --> 00:03:51,830
+If you can get past the fact that it's not beginner friendly, it's ugly, and it's often not the best
+
+64
+00:03:51,830 --> 00:03:54,430
+experience if you are designing it from scratch.
+
+65
+00:03:54,440 --> 00:03:59,810
+If you can get past those cons, it can be a lot faster once you get comfortable.
+
+66
+00:03:59,840 --> 00:04:05,390
+There are some features that you can really only do or interact with on the command line, get features,
+
+67
+00:04:05,390 --> 00:04:07,070
+but also a whole bunch of other features.
+
+68
+00:04:07,610 --> 00:04:10,820
+The commands are always going to be the same from one command line to the next.
+
+69
+00:04:11,270 --> 00:04:16,490
+Assuming you're using a unique space shell, it doesn't matter whose machine you're on or which machine
+
+70
+00:04:16,490 --> 00:04:17,029
+you're on.
+
+71
+00:04:17,029 --> 00:04:22,070
+The commands are consistent and get is created as a command line tool.
+
+72
+00:04:22,070 --> 00:04:28,160
+So all the documentation, tutorials, resources that are all oriented around the command line.
+
+73
+00:04:28,340 --> 00:04:30,350
+So there's a lot going for both sides.
+
+74
+00:04:30,770 --> 00:04:36,530
+Unfortunately, there's kind of a lot of gatekeeping around people using GIs that it somehow lesser
+
+75
+00:04:36,560 --> 00:04:38,230
+or you're not really using Git.
+
+76
+00:04:38,240 --> 00:04:39,830
+It's kind of garbage.
+
+77
+00:04:39,830 --> 00:04:41,120
+It's BS in my opinion.
+
+78
+00:04:41,120 --> 00:04:48,050
+We will be using both in this course, not side by side, but rather I will be teaching using the command
+
+79
+00:04:48,050 --> 00:04:48,440
+line.
+
+80
+00:04:48,440 --> 00:04:52,830
+That's really the assumed way of interacting with Git still to this day.
+
+81
+00:04:52,850 --> 00:04:56,090
+If you have plans and being a developer, if you are a developer already.
+
+82
+00:04:56,120 --> 00:04:58,250
+Command line is just part of that package.
+
+83
+00:04:58,250 --> 00:04:59,870
+You've got to know how to interact with it.
+
+84
+00:04:59,870 --> 00:05:07,190
+So I'll be showing you how to use Git from the command line, but I'll also be illustrating concepts
+
+85
+00:05:07,190 --> 00:05:08,090
+using a gooey.
+
+86
+00:05:08,090 --> 00:05:10,220
+I will be translating what we do.
+
+87
+00:05:10,220 --> 00:05:11,150
+So I'll show you.
+
+88
+00:05:11,390 --> 00:05:16,460
+Here's this one thing we can do where we make a new branch or here's how we merge, blah blah blah.
+
+89
+00:05:16,460 --> 00:05:20,030
+And then here's how you can do the same thing in a gooey.
+
+90
+00:05:20,390 --> 00:05:23,630
+So we'll be using a gooey in particular called Get Crackin.
+
+91
+00:05:23,810 --> 00:05:26,030
+This is this lovely logo here.
+
+92
+00:05:26,420 --> 00:05:29,900
+We will be installing it and setting it up in a video in this section.
+
+93
+00:05:29,900 --> 00:05:32,810
+But first we're going to install Git on our command line.
+
+94
+00:05:32,810 --> 00:05:36,500
+So if you're on a mac, there'll be a video for installing it on a mac.
+
+95
+00:05:36,500 --> 00:05:41,150
+And if you're on a PC, there'll be a video for installing Git on a Windows machine.
+
+96
+00:05:41,450 --> 00:05:42,150
+All righty.
+
+97
+00:05:42,170 --> 00:05:47,750
+So hopefully that explains a little bit about the differences or the two ways of interacting with Git.
+
+98
+00:05:47,750 --> 00:05:54,920
+There's the hideous but very, very common command line ubiquitous amongst get users.
+
+99
+00:05:54,920 --> 00:05:59,900
+And then there's this fractured world of user interfaces, graphical user interfaces that vary quite
+
+100
+00:05:59,900 --> 00:06:00,380
+a bit.
+
+101
+00:06:00,380 --> 00:06:05,990
+Some of them aren't full featured, others are quite powerful, but they all have the goal of making
+
+102
+00:06:05,990 --> 00:06:08,810
+it easier or more visual to work with Git.
+
+103
+00:06:08,990 --> 00:06:10,280
+So we'll be using both.
+
+104
+00:06:10,280 --> 00:06:15,380
+But primarily the command line first and I will actually have a crash course on how to use the command
+
+105
+00:06:15,380 --> 00:06:16,850
+line in this section as well.
+

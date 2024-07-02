@@ -1,0 +1,148 @@
+1
+00:00:00,060 --> 00:00:03,420
+Next up, I'd like to talk a little bit about the exercises in the course.
+
+2
+00:00:03,690 --> 00:00:10,140
+A very important piece, easy to overlook as a student, but I think are very important to really understanding
+
+3
+00:00:10,140 --> 00:00:13,080
+and living and breathing gibt you have to practice it.
+
+4
+00:00:13,080 --> 00:00:14,460
+It's not just the syntax.
+
+5
+00:00:14,460 --> 00:00:18,000
+So throughout the course there are exercises sprinkled in.
+
+6
+00:00:18,000 --> 00:00:23,640
+And I have to be honest, creating these exercises is not always that easy because unlike other things
+
+7
+00:00:23,640 --> 00:00:29,550
+that I teach, CSS or JavaScript or Python where I can ask students to make something and very clearly
+
+8
+00:00:29,550 --> 00:00:31,590
+set out, here are the expectations.
+
+9
+00:00:31,590 --> 00:00:33,630
+Make this thing with Git.
+
+10
+00:00:33,630 --> 00:00:36,750
+It's not really about making things, it's about the workflows.
+
+11
+00:00:36,750 --> 00:00:40,500
+So I had to get pretty creative and I tried my best to come up with exercises.
+
+12
+00:00:40,500 --> 00:00:42,180
+I'm pretty happy with how they turned out.
+
+13
+00:00:42,180 --> 00:00:45,870
+I just want to show you where to find them and the basics of how they work.
+
+14
+00:00:45,870 --> 00:00:49,440
+So the exercises are at the end of sections.
+
+15
+00:00:49,440 --> 00:00:52,530
+So for example, this is a section intro to GitHub.
+
+16
+00:00:52,530 --> 00:00:58,770
+The very last video is GitHub Basics Exercise or here's undoing changes in history.
+
+17
+00:00:58,770 --> 00:01:01,770
+The last video is Undoing Changes Exercise.
+
+18
+00:01:01,770 --> 00:01:05,160
+So there are videos where I explain the exercise.
+
+19
+00:01:05,160 --> 00:01:10,380
+I mute this here, so I explain how it works and what I'm expecting you to do, and then I go ahead
+
+20
+00:01:10,380 --> 00:01:15,570
+and do it myself, sort of a solution, but I always recommend you try it yourself first.
+
+21
+00:01:15,570 --> 00:01:21,600
+And then if you want the actual exercise document for every single one of these in resources, you'll
+
+22
+00:01:21,600 --> 00:01:25,800
+find a link, click it and it will take you to the exercise document that I created.
+
+23
+00:01:25,800 --> 00:01:28,650
+So it has the instructions, the different files.
+
+24
+00:01:28,650 --> 00:01:34,020
+There might be some starter code that I give you, the different expectations step by step, what I'm
+
+25
+00:01:34,020 --> 00:01:34,920
+asking you to do.
+
+26
+00:01:34,920 --> 00:01:41,010
+So one of these documents exists for every exercise in the course, and you'll find it attached to the
+
+27
+00:01:41,010 --> 00:01:42,300
+exercise video.
+
+28
+00:01:42,540 --> 00:01:44,340
+So that's where you can find them.
+
+29
+00:01:44,340 --> 00:01:46,770
+Again, I hope that you get something out of them.
+
+30
+00:01:46,770 --> 00:01:48,960
+The only way you'll know is if you actually attempt them.
+
+31
+00:01:48,960 --> 00:01:52,260
+So I really encourage you to do this in person when I teach.
+
+32
+00:01:52,260 --> 00:01:57,870
+Get the most learning without a doubt happens when students actually try using it and just get practice.
+
+33
+00:01:57,870 --> 00:01:59,910
+It's a weird thing to watch somebody use gadgets.
+
+34
+00:02:00,600 --> 00:02:03,390
+You really need to do it yourself to get anything out of it.
+
+35
+00:02:03,390 --> 00:02:05,700
+Anyway, I hope you enjoy the exercises.
+
+36
+00:02:05,700 --> 00:02:06,750
+That's how you find them.
+
+37
+00:02:06,750 --> 00:02:07,470
+Please do them.
+

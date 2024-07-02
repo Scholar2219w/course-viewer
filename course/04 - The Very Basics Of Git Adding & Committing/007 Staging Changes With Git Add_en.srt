@@ -1,0 +1,472 @@
+1
+00:00:00,120 --> 00:00:05,070
+In this video, we'll cover the gift ad command, which is the first of two commands that we'll use
+
+2
+00:00:05,070 --> 00:00:06,360
+to make a commit.
+
+3
+00:00:06,360 --> 00:00:12,300
+And as we previously talked about in the last video, we use two commands because that allows us to
+
+4
+00:00:12,300 --> 00:00:15,120
+separate out particular changes we've made.
+
+5
+00:00:15,270 --> 00:00:18,660
+We can I think I used the imagery of tweezers.
+
+6
+00:00:18,690 --> 00:00:24,780
+We can tweeze them out and select them before we make a commit so we can group things together.
+
+7
+00:00:24,780 --> 00:00:28,230
+And this get ad command is what enables that to happen.
+
+8
+00:00:28,230 --> 00:00:31,560
+So once we've done some work, we've actually made changes.
+
+9
+00:00:31,560 --> 00:00:38,880
+We then call those changes out using the get ad command to stage them for a commit and then we can make
+
+10
+00:00:38,880 --> 00:00:39,450
+a commit.
+
+11
+00:00:39,450 --> 00:00:42,120
+And in this video we're focusing on the first piece.
+
+12
+00:00:42,120 --> 00:00:45,960
+And before we can do anything with Git, we need to make some changes.
+
+13
+00:00:45,960 --> 00:00:49,080
+We need to do that first part, work on stuff.
+
+14
+00:00:49,350 --> 00:00:51,720
+So I'm going to do a quick demo.
+
+15
+00:00:51,750 --> 00:00:54,000
+I made this folder, my first novel.
+
+16
+00:00:54,000 --> 00:00:55,560
+I'm pretending I'm writing a novel.
+
+17
+00:00:55,890 --> 00:00:58,140
+We have a git repository in here as we did it.
+
+18
+00:00:58,170 --> 00:00:59,700
+We initialized it earlier.
+
+19
+00:00:59,700 --> 00:01:04,950
+So I'm now pretending to sit down day one of writing my novel and I'm going to do some work.
+
+20
+00:01:04,980 --> 00:01:09,360
+And if I was actually writing a novel, I would probably start by making an outline.
+
+21
+00:01:09,360 --> 00:01:10,470
+That's just how I like to work.
+
+22
+00:01:10,470 --> 00:01:18,600
+I outline all my courses, so I just made a new file there outline txt and I've opened this folder up
+
+23
+00:01:18,600 --> 00:01:21,150
+in a text editor I'm using vs code.
+
+24
+00:01:21,240 --> 00:01:22,230
+So here it is.
+
+25
+00:01:22,230 --> 00:01:23,640
+It's just an empty file.
+
+26
+00:01:23,640 --> 00:01:26,790
+So if I'm writing my novel, I'll put some basic stuff in here.
+
+27
+00:01:26,790 --> 00:01:31,200
+I am pretending that I'm writing The Great Gatsby just so we're up front about that.
+
+28
+00:01:31,200 --> 00:01:33,390
+It's now in the public domain in 2021.
+
+29
+00:01:33,390 --> 00:01:38,520
+So yep, I'm writing The Great Gatsby, so I'm going to be writing part of Chapter one.
+
+30
+00:01:38,520 --> 00:01:40,020
+So I start the outline.
+
+31
+00:01:40,020 --> 00:01:44,580
+All I know is so far it's very early on in the writing process is that we're going to meet some of our
+
+32
+00:01:44,580 --> 00:01:45,870
+characters in chapter one.
+
+33
+00:01:45,870 --> 00:01:52,590
+I haven't figured out what else happens yet, so I'll save that file and if I come over here and I type
+
+34
+00:01:52,590 --> 00:01:58,350
+get status, we now have made some changes in this project and get notices.
+
+35
+00:01:58,350 --> 00:02:00,630
+Something it says, something it didn't say earlier.
+
+36
+00:02:00,960 --> 00:02:04,200
+Untracked files, outline, text.
+
+37
+00:02:04,350 --> 00:02:04,670
+Hmm.
+
+38
+00:02:05,070 --> 00:02:06,720
+All right, so I'm still writing.
+
+39
+00:02:06,720 --> 00:02:11,730
+It's a little bit later in the morning, I've outlined, you know, I need to meet these characters
+
+40
+00:02:11,730 --> 00:02:13,230
+or introduce them in chapter one.
+
+41
+00:02:13,230 --> 00:02:17,280
+Maybe I want to start by actually fleshing out those characters.
+
+42
+00:02:17,280 --> 00:02:20,370
+I'm going to make a file called Characters Text.
+
+43
+00:02:20,490 --> 00:02:25,410
+So before I actually write chapter one, I want to make sure I've hammered out the details about those
+
+44
+00:02:25,410 --> 00:02:28,500
+characters, and I'm just going to copy and paste some stuff in I've written.
+
+45
+00:02:28,620 --> 00:02:34,830
+Okay, so we've got Jay Gatsby, Nick Carraway, Daisy Buchanan, Tom Buchanan, just a little bios
+
+46
+00:02:34,830 --> 00:02:36,150
+about each character.
+
+47
+00:02:36,150 --> 00:02:40,440
+And if you're following along, you can put whatever you want in here, and then I save the file.
+
+48
+00:02:40,620 --> 00:02:43,080
+All right, so I'm done for the morning.
+
+49
+00:02:43,080 --> 00:02:47,490
+I want to take a break before I actually begin writing chapter one.
+
+50
+00:02:47,490 --> 00:02:53,490
+So I've saved those files, and if I head back over to my terminal and I type git status again, now
+
+51
+00:02:53,490 --> 00:02:58,320
+get tells me there's two files that it's aware of, but it's not tracking.
+
+52
+00:02:59,280 --> 00:03:00,600
+So we've done step one.
+
+53
+00:03:00,600 --> 00:03:02,280
+I've worked on stuff.
+
+54
+00:03:02,280 --> 00:03:04,860
+Now I want to make it commit with what I've done.
+
+55
+00:03:04,860 --> 00:03:08,250
+Well, now we need to talk about a tiny bit of terminology.
+
+56
+00:03:08,520 --> 00:03:15,180
+Three different locations are not actual physical locations, working directory, staging area and the
+
+57
+00:03:15,180 --> 00:03:16,290
+repository.
+
+58
+00:03:16,770 --> 00:03:19,290
+Let's start with this first one working directory.
+
+59
+00:03:19,290 --> 00:03:25,410
+That's just a fancy way of referring to the directory, the place we're actually working on our project.
+
+60
+00:03:25,410 --> 00:03:30,060
+So for me, my working directory is this my first novel folder.
+
+61
+00:03:30,060 --> 00:03:33,570
+And in our working directory I have two files at the moment.
+
+62
+00:03:33,570 --> 00:03:36,240
+I might have more, I could have 100 files in here.
+
+63
+00:03:36,240 --> 00:03:40,110
+The working directory just refers to this directory where I'm working.
+
+64
+00:03:40,410 --> 00:03:43,380
+Then we have the repository itself.
+
+65
+00:03:43,380 --> 00:03:46,110
+This is the dot git folder.
+
+66
+00:03:46,110 --> 00:03:51,990
+Remember there is a dot get folder here ls dash a there it is inside of that folder.
+
+67
+00:03:51,990 --> 00:03:56,130
+At the moment there's some stuff that's just there, some default contents.
+
+68
+00:03:56,130 --> 00:04:01,130
+But once I actually make a commit, get commit changes, what is in it?
+
+69
+00:04:01,140 --> 00:04:04,410
+It actually adds new commits to that folder.
+
+70
+00:04:04,530 --> 00:04:09,990
+So when we actually make a commit, we are updating that folder, the actual git repository.
+
+71
+00:04:10,470 --> 00:04:13,920
+Otherwise, everything I've done so far is just in the working directory.
+
+72
+00:04:13,920 --> 00:04:20,310
+And then there's this intermediate thing, this zone again, not a physical location, the staging area,
+
+73
+00:04:20,310 --> 00:04:24,060
+and this is where we add our changes to before we make a commit.
+
+74
+00:04:24,060 --> 00:04:26,490
+So here's another flavor of diagram.
+
+75
+00:04:26,520 --> 00:04:31,740
+We have those three terms working directory, staging area and repository on the left side.
+
+76
+00:04:31,740 --> 00:04:35,250
+In the working directory you can see a bunch of changes that I've made.
+
+77
+00:04:35,280 --> 00:04:41,130
+So hypothetically, I've been working for a while, I've done some, I'm working on a project, some
+
+78
+00:04:41,130 --> 00:04:47,340
+web development project, and I've changed seven files and get has noticed that.
+
+79
+00:04:47,550 --> 00:04:53,850
+So I've decided, okay, there's actually two discrete things I was working on and I'm going to make
+
+80
+00:04:53,850 --> 00:04:57,390
+my first commit with those bottom four files that I changed.
+
+81
+00:04:57,390 --> 00:04:59,630
+They have to do with the nav bar I up.
+
+82
+00:04:59,740 --> 00:05:02,980
+Dated the Nafaa or I created a new nav bar on our web page.
+
+83
+00:05:02,980 --> 00:05:08,790
+So I stage those changes first and I do that using the get ad command.
+
+84
+00:05:08,800 --> 00:05:10,810
+Then I can make a commit.
+
+85
+00:05:11,110 --> 00:05:14,950
+And then same thing for these other changes I can stage them.
+
+86
+00:05:14,950 --> 00:05:19,900
+Then I make a commit, at which point I'm actually updating the git folder.
+
+87
+00:05:20,050 --> 00:05:25,630
+So I know I'm kind of beating a dead horse, but this is really important to command's get add is just
+
+88
+00:05:25,630 --> 00:05:31,600
+going to stage changes so that I then commit them and this get add command is pretty simple.
+
+89
+00:05:31,600 --> 00:05:39,700
+It's git space add and then one or more files, the name of a file that we've changed and we can do
+
+90
+00:05:39,700 --> 00:05:40,030
+more.
+
+91
+00:05:40,030 --> 00:05:42,850
+We can do multiple if we separate them by spaces.
+
+92
+00:05:42,940 --> 00:05:45,670
+Otherwise we can just do get add file name.
+
+93
+00:05:45,970 --> 00:05:50,800
+So over here in my working directory, I have these two files.
+
+94
+00:05:50,800 --> 00:05:51,460
+Right?
+
+95
+00:05:51,730 --> 00:05:52,840
+I've changed them.
+
+96
+00:05:53,290 --> 00:05:54,670
+They exist.
+
+97
+00:05:54,670 --> 00:05:57,490
+They didn't exist earlier and get noticed.
+
+98
+00:05:57,490 --> 00:05:58,930
+And it tells me this.
+
+99
+00:05:58,930 --> 00:06:00,310
+Let me make this full screen here.
+
+100
+00:06:00,310 --> 00:06:08,710
+It says untracked files characters and outline txt use get add file to include in what will be committed
+
+101
+00:06:09,010 --> 00:06:10,930
+OC So why don't we do that?
+
+102
+00:06:10,930 --> 00:06:18,340
+I'll add the first one, so get ADD and I can do autocomplete if I type something and then hit tab.
+
+103
+00:06:18,490 --> 00:06:21,040
+So get add characters to txt.
+
+104
+00:06:21,220 --> 00:06:23,170
+Now let's type get status again.
+
+105
+00:06:23,950 --> 00:06:25,360
+I haven't made it commit.
+
+106
+00:06:25,450 --> 00:06:33,850
+All that I've done is stage the one file characters text to be committed, but it's not yet committed.
+
+107
+00:06:34,150 --> 00:06:39,040
+So if I wanted to I could make a commit now with just that one file that I changed.
+
+108
+00:06:39,040 --> 00:06:43,180
+But I'm going to group them together because, you know, I worked on them together.
+
+109
+00:06:43,180 --> 00:06:44,830
+They have to do with one another.
+
+110
+00:06:44,860 --> 00:06:51,130
+Unlike this example here where I wanted to group things into two individual commits, I instead want
+
+111
+00:06:51,130 --> 00:06:52,780
+to group everything on this project.
+
+112
+00:06:52,780 --> 00:06:55,630
+So far, just two files into one commit.
+
+113
+00:06:55,630 --> 00:07:01,600
+So I'm going to also add outline text and then I'm going to look at get status.
+
+114
+00:07:01,600 --> 00:07:02,920
+We always use get status.
+
+115
+00:07:02,920 --> 00:07:09,190
+It can never hurt anything, just reports back and you'll see whenever we make a commit those two files
+
+116
+00:07:09,190 --> 00:07:10,150
+will be included.
+
+117
+00:07:10,420 --> 00:07:13,450
+So what we need to do next is cover, get, commit.
+
+118
+00:07:13,450 --> 00:07:15,280
+We need to learn how to make those commits.
+

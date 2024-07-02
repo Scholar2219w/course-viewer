@@ -1,0 +1,504 @@
+1
+00:00:00,060 --> 00:00:04,890
+So it's time to get some practice with the concepts and commands I've covered in this section.
+
+2
+00:00:04,890 --> 00:00:09,030
+So of course you don't have to do any of this, but I highly recommend you do, especially if you're
+
+3
+00:00:09,030 --> 00:00:11,880
+new to get and you haven't seen any of these commands before.
+
+4
+00:00:11,910 --> 00:00:14,310
+This is an opportunity for you to get some practice.
+
+5
+00:00:14,310 --> 00:00:17,520
+It's a simple exercise in terms of the content.
+
+6
+00:00:17,550 --> 00:00:23,910
+The actual files we'll be working with are based around two shopping lists, so there is a link in the
+
+7
+00:00:23,910 --> 00:00:25,440
+resources for this video.
+
+8
+00:00:25,470 --> 00:00:27,210
+I recommend you open it up.
+
+9
+00:00:27,690 --> 00:00:30,240
+It contains a link to this exact page.
+
+10
+00:00:30,240 --> 00:00:31,890
+It has the instructions I've typed up.
+
+11
+00:00:32,220 --> 00:00:37,350
+So there are steps, a step by step set of instructions for what I'd like you to do, starting with
+
+12
+00:00:37,350 --> 00:00:41,430
+make a new folder called shopping, initialize a new git repo inside of it.
+
+13
+00:00:41,430 --> 00:00:47,790
+Make sure you're not already in a git repo and then make a new file called yada txt then make a second
+
+14
+00:00:47,790 --> 00:00:54,570
+file groceries dot txt make a commit that includes both empty files, so a commit with both of those
+
+15
+00:00:54,570 --> 00:00:55,050
+files.
+
+16
+00:00:55,050 --> 00:00:57,510
+And then I tell you the exact message you should use.
+
+17
+00:00:57,720 --> 00:00:59,970
+And if you deviate from that, it's not a big deal.
+
+18
+00:00:59,970 --> 00:01:06,030
+But anyway, I'm just putting it there if you want to follow that and then make some changes in the
+
+19
+00:01:06,030 --> 00:01:11,340
+yard txt file we actually add some content and then we add some content to the groceries and you can
+
+20
+00:01:11,340 --> 00:01:17,790
+just copy and paste from here and then make a second commit, including only the changes from the groceries
+
+21
+00:01:17,790 --> 00:01:24,150
+file and the message for the commit should say add ingredients for tomato soup, then make a second
+
+22
+00:01:24,150 --> 00:01:27,960
+commit, including only the changes from the yard file.
+
+23
+00:01:28,050 --> 00:01:31,620
+And that message should say add items needed for garden box.
+
+24
+00:01:31,950 --> 00:01:35,820
+And then next up, we're going to make some changes to both files.
+
+25
+00:01:35,820 --> 00:01:41,880
+We're going to add this line to the end of the yard file and then in the garden file, we're going to
+
+26
+00:01:41,880 --> 00:01:43,020
+change the quantity.
+
+27
+00:01:43,110 --> 00:01:45,150
+It did say two bags of potting soil.
+
+28
+00:01:45,150 --> 00:01:46,920
+We're going to update that to three.
+
+29
+00:01:47,310 --> 00:01:52,380
+And then once both of those are done, we'll make a commit that includes both of those files.
+
+30
+00:01:52,470 --> 00:01:54,360
+And then you should use this message.
+
+31
+00:01:54,480 --> 00:02:00,600
+And then the very last thing is to use some unnamed git commands that we've covered to display all of
+
+32
+00:02:00,600 --> 00:02:03,450
+those commits and we should see three commits.
+
+33
+00:02:03,630 --> 00:02:09,180
+So that's a set of instructions, hopefully straightforward, but don't feel bad if you don't remember
+
+34
+00:02:09,180 --> 00:02:10,419
+the exact commands, right?
+
+35
+00:02:10,470 --> 00:02:11,820
+You can always reference them.
+
+36
+00:02:11,820 --> 00:02:16,530
+It's more about making sure you have the conceptual flow down of how you make it commit.
+
+37
+00:02:16,890 --> 00:02:23,130
+Okay, so I highly recommend you try it and stop the video now because I'm going to just go through
+
+38
+00:02:23,130 --> 00:02:25,440
+the process myself if you want to watch.
+
+39
+00:02:25,560 --> 00:02:31,830
+But again, I really strongly, strongly as I can through this pre-recorded video, I recommend that
+
+40
+00:02:31,830 --> 00:02:35,790
+you try this on your own and then if you get stuck, you can check out the solution.
+
+41
+00:02:36,120 --> 00:02:41,460
+Okay, so step one create a new folder called shopping and init a repo inside of it.
+
+42
+00:02:41,610 --> 00:02:48,180
+So I have an empty folder called exercises and I'll make a shopping directory and CD into it.
+
+43
+00:02:48,930 --> 00:02:50,790
+Make sure it's not in a git repo.
+
+44
+00:02:50,790 --> 00:02:55,050
+I'm not so I'll run git init to make me that new repo.
+
+45
+00:02:55,380 --> 00:02:58,740
+Then it says make a new file called yada txt.
+
+46
+00:02:58,890 --> 00:03:01,080
+So I'll do that from the command line.
+
+47
+00:03:01,080 --> 00:03:02,430
+Although you don't have to.
+
+48
+00:03:02,430 --> 00:03:03,090
+But here we are.
+
+49
+00:03:03,120 --> 00:03:13,530
+Touch yards txt and then make another new file called groceries oc touch groceries txt and then it says
+
+50
+00:03:13,530 --> 00:03:14,520
+make my first commit.
+
+51
+00:03:14,520 --> 00:03:19,650
+That includes both empty files and then use this message and I'll just copy that message.
+
+52
+00:03:19,650 --> 00:03:20,370
+I guess.
+
+53
+00:03:23,790 --> 00:03:26,460
+So now if I run get status.
+
+54
+00:03:26,940 --> 00:03:29,510
+There are two files that I currently are not.
+
+55
+00:03:29,670 --> 00:03:31,260
+My repo is currently not tracking.
+
+56
+00:03:31,260 --> 00:03:34,230
+So before I can make a commit, I can't make a commit right now.
+
+57
+00:03:34,230 --> 00:03:35,490
+There's nothing to commit.
+
+58
+00:03:35,490 --> 00:03:41,340
+I need to stage those files so I'll do a get add groceries and yard.
+
+59
+00:03:41,340 --> 00:03:43,680
+I can do them separately or just in a single line.
+
+60
+00:03:43,860 --> 00:03:45,480
+Now I type get status.
+
+61
+00:03:46,770 --> 00:03:47,400
+Great.
+
+62
+00:03:47,400 --> 00:03:50,700
+I'll do a git commit because that was the next instruction.
+
+63
+00:03:50,970 --> 00:03:55,590
+Using this message I copied create yard and groceries lists.
+
+64
+00:03:56,400 --> 00:03:58,710
+All right, so now I have one commit down.
+
+65
+00:03:59,010 --> 00:04:02,050
+The next instruction says in the yard file.
+
+66
+00:04:02,070 --> 00:04:07,140
+Add these two lines, so I'll copy that and I need to open the yard file.
+
+67
+00:04:07,260 --> 00:04:11,700
+Technically, I could do this from the terminal, but I'm going to use I mean, you could just go to
+
+68
+00:04:11,700 --> 00:04:19,050
+your text editor and open the terminal or open the file, rather, or I can use the code shortcut if
+
+69
+00:04:19,050 --> 00:04:24,840
+I'm using vs code and you've configured that code and then I'll just do dot that will open the entire
+
+70
+00:04:24,840 --> 00:04:27,420
+directory for me in VS code and here it is.
+
+71
+00:04:27,420 --> 00:04:28,590
+I have my two files.
+
+72
+00:04:28,590 --> 00:04:35,550
+So in the yard file I'm going to paste this two bags of potting soil, one bag of worm castings, and
+
+73
+00:04:35,550 --> 00:04:42,270
+then in the groceries file I'm going to copy and paste this and save both of them.
+
+74
+00:04:42,720 --> 00:04:47,490
+And then it says Make a new commit, including only the changes from the groceries file.
+
+75
+00:04:47,760 --> 00:04:49,920
+And this is what the message should be.
+
+76
+00:04:51,130 --> 00:04:55,060
+So we made changes to two files, but we only want these changes in this first command.
+
+77
+00:04:55,720 --> 00:04:57,540
+So that's the groceries file.
+
+78
+00:04:57,550 --> 00:05:00,310
+If we do get status, we see both of them have been changed.
+
+79
+00:05:00,430 --> 00:05:07,480
+I'm going to add I'll clear just to put this up top, get add groceries and that's all I'm going to
+
+80
+00:05:07,480 --> 00:05:07,990
+add.
+
+81
+00:05:08,470 --> 00:05:11,350
+So this will be included in the commit and I'll make that commit.
+
+82
+00:05:11,350 --> 00:05:18,160
+I'll use dash em and just do it from the command line and one go add ingredients for tomato soup.
+
+83
+00:05:18,490 --> 00:05:23,220
+And now we see that we still have those changes from yard that are not committed.
+
+84
+00:05:23,230 --> 00:05:24,460
+That's the next piece.
+
+85
+00:05:24,790 --> 00:05:29,950
+Make a second commit, including only the changes to the yard file and it should have this message.
+
+86
+00:05:30,070 --> 00:05:32,740
+Add items needed for garden box.
+
+87
+00:05:33,250 --> 00:05:34,660
+So we'll copy that.
+
+88
+00:05:34,690 --> 00:05:38,320
+Get add the yard file, get commit dash m.
+
+89
+00:05:39,040 --> 00:05:39,730
+There we go.
+
+90
+00:05:39,730 --> 00:05:45,130
+Add items needed for garden box and now we have no uncommitted changes.
+
+91
+00:05:45,580 --> 00:05:50,770
+And then the next step is to add the following line to the end of the groceries file.
+
+92
+00:05:50,770 --> 00:05:55,660
+So we need to buy a couple of seed potatoes, just potatoes that I'll buy from the grocery store.
+
+93
+00:05:55,660 --> 00:05:57,580
+So it goes in the groceries list.
+
+94
+00:05:58,610 --> 00:05:59,280
+Okay.
+
+95
+00:05:59,540 --> 00:06:06,590
+And then also I need to update the yard file so that it says three bags of potting soil instead of two.
+
+96
+00:06:07,400 --> 00:06:08,330
+So there we go.
+
+97
+00:06:09,310 --> 00:06:13,930
+And of course now if I type get status to files, both of them have been modified.
+
+98
+00:06:14,530 --> 00:06:17,780
+So now it says make a commit that includes both of those files.
+
+99
+00:06:17,780 --> 00:06:20,200
+So changes to both files with this message.
+
+100
+00:06:21,140 --> 00:06:26,540
+Add items needed to grow potatoes OC so I can do a get well.
+
+101
+00:06:26,780 --> 00:06:28,010
+I don't know why it did another status.
+
+102
+00:06:28,010 --> 00:06:35,000
+I just did that into a get add and then do both file names or it can do a get add dot to just add everything
+
+103
+00:06:35,000 --> 00:06:41,300
+which is these two files and then I'll do my get commit, dash em with that message.
+
+104
+00:06:43,550 --> 00:06:50,390
+And then the last piece, unfortunately I just realized there's a small typo here is to use an unspecified
+
+105
+00:06:50,390 --> 00:06:53,750
+command that we learned to display a list of all the commits.
+
+106
+00:06:53,750 --> 00:06:59,090
+This should actually say four because we've made four commits, the first empty one.
+
+107
+00:06:59,090 --> 00:07:01,070
+That's the one I forgot to count when I made this.
+
+108
+00:07:01,070 --> 00:07:03,140
+So let me update that very quickly.
+
+109
+00:07:03,140 --> 00:07:05,780
+That should say four instead of three.
+
+110
+00:07:06,050 --> 00:07:07,160
+Let's refresh.
+
+111
+00:07:07,820 --> 00:07:08,690
+And there we are.
+
+112
+00:07:08,720 --> 00:07:09,770
+You should see four.
+
+113
+00:07:09,770 --> 00:07:11,990
+Okay, so let's try this.
+
+114
+00:07:11,990 --> 00:07:17,870
+Let's go over here and the command is git log and I should now see four commits.
+
+115
+00:07:17,870 --> 00:07:18,830
+Here's the first one.
+
+116
+00:07:18,830 --> 00:07:20,000
+Create the empty lists.
+
+117
+00:07:20,000 --> 00:07:23,240
+Here's where I added to the grocery list for tomato soup ingredients.
+
+118
+00:07:23,240 --> 00:07:26,360
+Here is what I added to the garden or the yard list.
+
+119
+00:07:26,570 --> 00:07:28,730
+And then here is where I added to both of them.
+
+120
+00:07:28,730 --> 00:07:30,320
+And that's the end of the exercise.
+
+121
+00:07:30,320 --> 00:07:36,650
+I hope that you're able to go through that and and not have to follow along with me step by step, although
+
+122
+00:07:36,650 --> 00:07:37,970
+there's no shame in that either.
+
+123
+00:07:38,840 --> 00:07:41,270
+You'll get more practice with this throughout the rest of the course.
+
+124
+00:07:41,270 --> 00:07:46,070
+This is really, really the bread and butter of git add, commit, add, commit.
+
+125
+00:07:46,070 --> 00:07:49,640
+We do it all day long or at least many times a day.
+
+126
+00:07:49,910 --> 00:07:50,290
+Okay.
+

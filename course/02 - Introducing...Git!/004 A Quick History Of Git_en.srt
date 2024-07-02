@@ -1,0 +1,324 @@
+1
+00:00:00,090 --> 00:00:04,500
+This video, like every video in the course, I guess is completely optional.
+
+2
+00:00:04,710 --> 00:00:09,090
+But this video in particular, I want to focus on the history of it just for a couple of minutes.
+
+3
+00:00:09,090 --> 00:00:14,630
+It's kind of fascinating, in my opinion, but it's not super relevant to learning how to use Git.
+
+4
+00:00:14,640 --> 00:00:16,290
+So no big deal if you skip it.
+
+5
+00:00:16,290 --> 00:00:16,950
+But let's do it.
+
+6
+00:00:16,950 --> 00:00:19,170
+Let's talk about the creation of Git.
+
+7
+00:00:19,320 --> 00:00:23,100
+So there's a very famous developer named Linus Torvalds.
+
+8
+00:00:23,100 --> 00:00:29,010
+It's probably closer to Linus Torvalds, but the Americanized version is Linus Torvalds.
+
+9
+00:00:29,010 --> 00:00:31,860
+He is truly a legendary engineer.
+
+10
+00:00:31,860 --> 00:00:36,810
+He is the creator, the main developer behind Linux, but also Git.
+
+11
+00:00:36,810 --> 00:00:43,800
+So very prolific, very talented and he's always been very pro open source projects.
+
+12
+00:00:43,800 --> 00:00:49,530
+Meaning I'm not familiar with the term code bases that are available for others to see and collaborate
+
+13
+00:00:49,530 --> 00:00:55,290
+on and and tweak and try their own things with instead of hiding code behind some sort of paywall,
+
+14
+00:00:55,290 --> 00:00:56,580
+making it all secret.
+
+15
+00:00:56,880 --> 00:01:04,530
+Anyway, at some point he was working on Linux with a team and they were using a different version control
+
+16
+00:01:04,530 --> 00:01:06,750
+system called Bit Keeper.
+
+17
+00:01:06,780 --> 00:01:08,760
+This is the Wikipedia page for Git.
+
+18
+00:01:08,940 --> 00:01:14,580
+So Bit Keeper was a tool that did basically what Git helps you do manage versions.
+
+19
+00:01:15,210 --> 00:01:20,370
+However, at some point I guess there was a fight, a disagreement, and the owners, the creators of
+
+20
+00:01:20,370 --> 00:01:25,560
+Bit Keeper did not allow the Linux team to use it for free anymore.
+
+21
+00:01:25,590 --> 00:01:26,580
+They wanted to charge money.
+
+22
+00:01:26,580 --> 00:01:28,470
+They, I guess, remove the license.
+
+23
+00:01:29,280 --> 00:01:31,050
+So this was controversial.
+
+24
+00:01:31,050 --> 00:01:35,430
+It spurred the creation of a couple of version control systems, including Mercurial.
+
+25
+00:01:35,640 --> 00:01:42,180
+But for our purposes, what we care about is that Linus was frustrated, he was -- off about that.
+
+26
+00:01:42,270 --> 00:01:49,470
+He wanted a free version control system that had features that he desired, and at the time nothing
+
+27
+00:01:49,470 --> 00:01:50,160
+fit that bill.
+
+28
+00:01:50,160 --> 00:01:55,350
+There were paid services that had those features and they were free ones that just didn't have the features
+
+29
+00:01:55,350 --> 00:01:55,860
+he wanted.
+
+30
+00:01:55,860 --> 00:01:58,860
+So he wanted to make something fast and open source.
+
+31
+00:01:58,980 --> 00:02:01,680
+And that's actually exactly what he did.
+
+32
+00:02:01,680 --> 00:02:04,320
+He just said, Screw it, I'm going to do it on my own.
+
+33
+00:02:04,650 --> 00:02:11,100
+And he spent most of April 2005 just writing code to make it himself.
+
+34
+00:02:11,130 --> 00:02:13,710
+It's a very impressive effort.
+
+35
+00:02:14,280 --> 00:02:16,440
+So he was unhappy with the existing tools.
+
+36
+00:02:16,440 --> 00:02:17,010
+He got to work.
+
+37
+00:02:17,010 --> 00:02:18,150
+He said, I'll do it myself.
+
+38
+00:02:18,150 --> 00:02:21,330
+And that turned in to Git in just a matter of days.
+
+39
+00:02:21,330 --> 00:02:23,730
+He had the basic functionality done.
+
+40
+00:02:23,730 --> 00:02:28,260
+Now that doesn't mean that it's a one man show and that he's in charge of get to this day.
+
+41
+00:02:28,290 --> 00:02:29,880
+There have been many collaborators.
+
+42
+00:02:29,880 --> 00:02:36,840
+In fact, he handed over development of Git after I think maybe the first month or two to some other
+
+43
+00:02:36,840 --> 00:02:37,890
+developers anyway.
+
+44
+00:02:37,890 --> 00:02:42,270
+But basically he saw a need for a product that didn't exist as a free, open source tool.
+
+45
+00:02:42,270 --> 00:02:44,820
+He created it himself and now it's a huge hit.
+
+46
+00:02:44,820 --> 00:02:45,960
+Everyone uses it, right?
+
+47
+00:02:45,960 --> 00:02:51,840
+15 years later, over 90% of all developers worldwide use Git on a daily basis.
+
+48
+00:02:51,870 --> 00:02:59,130
+Now, one interesting note is about the naming the name Git in development.
+
+49
+00:02:59,130 --> 00:03:04,650
+Linus Torvalds referred to it as the stupid content tracker, just as his own personal name.
+
+50
+00:03:04,650 --> 00:03:10,080
+But eventually he settled on the name Git and according to the official source code for Git, you can
+
+51
+00:03:10,080 --> 00:03:11,130
+view this online.
+
+52
+00:03:11,130 --> 00:03:16,350
+There are a couple of explanations for the meaning of the name Git, depending on your mood.
+
+53
+00:03:16,590 --> 00:03:20,460
+So it's either a random three letter combination that is pronounceable.
+
+54
+00:03:20,460 --> 00:03:24,190
+It's always good and not actually used by any common Unix command.
+
+55
+00:03:25,320 --> 00:03:30,720
+The second option the meaning of Git is stupid, contemptible and despicable.
+
+56
+00:03:30,720 --> 00:03:31,620
+Simple.
+
+57
+00:03:32,070 --> 00:03:34,260
+Then we have Global Information Tracker.
+
+58
+00:03:34,260 --> 00:03:36,960
+That's the more corporate cleaned up version.
+
+59
+00:03:36,960 --> 00:03:39,840
+Git git global information tracker.
+
+60
+00:03:39,840 --> 00:03:42,300
+That's for when you're in a good mood and it actually works for you.
+
+61
+00:03:42,300 --> 00:03:48,510
+Angels sing in a light suddenly fills the room and then when things break and it doesn't work, you
+
+62
+00:03:48,510 --> 00:03:54,090
+can see it is gosh darn idiotic truckload of you know what?
+
+63
+00:03:54,240 --> 00:03:57,300
+Oh, I always feel like such a goody two shoes in these videos.
+
+64
+00:03:57,300 --> 00:04:02,430
+I don't want to lead to any angry reviews and commenters, but this isn't the source code, right?
+
+65
+00:04:02,430 --> 00:04:03,900
+I didn't put this in there myself.
+
+66
+00:04:03,900 --> 00:04:06,660
+That's in the official source for Git.
+
+67
+00:04:07,260 --> 00:04:13,350
+So the last note that I think is kind of funny in British slang, it means an unpleasant person.
+
+68
+00:04:13,350 --> 00:04:18,779
+And Linus Torvalds sarcastically quipped that he actually named it after himself.
+
+69
+00:04:18,779 --> 00:04:22,350
+He said, I'm an egotistical bastard and I name all the projects after myself.
+
+70
+00:04:22,350 --> 00:04:24,300
+First Linux Linus.
+
+71
+00:04:24,660 --> 00:04:32,400
+Now Git joking that he's an unpleasant person or maybe he's a gosh darn idiotic truckload of you know
+
+72
+00:04:32,400 --> 00:04:33,000
+what?
+
+73
+00:04:33,150 --> 00:04:36,450
+Okay, so just kind of a fun little bit of history.
+
+74
+00:04:36,450 --> 00:04:43,110
+It's always amazing when one person goes about trying to solve a problem and they succeed, and then
+
+75
+00:04:43,110 --> 00:04:46,560
+it just becomes incredibly widely used and widespread.
+
+76
+00:04:46,560 --> 00:04:48,270
+That's exactly what happened with Git.
+
+77
+00:04:48,270 --> 00:04:50,580
+It started with one guy hunkered down somewhere.
+
+78
+00:04:50,580 --> 00:04:52,620
+I mean, incredibly talented developer, right?
+
+79
+00:04:52,620 --> 00:04:58,110
+It's not just like me or you most likely, but a very talented developer, just taking on existing tools
+
+80
+00:04:58,110 --> 00:04:59,670
+and trying to improve upon them.
+
+81
+00:04:59,700 --> 00:05:03,000
+With a free, open source tool that now is everywhere.
+

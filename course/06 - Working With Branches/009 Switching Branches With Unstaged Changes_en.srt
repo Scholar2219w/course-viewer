@@ -1,0 +1,268 @@
+1
+00:00:00,090 --> 00:00:02,100
+This is going to be a very quick video.
+
+2
+00:00:02,130 --> 00:00:05,210
+I just need to explain one thing that we haven't run into yet.
+
+3
+00:00:05,220 --> 00:00:11,340
+If I'm on a branch and I have some work that is not currently committed, so let's go to the oldest
+
+4
+00:00:11,340 --> 00:00:15,270
+branch, get switch oldies and I'll do some work here.
+
+5
+00:00:15,270 --> 00:00:21,690
+Like I'll add two Van Morrison songs, great songs, and it's done Me and Caravan, so I'll save those
+
+6
+00:00:21,690 --> 00:00:22,200
+too.
+
+7
+00:00:22,500 --> 00:00:24,420
+But I'm not going to add in commits.
+
+8
+00:00:24,420 --> 00:00:26,580
+So over here I see get status.
+
+9
+00:00:26,790 --> 00:00:29,490
+I modified that I have changes that are not staged.
+
+10
+00:00:29,490 --> 00:00:32,460
+There's work on this branch that has not been committed.
+
+11
+00:00:32,759 --> 00:00:36,360
+If I try and switch branches right now, let's see what happens.
+
+12
+00:00:36,360 --> 00:00:45,480
+Let's go back to the how about our empty playlist, get switch empty playlist and what does it say?
+
+13
+00:00:45,810 --> 00:00:46,860
+I get an error.
+
+14
+00:00:46,860 --> 00:00:51,480
+Your local changes to the following files would be overwritten by checkout playlist.
+
+15
+00:00:51,480 --> 00:00:57,060
+TXT It's telling me that the work I have done right now that I have not yet committed, which is right
+
+16
+00:00:57,060 --> 00:00:57,540
+here.
+
+17
+00:00:57,630 --> 00:01:02,430
+If I try and switch to a different branch, it's going to be lost because it's not committed.
+
+18
+00:01:02,610 --> 00:01:04,200
+This branch doesn't know about it.
+
+19
+00:01:04,200 --> 00:01:09,570
+There's not going to be a bookmark for it in the really large book before we change pages.
+
+20
+00:01:09,570 --> 00:01:13,470
+So it says Please commit your changes or stash them.
+
+21
+00:01:13,650 --> 00:01:17,490
+We will learn more about stashing in just a couple of sections from now.
+
+22
+00:01:17,490 --> 00:01:19,050
+So for now, that's not an option.
+
+23
+00:01:19,050 --> 00:01:24,480
+For now, our only option is to commit our work or just delete it, I guess, and not make those changes.
+
+24
+00:01:24,480 --> 00:01:33,570
+So I am going to commit that get add playlist, get commit Dash Am, add two Van Morrison songs.
+
+25
+00:01:36,270 --> 00:01:37,450
+Just like that.
+
+26
+00:01:37,470 --> 00:01:42,210
+And now I can switch so I can do the same command to switch to empty playlists.
+
+27
+00:01:42,240 --> 00:01:43,310
+No complaints.
+
+28
+00:01:43,320 --> 00:01:46,440
+So if you run into an issue like this, hopefully you understand why.
+
+29
+00:01:46,440 --> 00:01:49,500
+Now get is warning you you're going to lose those changes.
+
+30
+00:01:49,500 --> 00:01:52,770
+You either need to stash them, which we haven't learned or commit them.
+
+31
+00:01:52,860 --> 00:01:58,060
+Now, the last example I showed you, we had changes that were in conflict, right?
+
+32
+00:01:58,110 --> 00:02:04,080
+When I tried to switch branches, we were working on the same file, this playlist file, and they were
+
+33
+00:02:04,080 --> 00:02:04,770
+in conflict.
+
+34
+00:02:04,770 --> 00:02:07,980
+And so get yelled at me and said, Hey, I don't know what to do.
+
+35
+00:02:08,009 --> 00:02:13,110
+We'll learn more about conflicts when we get to merging, but sometimes that's not an issue at all.
+
+36
+00:02:13,110 --> 00:02:17,250
+So if I make a new file, for example, I'm on the oldest branch.
+
+37
+00:02:17,280 --> 00:02:23,700
+Let me make a new branch here, get switch C and this branch will be.
+
+38
+00:02:24,240 --> 00:02:24,690
+I don't know.
+
+39
+00:02:24,690 --> 00:02:27,690
+How about chicken?
+
+40
+00:02:28,170 --> 00:02:29,310
+I'm going to delete it.
+
+41
+00:02:29,400 --> 00:02:30,420
+A chicken branch.
+
+42
+00:02:31,050 --> 00:02:37,140
+And on this chicken branch, I'm going to make a new file entirely called chickens txt and I'll put
+
+43
+00:02:37,140 --> 00:02:39,900
+some of my chickens in here like Stevie Chicks.
+
+44
+00:02:40,620 --> 00:02:46,350
+So I have this new file no other branch has, but I haven't added or committed that file.
+
+45
+00:02:46,410 --> 00:02:51,090
+And so now if I switch again, let's go back to oldest get switch oldies.
+
+46
+00:02:51,420 --> 00:02:57,720
+Previously at the beginning of this video we saw that get yelled at me when I tried to switch and it
+
+47
+00:02:57,720 --> 00:02:58,740
+says You can't switch.
+
+48
+00:02:58,740 --> 00:03:01,980
+You have changes that are going to be overridden that you're in conflict.
+
+49
+00:03:01,980 --> 00:03:03,030
+We don't know what to do.
+
+50
+00:03:03,060 --> 00:03:04,590
+Please stash or commit them.
+
+51
+00:03:04,590 --> 00:03:08,460
+But this is going to be different because no other branch has this file.
+
+52
+00:03:08,460 --> 00:03:11,430
+There's no way that it's in conflict with anything.
+
+53
+00:03:11,700 --> 00:03:15,450
+So what actually will happen is this this file is going to come with me.
+
+54
+00:03:15,900 --> 00:03:17,700
+I'm now on the oldest branch.
+
+55
+00:03:18,450 --> 00:03:19,950
+And I still have chickens.
+
+56
+00:03:19,990 --> 00:03:20,520
+You see that?
+
+57
+00:03:20,520 --> 00:03:21,720
+The file is still there.
+
+58
+00:03:21,870 --> 00:03:25,590
+And it came with me and it still says, Hey, there's this untracked file.
+
+59
+00:03:25,620 --> 00:03:27,270
+You haven't made it commit with it anywhere.
+
+60
+00:03:27,270 --> 00:03:29,910
+It's just going to follow you to every branch you go to.
+
+61
+00:03:30,090 --> 00:03:36,630
+So for now, I'm just going to recommend we always add and commit changes before we switch branches
+
+62
+00:03:36,630 --> 00:03:37,920
+so that we can avoid this.
+
+63
+00:03:37,920 --> 00:03:41,850
+But of course, like I said, we're going to learn how to stash changes very soon.
+
+64
+00:03:41,850 --> 00:03:45,750
+First, we're going to learn about merging, but I just want to call your attention to this behavior.
+
+65
+00:03:45,750 --> 00:03:51,120
+When you switch branches, sometimes, if you have unstaged changes, they will come with you.
+
+66
+00:03:51,810 --> 00:03:54,650
+Other times, if they're in conflict, get will yell at you.
+
+67
+00:03:54,660 --> 00:03:55,860
+So just know that.
+

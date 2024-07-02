@@ -1,0 +1,256 @@
+1
+00:00:00,180 --> 00:00:03,540
+So let's start the section off with a nice and easy topic.
+
+2
+00:00:03,540 --> 00:00:05,100
+The get docs.
+
+3
+00:00:05,280 --> 00:00:12,630
+Yes, this is a very funny joke because these are pictures of doctors, but we're not actually talking
+
+4
+00:00:12,630 --> 00:00:13,590
+about doctors.
+
+5
+00:00:13,590 --> 00:00:15,920
+We're talking about the git documentation.
+
+6
+00:00:15,930 --> 00:00:17,250
+Can you believe how funny that is?
+
+7
+00:00:17,400 --> 00:00:22,980
+So dumb jokes aside, we're talking about the git documentation which you may want to reference at some
+
+8
+00:00:22,980 --> 00:00:27,150
+point if you have questions or you want to learn more about one of the commands that I'm showing you.
+
+9
+00:00:27,540 --> 00:00:31,910
+So the docs are accessible at Git Dash Semco.
+
+10
+00:00:33,350 --> 00:00:34,670
+I never remember that.
+
+11
+00:00:34,700 --> 00:00:40,730
+I just Google get and then I end up on this web page and then we want to go to documentation pretty
+
+12
+00:00:40,730 --> 00:00:41,510
+much every time.
+
+13
+00:00:41,510 --> 00:00:47,270
+That's where I go, you know, I'm not going to about I don't need to see the advantages of get to compare
+
+14
+00:00:47,270 --> 00:00:48,230
+it to something else.
+
+15
+00:00:48,230 --> 00:00:49,160
+I'm already using it.
+
+16
+00:00:49,160 --> 00:00:50,700
+I just want the docs.
+
+17
+00:00:50,720 --> 00:00:55,730
+Now there are a couple of sections here and most of the time I end up looking at the reference manual.
+
+18
+00:00:55,760 --> 00:01:02,720
+Occasionally this book called Pro get pretty much never the videos, so the reference manual will start.
+
+19
+00:01:02,720 --> 00:01:04,819
+There is exactly what it says.
+
+20
+00:01:04,819 --> 00:01:09,740
+It's a reference manual to all the git commands and main topics.
+
+21
+00:01:09,740 --> 00:01:11,060
+It is not ordered.
+
+22
+00:01:11,240 --> 00:01:14,120
+It's not a step by step guide, it's just a reference.
+
+23
+00:01:14,120 --> 00:01:18,050
+So for example, we've been using get commit.
+
+24
+00:01:18,050 --> 00:01:22,640
+If I want to learn more about Git commits, I can click on this, I'll zoom in.
+
+25
+00:01:22,670 --> 00:01:24,500
+It tells us roughly what it does.
+
+26
+00:01:24,500 --> 00:01:26,420
+Record changes to the repository.
+
+27
+00:01:26,540 --> 00:01:33,350
+Here's a more detailed description, but then as I scroll down, this is what I end up looking at occasionally
+
+28
+00:01:33,350 --> 00:01:35,930
+on the docs, all of these options.
+
+29
+00:01:35,930 --> 00:01:42,440
+So this is one command get commit and we've used one option which is dash m could find that on here
+
+30
+00:01:42,440 --> 00:01:43,250
+somewhere.
+
+31
+00:01:43,370 --> 00:01:50,600
+Dash M which is short for dash dash message, use the given message as the commit message.
+
+32
+00:01:51,200 --> 00:01:52,040
+We already know that.
+
+33
+00:01:52,040 --> 00:01:56,420
+Hopefully you know how to do that, but here is where we would find that information.
+
+34
+00:01:56,600 --> 00:02:01,730
+So there are lots of options for every single one of the git commands I've shown you and it's honestly
+
+35
+00:02:01,730 --> 00:02:02,630
+overwhelming.
+
+36
+00:02:03,080 --> 00:02:06,740
+I use very few of them, but there are a lot available.
+
+37
+00:02:06,740 --> 00:02:12,080
+So if you ever have questions about them, if you see somebody use a command, get commit and then the
+
+38
+00:02:12,080 --> 00:02:16,340
+Dash Z flag and you have no idea what that is, you can read about it here.
+
+39
+00:02:16,670 --> 00:02:21,680
+Also, if we keep scrolling down, we will find examples.
+
+40
+00:02:21,680 --> 00:02:26,600
+So there are some examples that show how to use get commit in this example.
+
+41
+00:02:26,750 --> 00:02:31,640
+But on another page, if we're looking at git log, that will be examples for git log or for some of
+
+42
+00:02:31,640 --> 00:02:33,830
+the more advanced commands that can be helpful.
+
+43
+00:02:34,370 --> 00:02:35,840
+And that's pretty much it.
+
+44
+00:02:35,840 --> 00:02:42,230
+I mean, there's discussion down at the bottom basically for every git command, we deal with this really
+
+45
+00:02:42,230 --> 00:02:46,700
+thorough but also intimidating set of documentation.
+
+46
+00:02:46,820 --> 00:02:54,740
+So if you are looking for something more educational or more sort of techy, you can go to the book
+
+47
+00:02:54,980 --> 00:02:59,180
+and this is grouped into topics that are ordered and it explains things.
+
+48
+00:02:59,180 --> 00:03:03,890
+So for example, we haven't yet covered branching, but if you wanted to learn more about branching
+
+49
+00:03:03,890 --> 00:03:09,920
+or if my explanation is insufficient, once you get to that section, you can read more and have diagrams
+
+50
+00:03:09,920 --> 00:03:12,140
+and sort of step by step explanation here.
+
+51
+00:03:12,140 --> 00:03:13,910
+And it's pretty I shouldn't say pretty.
+
+52
+00:03:13,910 --> 00:03:15,170
+It's very well written.
+
+53
+00:03:15,380 --> 00:03:24,800
+It's a well done book and it is a nice antidote to the dry and purely reference manual documentation.
+
+54
+00:03:24,800 --> 00:03:31,340
+The book really does have a clear path through it, so I don't necessarily recommend reading the entire
+
+55
+00:03:31,340 --> 00:03:35,930
+book, but I mean, I come here occasionally when I have questions about things, some commands that
+
+56
+00:03:35,930 --> 00:03:39,770
+I haven't used in a while or configuring things.
+
+57
+00:03:39,830 --> 00:03:42,380
+The book is very helpful to explain them.
+
+58
+00:03:42,380 --> 00:03:47,300
+And then if you just have a one off question about what is that flag or is there a way to do X with
+
+59
+00:03:47,300 --> 00:03:48,800
+the git log command?
+
+60
+00:03:48,800 --> 00:03:51,260
+You can go read about it on the reference manual.
+
+61
+00:03:51,260 --> 00:03:55,130
+Just do your best to stay sane while reading these docs.
+
+62
+00:03:55,130 --> 00:03:58,460
+There are so many options, so many flags for every single command.
+
+63
+00:03:58,550 --> 00:04:00,770
+All right, so that's how we get to the docs.
+
+64
+00:04:00,800 --> 00:04:06,320
+Get them documentation, reference, manual or book.
+

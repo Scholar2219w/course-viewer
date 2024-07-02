@@ -1,0 +1,9 @@
+
+001 SLIDES-FOR-THIS-SECTION
+https://www.canva.com/design/DAEVUT6HslA/tbdbyITzamUidWfk-HcSug/view?utm_content=DAEVUT6HslA&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+
+002 Git-Diff-Docs
+https://git-scm.com/docs/git-diff
+
+011 Diff-Exercise-Instructions
+https://www.notion.so/Git-Diff-Exercise-f7829bd2783940cea14239022a6c37a9

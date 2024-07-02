@@ -1,0 +1,312 @@
+1
+00:00:00,210 --> 00:00:06,450
+In this video I want to use get crackin as a way to visualize our branches and specifically to visualize
+
+2
+00:00:06,450 --> 00:00:07,950
+the merging process.
+
+3
+00:00:08,070 --> 00:00:11,910
+So I have get cracking open with this playlist repository.
+
+4
+00:00:12,270 --> 00:00:14,460
+We just merged our two branches.
+
+5
+00:00:14,700 --> 00:00:16,680
+We merged oldest into master.
+
+6
+00:00:16,710 --> 00:00:20,760
+Unfortunately, I've been trying desperately to zoom this in.
+
+7
+00:00:20,790 --> 00:00:22,260
+This is as far as it lets me go.
+
+8
+00:00:22,260 --> 00:00:24,600
+For whatever reason, I hope that you can see this.
+
+9
+00:00:24,600 --> 00:00:30,780
+Otherwise I'll try and make it a bit larger in post-production, although it might be blurry anyway.
+
+10
+00:00:30,810 --> 00:00:35,550
+I have my road trip playlist repository open and if you need to know if you don't remember how to open
+
+11
+00:00:35,550 --> 00:00:41,100
+that, just go to view all repositories or you can actually click right there to open a repository and
+
+12
+00:00:41,100 --> 00:00:43,740
+then navigate to the right folder and open it.
+
+13
+00:00:43,770 --> 00:00:49,170
+So here it is and I can see each branch reference over here on the left side now.
+
+14
+00:00:49,200 --> 00:00:55,050
+Master and oldies are currently referring to the exact same commits because that's where they are.
+
+15
+00:00:55,080 --> 00:00:59,190
+They are in sync with one another right now, but I'm going to change that.
+
+16
+00:00:59,190 --> 00:01:05,040
+I'm actually going to add some more work to the oldest branch and then merge it back into master eventually.
+
+17
+00:01:05,040 --> 00:01:12,750
+But for now I'm going to go to the oldest branch, so let's switch over, get switch oldies and then
+
+18
+00:01:12,750 --> 00:01:15,060
+I'm just going to add another song or two here.
+
+19
+00:01:15,480 --> 00:01:19,620
+So I added two songs by Wings Band on the Run and Live and Let Die.
+
+20
+00:01:19,650 --> 00:01:21,270
+Let's add both of those.
+
+21
+00:01:21,360 --> 00:01:27,570
+Get commit dash a dash m add to Wings songs.
+
+22
+00:01:29,190 --> 00:01:31,830
+So we added that to oldies, right?
+
+23
+00:01:31,830 --> 00:01:35,760
+Master no longer is up to date or in sync with oldies.
+
+24
+00:01:35,790 --> 00:01:38,490
+Oldies now has a commit that master does not.
+
+25
+00:01:38,970 --> 00:01:41,940
+Obviously if I switch to master, we see that go away.
+
+26
+00:01:42,420 --> 00:01:47,010
+So now if we go back to get crackin, we can see here's master.
+
+27
+00:01:47,220 --> 00:01:54,900
+The last commit master has is this one add to Van Morrison songs oldies is now one commit ahead and
+
+28
+00:01:54,900 --> 00:01:57,540
+it has Add to Wings songs.
+
+29
+00:01:57,930 --> 00:02:00,060
+So I can do one more example.
+
+30
+00:02:00,510 --> 00:02:01,860
+Let's just add two more songs.
+
+31
+00:02:01,860 --> 00:02:03,530
+How about two Joni Mitchell songs?
+
+32
+00:02:03,540 --> 00:02:10,590
+Let me switch back, get switch and I can switch branches using get crackin or gooey so I can switch
+
+33
+00:02:10,590 --> 00:02:11,880
+this way if you prefer.
+
+34
+00:02:12,270 --> 00:02:14,580
+And now in my terminal I type get status.
+
+35
+00:02:14,610 --> 00:02:21,090
+It does say I'm on oldies, so I prefer to use terminal, but I like to use get crackin to help visualize
+
+36
+00:02:21,090 --> 00:02:21,840
+this stuff.
+
+37
+00:02:21,840 --> 00:02:25,860
+Anyway, I'm going to add to Joni Mitchell songs.
+
+38
+00:02:25,890 --> 00:02:28,620
+There we are, river and both sides now.
+
+39
+00:02:28,710 --> 00:02:29,790
+Great songs.
+
+40
+00:02:29,940 --> 00:02:32,610
+I will add those changes and commit.
+
+41
+00:02:32,610 --> 00:02:36,720
+So get commit dash a dash m and I could do this from within.
+
+42
+00:02:36,720 --> 00:02:38,460
+Get cracking if I wanted to.
+
+43
+00:02:39,840 --> 00:02:40,440
+Over here.
+
+44
+00:02:40,440 --> 00:02:41,730
+View the change.
+
+45
+00:02:41,730 --> 00:02:45,780
+I can stage that file and then I can make my commit message.
+
+46
+00:02:45,780 --> 00:02:50,100
+Add to Joni Mitchell songs.
+
+47
+00:02:50,490 --> 00:02:52,020
+It's the exact same thing.
+
+48
+00:02:52,020 --> 00:02:52,380
+Whoops.
+
+49
+00:02:52,380 --> 00:02:53,340
+I mean to.
+
+50
+00:02:54,190 --> 00:02:55,720
+It's just I'm doing it from a gooey.
+
+51
+00:02:55,720 --> 00:03:00,910
+So I stage that file I commit and I'm on the branch oldies, so let's do that.
+
+52
+00:03:01,330 --> 00:03:04,480
+Okay, so now we see this is where Master was.
+
+53
+00:03:04,480 --> 00:03:05,470
+It still is.
+
+54
+00:03:05,470 --> 00:03:09,460
+But oldies now has two new commits that master does not have.
+
+55
+00:03:09,610 --> 00:03:13,920
+So this sets us up for what we've already seen a fast forward merge.
+
+56
+00:03:13,930 --> 00:03:18,370
+If I want to merge the changes from oldies into master, it's pretty straightforward.
+
+57
+00:03:18,370 --> 00:03:21,540
+All we need to do is add these two commits to master.
+
+58
+00:03:21,550 --> 00:03:24,040
+Well, it's not what we do, but it's what git does.
+
+59
+00:03:24,040 --> 00:03:29,110
+It just catches up, catches up to the top, so it's in sync with oldies.
+
+60
+00:03:29,110 --> 00:03:31,330
+So again, this is master right now.
+
+61
+00:03:31,690 --> 00:03:32,830
+This is oldies.
+
+62
+00:03:32,830 --> 00:03:35,740
+There's two commits on oldies that master does not have.
+
+63
+00:03:35,740 --> 00:03:37,170
+I'm going to merge them.
+
+64
+00:03:37,180 --> 00:03:39,190
+So what does that process like again?
+
+65
+00:03:39,190 --> 00:03:40,420
+Well, it's two steps.
+
+66
+00:03:40,420 --> 00:03:46,750
+Remember, we go to the destination branch and then we merge with Git Merge and our branch name.
+
+67
+00:03:46,750 --> 00:03:54,280
+So I'm going to switch to Master OC now I'm going to run, get merge and then oldies.
+
+68
+00:03:54,280 --> 00:03:59,710
+So before I hit enter just one more time, these two commits wings and Joni Mitchell.
+
+69
+00:03:59,740 --> 00:04:03,130
+Those two bands are two groups that I added songs for.
+
+70
+00:04:03,160 --> 00:04:08,410
+Those commits are now going to be added to master, or another way of thinking of it is just master
+
+71
+00:04:08,410 --> 00:04:11,290
+is going to fast forward and catch up with those two commits.
+
+72
+00:04:11,290 --> 00:04:12,280
+So here we go.
+
+73
+00:04:13,040 --> 00:04:20,510
+Fast forward and you can see over here now master and oldest are both referring to the same commit.
+
+74
+00:04:20,810 --> 00:04:23,810
+So that's visualizing a fast forward merge.
+
+75
+00:04:23,810 --> 00:04:27,200
+But as I've alluded to, not every merge is a fast forward.
+
+76
+00:04:27,290 --> 00:04:32,400
+And in the next video, we will deliberately create a situation that is not as simple.
+
+77
+00:04:32,420 --> 00:04:35,440
+We'll have to merge and there may be some issues that arise.
+
+78
+00:04:35,450 --> 00:04:36,380
+So that's coming up.
+

@@ -1,0 +1,224 @@
+1
+00:00:00,120 --> 00:00:04,019
+So next up, I'd like to talk about the course curriculum and what we cover.
+
+2
+00:00:04,019 --> 00:00:10,290
+And I'll try to break it down into some smaller pieces because on the surface we cover quite a few topics
+
+3
+00:00:10,290 --> 00:00:12,120
+related to Git and GitHub.
+
+4
+00:00:12,390 --> 00:00:18,780
+So there's always a pressure honestly in these courses to fit as many related topics as possible into
+
+5
+00:00:18,780 --> 00:00:23,160
+a course just to compete or to stand out in some way.
+
+6
+00:00:23,160 --> 00:00:30,510
+And I can't ignore that, but I do want to try my best to make it very clear what actually matters and
+
+7
+00:00:30,510 --> 00:00:34,920
+what is fundamental, because not all of this stuff you see in front of you and there's likely to be
+
+8
+00:00:34,920 --> 00:00:39,630
+more by the time you're actually watching this, there will be more videos or more additional sections
+
+9
+00:00:39,630 --> 00:00:42,150
+added towards the end because students request them.
+
+10
+00:00:42,150 --> 00:00:45,360
+But anyway, not all of these are critical.
+
+11
+00:00:45,630 --> 00:00:50,460
+So there's a couple of chunks, I guess that I would I would break things down into the first bit is
+
+12
+00:00:50,460 --> 00:00:54,840
+all about the core functionality of Git working with the very, very basics.
+
+13
+00:00:54,840 --> 00:01:00,390
+Things like adding and committing and creating repositories get logged, get status, creating branches,
+
+14
+00:01:00,390 --> 00:01:02,820
+checking out, switching, merging.
+
+15
+00:01:02,820 --> 00:01:05,160
+That is your core git toolbox.
+
+16
+00:01:05,160 --> 00:01:11,220
+And then we talk about I'm calling it next level git, but it's not crazy difficult stuff.
+
+17
+00:01:11,220 --> 00:01:14,880
+It's just a couple of git topics that won't come up as often.
+
+18
+00:01:14,880 --> 00:01:19,080
+They're not part of your day to day get life, but they still are very important.
+
+19
+00:01:19,080 --> 00:01:25,200
+So we talk about defying the git diff, command stashing, and then we talk about quite a few ways of
+
+20
+00:01:25,200 --> 00:01:27,960
+time traveling and git or undoing changes.
+
+21
+00:01:27,990 --> 00:01:34,860
+Get revert, get reset, get restored, undoing changes and going back to old work and detaching and
+
+22
+00:01:34,860 --> 00:01:36,180
+reattaching the head.
+
+23
+00:01:36,180 --> 00:01:38,640
+And there's quite a bit of stuff in that section.
+
+24
+00:01:38,940 --> 00:01:42,210
+So it's important, but it's just not part of this Git core.
+
+25
+00:01:42,750 --> 00:01:46,290
+Then we move on to GitHub and collaboration.
+
+26
+00:01:46,290 --> 00:01:48,600
+So I've grouped together four sections here.
+
+27
+00:01:48,600 --> 00:01:53,010
+I don't really have a nice title for it, but we basically learn about the basics of GitHub, working
+
+28
+00:01:53,010 --> 00:01:57,090
+with GitHub, getting our code up on GitHub, getting stuff down from GitHub.
+
+29
+00:01:57,120 --> 00:02:03,120
+We talk about things like GitHub pages and GitHub gists and collaboration workflows.
+
+30
+00:02:03,120 --> 00:02:05,550
+That's a very significant chunk of this course.
+
+31
+00:02:05,550 --> 00:02:10,770
+We spend a lot of time on that, talking about the different ways that you could use Git with a team
+
+32
+00:02:10,770 --> 00:02:15,570
+to collaborate along with GitHub and different structures, different strategies you can employ.
+
+33
+00:02:15,570 --> 00:02:19,230
+There's not just one way and they all have some certain strengths and weaknesses.
+
+34
+00:02:19,230 --> 00:02:22,110
+So I demonstrate those and spend a lot of time talking about it.
+
+35
+00:02:22,110 --> 00:02:23,340
+It's pretty important stuff.
+
+36
+00:02:23,610 --> 00:02:30,540
+So I've grouped that together with GitHub and then after that it's kind of just a mixture of other Git
+
+37
+00:02:30,540 --> 00:02:33,210
+stuff that I felt compelled to include.
+
+38
+00:02:33,210 --> 00:02:36,510
+And these are some of the more advanced topics or the niche topics.
+
+39
+00:02:36,510 --> 00:02:42,570
+So this includes things like rebasing, cleaning up your git history with interactive rebasing, squashing,
+
+40
+00:02:42,570 --> 00:02:47,640
+dropping, fixing up all sorts of sort of fun parts, in my opinion.
+
+41
+00:02:47,640 --> 00:02:52,800
+We talk about tags, we talk about how it works behind the scenes and hashing.
+
+42
+00:02:53,070 --> 00:02:57,210
+We cover things like get objects, get blobs, get trees.
+
+43
+00:02:57,210 --> 00:03:01,890
+So there's stuff in here that you could go your whole life as a get user without knowing.
+
+44
+00:03:01,890 --> 00:03:05,100
+I think it's worth giving you the option at least to check it out.
+
+45
+00:03:05,100 --> 00:03:10,620
+If you're curious, we talk about creating custom aliases and shortcuts and ref logs.
+
+46
+00:03:10,620 --> 00:03:11,550
+That's a fun one.
+
+47
+00:03:11,550 --> 00:03:15,630
+I'm happy with how that section turned out and as I said, there's likely to be more.
+
+48
+00:03:15,630 --> 00:03:20,220
+If you scroll down right now through the curriculum, there's likely more content in the course that's
+
+49
+00:03:20,220 --> 00:03:21,330
+not included here.
+
+50
+00:03:21,570 --> 00:03:27,300
+So to recap this, there's quite a bit and it's all getting GitHub oriented, but there's this first
+
+51
+00:03:27,300 --> 00:03:30,060
+chunk that is the core of Git on its own.
+
+52
+00:03:30,060 --> 00:03:36,240
+Then we talk about some next level Git topics that are absolutely important to know, but they're not
+
+53
+00:03:36,240 --> 00:03:42,150
+part of your typical hour to hour or day to day use case for Git or they might not be.
+
+54
+00:03:42,180 --> 00:03:48,120
+And then we talk about GitHub and collaboration workflows and then it's just a bunch of other Git related
+
+55
+00:03:48,120 --> 00:03:50,850
+topics at the end that I had a lot of fun recording.
+
+56
+00:03:50,880 --> 00:03:52,530
+Okay, so let's get started.
+

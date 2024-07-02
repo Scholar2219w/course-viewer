@@ -1,0 +1,456 @@
+1
+00:00:00,120 --> 00:00:06,120
+So the last thing I'll show you here is how to use get cracking or a similar gooey tool to visualize
+
+2
+00:00:06,120 --> 00:00:10,560
+diffs to actually see them in a file instead of having to see them in your terminal.
+
+3
+00:00:10,620 --> 00:00:15,720
+A lot of the time this is really useful, especially if you're working on large projects with tons of
+
+4
+00:00:15,720 --> 00:00:16,230
+files.
+
+5
+00:00:16,230 --> 00:00:20,640
+And this is one of the areas I think always shine when you're working with Git.
+
+6
+00:00:20,940 --> 00:00:22,950
+So here's get cracking.
+
+7
+00:00:23,280 --> 00:00:28,530
+Unfortunately, as I've said a couple of times before, I can't make this any larger, so it lets me
+
+8
+00:00:28,530 --> 00:00:32,189
+make it larger up until this point, which is still not very large.
+
+9
+00:00:32,189 --> 00:00:36,210
+So I'll do my best to try and enhance and zoom in in post-production.
+
+10
+00:00:36,360 --> 00:00:38,390
+But here's my colors repository.
+
+11
+00:00:38,400 --> 00:00:39,490
+Very simple, right?
+
+12
+00:00:39,510 --> 00:00:45,750
+We have our initial commit, we added red, orange, yellow, green, add blue and purple had indigo.
+
+13
+00:00:45,780 --> 00:00:48,480
+Then I created this odd numbers branch.
+
+14
+00:00:48,480 --> 00:00:48,840
+Right.
+
+15
+00:00:48,840 --> 00:00:51,000
+I removed two and four from the numbers.
+
+16
+00:00:51,090 --> 00:00:55,320
+It's this project file here, numbers and colors.
+
+17
+00:00:55,500 --> 00:01:01,620
+If I visually if I want to see a diff, let's start by making some unstaged changes right now.
+
+18
+00:01:01,710 --> 00:01:02,070
+Right.
+
+19
+00:01:02,070 --> 00:01:02,930
+Get status.
+
+20
+00:01:02,940 --> 00:01:05,099
+Nothing to commit working tree clean.
+
+21
+00:01:05,700 --> 00:01:09,960
+So why don't I add something to colors like I love the rainbow.
+
+22
+00:01:10,500 --> 00:01:11,790
+We'll save that.
+
+23
+00:01:11,790 --> 00:01:15,540
+And then in numbers, let's add five.
+
+24
+00:01:16,290 --> 00:01:17,700
+This is on the master branch.
+
+25
+00:01:17,700 --> 00:01:21,900
+Six and seven like that.
+
+26
+00:01:22,170 --> 00:01:27,780
+All right, so now I have two files that have been changed, both of which are unstaged.
+
+27
+00:01:28,080 --> 00:01:34,920
+So now, as it shows me here to file changes in working directory, I can click to view those changes.
+
+28
+00:01:35,130 --> 00:01:36,750
+So that's what it's showing me here.
+
+29
+00:01:36,840 --> 00:01:38,790
+Unstaged and staged.
+
+30
+00:01:39,120 --> 00:01:46,650
+So I can click on either these files and it visually shows me this new change showing it to me in the
+
+31
+00:01:46,650 --> 00:01:47,550
+file here.
+
+32
+00:01:47,580 --> 00:01:52,170
+I love the Rainbow was added it shows it in green so you can see there.
+
+33
+00:01:52,170 --> 00:01:54,090
+Also, here's our little diff header.
+
+34
+00:01:54,090 --> 00:01:56,460
+It's not showing the entire file right.
+
+35
+00:01:56,460 --> 00:02:00,330
+I can see I can click to see file view or just diff view.
+
+36
+00:02:00,840 --> 00:02:02,850
+And then same thing with numbers here.
+
+37
+00:02:02,850 --> 00:02:05,400
+It's showing me that five, six and seven are new.
+
+38
+00:02:05,400 --> 00:02:06,420
+They've been added.
+
+39
+00:02:06,750 --> 00:02:09,060
+Let's do something slightly different.
+
+40
+00:02:09,060 --> 00:02:11,880
+Let's delete for whatever reason.
+
+41
+00:02:12,090 --> 00:02:12,990
+I don't know.
+
+42
+00:02:12,990 --> 00:02:14,700
+We'll get rid of Violet.
+
+43
+00:02:16,270 --> 00:02:16,930
+Okay.
+
+44
+00:02:17,200 --> 00:02:24,340
+So now go back to colors and it's showing me violet that has been removed it's non existent currently
+
+45
+00:02:24,790 --> 00:02:32,200
+versus I love the rainbow has been added and again it's just showing me the diff view and then if I
+
+46
+00:02:32,200 --> 00:02:36,220
+wanted to, if I stage one of these files, let's stage colors.
+
+47
+00:02:36,980 --> 00:02:38,800
+I can go here and see.
+
+48
+00:02:38,810 --> 00:02:40,930
+Okay, here's the changes I have staged.
+
+49
+00:02:40,940 --> 00:02:42,490
+Here's the changes I've unstaged.
+
+50
+00:02:42,500 --> 00:02:47,840
+So if I stage both files and I just want to see that diff now, I can just go between them.
+
+51
+00:02:47,840 --> 00:02:52,340
+Nothing has changed in terms of what is what's different and what's not different.
+
+52
+00:02:52,340 --> 00:02:58,670
+It's just if I was doing this with Git commands, I would do get diff versus get diff head versus git
+
+53
+00:02:59,060 --> 00:03:01,070
+get diff staged here.
+
+54
+00:03:01,070 --> 00:03:02,600
+It's just a matter of clicking.
+
+55
+00:03:02,840 --> 00:03:07,610
+If they're in the stage two files area, then I'm viewing a diff for what is staged.
+
+56
+00:03:07,610 --> 00:03:15,620
+If they are not staged here, I'm looking at the unstaged changes from numbers, dot text, other things
+
+57
+00:03:15,620 --> 00:03:16,730
+that we can do.
+
+58
+00:03:16,850 --> 00:03:19,160
+If I get out of here quickly.
+
+59
+00:03:19,850 --> 00:03:20,870
+Sometimes I you get lost.
+
+60
+00:03:20,870 --> 00:03:21,380
+Here it is.
+
+61
+00:03:21,380 --> 00:03:22,400
+Can X out.
+
+62
+00:03:22,880 --> 00:03:29,990
+If I want to see changes between two commits, for example, I can click on one commit like where we
+
+63
+00:03:29,990 --> 00:03:36,440
+added indigo and then hold down shift and select another commit like that.
+
+64
+00:03:36,740 --> 00:03:40,370
+And then over here it's showing me viewing diff between two commits.
+
+65
+00:03:40,370 --> 00:03:44,120
+There's only one file that changed and this is what changed, right?
+
+66
+00:03:44,150 --> 00:03:45,590
+This is the difference between them.
+
+67
+00:03:45,800 --> 00:03:53,390
+So I removed purple, I added indigo between those two commits or let's do a more drastic difference
+
+68
+00:03:53,570 --> 00:03:54,920
+from the very beginning.
+
+69
+00:03:54,920 --> 00:03:58,550
+Or How about when we added red up to when we added indigo?
+
+70
+00:03:59,150 --> 00:04:00,470
+Here's what changed.
+
+71
+00:04:01,660 --> 00:04:04,580
+Or I could have multiple files involved.
+
+72
+00:04:04,600 --> 00:04:06,150
+I'll open a different project.
+
+73
+00:04:06,550 --> 00:04:07,960
+Here's a much larger project.
+
+74
+00:04:07,960 --> 00:04:13,960
+That 2048 app I was showing you right where we had the more complicated diffs.
+
+75
+00:04:14,350 --> 00:04:19,899
+If I wanted to visually see the difference between some commits, I could.
+
+76
+00:04:19,899 --> 00:04:20,290
+I don't know.
+
+77
+00:04:20,290 --> 00:04:23,260
+Let's just pick two early commits.
+
+78
+00:04:24,200 --> 00:04:25,280
+How about.
+
+79
+00:04:25,580 --> 00:04:25,990
+Sure.
+
+80
+00:04:26,000 --> 00:04:26,840
+Those two.
+
+81
+00:04:26,990 --> 00:04:29,930
+I can see all of these files were changed.
+
+82
+00:04:29,930 --> 00:04:33,710
+Although it looks like ten of them were renamed, but four files were modified.
+
+83
+00:04:34,010 --> 00:04:36,100
+And then I can see the different chunks.
+
+84
+00:04:36,110 --> 00:04:37,670
+I can see the chunk headers.
+
+85
+00:04:37,670 --> 00:04:40,460
+So this is visually for me, a lot easier.
+
+86
+00:04:40,730 --> 00:04:45,830
+It's often a lot easier to work with if I really am trying to understand the difference between two
+
+87
+00:04:45,830 --> 00:04:49,320
+commits or between two two branches or something like that.
+
+88
+00:04:49,340 --> 00:04:50,870
+Doing it from the command line.
+
+89
+00:04:51,050 --> 00:04:53,390
+Good to know how to do and I still use that.
+
+90
+00:04:53,390 --> 00:04:59,840
+But if I really need to dig down into the changes and spend some time working through what's different,
+
+91
+00:04:59,840 --> 00:05:03,710
+then I really like the diff view from editors or from guys like get cracking.
+
+92
+00:05:04,010 --> 00:05:10,190
+So if I want to see the same thing that I'm seeing over here and I just type get diff head, this is
+
+93
+00:05:10,190 --> 00:05:13,910
+everything that's changed since the last commits very early in the section.
+
+94
+00:05:13,910 --> 00:05:21,650
+I think the first or second video I changed index HTML, I changed grid JS and I changed main CSS so
+
+95
+00:05:21,650 --> 00:05:24,860
+I can view that here I click on my work in progress.
+
+96
+00:05:24,860 --> 00:05:27,490
+So this is nothing committed yet.
+
+97
+00:05:27,500 --> 00:05:30,470
+And then I can see the three files one at a time.
+
+98
+00:05:30,470 --> 00:05:32,210
+Here's what's changed in index.
+
+99
+00:05:32,930 --> 00:05:34,460
+I can visualize it pretty easy.
+
+100
+00:05:34,460 --> 00:05:39,850
+I can stage, I can see what changed in the grid JS file and in main course.
+
+101
+00:05:40,280 --> 00:05:45,230
+So I find this just better, easier to work with than this personally.
+
+102
+00:05:45,230 --> 00:05:49,190
+And the last thing I'll show you is if you want more context, you want the entire file.
+
+103
+00:05:49,640 --> 00:05:50,870
+Right now we're in hunk.
+
+104
+00:05:50,870 --> 00:05:52,580
+People call it hunk instead of chunk.
+
+105
+00:05:52,580 --> 00:05:54,710
+Sometimes they mean the same thing.
+
+106
+00:05:54,710 --> 00:06:01,670
+I'm viewing one chunk or one hunk at a time versus in line view shows me the entire file with the diff
+
+107
+00:06:01,670 --> 00:06:04,610
+right there so I can find that one down there.
+
+108
+00:06:04,640 --> 00:06:07,100
+It's not too bad, but some of the files are longer.
+
+109
+00:06:07,100 --> 00:06:07,460
+Right.
+
+110
+00:06:07,460 --> 00:06:14,360
+So I've got a scroll quite a ways if I want to see everything versus if I go to Hunk View, I just see
+
+111
+00:06:14,360 --> 00:06:17,570
+the three hunks with some context around each change.
+
+112
+00:06:17,840 --> 00:06:18,890
+So that's it.
+
+113
+00:06:18,920 --> 00:06:24,410
+Nice part of get cracking and all these other guys, they pretty much all offer a view like this.
+
+114
+00:06:24,410 --> 00:06:25,520
+It's pretty standard.
+

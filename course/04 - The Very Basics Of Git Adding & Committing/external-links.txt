@@ -1,0 +1,24 @@
+
+001 SLIDES-FOR-THIS-SECTION
+https://www.canva.com/design/DAEPH_Lq4Wk/Wp_d5Rvk_OjVvgPH0xmzhg/view?utm_content=DAEPH_Lq4Wk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+
+003 Git-Init-Docs
+https://git-scm.com/docs/git-init
+
+003 Git-Status-Docs
+https://git-scm.com/docs/git-status
+
+007 Git-Add-Docs
+https://git-scm.com/docs/git-add
+
+008 Git-Commit-Docs
+https://git-scm.com/docs/git-commit
+
+009 Great-Gatsby-Text
+http://gutenberg.net.au/ebooks02/0200041h.html
+
+009 Git-Log-Docs
+https://git-scm.com/docs/git-log
+
+010 Committing-Exercise-Instructions
+https://www.notion.so/Committing-Basics-Exercise-3dc1ef1873ce45e68cedd2265710d7d8

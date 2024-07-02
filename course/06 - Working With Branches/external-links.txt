@@ -1,0 +1,15 @@
+
+001 SLIDES-FOR-THIS-SECTION
+https://www.canva.com/design/DAEPOwX2Zzs/90STrbMXNysYIkSsxUCu-g/view?utm_content=DAEPOwX2Zzs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+
+005 Git-Branch-Docs
+https://git-scm.com/docs/git-branch
+
+006 Git-Switch-Docs
+https://git-scm.com/docs/git-switch
+
+008 Git-Checkout-Docs
+https://git-scm.com/docs/git-checkout
+
+012 Branching-Exercise-Instructions
+https://www.notion.so/Branching-Exercise-b5460c881d56400cb046357d9a430bf8

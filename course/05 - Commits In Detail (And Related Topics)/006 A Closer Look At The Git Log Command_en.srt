@@ -1,0 +1,272 @@
+1
+00:00:00,120 --> 00:00:00,930
+In this video.
+
+2
+00:00:00,930 --> 00:00:08,130
+I want to talk about the docs one more time and specifically how we can learn more about git log, which
+
+3
+00:00:08,130 --> 00:00:11,520
+just gives us a log of the commits in a given repository.
+
+4
+00:00:12,000 --> 00:00:17,940
+And as we saw when I added a very, very long commit message, we see the entire thing here.
+
+5
+00:00:17,970 --> 00:00:24,510
+Now shortly we will want to see these commits and specifically we're going to want to know these commit
+
+6
+00:00:24,540 --> 00:00:25,350
+hashes.
+
+7
+00:00:25,920 --> 00:00:26,580
+Spoiler.
+
+8
+00:00:26,580 --> 00:00:33,140
+We need those in order to revisit a commit or undo a commit or check out or take a look at a commit.
+
+9
+00:00:33,150 --> 00:00:34,380
+So we need those.
+
+10
+00:00:34,590 --> 00:00:40,140
+And if we have hundreds of commits and they all have these really long messages, that could be really
+
+11
+00:00:40,140 --> 00:00:40,950
+frustrating.
+
+12
+00:00:41,100 --> 00:00:44,420
+So there are some options for how we use git log.
+
+13
+00:00:44,430 --> 00:00:49,890
+So let's go to the documentation, let's go to reference and we'll find log.
+
+14
+00:00:50,640 --> 00:00:51,480
+Here it is.
+
+15
+00:00:51,930 --> 00:00:53,150
+I'll zoom in a bit.
+
+16
+00:00:53,160 --> 00:01:00,630
+As we know it shows us commit logs, but there's quite a bit to how it works and there's a lot that
+
+17
+00:01:00,630 --> 00:01:05,099
+I just don't know about it because I don't use most of these features.
+
+18
+00:01:05,099 --> 00:01:10,890
+Just like with most Git commands, there are tons of options, but the one I'm interested in for now
+
+19
+00:01:10,920 --> 00:01:14,100
+we scroll down, could also find it in the examples.
+
+20
+00:01:14,100 --> 00:01:15,480
+I'm pretty sure down at the bottom.
+
+21
+00:01:15,480 --> 00:01:16,200
+I mean, look at this.
+
+22
+00:01:16,200 --> 00:01:16,950
+This is crazy.
+
+23
+00:01:16,950 --> 00:01:19,200
+The number of options just absurd.
+
+24
+00:01:19,710 --> 00:01:24,420
+You can filter things out based on who wrote the commits when they were committed.
+
+25
+00:01:24,420 --> 00:01:26,880
+I believe you can order them differently.
+
+26
+00:01:27,150 --> 00:01:28,980
+But what we are after.
+
+27
+00:01:30,370 --> 00:01:30,670
+All right.
+
+28
+00:01:30,670 --> 00:01:33,290
+Well, I had to search for it, but this is what we're after.
+
+29
+00:01:33,310 --> 00:01:40,330
+Formatting the commits these flags including dash dash pretty allow us to pretty print or change the
+
+30
+00:01:40,330 --> 00:01:46,780
+format of the logs how they're printed out and specifically I usually use this option one line.
+
+31
+00:01:46,990 --> 00:01:53,530
+So dash dash one line which is actually shorthand for dash dash pretty equals one line dash dash abbrev
+
+32
+00:01:53,530 --> 00:01:54,490
+commit.
+
+33
+00:01:54,490 --> 00:01:56,140
+So what does this mean?
+
+34
+00:01:56,140 --> 00:01:59,830
+We can just take one piece at a time just to show you a brief commit.
+
+35
+00:02:00,100 --> 00:02:03,640
+Just shows us a shorter version of that commit hash.
+
+36
+00:02:03,640 --> 00:02:09,460
+So if I do get log dash, dash a brief commit, it's hard to see much of a difference.
+
+37
+00:02:09,460 --> 00:02:15,490
+But here I'm only getting a small piece compared to what we got before of each one of those commit hashes,
+
+38
+00:02:15,760 --> 00:02:18,430
+but we're actually after a bit more than that.
+
+39
+00:02:18,430 --> 00:02:20,320
+We want one line.
+
+40
+00:02:20,320 --> 00:02:27,460
+So when we do dash, dash pretty equals one line, we have these different options for pretty dash,
+
+41
+00:02:27,460 --> 00:02:31,450
+dash, pretty medium or fuller email.
+
+42
+00:02:31,450 --> 00:02:34,570
+These are all things that we can format in the response.
+
+43
+00:02:34,570 --> 00:02:36,430
+But I just wanted to show you one line.
+
+44
+00:02:36,430 --> 00:02:42,880
+So I like to use the shorthand dash dash one line, but just know that it's actually shorthand for pretty
+
+45
+00:02:42,880 --> 00:02:45,430
+equal to one line and abbreviated commit.
+
+46
+00:02:46,650 --> 00:02:51,480
+Let me just show that jet lag dash, dash one line if I can type it correctly.
+
+47
+00:02:51,480 --> 00:02:52,660
+And there we go.
+
+48
+00:02:52,680 --> 00:02:53,990
+Oh, it's so much better.
+
+49
+00:02:54,000 --> 00:02:54,900
+Look at that.
+
+50
+00:02:55,110 --> 00:03:00,420
+You can see one line of each commit message, which is why your first line of a commit message, even
+
+51
+00:03:00,420 --> 00:03:03,330
+if it's a super long one, the first line should explain.
+
+52
+00:03:03,330 --> 00:03:04,860
+It should summarize the commit.
+
+53
+00:03:04,860 --> 00:03:06,630
+So remove extra blank lines.
+
+54
+00:03:06,630 --> 00:03:07,620
+That's what we did.
+
+55
+00:03:07,620 --> 00:03:12,510
+Even though if we actually look at the entire message, there's a whole bunch of other stuff.
+
+56
+00:03:12,510 --> 00:03:16,560
+It's very important or I shouldn't say very important, but it's conventional.
+
+57
+00:03:16,560 --> 00:03:22,440
+And you should follow this pattern of having that first line, be the summary of the commit and then
+
+58
+00:03:22,440 --> 00:03:25,890
+any other information comes afterwards separated by a return.
+
+59
+00:03:26,190 --> 00:03:28,420
+So git log, dash, dash one line.
+
+60
+00:03:28,440 --> 00:03:33,900
+It's a nice way to look at our history, and it's not just about remembering, Oh, that was such a
+
+61
+00:03:33,900 --> 00:03:35,010
+cute message I wrote.
+
+62
+00:03:35,010 --> 00:03:41,040
+It's actually important to be able to do this because shortly we will be revisiting commits and we want
+
+63
+00:03:41,040 --> 00:03:44,760
+to look at this history so that we can figure out where to time travel back to.
+
+64
+00:03:44,760 --> 00:03:48,270
+But for now we're just reminiscing, so let's get logged.
+
+65
+00:03:48,300 --> 00:03:51,900
+The docs, as I just showed you, are so overwhelming.
+
+66
+00:03:51,900 --> 00:03:54,060
+I mean, there's so much you can do with git log.
+
+67
+00:03:54,060 --> 00:04:01,680
+I have carpal tunnel just from scrolling down this page, so don't feel intimidated or do feel intimidated,
+
+68
+00:04:01,680 --> 00:04:06,120
+but know that I am also intimidated by this page, whichever makes you more comfortable.
+

@@ -1,0 +1,756 @@
+1
+00:00:00,210 --> 00:00:00,720
+All right.
+
+2
+00:00:00,720 --> 00:00:04,570
+So once again, it's time for you to get a bit of practice with what we've been talking about.
+
+3
+00:00:04,590 --> 00:00:07,920
+This time it's an exercise on merging and conflicts.
+
+4
+00:00:07,950 --> 00:00:10,140
+Now this exercise is a bit different.
+
+5
+00:00:10,140 --> 00:00:11,550
+It takes a different form.
+
+6
+00:00:11,940 --> 00:00:18,510
+Instead of just following a step by step set of instructions, I could have asked you to make this file,
+
+7
+00:00:18,540 --> 00:00:23,530
+make this branch, merge that branch into this branch, and then fix the conflict.
+
+8
+00:00:23,580 --> 00:00:23,850
+Right.
+
+9
+00:00:23,850 --> 00:00:29,300
+I could tell you exactly the steps you need to do to create a merge conflict and then resolve it.
+
+10
+00:00:29,310 --> 00:00:33,190
+Instead of that, it's going to be kind of the opposite.
+
+11
+00:00:33,210 --> 00:00:38,190
+I'm going to tell you that I want specific requirements for a merge, for example.
+
+12
+00:00:38,280 --> 00:00:42,660
+I want you to create a scenario that results in a fast forward merge.
+
+13
+00:00:42,660 --> 00:00:47,370
+So I'm not going to tell you the name of the file what to change, what to add, what to commit, what
+
+14
+00:00:47,370 --> 00:00:48,150
+to merge.
+
+15
+00:00:48,180 --> 00:00:52,770
+All that I have are these three scenarios and then you need to engineer them.
+
+16
+00:00:52,770 --> 00:00:59,100
+And while it may not be as easy to follow or as mindless in a way where you just step by step do with
+
+17
+00:00:59,100 --> 00:01:05,760
+the instructions, say it's definitely a better test of your understanding of how merging works, so
+
+18
+00:01:05,760 --> 00:01:10,680
+you'll need to make a new repo, make a file or two in the repo of your choice, name it whatever you
+
+19
+00:01:10,680 --> 00:01:11,010
+want.
+
+20
+00:01:11,010 --> 00:01:11,970
+It doesn't matter.
+
+21
+00:01:12,000 --> 00:01:15,120
+Just some place you'll be working it, so I'll call mine.
+
+22
+00:01:15,120 --> 00:01:17,010
+Greetings text.
+
+23
+00:01:17,460 --> 00:01:20,520
+So I recommend you just stop right now and try it.
+
+24
+00:01:20,970 --> 00:01:23,010
+The instructions are pretty straightforward.
+
+25
+00:01:23,010 --> 00:01:27,900
+Basically, it will say something like Make a new branch, do some work in the repo.
+
+26
+00:01:27,900 --> 00:01:33,090
+It's very vague, do some work in the repo such that when you merge that new branch into master, it
+
+27
+00:01:33,090 --> 00:01:35,400
+generates a fast forward merge.
+
+28
+00:01:35,610 --> 00:01:36,690
+So what does that mean?
+
+29
+00:01:36,690 --> 00:01:37,200
+Where?
+
+30
+00:01:37,200 --> 00:01:38,430
+Where do you do that new work?
+
+31
+00:01:38,430 --> 00:01:39,600
+What does it look like?
+
+32
+00:01:39,600 --> 00:01:41,430
+It doesn't matter what it actually looks like.
+
+33
+00:01:41,430 --> 00:01:44,940
+The contents of a commit but just generate a fast forward merge.
+
+34
+00:01:45,510 --> 00:01:46,770
+Same thing here.
+
+35
+00:01:46,920 --> 00:01:52,200
+Create a new branch, make some changes to the repo such that when you merge the new branch into master
+
+36
+00:01:52,200 --> 00:01:54,120
+it results in a merge commit.
+
+37
+00:01:54,120 --> 00:01:59,190
+So again, very vague and this should not result in any merge conflicts.
+
+38
+00:01:59,190 --> 00:02:03,960
+So you have to understand or you have to try and and think about how do I create a conflict and how
+
+39
+00:02:03,960 --> 00:02:05,730
+do I avoid a conflict?
+
+40
+00:02:05,730 --> 00:02:11,520
+And then the final piece is to do the same thing, work on a new branch, make some changes to that
+
+41
+00:02:11,520 --> 00:02:14,370
+branch or to master or both, who knows?
+
+42
+00:02:14,400 --> 00:02:19,110
+And being vague such that when you merge the new branch into the master branch, it results in a merge
+
+43
+00:02:19,110 --> 00:02:20,070
+conflict.
+
+44
+00:02:20,070 --> 00:02:24,210
+So merge it, see if you are right and then resolve the a.
+
+45
+00:02:25,560 --> 00:02:26,280
+There we are.
+
+46
+00:02:26,310 --> 00:02:28,050
+I don't know why that didn't load all the way.
+
+47
+00:02:28,080 --> 00:02:29,640
+Resolve the conflict.
+
+48
+00:02:29,990 --> 00:02:33,300
+Okay, so I'll try this, but I recommend you do it on your own.
+
+49
+00:02:33,540 --> 00:02:35,530
+This is a very important exercise.
+
+50
+00:02:35,550 --> 00:02:39,270
+Merging is is important to understand the distinction between these types of merges.
+
+51
+00:02:39,540 --> 00:02:45,540
+So I'm going to make a new folder, make directory merging exercise.
+
+52
+00:02:46,470 --> 00:02:47,970
+I'll seed into that.
+
+53
+00:02:48,570 --> 00:02:50,040
+Make sure I'm not in a repo.
+
+54
+00:02:50,070 --> 00:02:50,910
+I'll init.
+
+55
+00:02:51,210 --> 00:02:54,190
+And then I'm just going to add this file I'll be working with.
+
+56
+00:02:54,210 --> 00:02:58,140
+I'll call it greetings text and I'll add and commit.
+
+57
+00:03:00,240 --> 00:03:02,610
+So this is on the master branch by default.
+
+58
+00:03:02,610 --> 00:03:05,670
+Add greetings file.
+
+59
+00:03:06,580 --> 00:03:07,150
+Och.
+
+60
+00:03:07,150 --> 00:03:12,700
+So the first bit is generate a fast forward merge, so make a new branch and do some work on that branch
+
+61
+00:03:12,700 --> 00:03:19,240
+or somewhere so that when I merge it into master, we get a fast forward merge so I can name this branch,
+
+62
+00:03:19,240 --> 00:03:20,020
+anything.
+
+63
+00:03:20,800 --> 00:03:25,270
+I'm going to go with Spanish because I'm doing these greetings, right?
+
+64
+00:03:25,360 --> 00:03:26,710
+Different languages.
+
+65
+00:03:26,920 --> 00:03:29,950
+I'll have like Ola and Bonjour and hello and stuff.
+
+66
+00:03:30,760 --> 00:03:36,340
+So I make this new branch and to generate a fast forward merge again, I hope you're pausing and doing
+
+67
+00:03:36,340 --> 00:03:41,530
+it yourself, but if you need a reminder, all that needs to happen is that when we branch off of master
+
+68
+00:03:41,530 --> 00:03:44,290
+like we have, we don't touch master again.
+
+69
+00:03:44,620 --> 00:03:49,210
+We can add as many commits as we want to Spanish and then we merge that into master.
+
+70
+00:03:49,210 --> 00:03:51,820
+But we don't change the master branch in the meantime.
+
+71
+00:03:51,820 --> 00:03:56,110
+So all that master has to do is catch up on these commits that we've added to Spanish.
+
+72
+00:03:56,410 --> 00:04:02,050
+So if I open my files so open, just open everything in this folder.
+
+73
+00:04:02,080 --> 00:04:02,890
+Here it is.
+
+74
+00:04:02,890 --> 00:04:06,300
+I'll add in Hola in Spanish OC.
+
+75
+00:04:06,580 --> 00:04:09,430
+So that's our greeting and we'll add this.
+
+76
+00:04:09,430 --> 00:04:12,670
+I'm just going to do a single commit that will give me a fast forward merge.
+
+77
+00:04:12,850 --> 00:04:17,410
+So get commit m add spanish greeting.
+
+78
+00:04:20,190 --> 00:04:22,560
+Now I'm on the Spanish branch.
+
+79
+00:04:22,560 --> 00:04:25,440
+The goal is to merge the branch into master.
+
+80
+00:04:25,440 --> 00:04:32,100
+So I need to switch to master and then I'm going to generate that fast forward merge by getting merging
+
+81
+00:04:32,100 --> 00:04:32,790
+Spanish.
+
+82
+00:04:32,790 --> 00:04:38,480
+So get merge the Spanish branch, whatever branch you did when we merge it in there we are.
+
+83
+00:04:38,490 --> 00:04:40,170
+I got a fast forward merge.
+
+84
+00:04:40,440 --> 00:04:45,000
+So if you see that whatever your contents are, whatever your file name is, if you saw fast forward,
+
+85
+00:04:45,000 --> 00:04:45,750
+good to go.
+
+86
+00:04:46,140 --> 00:04:46,730
+Okay.
+
+87
+00:04:46,740 --> 00:04:51,270
+So again, what happened is that I had some changes on a branch, some new commits, just one commit
+
+88
+00:04:51,270 --> 00:04:53,430
+in my example, but it could have been ten commits or more.
+
+89
+00:04:53,460 --> 00:04:54,270
+Doesn't matter.
+
+90
+00:04:54,810 --> 00:05:01,380
+But what matters is that my master branch that I merged into has not changed or did not change in the
+
+91
+00:05:01,380 --> 00:05:02,070
+meantime.
+
+92
+00:05:02,160 --> 00:05:04,020
+So all I had to do was catch up.
+
+93
+00:05:04,020 --> 00:05:06,180
+Fast forward to get those new commits.
+
+94
+00:05:06,930 --> 00:05:11,340
+Now that's going to change with part to generate a merge commit with no conflicts.
+
+95
+00:05:11,340 --> 00:05:15,300
+So this time I'm going to make a new branch and make some commits on it.
+
+96
+00:05:15,300 --> 00:05:22,050
+But to generate a merge commit, I'm also going to make a commit on the master branch and to make my
+
+97
+00:05:22,050 --> 00:05:24,300
+life easier to avoid.
+
+98
+00:05:24,300 --> 00:05:30,510
+Conflicts get can sometimes merge stuff in the same file without conflicts, but what I'm going to do
+
+99
+00:05:30,510 --> 00:05:35,040
+is just make a new file on a branch and we know for sure there won't be a conflict.
+
+100
+00:05:35,040 --> 00:05:37,350
+So let me do this full screen here.
+
+101
+00:05:37,380 --> 00:05:45,420
+I'm going to make a branch get switch dash, see French and then on this branch I'm going to add a new
+
+102
+00:05:45,420 --> 00:05:45,900
+commit.
+
+103
+00:05:45,900 --> 00:05:47,010
+I'm going to do some work.
+
+104
+00:05:47,010 --> 00:05:50,290
+So why didn't I just add to my greetings file phone?
+
+105
+00:05:50,310 --> 00:05:50,850
+Sure.
+
+106
+00:05:50,850 --> 00:05:53,970
+Right on.
+
+107
+00:05:53,970 --> 00:05:58,350
+You know OC and then I'll add that change.
+
+108
+00:05:58,350 --> 00:06:03,870
+So get add greetings, get commit dash and add French greeting.
+
+109
+00:06:04,230 --> 00:06:08,100
+So now this branch has a commit, that master does not.
+
+110
+00:06:08,100 --> 00:06:09,690
+But I'm not going to merge just yet.
+
+111
+00:06:09,900 --> 00:06:12,390
+If I did, it would be a fast forward merge.
+
+112
+00:06:12,390 --> 00:06:16,050
+So now I'm back on the master branch and I'm going to make a new file.
+
+113
+00:06:17,130 --> 00:06:23,820
+What do you call like goodbye and or if what are those.
+
+114
+00:06:23,820 --> 00:06:24,360
+Greetings.
+
+115
+00:06:24,360 --> 00:06:26,310
+Are they, is there a term for that.
+
+116
+00:06:26,460 --> 00:06:30,720
+Oh how about farewells text.
+
+117
+00:06:32,100 --> 00:06:35,700
+So I'll make this farewells file and it's just going to say goodbye.
+
+118
+00:06:36,330 --> 00:06:38,220
+So now I have some work.
+
+119
+00:06:38,310 --> 00:06:47,940
+If I add in commit on the master branch a new commit get add farewells get commit dash am add farewells
+
+120
+00:06:47,940 --> 00:06:49,980
+file that's on the master branch.
+
+121
+00:06:49,980 --> 00:06:54,060
+So now there's a commit on the master branch that doesn't exist on the French branch and there's a commit
+
+122
+00:06:54,060 --> 00:06:56,730
+on the French branch that doesn't exist on the master branch.
+
+123
+00:06:56,730 --> 00:07:00,690
+But there shouldn't be conflict because those commits don't overlap.
+
+124
+00:07:00,690 --> 00:07:01,320
+Right?
+
+125
+00:07:01,320 --> 00:07:04,680
+This commit was on the farewells file, totally separate file.
+
+126
+00:07:04,680 --> 00:07:08,070
+The other commit on the French branch was in the greetings file.
+
+127
+00:07:08,430 --> 00:07:12,300
+But even if they were in the same file, it doesn't necessarily mean there would be a conflict.
+
+128
+00:07:12,300 --> 00:07:15,120
+But we know for sure there won't be, or at least there shouldn't be.
+
+129
+00:07:15,270 --> 00:07:23,130
+So make sure no uncommitted changes and now get merge french and we get this merge commit.
+
+130
+00:07:23,130 --> 00:07:28,200
+I'll just leave it as is merge branch french close out of there and there we go.
+
+131
+00:07:28,290 --> 00:07:32,100
+If I type get log we now have that new commit in there.
+
+132
+00:07:32,250 --> 00:07:33,270
+Let's do a one line.
+
+133
+00:07:34,560 --> 00:07:37,080
+So here is where the French branch was.
+
+134
+00:07:37,500 --> 00:07:42,180
+The master branch was here and now we have a new merge commit and this is where the master branch currently
+
+135
+00:07:42,180 --> 00:07:42,870
+points to.
+
+136
+00:07:43,560 --> 00:07:48,900
+Now the final piece is to do the same thing, but now deliberately generate a conflict and merge that
+
+137
+00:07:48,900 --> 00:07:51,750
+conflict well, not merge it, resolve the conflict.
+
+138
+00:07:52,500 --> 00:07:54,960
+So I'll make a third branch.
+
+139
+00:07:55,410 --> 00:07:58,500
+What do I want to change on one of those branches?
+
+140
+00:07:58,680 --> 00:08:03,000
+So I'm going to change the same file, the greetings file on the master branch.
+
+141
+00:08:03,000 --> 00:08:07,830
+I'll probably add hello in there and then I'll make another branch where I can add a different greeting.
+
+142
+00:08:07,980 --> 00:08:10,680
+How about Japanese?
+
+143
+00:08:11,310 --> 00:08:17,450
+If I can spell konichiwa correctly, we'll put that on the greetings file on the Japanese branch.
+
+144
+00:08:17,470 --> 00:08:18,600
+I'm going to make a branch right now.
+
+145
+00:08:18,600 --> 00:08:23,870
+Get switched dash see Japanese OC.
+
+146
+00:08:24,030 --> 00:08:32,850
+So on this branch I'll put konichiwa in there and then I will add and commit get status, get add greetings,
+
+147
+00:08:32,850 --> 00:08:36,419
+get commit m add Japanese greeting.
+
+148
+00:08:37,320 --> 00:08:44,130
+Now I'll switch back to Master and before I do any sort of merging, I'm also going to make a change
+
+149
+00:08:44,130 --> 00:08:45,000
+to greetings.
+
+150
+00:08:45,210 --> 00:08:48,810
+And this will generate a conflict, especially because it's on the last line.
+
+151
+00:08:48,810 --> 00:08:49,080
+Right.
+
+152
+00:08:49,110 --> 00:08:53,970
+And I just updated the last line on the Japanese branch, so I'll put hello in here.
+
+153
+00:08:54,870 --> 00:08:59,970
+So now if I add this get add greetings I'm on the master branch.
+
+154
+00:09:00,300 --> 00:09:03,240
+Get commit to add hello.
+
+155
+00:09:04,080 --> 00:09:08,370
+Now we're going to have a conflict when I merge that Japanese branch in.
+
+156
+00:09:08,400 --> 00:09:14,640
+It has a commit that updates this line and there's a commit on this branch that the Japanese branch
+
+157
+00:09:14,640 --> 00:09:15,420
+does not have.
+
+158
+00:09:15,420 --> 00:09:17,220
+That also updates this line.
+
+159
+00:09:17,220 --> 00:09:17,670
+So.
+
+160
+00:09:17,750 --> 00:09:19,280
+We should get a conflict.
+
+161
+00:09:19,610 --> 00:09:21,740
+Get merge Japanese.
+
+162
+00:09:23,890 --> 00:09:24,760
+And we do.
+
+163
+00:09:25,090 --> 00:09:28,590
+That's good, because that's what the exercise called for conflict.
+
+164
+00:09:28,600 --> 00:09:29,920
+So let's merge it.
+
+165
+00:09:30,490 --> 00:09:33,700
+I believe I just said resolve it in any way you'd like.
+
+166
+00:09:33,700 --> 00:09:35,650
+So I'm going to keep both of them, right?
+
+167
+00:09:35,650 --> 00:09:36,300
+Why not?
+
+168
+00:09:36,310 --> 00:09:38,620
+So I'll do except both changes.
+
+169
+00:09:38,620 --> 00:09:43,600
+If I use vs code, I'll just click that or I can just delete these symbols myself.
+
+170
+00:09:44,410 --> 00:09:46,360
+Up to me how I want to handle that.
+
+171
+00:09:46,360 --> 00:09:48,430
+You don't have to keep both of them, but I will.
+
+172
+00:09:49,030 --> 00:09:52,000
+So we save and that's not enough to resolve it.
+
+173
+00:09:52,000 --> 00:09:58,420
+I mean, technically, I guess you could say we've resolved it in the file, but if type get status
+
+174
+00:09:58,900 --> 00:10:05,380
+right, it tells me that we have merged paths and if I do a git log, we don't actually have a merge
+
+175
+00:10:05,380 --> 00:10:06,070
+commit yet.
+
+176
+00:10:06,070 --> 00:10:08,080
+So I need to add those changes.
+
+177
+00:10:08,080 --> 00:10:14,470
+Remember, after we resolve conflicts, we add the files with the changes and then we commit and we'll
+
+178
+00:10:14,470 --> 00:10:21,430
+do something like resolve conflicts for now or merge x branch and now we are done.
+
+179
+00:10:21,430 --> 00:10:23,650
+So if we do our git log one more time.
+
+180
+00:10:25,950 --> 00:10:31,170
+We now see we have this new merge commit where we resolve the conflicts ourself manually.
+
+181
+00:10:31,200 --> 00:10:36,060
+Get couldn't just make the commit for us and we successfully met those requirements.
+
+182
+00:10:36,060 --> 00:10:38,880
+So first off we made a fast forward merge.
+
+183
+00:10:38,880 --> 00:10:43,530
+We did some commits in a branch, we merged them into a branch that had not changed, no new commits
+
+184
+00:10:43,530 --> 00:10:45,240
+on that branch, so it just caught up.
+
+185
+00:10:45,690 --> 00:10:50,790
+Then we had two different merge commits, one where we tried to not have conflict.
+
+186
+00:10:50,790 --> 00:10:55,980
+So I just edited two different files, one on each branch and then one where we deliberately tried to
+
+187
+00:10:55,980 --> 00:10:56,730
+get conflicts.
+
+188
+00:10:56,730 --> 00:11:01,320
+So I edited the same file two commits on different branches, same line.
+
+189
+00:11:01,320 --> 00:11:05,610
+There was a conflict, we resolved it and then we added and committed and we were done.
+

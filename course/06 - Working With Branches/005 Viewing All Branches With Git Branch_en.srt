@@ -1,0 +1,128 @@
+1
+00:00:00,240 --> 00:00:00,860
+Okey dokey.
+
+2
+00:00:00,870 --> 00:00:02,670
+It's time to learn our first command.
+
+3
+00:00:02,670 --> 00:00:04,140
+That has to do with branching.
+
+4
+00:00:04,140 --> 00:00:05,190
+And it's pretty simple.
+
+5
+00:00:05,190 --> 00:00:10,260
+One, it is get branch, get space branch, nothing else.
+
+6
+00:00:10,470 --> 00:00:17,280
+This will just give us a list of our current existing branches in a repo so it doesn't make a new branch,
+
+7
+00:00:17,280 --> 00:00:20,520
+it doesn't switch branches, it just shows you the current branches.
+
+8
+00:00:21,030 --> 00:00:26,760
+In our case, we haven't made new branches, so we won't see anything except Master.
+
+9
+00:00:26,760 --> 00:00:29,100
+So I'm on my first novel for now.
+
+10
+00:00:29,100 --> 00:00:31,020
+I'm going to make a new repository in a moment.
+
+11
+00:00:31,020 --> 00:00:37,920
+If I type git branch, I see one branch master and to get out of here, just like with git log I type
+
+12
+00:00:37,920 --> 00:00:38,520
+q.
+
+13
+00:00:39,310 --> 00:00:41,290
+Now I'll show you a different project.
+
+14
+00:00:41,290 --> 00:00:43,780
+This repository has a couple more branches.
+
+15
+00:00:43,780 --> 00:00:46,570
+If I type git branch, you can see them all here.
+
+16
+00:00:46,600 --> 00:00:47,260
+Birds.
+
+17
+00:00:47,260 --> 00:00:47,980
+Birds of prey.
+
+18
+00:00:47,980 --> 00:00:49,060
+California mammals.
+
+19
+00:00:49,060 --> 00:00:49,510
+Hawks.
+
+20
+00:00:49,510 --> 00:00:49,960
+Mammals.
+
+21
+00:00:49,960 --> 00:00:51,190
+Master no animals.
+
+22
+00:00:51,190 --> 00:00:51,850
+Owls.
+
+23
+00:00:51,850 --> 00:00:53,050
+Stash test.
+
+24
+00:00:53,830 --> 00:00:55,570
+I was testing something out there.
+
+25
+00:00:56,200 --> 00:01:02,320
+You can see though, there's a bunch of branches, but the one that is active has a little asterisk
+
+26
+00:01:02,320 --> 00:01:03,130
+next to it.
+
+27
+00:01:03,130 --> 00:01:05,530
+That's the branch we're currently on.
+
+28
+00:01:05,710 --> 00:01:09,880
+So we see I'm on owls and again I can type Q to get out of here.
+
+29
+00:01:09,880 --> 00:01:14,440
+So here on my first novel project, we only have Master.
+
+30
+00:01:14,440 --> 00:01:18,550
+I never made that branch and it's the only branch we have, so we're on it.
+
+31
+00:01:18,550 --> 00:01:20,050
+We don't really have a choice right now.
+
+32
+00:01:20,050 --> 00:01:22,540
+But next up, we're going to learn how to make a new branch.
+

@@ -1,0 +1,128 @@
+1
+00:00:00,150 --> 00:00:00,600
+Okay.
+
+2
+00:00:00,600 --> 00:00:05,939
+So hopefully after the last section you're now familiar with branching and the basic branch commands
+
+3
+00:00:05,939 --> 00:00:08,170
+like Git branch and get switch.
+
+4
+00:00:08,189 --> 00:00:14,490
+We're now going to see how we can combine changes between branches, how we can merge branches into
+
+5
+00:00:14,490 --> 00:00:15,210
+one another.
+
+6
+00:00:15,210 --> 00:00:19,650
+So very important to understand branches before we can talk about merging them.
+
+7
+00:00:20,340 --> 00:00:24,730
+This section, there's really not a whole lot of different concepts that we cover.
+
+8
+00:00:24,750 --> 00:00:28,490
+It all has to do with merging branches and there are a few types of merges.
+
+9
+00:00:28,500 --> 00:00:30,870
+There's one called a fast forward merge.
+
+10
+00:00:30,900 --> 00:00:35,760
+I'm going to put that in critical as well as the get merge command that I'm going to show you and the
+
+11
+00:00:35,760 --> 00:00:39,420
+merge commits or merge commits that are generated from merge.
+
+12
+00:00:39,450 --> 00:00:43,680
+In some scenarios, it's really the only command I show you in this section.
+
+13
+00:00:44,070 --> 00:00:50,340
+But the probably the trickiest area is something called merge conflicts and learning how to resolve
+
+14
+00:00:50,340 --> 00:00:50,790
+them.
+
+15
+00:00:50,790 --> 00:00:52,110
+So I've put that in yellow.
+
+16
+00:00:52,140 --> 00:00:57,450
+It's not impossibly difficult or anything like that, but there's just some new things we need to talk
+
+17
+00:00:57,450 --> 00:01:00,810
+about when we try and merge changes together.
+
+18
+00:01:00,810 --> 00:01:02,430
+There's conflicts, how do we resolve them?
+
+19
+00:01:02,430 --> 00:01:04,650
+Get might get angry or might panic.
+
+20
+00:01:04,650 --> 00:01:06,510
+So how do we fix that situation?
+
+21
+00:01:06,960 --> 00:01:12,810
+All critical then the one thing that will go in nice to have you could totally skip this.
+
+22
+00:01:12,810 --> 00:01:18,990
+I show how to use vs code the text editor that I like to use it has some built in functionality to help
+
+23
+00:01:18,990 --> 00:01:20,190
+us resolve conflicts.
+
+24
+00:01:20,190 --> 00:01:22,380
+Totally nice to have but you would be fine.
+
+25
+00:01:22,380 --> 00:01:24,090
+Never seeing that video as well.
+
+26
+00:01:24,090 --> 00:01:29,160
+So concept wise, there's not all that much going on in this section, but the stuff that is going on
+
+27
+00:01:29,160 --> 00:01:30,060
+is all critical.
+
+28
+00:01:30,090 --> 00:01:33,420
+Take your time going through it, follow along, get some practice.
+
+29
+00:01:33,420 --> 00:01:38,160
+And this is one of those last critical sections where, you know, after this you'll have a foundation
+
+30
+00:01:38,160 --> 00:01:39,480
+that you need to work with it.
+
+31
+00:01:39,480 --> 00:01:44,520
+And then everything else that we add on top will be important or nice to have, but not a whole bunch
+
+32
+00:01:44,520 --> 00:01:46,650
+more critical stuff until we get to GitHub.
+

@@ -1,0 +1,372 @@
+1
+00:00:00,150 --> 00:00:00,450
+Okay.
+
+2
+00:00:00,570 --> 00:00:06,990
+So before we dive into branching, let's just talk for like 10 seconds, probably 30 seconds about how
+
+3
+00:00:06,990 --> 00:00:09,330
+jet works at a very, very basic level.
+
+4
+00:00:09,360 --> 00:00:16,800
+When we make a commit, each commit gets this weird looking hash, this long series of numbers and letters
+
+5
+00:00:16,890 --> 00:00:20,820
+that is supposed to be unique that corresponds to the contents of a commit.
+
+6
+00:00:20,820 --> 00:00:22,500
+Plus a couple of other things.
+
+7
+00:00:22,500 --> 00:00:25,500
+If you don't know about hashing functions, don't worry.
+
+8
+00:00:25,530 --> 00:00:28,770
+You don't need to understand any of it in order to use git.
+
+9
+00:00:28,770 --> 00:00:32,430
+I'd say most people don't who still use Git daily.
+
+10
+00:00:32,430 --> 00:00:37,770
+I will have a video in sort of an appendix at the end of the course or towards the end.
+
+11
+00:00:37,770 --> 00:00:41,790
+That goes into some more details about how the hashing actually works.
+
+12
+00:00:41,790 --> 00:00:45,420
+What is hash together, what hashing algorithm is used?
+
+13
+00:00:45,420 --> 00:00:46,560
+It's called SHA one.
+
+14
+00:00:46,560 --> 00:00:51,870
+Anyway, all that we need to know is that every commit has this unique hash, this unique identifier
+
+15
+00:00:51,870 --> 00:00:56,010
+that corresponds to the commits, and each commit references.
+
+16
+00:00:56,010 --> 00:00:59,400
+At least one parent commit that came before it.
+
+17
+00:00:59,460 --> 00:01:06,330
+So here we can see this most recent commit in blue has a commit that came before it, right?
+
+18
+00:01:06,330 --> 00:01:09,630
+This pink one and before that came this purply blue one.
+
+19
+00:01:09,630 --> 00:01:11,940
+And that happens to be the initial commit.
+
+20
+00:01:11,940 --> 00:01:13,770
+It does not have anything before it.
+
+21
+00:01:13,770 --> 00:01:15,540
+It does not have a parent commit.
+
+22
+00:01:15,570 --> 00:01:18,030
+That happens the very first time you commit.
+
+23
+00:01:18,030 --> 00:01:22,740
+So we have this linear history where one commit leads to the next, which leads to the next.
+
+24
+00:01:22,740 --> 00:01:28,170
+But often when we're working on a real project in the real world, we need to work in multiple contexts
+
+25
+00:01:28,170 --> 00:01:29,490
+simultaneously.
+
+26
+00:01:29,580 --> 00:01:35,610
+So imagine I'm working, I don't know, I work at some company, I'm working on a web application and
+
+27
+00:01:35,610 --> 00:01:39,270
+I'm trying out two different color scheme variations for a website.
+
+28
+00:01:39,270 --> 00:01:42,960
+And I want to try them both out and figure out which one I like best.
+
+29
+00:01:42,960 --> 00:01:47,760
+And at the same time, I also have been tasked with trying to fix a really horrible bug.
+
+30
+00:01:48,060 --> 00:01:50,730
+But this bug is proving very difficult to solve.
+
+31
+00:01:50,730 --> 00:01:56,730
+I'm actually needing to delete some code and comment stuff out, move stuff around to try and hunt down
+
+32
+00:01:56,730 --> 00:01:57,450
+the bug.
+
+33
+00:01:57,450 --> 00:01:59,700
+So it's not as simple as just fixing a typo.
+
+34
+00:01:59,700 --> 00:02:03,720
+I have to like totally destroy part of the code base to find this bug.
+
+35
+00:02:03,720 --> 00:02:09,210
+And at the same time, one of my teammates is working on adding a new feature, a little chat bot and
+
+36
+00:02:09,210 --> 00:02:09,990
+the bottom corner.
+
+37
+00:02:09,990 --> 00:02:14,550
+You know, those things that pop up and you can chat with customer service or something.
+
+38
+00:02:14,580 --> 00:02:20,730
+It's not clear at the moment if our company wants to use that, but he's going ahead and trying it as
+
+39
+00:02:20,730 --> 00:02:22,050
+a bit of an experiment.
+
+40
+00:02:22,050 --> 00:02:27,690
+And then another coworker is adding some new functionality to the search bar autocomplete, and yet
+
+41
+00:02:27,690 --> 00:02:30,360
+another developer is doing something very different.
+
+42
+00:02:30,360 --> 00:02:36,420
+She is doing a very experimental radical design overhaul of our entire application layout, but it won't
+
+43
+00:02:36,420 --> 00:02:41,820
+be presented until next month and we don't even know if any of it will be used after next month.
+
+44
+00:02:41,820 --> 00:02:44,190
+So lots of different contexts.
+
+45
+00:02:44,190 --> 00:02:51,660
+If we all worked in a linear fashion, one commit after the next, this would be practically impossible.
+
+46
+00:02:51,690 --> 00:02:56,820
+How could we be working on separate things, some of which break other people's code?
+
+47
+00:02:56,940 --> 00:02:57,390
+Right.
+
+48
+00:02:57,390 --> 00:03:03,630
+If I'm trying to fix a horrible bug and deleting a bunch of code, removing files, I'm just making
+
+49
+00:03:03,630 --> 00:03:04,380
+a mess.
+
+50
+00:03:04,380 --> 00:03:07,980
+That's going to be a big problem if somebody else is trying to add a new feature.
+
+51
+00:03:08,100 --> 00:03:14,460
+Likewise, if someone is doing a radical experimental design change on every single view of our application,
+
+52
+00:03:14,460 --> 00:03:15,600
+everything changes.
+
+53
+00:03:15,600 --> 00:03:21,570
+But I'm trying to work on some minor color scheme variations, or if someone's working on adding a chat
+
+54
+00:03:21,570 --> 00:03:24,150
+widget to the bottom right of our screen.
+
+55
+00:03:24,150 --> 00:03:29,340
+Those things need to happen in separate contexts because they have implications on one another and they
+
+56
+00:03:29,340 --> 00:03:35,310
+really need to happen in isolation until maybe at some point we decide to incorporate changes into each
+
+57
+00:03:35,310 --> 00:03:36,720
+other's contexts.
+
+58
+00:03:36,720 --> 00:03:38,760
+So that is where branching comes in.
+
+59
+00:03:38,760 --> 00:03:41,490
+That's exactly what git branches allow us to do.
+
+60
+00:03:41,520 --> 00:03:46,800
+Branches are a signature feature of Git and you can kind of think of them as alternative timelines for
+
+61
+00:03:46,800 --> 00:03:47,490
+a project.
+
+62
+00:03:47,490 --> 00:03:50,820
+They allow us to create separate contexts whenever we want.
+
+63
+00:03:50,820 --> 00:03:52,170
+We can try new things.
+
+64
+00:03:52,170 --> 00:03:54,450
+We can work on multiple ideas in parallel.
+
+65
+00:03:54,450 --> 00:04:00,450
+We can experiment, we can break stuff, and whatever we do on one branch will not impact what happens
+
+66
+00:04:00,450 --> 00:04:06,240
+on other branches, although we can decide to then combine branches, we call that merging and we'll
+
+67
+00:04:06,240 --> 00:04:07,140
+learn how to do that.
+
+68
+00:04:07,140 --> 00:04:09,180
+But that's something we have to decide to do.
+
+69
+00:04:09,210 --> 00:04:13,560
+Otherwise, if we make a change in one branch, the other branches do not know about it.
+
+70
+00:04:13,560 --> 00:04:15,180
+They exist in isolation.
+
+71
+00:04:15,180 --> 00:04:21,420
+So this allows me to make a commit and maybe make another commit on one branch and then at any point
+
+72
+00:04:21,420 --> 00:04:25,650
+splinter off and try something on this pink branch up top.
+
+73
+00:04:25,650 --> 00:04:27,270
+I'm calling New Color Scheme.
+
+74
+00:04:27,600 --> 00:04:33,150
+I could try a new color scheme out, but over here, if I switch back to this branch, none of that
+
+75
+00:04:33,150 --> 00:04:33,960
+code comes with me.
+
+76
+00:04:33,960 --> 00:04:35,250
+None of those new commits.
+
+77
+00:04:35,250 --> 00:04:38,040
+So I could branch off again and work on a bug fix.
+
+78
+00:04:38,040 --> 00:04:41,160
+But again, totally separate context.
+
+79
+00:04:41,580 --> 00:04:47,160
+And then I could branch off even further from this bug fix branch and branch further to do an experimental
+
+80
+00:04:47,160 --> 00:04:47,880
+redesign.
+
+81
+00:04:47,880 --> 00:04:53,640
+So now I have at least four different contexts one, two, three and four.
+
+82
+00:04:53,640 --> 00:04:58,410
+And this means that I could be working on this and maybe somebody else is working on this branch and
+
+83
+00:04:58,410 --> 00:04:59,940
+somebody else is working here or.
+
+84
+00:05:00,020 --> 00:05:05,720
+Maybe someone else is working on this purply bluish branch in the middle and working on things plotting
+
+85
+00:05:05,720 --> 00:05:06,270
+ahead.
+
+86
+00:05:06,290 --> 00:05:07,860
+Well, I'm still stuck here.
+
+87
+00:05:07,880 --> 00:05:13,010
+We're all working in separate contexts, but then a very important part is being able to then combine
+
+88
+00:05:13,010 --> 00:05:16,170
+and merge branches together when appropriate.
+
+89
+00:05:16,190 --> 00:05:20,900
+If you work on a bug fix and you actually solve it, then you want to merge that bug fix into the main
+
+90
+00:05:20,900 --> 00:05:22,850
+code base or into another branch.
+
+91
+00:05:22,850 --> 00:05:25,160
+So we'll learn how to do all of this in time.
+
+92
+00:05:25,250 --> 00:05:26,880
+But I'm going to stop talking for now.
+
+93
+00:05:26,900 --> 00:05:32,240
+In this video, I just wanted to introduce this idea of branching, of having separate contexts.
+

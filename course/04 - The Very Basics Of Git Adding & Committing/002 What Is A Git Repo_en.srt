@@ -1,0 +1,300 @@
+1
+00:00:00,150 --> 00:00:00,810
+All right.
+
+2
+00:00:00,810 --> 00:00:05,190
+So as the slide says, it's time for a quick, high level conceptual overview.
+
+3
+00:00:05,610 --> 00:00:10,260
+I'd like to try and introduce things at a conceptual level first before we dive into the commands.
+
+4
+00:00:10,260 --> 00:00:11,700
+But I also don't want to take too long.
+
+5
+00:00:11,700 --> 00:00:13,890
+I know we just want to get to the commands.
+
+6
+00:00:13,890 --> 00:00:17,590
+So in this video I want to talk about the term repository.
+
+7
+00:00:17,610 --> 00:00:20,940
+This comes up all the time when we talk about Git and GitHub.
+
+8
+00:00:21,450 --> 00:00:26,040
+So much, in fact that people usually just say repo instead of repository.
+
+9
+00:00:26,040 --> 00:00:28,890
+Save a couple of characters there that are the same thing.
+
+10
+00:00:28,890 --> 00:00:33,690
+So a git repository is just a git workspace installing git on our machine.
+
+11
+00:00:33,690 --> 00:00:34,500
+It's great.
+
+12
+00:00:34,500 --> 00:00:36,510
+You know, I have git over here.
+
+13
+00:00:36,540 --> 00:00:42,390
+Hopefully you install get following the instructions in the course I have git.
+
+14
+00:00:42,390 --> 00:00:43,860
+I can just verify it's here.
+
+15
+00:00:43,860 --> 00:00:44,970
+I can check the version.
+
+16
+00:00:44,970 --> 00:00:45,570
+Sure.
+
+17
+00:00:45,570 --> 00:00:49,290
+But that doesn't mean git is active or that I'm using git.
+
+18
+00:00:49,290 --> 00:00:51,090
+It's just on my machine.
+
+19
+00:00:51,210 --> 00:00:58,920
+I have to manually tell Git when I want to use it and in which directories I have to create repositories.
+
+20
+00:00:58,920 --> 00:01:04,590
+So any time I want to use git for let's say I'm writing a new symphony or a novel or I'm working on
+
+21
+00:01:04,590 --> 00:01:11,280
+a freelance web development project or whatever it is I need to tell Git to create a new repository.
+
+22
+00:01:11,280 --> 00:01:14,610
+So it's just a Git workspace with its own history.
+
+23
+00:01:14,610 --> 00:01:17,430
+So every git repo has its own history.
+
+24
+00:01:17,460 --> 00:01:18,390
+They're not linked.
+
+25
+00:01:18,390 --> 00:01:19,860
+They're not connected in any way.
+
+26
+00:01:19,860 --> 00:01:22,480
+There are these like little encapsulated bubbles.
+
+27
+00:01:22,480 --> 00:01:27,960
+That's why I have this jar on the right with some git history inside of it so we can have as many repos
+
+28
+00:01:27,960 --> 00:01:31,680
+as needed, all with separate histories and contents on our machine.
+
+29
+00:01:31,980 --> 00:01:34,920
+So I may have a bunch of folders, a bunch of different projects.
+
+30
+00:01:34,920 --> 00:01:36,960
+Each one of these is a separate project.
+
+31
+00:01:37,200 --> 00:01:43,710
+If I want to use Git, I have to go into each project folder and create a git repository.
+
+32
+00:01:43,710 --> 00:01:44,820
+I have to tell get.
+
+33
+00:01:44,820 --> 00:01:45,540
+All right.
+
+34
+00:01:45,540 --> 00:01:46,950
+I want a repo in here.
+
+35
+00:01:46,950 --> 00:01:50,340
+And in here and in here and in here.
+
+36
+00:01:50,340 --> 00:01:56,310
+And whatever happens in those folders, whatever get commands I run, whatever history I store with
+
+37
+00:01:56,310 --> 00:01:59,520
+Git, they're completely separate and not connected.
+
+38
+00:01:59,790 --> 00:02:04,200
+So this allows me to have different histories for a symphony, an app.
+
+39
+00:02:04,200 --> 00:02:10,680
+I'm cloning, a movie script, I'm writing a startup idea, whatever, a novel portfolio website, you
+
+40
+00:02:10,680 --> 00:02:11,100
+name it.
+
+41
+00:02:11,100 --> 00:02:13,980
+I can have as many separate repositories as I need.
+
+42
+00:02:13,980 --> 00:02:20,160
+And to wrap things up here, I have two separate folders, two different projects on my machine, and
+
+43
+00:02:20,160 --> 00:02:24,990
+I've created Git repositories in each of them, which I haven't shown you how to do just yet, but I
+
+44
+00:02:24,990 --> 00:02:27,180
+just want to show you that they have separate histories.
+
+45
+00:02:27,180 --> 00:02:33,120
+So one project is this large web application, a bunch of files and folders, this other one.
+
+46
+00:02:33,120 --> 00:02:35,580
+So the first one is called Yelp Camp 2.0.
+
+47
+00:02:35,580 --> 00:02:37,350
+It's a project from one of my courses.
+
+48
+00:02:37,710 --> 00:02:39,060
+The other one is just animals.
+
+49
+00:02:39,060 --> 00:02:43,290
+It's a single folder with one file very straightforward, just a list of animals.
+
+50
+00:02:43,290 --> 00:02:45,570
+They both have separate git histories.
+
+51
+00:02:45,570 --> 00:02:47,730
+They are distinct repositories.
+
+52
+00:02:48,060 --> 00:02:49,710
+I can prove that to you in a couple of ways.
+
+53
+00:02:49,710 --> 00:02:51,440
+I'll show you in the console here.
+
+54
+00:02:51,440 --> 00:02:57,120
+You can see all of this history here is associated with this Yelp camp repository.
+
+55
+00:02:57,270 --> 00:02:58,470
+So lots of stuff.
+
+56
+00:02:58,470 --> 00:03:00,360
+What that stuff is how I see it.
+
+57
+00:03:00,360 --> 00:03:01,500
+Don't worry about that.
+
+58
+00:03:02,040 --> 00:03:07,380
+If I go to the animals directory and I do the same thing a lot less and different history, all the
+
+59
+00:03:07,380 --> 00:03:08,970
+history is about animals.
+
+60
+00:03:09,390 --> 00:03:13,230
+Another way to show that to you is through a gooey like get crackin here.
+
+61
+00:03:13,230 --> 00:03:16,830
+I'm looking at the animals history for this one repository.
+
+62
+00:03:16,860 --> 00:03:19,530
+You can see there's a decent amount of stuff.
+
+63
+00:03:19,530 --> 00:03:22,020
+It all has to do with animal stuff.
+
+64
+00:03:22,020 --> 00:03:27,990
+And if I switch over to a different repository, very different, completely distinct history.
+
+65
+00:03:28,380 --> 00:03:29,400
+There's collaborators.
+
+66
+00:03:29,400 --> 00:03:30,390
+It's not just me.
+
+67
+00:03:30,390 --> 00:03:34,560
+And this is it goes back like a year or more versus this animal.
+
+68
+00:03:34,560 --> 00:03:39,570
+This one is a lot more recent and obviously focused on animals.
+
+69
+00:03:39,570 --> 00:03:44,340
+Anyway, we'll learn more about what all this is and how we make these checkpoints and how to use it
+
+70
+00:03:44,640 --> 00:03:47,880
+and the command line and all that stuff in upcoming videos.
+
+71
+00:03:47,880 --> 00:03:53,130
+But for now, I just wanted to explain this concept of repositories and just prove to show you some
+
+72
+00:03:53,130 --> 00:03:56,220
+evidence of different git histories for two different repos.
+
+73
+00:03:56,220 --> 00:03:59,280
+So that's all there is to this term, this concept of a repository.
+
+74
+00:03:59,280 --> 00:04:00,540
+It's a get workspace.
+
+75
+00:04:00,540 --> 00:04:04,860
+And in the next video I'll show you how we create them, how we instantiate a new repo.
+

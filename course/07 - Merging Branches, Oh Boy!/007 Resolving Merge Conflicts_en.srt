@@ -1,0 +1,572 @@
+1
+00:00:00,180 --> 00:00:00,630
+All right.
+
+2
+00:00:00,630 --> 00:00:06,030
+So in this video, I'm going to demonstrate generating a merge conflict and then resolving it.
+
+3
+00:00:06,030 --> 00:00:09,930
+And I'm going to keep working with our simple repository.
+
+4
+00:00:09,930 --> 00:00:15,390
+Currently it has two branches, Master and ABA, but I'm actually going to delete the ABA branch because
+
+5
+00:00:15,390 --> 00:00:19,860
+I merged in those changes and let's say I'm done with it, so I'm going to delete it.
+
+6
+00:00:19,980 --> 00:00:21,600
+There's a couple of ways of doing it.
+
+7
+00:00:21,750 --> 00:00:28,680
+I've actually already shown this, but basically get Branch Dash DX and then a branch name and you want
+
+8
+00:00:28,680 --> 00:00:30,420
+to make sure you're not on that branch.
+
+9
+00:00:30,420 --> 00:00:34,110
+So if I want to delete this ABA branch, I'm not on it.
+
+10
+00:00:34,110 --> 00:00:41,280
+So get branch, I'll do a full screen dash dx aba and it's gone.
+
+11
+00:00:41,550 --> 00:00:45,750
+So I had all of the changes merged into Master, so it doesn't warn me.
+
+12
+00:00:46,050 --> 00:00:51,360
+When I first introduced how to delete a branch, it did warn us because we hadn't learned how to merge
+
+13
+00:00:51,360 --> 00:00:53,700
+changes in, but now everything is merged in.
+
+14
+00:00:53,700 --> 00:00:56,370
+I don't need to force this delete with a capital DX.
+
+15
+00:00:56,820 --> 00:00:59,640
+Okay, so now we have just the master branch.
+
+16
+00:00:59,640 --> 00:01:06,210
+All right, so now what I'm going to do to demonstrate merge conflicts is I'm going to make two branches
+
+17
+00:01:06,210 --> 00:01:07,140
+and I'll do it quickly.
+
+18
+00:01:07,140 --> 00:01:13,290
+I'll probably fast forward through a lot of it, one for our friend Bjorn and another for our friend.
+
+19
+00:01:13,620 --> 00:01:14,970
+I don't know Serena.
+
+20
+00:01:14,970 --> 00:01:19,770
+And they're going to each have their own branch where they can make their own playlist for the road
+
+21
+00:01:19,770 --> 00:01:22,440
+trip, and they're definitely not going to agree.
+
+22
+00:01:22,650 --> 00:01:26,640
+So they'll make their own playlist on their own branch, and then I'll merge them together when we're
+
+23
+00:01:26,640 --> 00:01:27,930
+ready for our road trip.
+
+24
+00:01:27,930 --> 00:01:34,830
+So I'll start by making Serena's branch, so I'll do it in one go get switched dash, see Serena.
+
+25
+00:01:36,510 --> 00:01:44,310
+And then I'll also go back to master, get switch master and then I'll make the other branch get switched.
+
+26
+00:01:44,310 --> 00:01:46,650
+Dash See for Bjorn.
+
+27
+00:01:48,100 --> 00:01:51,150
+All right, so now we have two branches.
+
+28
+00:01:51,160 --> 00:01:56,170
+Well, we have three, but we have two that we just made Serena and Bjorn, and they're all referring
+
+29
+00:01:56,200 --> 00:01:58,600
+to the same spot that master currently is.
+
+30
+00:01:58,900 --> 00:02:00,700
+So now we're going to switch over.
+
+31
+00:02:00,830 --> 00:02:01,870
+Let's we're on Bjorn.
+
+32
+00:02:01,870 --> 00:02:03,820
+So let's just work on Bjorn's branch.
+
+33
+00:02:03,910 --> 00:02:09,759
+Bjorn really does not like Abba that much, but he likes Dancing Queen, so he's going to keep Dancing
+
+34
+00:02:09,759 --> 00:02:10,360
+Queen.
+
+35
+00:02:11,410 --> 00:02:15,220
+Then we're going to add some music in that Bjorn does.
+
+36
+00:02:15,220 --> 00:02:18,700
+Like Bjorn likes a band called King Gizzard and The Lizard Wizard.
+
+37
+00:02:18,700 --> 00:02:20,590
+So he adds that in.
+
+38
+00:02:20,620 --> 00:02:23,930
+We'll make it commit for him or he makes a commit.
+
+39
+00:02:23,950 --> 00:02:24,880
+I'll just do it here.
+
+40
+00:02:24,910 --> 00:02:31,490
+Stage all changes and I'm just going to do King Gizzard Lizard Wizard Song.
+
+41
+00:02:31,510 --> 00:02:32,230
+All right.
+
+42
+00:02:32,230 --> 00:02:34,210
+So we're on The Bjorn.
+
+43
+00:02:34,910 --> 00:02:37,280
+Branch, and he adds One more song.
+
+44
+00:02:37,670 --> 00:02:39,080
+What should he do here?
+
+45
+00:02:39,110 --> 00:02:44,400
+He likes The Strokes, so he adds both or two songs in By The Strokes OC.
+
+46
+00:02:44,450 --> 00:02:48,980
+He stages them, he commits Add to Strokes songs.
+
+47
+00:02:49,850 --> 00:02:56,790
+Then simultaneously, Serena is working on her branch and she likes Abba quite a bit.
+
+48
+00:02:56,810 --> 00:03:01,910
+She even goes as far as to add another Abba song in, she adds.
+
+49
+00:03:02,180 --> 00:03:02,670
+What is it?
+
+50
+00:03:02,690 --> 00:03:05,570
+Gimme, gimme, I think by Abba.
+
+51
+00:03:06,710 --> 00:03:08,600
+So she makes that commit.
+
+52
+00:03:09,460 --> 00:03:10,840
+Stages her change.
+
+53
+00:03:10,840 --> 00:03:13,720
+Add one ABBA song.
+
+54
+00:03:15,590 --> 00:03:16,090
+Okay.
+
+55
+00:03:16,220 --> 00:03:18,570
+And she does one more change.
+
+56
+00:03:18,590 --> 00:03:19,530
+What else does she like?
+
+57
+00:03:19,550 --> 00:03:20,870
+She likes Dolly Parton.
+
+58
+00:03:21,110 --> 00:03:22,970
+So she adds, Here you come again.
+
+59
+00:03:24,290 --> 00:03:26,230
+So she adds that change.
+
+60
+00:03:26,240 --> 00:03:27,050
+She stages it.
+
+61
+00:03:27,050 --> 00:03:31,220
+She commits add one Dolly Parton song.
+
+62
+00:03:32,320 --> 00:03:32,890
+Okay.
+
+63
+00:03:32,920 --> 00:03:37,720
+So now when we take a look, if we ignore everything that we did earlier, we just look from here and
+
+64
+00:03:37,720 --> 00:03:41,530
+above, we can see that we have two branches we're ignoring master.
+
+65
+00:03:41,530 --> 00:03:43,450
+We have Serena and we have Bjorn.
+
+66
+00:03:43,630 --> 00:03:50,200
+And Serena has two commits that don't exist on Bjorn, and Bjorn has two commits that don't exist on
+
+67
+00:03:50,200 --> 00:03:50,920
+Serena.
+
+68
+00:03:50,950 --> 00:03:57,970
+But unlike the previous merge we did where we were merging this ABBA branch with the master branch,
+
+69
+00:03:58,120 --> 00:03:59,590
+there were no conflicts there.
+
+70
+00:03:59,590 --> 00:04:06,250
+Here, there are definitely conflicts because we're editing the same file and some of the same lines.
+
+71
+00:04:06,250 --> 00:04:12,160
+So when I switch right, I'll switch one more time from Serena now to Bjorn.
+
+72
+00:04:14,920 --> 00:04:17,850
+We can see there's a lot of changes going on in there.
+
+73
+00:04:17,860 --> 00:04:21,620
+So when I try and merge the two, we're going to run into an issue.
+
+74
+00:04:21,670 --> 00:04:24,720
+So now I have to decide where I want to do the merging.
+
+75
+00:04:24,730 --> 00:04:29,250
+Do I want them to still have separate branches and just continue to have separate branches?
+
+76
+00:04:29,260 --> 00:04:32,020
+If so, maybe I'll make a third branch.
+
+77
+00:04:32,050 --> 00:04:33,370
+I'll call that one.
+
+78
+00:04:33,790 --> 00:04:34,420
+What should it be?
+
+79
+00:04:34,420 --> 00:04:38,260
+Get switched c combination or just combo?
+
+80
+00:04:38,260 --> 00:04:40,390
+And I'm branching from Bjorn.
+
+81
+00:04:40,390 --> 00:04:41,470
+That's where I am now.
+
+82
+00:04:41,470 --> 00:04:48,640
+So it will include all the stuff from Bjorn and then I can merge in the changes from Serena OC.
+
+83
+00:04:48,850 --> 00:04:52,900
+So now I have this new combo branch, it's at the same spot as Bjorn.
+
+84
+00:04:52,930 --> 00:04:54,520
+They're referencing the same commit.
+
+85
+00:04:54,520 --> 00:04:57,910
+Now I'm going to merge in Serena, so here we are.
+
+86
+00:04:57,910 --> 00:05:05,200
+I'm on combo which contains the same stuff as the Bjorn branch I'm going to do get merge so Rina and
+
+87
+00:05:05,200 --> 00:05:12,610
+here we go it tries to auto merge nope conflict merge conflict in songs text automatic merge failed
+
+88
+00:05:12,610 --> 00:05:15,130
+fix conflicts and then commit the result.
+
+89
+00:05:15,340 --> 00:05:16,960
+So we go to our editor.
+
+90
+00:05:16,960 --> 00:05:18,460
+I'm using vs code.
+
+91
+00:05:18,460 --> 00:05:24,100
+You can see it does some nice highlighting for me and we have those markers I mentioned so you can see
+
+92
+00:05:24,130 --> 00:05:28,510
+head right here from that line down to here those equal sign.
+
+93
+00:05:28,510 --> 00:05:31,300
+This is what we had on the branch originally.
+
+94
+00:05:31,480 --> 00:05:34,840
+In our case it was the combo branch so we can see it.
+
+95
+00:05:34,870 --> 00:05:40,750
+It's Bjorn's changes and then here this is the change or the changes we had coming in from the Serena
+
+96
+00:05:40,750 --> 00:05:41,350
+branch.
+
+97
+00:05:41,350 --> 00:05:44,980
+And I have to decide, do I want just Serena stuff?
+
+98
+00:05:44,980 --> 00:05:46,300
+Do I want Jess Bjorn's?
+
+99
+00:05:46,330 --> 00:05:47,920
+No, I want both.
+
+100
+00:05:47,920 --> 00:05:52,330
+So what I'm going to do is I'm going to delete these markers.
+
+101
+00:05:52,330 --> 00:05:53,530
+We get rid of those.
+
+102
+00:05:55,120 --> 00:05:56,260
+So all of that.
+
+103
+00:05:56,770 --> 00:06:00,040
+And then I'm going to keep, you know, where they have overlap.
+
+104
+00:06:00,040 --> 00:06:01,810
+For example, Dancing Queen is on both of them.
+
+105
+00:06:01,810 --> 00:06:04,930
+I don't want Dancing Queen twice, so I'm going to do that.
+
+106
+00:06:04,930 --> 00:06:07,060
+And otherwise I think everything is unique.
+
+107
+00:06:07,240 --> 00:06:08,890
+The point is, it's up to me.
+
+108
+00:06:09,370 --> 00:06:11,860
+It's totally up to me what I want to keep and don't keep.
+
+109
+00:06:11,860 --> 00:06:16,960
+And in this case, I mean, if we're doing a playlist to friends, I guess it's fair, it's equitable
+
+110
+00:06:16,960 --> 00:06:20,920
+to allow them both just take both of their songs and combine them.
+
+111
+00:06:21,310 --> 00:06:25,000
+But if I wanted to, I could say, You know what, I only like Serena songs.
+
+112
+00:06:25,000 --> 00:06:27,220
+I'm getting rid of you, Bjorn.
+
+113
+00:06:27,220 --> 00:06:28,230
+And I could do that.
+
+114
+00:06:28,240 --> 00:06:32,560
+I could just get rid of that and say, This is what we're going with, but I'm not going to I'm going
+
+115
+00:06:32,560 --> 00:06:36,790
+to keep both of their songs in there and I just remove the duplicate which was Dancing Queen.
+
+116
+00:06:37,240 --> 00:06:38,590
+So now I save.
+
+117
+00:06:38,920 --> 00:06:40,720
+So go back to this guide here.
+
+118
+00:06:41,050 --> 00:06:42,760
+First step, open the files.
+
+119
+00:06:42,760 --> 00:06:44,380
+Second, edit the files.
+
+120
+00:06:44,380 --> 00:06:46,600
+Third, remove the conflict markers.
+
+121
+00:06:46,600 --> 00:06:47,380
+We did that.
+
+122
+00:06:47,380 --> 00:06:50,710
+Fourth, add changes and make a commit.
+
+123
+00:06:50,980 --> 00:06:53,650
+So whoops, I need to go back to my terminal.
+
+124
+00:06:54,370 --> 00:07:01,390
+We type get status and it tells us we're on this branch combo on merged paths and it tells us this songs
+
+125
+00:07:01,390 --> 00:07:06,610
+that text file has been modified so now we just add the changes.
+
+126
+00:07:07,470 --> 00:07:07,940
+Okay.
+
+127
+00:07:08,160 --> 00:07:14,400
+And then we commit, get, commit and we can just do something like resolve conflicts or.
+
+128
+00:07:14,730 --> 00:07:15,540
+It's up to you really.
+
+129
+00:07:15,540 --> 00:07:18,330
+But I'll just do resolve conflicts to keep it short and simple.
+
+130
+00:07:18,600 --> 00:07:20,520
+And that's what this commit is.
+
+131
+00:07:20,520 --> 00:07:23,970
+This commit is us merging and resolving those conflicts.
+
+132
+00:07:25,770 --> 00:07:29,190
+So now let's head over to our little visualization here.
+
+133
+00:07:29,460 --> 00:07:32,000
+It looks exactly the same as what we had earlier.
+
+134
+00:07:32,010 --> 00:07:33,600
+It's the same process, right?
+
+135
+00:07:33,600 --> 00:07:38,760
+We merged this branch, Serena, into combo and we have this new merge commit.
+
+136
+00:07:38,790 --> 00:07:42,480
+The difference is that we had to do some work to make that commit.
+
+137
+00:07:42,550 --> 00:07:46,180
+We didn't just approve a commit message like we did a couple of videos ago.
+
+138
+00:07:46,200 --> 00:07:50,160
+Instead, we actually had to dig into a file and make some changes.
+
+139
+00:07:50,160 --> 00:07:55,770
+We had to look at those markers that get adds for us, these things, and figure out what we wanted
+
+140
+00:07:55,770 --> 00:08:01,820
+to keep from the two branches and then make changes save and then add and commit.
+
+141
+00:08:01,830 --> 00:08:07,050
+But now that conflict has been resolved and we're on our new branch combo, which includes the commits
+
+142
+00:08:07,050 --> 00:08:12,720
+that it had earlier from Bjorn and the new commits from Serena and the conflicts there that we manually
+
+143
+00:08:12,720 --> 00:08:13,440
+resolved.
+

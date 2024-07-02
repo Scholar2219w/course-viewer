@@ -1,0 +1,188 @@
+1
+00:00:00,240 --> 00:00:00,870
+Okay.
+
+2
+00:00:00,870 --> 00:00:05,430
+So this is an optional crash course on basic Unix commands.
+
+3
+00:00:05,850 --> 00:00:09,620
+If you are familiar with these commands, I'll run through them very quickly.
+
+4
+00:00:09,630 --> 00:00:20,550
+Things like LHS and P and CD and touch and mkdir make dear make dir r m our m dash ref.
+
+5
+00:00:20,550 --> 00:00:25,410
+If you know those commands already or you're familiar enough with them, then I would just skip the
+
+6
+00:00:25,410 --> 00:00:26,400
+next three videos.
+
+7
+00:00:26,400 --> 00:00:26,560
+Right?
+
+8
+00:00:26,610 --> 00:00:27,980
+You can always come back to these.
+
+9
+00:00:27,990 --> 00:00:32,850
+They have nothing to do with Git on their own, but they play a very important role.
+
+10
+00:00:32,850 --> 00:00:38,550
+And if you are not familiar with them, if you're new to the terminal when 100% stick it out through
+
+11
+00:00:38,550 --> 00:00:43,800
+these videos, I know it's not the most exciting thing on earth, but let's be honest, neither is Git.
+
+12
+00:00:43,800 --> 00:00:46,620
+It's very important, but it's not the sexiest topic.
+
+13
+00:00:46,620 --> 00:00:53,160
+So the reason this all matters is that I will be teaching git primarily from the command line, so I'll
+
+14
+00:00:53,160 --> 00:00:56,030
+be doing things like just as an example.
+
+15
+00:00:57,090 --> 00:01:00,510
+Everyone, I'm going to move into this folder here.
+
+16
+00:01:00,510 --> 00:01:04,890
+And to do that I would use the CD command, which we have not yet discussed.
+
+17
+00:01:04,890 --> 00:01:13,320
+And then and here I'd like to make a new file called my Apks JS file and then we'll run some git command
+
+18
+00:01:13,320 --> 00:01:16,500
+in here, do some git stuff again.
+
+19
+00:01:16,500 --> 00:01:21,990
+Haven't talked about any of this, but I'll do things like that and then we'll run another command and
+
+20
+00:01:21,990 --> 00:01:23,400
+then we'll back out.
+
+21
+00:01:23,550 --> 00:01:28,590
+The point is that we'll be navigating through the terminal, moving to different locations, different
+
+22
+00:01:28,590 --> 00:01:34,350
+folders, manipulating files, making changes, deleting creating things, and then interacting with
+
+23
+00:01:34,350 --> 00:01:34,890
+git.
+
+24
+00:01:34,890 --> 00:01:40,380
+From here we'll run commands that are specific to get and the folder that we're in.
+
+25
+00:01:40,710 --> 00:01:45,780
+So if you are comfortable with those basic commands, if already laid out, skip the next few videos.
+
+26
+00:01:45,780 --> 00:01:48,570
+If you're not if you're not familiar, don't freak out.
+
+27
+00:01:48,570 --> 00:01:54,090
+This is stuff that it's easy but it's it takes a bit of time for it to really stick.
+
+28
+00:01:54,090 --> 00:01:56,340
+The hardest part is remembering the commands.
+
+29
+00:01:56,340 --> 00:02:01,740
+So I recommend you just put some sticky notes up or a cheat sheet just to come back to these commands.
+
+30
+00:02:01,770 --> 00:02:04,110
+No one's expecting you to know them by heart.
+
+31
+00:02:04,110 --> 00:02:09,960
+After three videos, it takes a while for my bootcamp students in person at least to start working with
+
+32
+00:02:09,960 --> 00:02:12,990
+these commands like they're second nature because they're not.
+
+33
+00:02:12,990 --> 00:02:17,580
+It's kind of a horrible interface, but you force yourself to use it and you'll get comfortable.
+
+34
+00:02:17,580 --> 00:02:22,020
+Last thing I'll say is if you're on a mac, I'll be using the terminal app.
+
+35
+00:02:22,020 --> 00:02:27,210
+And if you're using a Windows machine as we installed Git, we set up get bash.
+
+36
+00:02:27,210 --> 00:02:30,120
+So my screen will look like this on the windows side.
+
+37
+00:02:30,810 --> 00:02:35,130
+Either one, the commands are 99.9% identical.
+
+38
+00:02:35,130 --> 00:02:40,830
+So if you see me do a command like LRS on the windows side or on the Mac side, they both are going
+
+39
+00:02:40,830 --> 00:02:42,060
+to do the same thing.
+
+40
+00:02:42,330 --> 00:02:42,960
+All right.
+
+41
+00:02:42,960 --> 00:02:44,070
+So let's get started.
+
+42
+00:02:44,070 --> 00:02:48,240
+Remember, completely optional, but I highly recommend sticking it out through these videos.
+
+43
+00:02:48,240 --> 00:02:52,890
+If you don't know the terminal commands, if you don't know the basic UNIX commands that I quickly ran
+
+44
+00:02:52,890 --> 00:03:00,150
+through c d touch make directory, rem, lz d those are going to be pretty important for the rest of
+
+45
+00:03:00,150 --> 00:03:02,340
+the course so that we can work with Git.
+
+46
+00:03:02,370 --> 00:03:03,210
+All right, I'll shut up.
+
+47
+00:03:03,210 --> 00:03:04,170
+Let's get started.
+

@@ -1,0 +1,576 @@
+1
+00:00:00,120 --> 00:00:00,470
+Okay.
+
+2
+00:00:00,540 --> 00:00:03,560
+So this is the windows get installation video.
+
+3
+00:00:03,570 --> 00:00:08,490
+If you're not on a Windows machine, I guess you're welcome to join us if you want, but I would just
+
+4
+00:00:08,490 --> 00:00:15,600
+move on and go to the next video installing get on a Windows machine is it's not complicated, but it's
+
+5
+00:00:15,600 --> 00:00:18,150
+a little bit trickier than to do it on a mac.
+
+6
+00:00:18,150 --> 00:00:21,300
+And the reason for this is that git was designed it was created.
+
+7
+00:00:21,300 --> 00:00:27,690
+If you watch that video where I did The Brief History of Git, it was created to run on a Unix based
+
+8
+00:00:27,690 --> 00:00:28,200
+interface.
+
+9
+00:00:28,200 --> 00:00:34,320
+It was designed for Linux because the guy who created it, Linus Torvalds, also created Linux.
+
+10
+00:00:34,630 --> 00:00:41,910
+OC The problem that we run into on a Windows machine is that Windows machines don't come with a Unix
+
+11
+00:00:41,910 --> 00:00:43,860
+based prompt by default.
+
+12
+00:00:43,860 --> 00:00:48,090
+Windows comes with a different command line interface called command prompt.
+
+13
+00:00:48,450 --> 00:00:49,650
+It's not Unix based.
+
+14
+00:00:49,650 --> 00:00:52,230
+If you don't know what Unix is, it really it's not a big deal.
+
+15
+00:00:52,230 --> 00:00:53,520
+You don't need to know what it is.
+
+16
+00:00:53,700 --> 00:00:55,500
+It just causes an issue here.
+
+17
+00:00:55,530 --> 00:01:01,320
+Get wants to run with a Unix based interface and there's this shell, this thing called Bash that it's
+
+18
+00:01:01,320 --> 00:01:03,690
+a default shell for Linux machines and for Macs.
+
+19
+00:01:03,690 --> 00:01:05,340
+So it's a lot easier on those machines.
+
+20
+00:01:05,340 --> 00:01:08,460
+We don't have to jump through any hoops on a Windows machine.
+
+21
+00:01:08,460 --> 00:01:12,750
+We have to download something called Get Bash, which we're about to do.
+
+22
+00:01:12,750 --> 00:01:19,140
+And get Bash is going to emulate a bash, a Unix experience on our Windows Machine and it comes with
+
+23
+00:01:19,140 --> 00:01:20,100
+Git also.
+
+24
+00:01:20,100 --> 00:01:24,060
+So some people actually use Git bash without even touching the git portion.
+
+25
+00:01:24,060 --> 00:01:26,730
+They just want the bash portion anyway.
+
+26
+00:01:26,940 --> 00:01:28,800
+You'll see it's not too bad.
+
+27
+00:01:28,800 --> 00:01:33,060
+It's a single package we download and then it's just a couple of menus and settings that we have to
+
+28
+00:01:33,060 --> 00:01:33,810
+walk through.
+
+29
+00:01:33,810 --> 00:01:35,640
+So that's all we're going to do here.
+
+30
+00:01:36,060 --> 00:01:40,680
+If none of that explanation made sense to you, don't worry, we'll just install it and it should work.
+
+31
+00:01:40,680 --> 00:01:46,260
+But if you're curious, this is kind of the issue at the core of why it's a little trickier on Windows.
+
+32
+00:01:46,440 --> 00:01:51,510
+Git was not designed to run on a Windows machine originally, so there's just an extra hurdle or two.
+
+33
+00:01:51,660 --> 00:01:52,680
+OC Let's go.
+
+34
+00:01:52,890 --> 00:01:53,430
+All right.
+
+35
+00:01:53,430 --> 00:01:58,290
+So the first thing we need to do is go to the Git Home page, the Git website, and download the Git
+
+36
+00:01:58,290 --> 00:01:59,610
+installer for Windows.
+
+37
+00:01:59,820 --> 00:02:02,130
+So I've included in the resources a link.
+
+38
+00:02:02,130 --> 00:02:05,490
+It's also just git sxm.
+
+39
+00:02:06,450 --> 00:02:11,940
+I never remember that and I just google or or bing git and then click the link.
+
+40
+00:02:12,060 --> 00:02:17,910
+So I'm going to click download just the version that it suggesting for me on my Windows machine you
+
+41
+00:02:17,910 --> 00:02:23,070
+can see the other options 62 and 64 bits, but anyway, it looks like it finished.
+
+42
+00:02:23,070 --> 00:02:24,900
+So I'm going to open this up.
+
+43
+00:02:25,810 --> 00:02:26,560
+All righty.
+
+44
+00:02:26,950 --> 00:02:27,970
+I'm going to click.
+
+45
+00:02:27,970 --> 00:02:28,240
+Yes.
+
+46
+00:02:28,240 --> 00:02:30,220
+Do I want to allow it to make changes?
+
+47
+00:02:30,490 --> 00:02:33,640
+And is there a way to make this larger?
+
+48
+00:02:34,030 --> 00:02:35,530
+Does not look like it.
+
+49
+00:02:35,530 --> 00:02:40,060
+So I'll try zooming in in post-production to make this a little bit easier for you to see.
+
+50
+00:02:40,240 --> 00:02:42,790
+It's quite small on this large screen.
+
+51
+00:02:43,090 --> 00:02:44,860
+Anyway, I'm going to click next.
+
+52
+00:02:44,860 --> 00:02:46,120
+This is the license.
+
+53
+00:02:46,540 --> 00:02:48,820
+You know, I've read the entire thing.
+
+54
+00:02:48,820 --> 00:02:53,230
+All right, I'll hit next, then it's asking where I want to install it.
+
+55
+00:02:53,230 --> 00:02:54,310
+I'll leave the default.
+
+56
+00:02:54,310 --> 00:02:58,060
+So C drive program files get next up here.
+
+57
+00:02:58,540 --> 00:03:05,110
+I'm just going to leave all these defaults so I'm not going to check or uncheck anything and click next.
+
+58
+00:03:06,140 --> 00:03:09,740
+And then it's saying the name of the shortcut that it creates for me.
+
+59
+00:03:09,740 --> 00:03:13,850
+I'll just call it quits, and that's good to go.
+
+60
+00:03:14,030 --> 00:03:19,430
+Now, this is one spot where I recommend actually deviating from the default.
+
+61
+00:03:19,610 --> 00:03:23,980
+So it's asking us to choose the default text editor that get uses.
+
+62
+00:03:23,990 --> 00:03:27,890
+Now, the default that it uses right now is something called vim.
+
+63
+00:03:28,520 --> 00:03:30,950
+It is kind of a nightmare if you've never used it.
+
+64
+00:03:31,070 --> 00:03:35,000
+The commands and it's all done via text in the terminal.
+
+65
+00:03:35,570 --> 00:03:40,610
+A lot of people use it, but way, way more people are scared of it and confused by it.
+
+66
+00:03:40,610 --> 00:03:45,140
+So I recommend switching this over to VTS code or Visual Studio code.
+
+67
+00:03:45,410 --> 00:03:49,760
+So this is a brand new install of windows on my computer.
+
+68
+00:03:49,760 --> 00:03:55,550
+I don't actually have VTS code yet, so I'm going to click this use Visual Studio code, Visual Studio
+
+69
+00:03:55,550 --> 00:04:00,830
+code as its default editor and it doesn't let me hit next because I don't have it installed.
+
+70
+00:04:00,830 --> 00:04:06,620
+So I'm going to click that link and just open it up and then download for Windows.
+
+71
+00:04:06,740 --> 00:04:11,210
+We won't need this text editor right away and you don't have to use this editor either.
+
+72
+00:04:11,240 --> 00:04:17,930
+I have a video where I explain how to get out of Vim and how to use Vim in one context.
+
+73
+00:04:18,410 --> 00:04:20,360
+So if you want to use Vim, you can do that.
+
+74
+00:04:20,360 --> 00:04:24,020
+Or if you have some other editor that you like, feel free to use that instead.
+
+75
+00:04:24,440 --> 00:04:26,180
+So this is a pretty quick install.
+
+76
+00:04:26,180 --> 00:04:27,800
+Just accept the agreement.
+
+77
+00:04:27,890 --> 00:04:29,330
+Location is fine.
+
+78
+00:04:30,080 --> 00:04:31,190
+That's good to go.
+
+79
+00:04:31,490 --> 00:04:34,910
+And then I'm going to leave this check to add to PATH.
+
+80
+00:04:34,910 --> 00:04:42,740
+We want that and I'm going to click this register code as an editor for supported file types so that
+
+81
+00:04:42,740 --> 00:04:47,480
+the bottom two checkbox is there and then I'll click next install.
+
+82
+00:04:48,490 --> 00:04:50,590
+And hopefully that goes pretty quickly.
+
+83
+00:04:50,740 --> 00:04:56,020
+And then while that finishes up, I guess I do actually have to wait for it to finish in order to go
+
+84
+00:04:56,020 --> 00:04:59,890
+back to the other installer for get so that finished.
+
+85
+00:05:00,700 --> 00:05:03,370
+We could launch it right now, but we really don't need it.
+
+86
+00:05:03,820 --> 00:05:10,120
+All that we need that for is so that we can use VTS code as the default editor so it doesn't register
+
+87
+00:05:10,120 --> 00:05:11,770
+that we actually have that.
+
+88
+00:05:11,770 --> 00:05:15,820
+I'm going to click back and next again, okay, now it's working.
+
+89
+00:05:15,820 --> 00:05:20,050
+So we still have Visual Studio code selected and now I can click next.
+
+90
+00:05:21,220 --> 00:05:25,840
+And then here, this is a bigger topic actually that we're not going to go into a whole lot right now,
+
+91
+00:05:25,840 --> 00:05:32,080
+but a bigger topic we discussed throughout the course in late 2020, there's been a push without going
+
+92
+00:05:32,080 --> 00:05:38,740
+into too much detail, there's been a push to rename the default branch in Git and GitHub from master
+
+93
+00:05:38,740 --> 00:05:43,720
+to Main or some other similar name like Trunk or development.
+
+94
+00:05:43,780 --> 00:05:45,640
+We'll talk more about what this means.
+
+95
+00:05:45,820 --> 00:05:49,540
+We haven't talked about branches at all, so that probably makes no sense.
+
+96
+00:05:49,540 --> 00:05:56,770
+I'm actually going to say let git decide and keep it as the current default branch name, but later
+
+97
+00:05:56,770 --> 00:05:59,200
+on I will show you how to change the default branch name.
+
+98
+00:05:59,200 --> 00:06:04,090
+We'll talk about how to work with Main instead of master and we'll cover all of this.
+
+99
+00:06:04,090 --> 00:06:10,360
+So to keep things simple and to keep you sort of in sync with the standard documentation and tutorials
+
+100
+00:06:10,360 --> 00:06:15,640
+you'll see in the world right now, we're going to just let Git decide, all right.
+
+101
+00:06:15,940 --> 00:06:18,130
+And then I'll leave this alone as well.
+
+102
+00:06:19,130 --> 00:06:19,760
+Okay.
+
+103
+00:06:19,790 --> 00:06:21,140
+I'm going to click next again.
+
+104
+00:06:21,650 --> 00:06:24,980
+Leave this as use the OpenSSL library.
+
+105
+00:06:24,980 --> 00:06:29,690
+So on this page or this screen, we're going to leave the top option selected.
+
+106
+00:06:29,690 --> 00:06:33,590
+Check out window style commit Unix style line endings.
+
+107
+00:06:33,590 --> 00:06:37,280
+It doesn't matter what that does right now, but we're going to pick that first one.
+
+108
+00:06:37,990 --> 00:06:39,430
+And then we have this screen.
+
+109
+00:06:39,430 --> 00:06:41,820
+Which terminal emulator do we want to use?
+
+110
+00:06:41,830 --> 00:06:46,270
+If you want to follow along with me and what I'll be using well through the throughout the course,
+
+111
+00:06:46,270 --> 00:06:51,670
+I'm using a mac, but on the Windows specific videos, I'll be using this first one min dt why?
+
+112
+00:06:52,930 --> 00:06:57,730
+And then we're going to select default, just the default option that's already selected for us.
+
+113
+00:06:58,570 --> 00:07:01,090
+And then, yep, we'll just keep this one selected.
+
+114
+00:07:01,090 --> 00:07:02,890
+Get credentialed manager core.
+
+115
+00:07:04,470 --> 00:07:07,350
+Well, enable file system caching that's already selected.
+
+116
+00:07:07,680 --> 00:07:08,610
+We're good to go.
+
+117
+00:07:09,930 --> 00:07:14,820
+And we don't need to enable support for pseudo councils, so we don't need to select that.
+
+118
+00:07:14,820 --> 00:07:16,080
+And then we click install.
+
+119
+00:07:18,090 --> 00:07:19,980
+And we wait for this to finish.
+
+120
+00:07:20,680 --> 00:07:22,510
+And I'll probably fast forward.
+
+121
+00:07:23,520 --> 00:07:24,090
+All right.
+
+122
+00:07:24,090 --> 00:07:25,680
+So it looks like it finished up.
+
+123
+00:07:26,100 --> 00:07:26,910
+Let's launch it.
+
+124
+00:07:26,910 --> 00:07:31,080
+So we'll click launch, get bash and then we can get rid of this.
+
+125
+00:07:31,080 --> 00:07:33,720
+We don't I don't care to see the release notes personally.
+
+126
+00:07:33,720 --> 00:07:35,160
+And then we'll click Finish.
+
+127
+00:07:36,050 --> 00:07:40,430
+So you'll probably see, hopefully see a prompt that looks something like this.
+
+128
+00:07:40,550 --> 00:07:42,470
+Your name will be different.
+
+129
+00:07:42,650 --> 00:07:46,460
+And I just full screened it to make it hopefully legible.
+
+130
+00:07:47,030 --> 00:07:52,760
+And for now, the last thing we'll do just to verify that git is installed is run the command, get
+
+131
+00:07:52,760 --> 00:07:54,470
+dash dash version.
+
+132
+00:07:55,730 --> 00:07:59,540
+So as long as we see something here, you should see something here.
+
+133
+00:07:59,660 --> 00:08:06,560
+If you have this if you're able to see this window after the installation, then I can't think of a
+
+134
+00:08:06,560 --> 00:08:08,330
+situation where it would not be installed.
+
+135
+00:08:08,330 --> 00:08:15,140
+But just to verify we can run this get dash dash version, the command is being recognized and we should
+
+136
+00:08:15,140 --> 00:08:15,980
+be good to go.
+
+137
+00:08:16,010 --> 00:08:21,350
+Now, one thing I'll mention is if you do close out of this, you get rid of this terminal window.
+
+138
+00:08:21,950 --> 00:08:29,350
+If we shut that down, if you want to reopen it and have access to it again, a pretty reasonable request.
+
+139
+00:08:29,360 --> 00:08:31,370
+You can just search for a get bash.
+
+140
+00:08:31,370 --> 00:08:35,179
+That's the name of the application we want to run or open.
+
+141
+00:08:35,179 --> 00:08:38,510
+So get bash and then we get back to this window.
+
+142
+00:08:39,710 --> 00:08:44,059
+So if you're on a Windows machine, this window is where you will be working.
+
+143
+00:08:44,059 --> 00:08:49,700
+When you see me working on my Mac terminal, I'll talk about some of the minor differences in commands,
+
+144
+00:08:49,700 --> 00:08:53,390
+but overall it should be a pretty smooth experience now that we have it installed.
+

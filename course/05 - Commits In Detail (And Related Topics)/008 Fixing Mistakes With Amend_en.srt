@@ -1,0 +1,332 @@
+1
+00:00:00,150 --> 00:00:02,370
+Next up, amending commits.
+
+2
+00:00:02,610 --> 00:00:04,650
+Occasionally when you're working with Git.
+
+3
+00:00:04,680 --> 00:00:10,890
+You may create a new commit and then realize just a moment too late that you forgot to include a relevant
+
+4
+00:00:10,890 --> 00:00:12,060
+file in the commit.
+
+5
+00:00:12,390 --> 00:00:17,190
+Or another thing that can happen is you make a commit and then you read over the commit message and
+
+6
+00:00:17,190 --> 00:00:20,250
+you realize too late that you have a typo.
+
+7
+00:00:20,280 --> 00:00:22,890
+You wrote something wrong in that commit message.
+
+8
+00:00:22,890 --> 00:00:25,650
+So there are a couple of ways of fixing those problems.
+
+9
+00:00:25,650 --> 00:00:29,760
+But the easiest one, the one I'm showing in this video, is to amend the commit.
+
+10
+00:00:29,760 --> 00:00:36,230
+So this allows us to edit or to redo, to update just the previous commit so this doesn't work.
+
+11
+00:00:36,240 --> 00:00:42,720
+If you made a mistake ten commits ago, this is only if you made a mistake just one commit ago.
+
+12
+00:00:42,900 --> 00:00:50,190
+So here's how it works when you make a commit here on my slides I'm doing commit m I made some commit.
+
+13
+00:00:50,190 --> 00:00:51,630
+Then I realized shoot.
+
+14
+00:00:51,630 --> 00:00:53,070
+I forgot to include a file.
+
+15
+00:00:53,250 --> 00:01:01,710
+So I add that file, I stage it and then I get commit dash dash, amend and amend is going to redo the
+
+16
+00:01:01,710 --> 00:01:02,820
+previous commit.
+
+17
+00:01:03,060 --> 00:01:08,130
+You can read about it on the docs, although as always it's a little bit intimidating.
+
+18
+00:01:08,130 --> 00:01:09,650
+I'll search for it on here.
+
+19
+00:01:09,710 --> 00:01:14,190
+Amend replace the tip of the current branch by creating a new commit.
+
+20
+00:01:14,190 --> 00:01:17,370
+We haven't talked about branches, but creating a new commit.
+
+21
+00:01:17,580 --> 00:01:19,110
+It's prepared as usual.
+
+22
+00:01:19,110 --> 00:01:23,760
+The message from the original commit is used as the starting point instead of an empty message.
+
+23
+00:01:23,970 --> 00:01:25,590
+I don't know if that's at all helpful to read.
+
+24
+00:01:25,590 --> 00:01:27,030
+I'm just going to show it to you.
+
+25
+00:01:27,570 --> 00:01:30,750
+So let's go ahead and make a mistake.
+
+26
+00:01:31,110 --> 00:01:35,340
+I'm going to add a little heading to every file.
+
+27
+00:01:35,340 --> 00:01:41,940
+So at the top I just wanted to say outline just as an example and then I'll add some space in there,
+
+28
+00:01:41,940 --> 00:01:43,050
+something like this.
+
+29
+00:01:43,050 --> 00:01:44,970
+I'm going to do that for all my other files.
+
+30
+00:01:44,970 --> 00:01:46,980
+Chapter one, two and characters.
+
+31
+00:01:47,220 --> 00:01:49,260
+So let's do it for characters in here.
+
+32
+00:01:51,880 --> 00:01:53,890
+So there I have a change in this file.
+
+33
+00:01:53,980 --> 00:01:56,380
+Here's chapter one or chapter two, rather.
+
+34
+00:01:58,290 --> 00:02:01,290
+So that's chapter two and then chapter one.
+
+35
+00:02:01,690 --> 00:02:06,780
+Okay, so I've made those changes, just added a little heading to each one of those files if I type
+
+36
+00:02:06,780 --> 00:02:07,720
+get status.
+
+37
+00:02:07,740 --> 00:02:14,220
+Of course, we see we modified four files, so let's go ahead and stage some of these files.
+
+38
+00:02:14,220 --> 00:02:16,320
+Let's do chapter one.
+
+39
+00:02:18,790 --> 00:02:20,250
+Let's do chapter two.
+
+40
+00:02:20,260 --> 00:02:23,850
+I'll make this full screen and let's do the characters file.
+
+41
+00:02:23,860 --> 00:02:30,640
+But I'm going to deliberately pretend to forget the outline file, so I'll add those three files.
+
+42
+00:02:30,640 --> 00:02:32,080
+They should be staged.
+
+43
+00:02:32,980 --> 00:02:38,200
+And normally I would check like I just did with to get status and realize, Oh, I forgot that file,
+
+44
+00:02:38,200 --> 00:02:42,520
+but let's say I didn't do that and I commit, so get commit.
+
+45
+00:02:42,520 --> 00:02:43,480
+I'll just do a dash.
+
+46
+00:02:43,480 --> 00:02:43,770
+Hm.
+
+47
+00:02:43,810 --> 00:02:54,160
+Commit, add heading to all files or add headings to all files like that.
+
+48
+00:02:54,310 --> 00:02:55,120
+All righty.
+
+49
+00:02:56,030 --> 00:03:04,130
+And then I realized, Oh no, I forgot my outline so we can use that amend option that I showed you.
+
+50
+00:03:04,160 --> 00:03:07,160
+We need to add this file, so we're going to stage it.
+
+51
+00:03:07,190 --> 00:03:09,890
+Again, this only works if I haven't made another commit.
+
+52
+00:03:09,890 --> 00:03:15,560
+I can't go back and edit a commit from ten commits ago, but I did just make that commit and I'm going
+
+53
+00:03:15,560 --> 00:03:16,160
+to amend it.
+
+54
+00:03:16,160 --> 00:03:20,740
+So I'll add that file, but I'm not going to commit like normal.
+
+55
+00:03:20,750 --> 00:03:24,410
+I'm going to do a git commit, dash, dash, amend.
+
+56
+00:03:24,890 --> 00:03:25,580
+All right.
+
+57
+00:03:25,580 --> 00:03:31,220
+And this is going to open up in V's code because that's what I've configured my editor to be.
+
+58
+00:03:31,430 --> 00:03:36,590
+And it opens up the previous commit message and this allows me to edit that commit message.
+
+59
+00:03:36,590 --> 00:03:40,340
+So if I had a typo in here, I could change it.
+
+60
+00:03:40,730 --> 00:03:43,070
+I could if I misspelled sometimes.
+
+61
+00:03:43,070 --> 00:03:44,720
+That's the reason for amending.
+
+62
+00:03:44,930 --> 00:03:47,180
+You might not stage any new files.
+
+63
+00:03:47,180 --> 00:03:49,010
+You might just want to fix a commit message.
+
+64
+00:03:49,010 --> 00:03:51,200
+Just get commit dash, dash, amend.
+
+65
+00:03:51,200 --> 00:03:54,170
+That will open up in whatever editor you've used.
+
+66
+00:03:54,170 --> 00:03:58,970
+Hopefully you've configured it so that it's not vim or hopefully you know how to use vim.
+
+67
+00:03:59,780 --> 00:04:01,040
+So I have B's code.
+
+68
+00:04:01,040 --> 00:04:03,380
+Go back and watch a video where I did that if you need it.
+
+69
+00:04:03,380 --> 00:04:05,870
+And now I can change the message if needed.
+
+70
+00:04:05,870 --> 00:04:11,720
+But if I don't want to change the message, I want to leave it, which I do, and I just want to include
+
+71
+00:04:11,720 --> 00:04:13,610
+that new file or files.
+
+72
+00:04:13,610 --> 00:04:15,260
+In this case, it's just the outline.
+
+73
+00:04:15,350 --> 00:04:21,019
+All I need to do is save this file and close it so I'm not going to change the commit at all.
+
+74
+00:04:21,019 --> 00:04:26,720
+You can see it's also put, modified, outlined text in here that's now going to be included.
+
+75
+00:04:27,440 --> 00:04:29,780
+I'll close out of there and there we are.
+
+76
+00:04:30,200 --> 00:04:32,960
+Four files changed is what it said in that commit.
+
+77
+00:04:32,960 --> 00:04:37,280
+Previously it was just three, but now I amended that commit.
+
+78
+00:04:37,280 --> 00:04:40,730
+I basically redid it and I included the outline.
+
+79
+00:04:41,030 --> 00:04:41,390
+All right.
+
+80
+00:04:41,390 --> 00:04:43,100
+So there's two reasons to do this.
+
+81
+00:04:43,100 --> 00:04:49,700
+One is to include files, changes that you forgot that you somehow messed up in the previous commit.
+
+82
+00:04:49,940 --> 00:04:54,740
+The other option is just to redo the commit message, or you could do both of them at the same time.
+
+83
+00:04:54,740 --> 00:04:59,720
+You just need to add dash dash amend and that allows you to redo the previous commit.
+

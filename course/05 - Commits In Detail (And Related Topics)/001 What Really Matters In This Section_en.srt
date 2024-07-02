@@ -1,0 +1,152 @@
+1
+00:00:00,150 --> 00:00:01,950
+I hope you survive the previous section.
+
+2
+00:00:01,950 --> 00:00:04,290
+There's a lot of really important stuff in there.
+
+3
+00:00:04,380 --> 00:00:06,900
+Maybe take a break before moving on to this one.
+
+4
+00:00:07,380 --> 00:00:09,420
+I don't really have a real title for this section.
+
+5
+00:00:09,420 --> 00:00:12,630
+I'm calling it committing in more detail, but it's more than that.
+
+6
+00:00:12,660 --> 00:00:19,080
+This section does cover some more stuff around committing, but also there are some assorted gifts topics
+
+7
+00:00:19,080 --> 00:00:21,630
+thrown in here that didn't really fit anywhere else neatly.
+
+8
+00:00:21,630 --> 00:00:23,580
+So let's talk about what actually matters.
+
+9
+00:00:23,940 --> 00:00:27,780
+We're going to talk about something called atomic commit writing atomic commits.
+
+10
+00:00:27,780 --> 00:00:29,460
+That sounds scarier than it is.
+
+11
+00:00:29,460 --> 00:00:33,510
+It's just an approach as to how you break down commits.
+
+12
+00:00:33,510 --> 00:00:36,600
+We'll say it's important, but I would stress about it not critical.
+
+13
+00:00:36,810 --> 00:00:42,270
+If you're on a Windows machine when we installed it, we also configured VTS code to be the default
+
+14
+00:00:42,270 --> 00:00:42,890
+editor.
+
+15
+00:00:42,900 --> 00:00:47,580
+If you're on a mac that was not part of the installation process, it didn't prompt us for that.
+
+16
+00:00:47,580 --> 00:00:54,030
+So if you're on a mac, it's going to be important to configure the default editor and I use VTS code.
+
+17
+00:00:54,030 --> 00:00:55,140
+I'll show you how to do that.
+
+18
+00:00:55,140 --> 00:00:57,930
+If you're not on a mac, you probably already did it.
+
+19
+00:00:58,830 --> 00:01:01,230
+Working with a graphical user interface.
+
+20
+00:01:01,230 --> 00:01:02,340
+I like showing it.
+
+21
+00:01:02,340 --> 00:01:07,200
+A lot of students enjoy it, but 100% optional, not essential to using git.
+
+22
+00:01:07,200 --> 00:01:12,900
+It's one option, but you could go your whole life without ever touching a gooey amending commits will
+
+23
+00:01:12,900 --> 00:01:19,680
+say it's nice to have it's useful, but especially early on not that common that you would need this.
+
+24
+00:01:19,680 --> 00:01:26,760
+Now get ignore I'll say is a pretty critical part of working with git still early on not a big deal
+
+25
+00:01:26,760 --> 00:01:30,570
+but when you work with get in the real world get ignores are very important.
+
+26
+00:01:31,020 --> 00:01:33,540
+I haven't even explained what it is but just trust me.
+
+27
+00:01:33,540 --> 00:01:39,870
+That thing critical writing good commit messages will say it's important but again not like a fundamental
+
+28
+00:01:39,870 --> 00:01:40,110
+thing.
+
+29
+00:01:40,110 --> 00:01:42,300
+More of a matter of taste and opinion.
+
+30
+00:01:42,390 --> 00:01:48,090
+And then navigating the git documentation, we'll say important as well, but not critical.
+
+31
+00:01:48,090 --> 00:01:50,130
+I'm not really a big fan of the get docs, honestly.
+
+32
+00:01:50,130 --> 00:01:52,020
+They're they're very intimidating.
+
+33
+00:01:52,470 --> 00:01:54,750
+So as you can see, it's kind of a mixed bag here.
+
+34
+00:01:54,750 --> 00:02:00,030
+There are some nice to have that I still recommend watching, but amending commits for example, working
+
+35
+00:02:00,030 --> 00:02:05,310
+with a gooey I don't think they're all that important but working with good ignores and then some good
+
+36
+00:02:05,310 --> 00:02:11,009
+practices for writing commits, writing atomic commits, writing good commit messages worth your time,
+
+37
+00:02:11,009 --> 00:02:12,600
+but don't freak out about it.
+
+38
+00:02:12,600 --> 00:02:13,620
+So let's get started.
+

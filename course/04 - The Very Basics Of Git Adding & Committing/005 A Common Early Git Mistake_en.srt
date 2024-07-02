@@ -1,0 +1,228 @@
+1
+00:00:00,270 --> 00:00:00,600
+Okay.
+
+2
+00:00:00,600 --> 00:00:06,330
+So in this video, I want to quickly talk about a common issue that some students run into early on.
+
+3
+00:00:06,810 --> 00:00:12,690
+And to explain it first, we need to understand that when we have a git repo, we initialize a get repo
+
+4
+00:00:12,690 --> 00:00:14,850
+that's in one directory, right?
+
+5
+00:00:14,880 --> 00:00:18,150
+In our case, it was the my first novel directory.
+
+6
+00:00:18,180 --> 00:00:25,200
+But Git is going to watch everything that happens in this directory, including anything nested further
+
+7
+00:00:25,200 --> 00:00:29,310
+down as child or grandchild directories and so on.
+
+8
+00:00:29,550 --> 00:00:32,910
+So I could just quickly make some dummy folders.
+
+9
+00:00:32,910 --> 00:00:33,870
+I'm going to delete these.
+
+10
+00:00:33,870 --> 00:00:39,540
+So you do not need to follow along if you are just going to call this, let's say I'm working on the
+
+11
+00:00:39,540 --> 00:00:42,000
+book, here's the intro to the book.
+
+12
+00:00:42,000 --> 00:00:45,960
+I'll see into the intro and then I'll make another folder in here.
+
+13
+00:00:46,410 --> 00:00:48,630
+How about draft one?
+
+14
+00:00:50,310 --> 00:00:55,740
+So I'm two folders in two levels deep, but I can still type get status.
+
+15
+00:00:55,750 --> 00:00:56,430
+Whoops.
+
+16
+00:00:57,000 --> 00:01:03,650
+Apparently not if I type it correctly and I still get feedback that says yes, you are in a git repo.
+
+17
+00:01:03,660 --> 00:01:05,790
+So it's not just this folder.
+
+18
+00:01:05,790 --> 00:01:10,170
+My first novel, it's everything nested in that folder.
+
+19
+00:01:10,470 --> 00:01:12,180
+So it's top down.
+
+20
+00:01:12,600 --> 00:01:15,570
+And that's important to understand for a couple of reasons.
+
+21
+00:01:15,570 --> 00:01:21,750
+One, any files and folders and changes I do in this directory for this one project are tracked by git
+
+22
+00:01:21,900 --> 00:01:24,150
+if I initialize the repo like I did.
+
+23
+00:01:24,150 --> 00:01:31,500
+But too it's important to understand we do not want to be initializing another repo inside of an existing
+
+24
+00:01:31,500 --> 00:01:32,100
+repo.
+
+25
+00:01:32,430 --> 00:01:34,710
+I made a warning sign to make this clear.
+
+26
+00:01:35,190 --> 00:01:42,240
+We want to keep our repository separate and you don't want to run git init inside of an existing repository.
+
+27
+00:01:42,240 --> 00:01:46,320
+It's not the end of the world, but at some point things will go wrong.
+
+28
+00:01:46,320 --> 00:01:50,580
+Get will get confused because it's tracking everything happening in a folder.
+
+29
+00:01:50,580 --> 00:01:57,960
+And if one of those folders has git also initialized, then it's git tracking git and it just gets confused.
+
+30
+00:01:57,960 --> 00:02:00,120
+So we want to avoid that.
+
+31
+00:02:00,390 --> 00:02:06,390
+And the easiest thing to do is just make sure when you run Git in it, make sure you're not in a repository
+
+32
+00:02:06,420 --> 00:02:09,930
+and that's why I showed you to use git status first.
+
+33
+00:02:09,930 --> 00:02:15,690
+So if I wanted to make a new repository, I'm writing a new novel, I want to have a separate history.
+
+34
+00:02:15,690 --> 00:02:17,610
+I would try running git status.
+
+35
+00:02:17,610 --> 00:02:19,590
+Oh I'm in a repo.
+
+36
+00:02:19,620 --> 00:02:20,670
+That should tell me.
+
+37
+00:02:20,670 --> 00:02:23,190
+Don't initialize a new repo in here.
+
+38
+00:02:23,370 --> 00:02:24,870
+You're already in a repo.
+
+39
+00:02:24,900 --> 00:02:26,130
+Go somewhere else.
+
+40
+00:02:26,910 --> 00:02:28,560
+So let's back out a couple of levels.
+
+41
+00:02:28,560 --> 00:02:29,550
+Let's keep going.
+
+42
+00:02:29,730 --> 00:02:36,630
+So I've backed out and now I can make another directory book to go into that directory.
+
+43
+00:02:36,990 --> 00:02:38,910
+Just show it over here, here it is.
+
+44
+00:02:39,060 --> 00:02:43,140
+And type get status, not a git repository.
+
+45
+00:02:43,140 --> 00:02:44,760
+Now I can initialize.
+
+46
+00:02:45,000 --> 00:02:46,740
+All right, so you just want to be careful of that.
+
+47
+00:02:46,740 --> 00:02:52,470
+If you do happen to initialize a repo inside of an existing repo, I showed you how to delete how to
+
+48
+00:02:52,470 --> 00:02:58,080
+remove that repository by getting rid of the corresponding dot git folder.
+
+49
+00:02:58,590 --> 00:02:59,940
+All right, so it's not the end of the world.
+
+50
+00:02:59,940 --> 00:03:02,520
+It won't give you an error message, but you want to be careful.
+
+51
+00:03:02,820 --> 00:03:09,450
+And in general, my rule is make a folder for a project and then initialize get in that folder.
+
+52
+00:03:09,450 --> 00:03:14,820
+So don't you don't want to have a git repo on your desktop or your documents folder or on your entire
+
+53
+00:03:14,820 --> 00:03:17,760
+machine that's tracking everything you could.
+
+54
+00:03:17,760 --> 00:03:23,670
+But most people prefer to have one repo per project, so always run, get status, make sure you're
+
+55
+00:03:23,670 --> 00:03:25,770
+not in a repo before you initialize.
+
+56
+00:03:25,770 --> 00:03:30,750
+And if you do happen to end up with nested repos, you can sort it out by deleting one of a docket get
+
+57
+00:03:30,750 --> 00:03:32,160
+folders oc.
+

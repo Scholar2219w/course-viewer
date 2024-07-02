@@ -1,0 +1,708 @@
+1
+00:00:00,060 --> 00:00:05,220
+Before we talk about the ways we can use get dif the different variations the options let's discuss
+
+2
+00:00:05,220 --> 00:00:06,270
+the output.
+
+3
+00:00:06,270 --> 00:00:12,150
+So the output that we get from get diff, whatever the diff is that we're trying to generate, it always
+
+4
+00:00:12,150 --> 00:00:16,260
+follows a very similar pattern and it looks something like this.
+
+5
+00:00:16,260 --> 00:00:18,780
+You can see over here on the right, it's kind of crazy looking.
+
+6
+00:00:18,780 --> 00:00:25,020
+I mean, we see hopefully relatively clearly some of the code or changes in a file, but then there's
+
+7
+00:00:25,020 --> 00:00:27,480
+a bunch of stuff before we've got pluses.
+
+8
+00:00:27,480 --> 00:00:31,590
+We also have minuses, we have weird looking symbols.
+
+9
+00:00:31,590 --> 00:00:35,250
+He's at ATS, so let's walk through what exactly is going on.
+
+10
+00:00:35,490 --> 00:00:41,040
+So for these diagrams, I'm using a very simple example of a repository where we have a file called
+
+11
+00:00:41,040 --> 00:00:43,740
+Rainbow txt and I made a commit.
+
+12
+00:00:43,740 --> 00:00:44,910
+It looked like this.
+
+13
+00:00:44,940 --> 00:00:46,800
+Red, orange, yellow, green, blue, purple.
+
+14
+00:00:46,800 --> 00:00:48,900
+That's how I learned the rainbow when I was a little kid.
+
+15
+00:00:48,930 --> 00:00:50,790
+It was just blue and purple at the end.
+
+16
+00:00:50,790 --> 00:00:53,520
+But then we make some new changes.
+
+17
+00:00:53,520 --> 00:00:58,050
+We haven't committed anything, but I made some changes in the working directory in the same file and
+
+18
+00:00:58,050 --> 00:01:02,790
+I updated it to be Blue Indigo Violet Roy G Biv OC.
+
+19
+00:01:02,850 --> 00:01:05,519
+So clearly we can see it's a minor difference.
+
+20
+00:01:05,519 --> 00:01:08,820
+We changed the same file so that purple is gone.
+
+21
+00:01:08,820 --> 00:01:11,430
+We deleted that and we added indigo and violet.
+
+22
+00:01:11,670 --> 00:01:17,580
+So when I run the git diff command and again I'll walk through doing that in the different variations,
+
+23
+00:01:17,580 --> 00:01:20,460
+but I'll get an output that looks something like this.
+
+24
+00:01:21,060 --> 00:01:25,710
+So there's a lot of stuff going on even just for that tiny little bit of a change.
+
+25
+00:01:25,710 --> 00:01:31,110
+Hopefully you can see, right, we see purple in red with a minus sign, indigo and violet in green
+
+26
+00:01:31,110 --> 00:01:32,160
+with a plus sign.
+
+27
+00:01:32,460 --> 00:01:36,180
+But let's talk about what we actually see on this diff on this output.
+
+28
+00:01:36,570 --> 00:01:41,760
+So the first thing up top, it's going to say diff and then dash, dash, get, but then it's going
+
+29
+00:01:41,760 --> 00:01:44,250
+to have the files that are being compared.
+
+30
+00:01:44,400 --> 00:01:50,130
+Usually these are actually going to be the same file, just two versions, the old version of Rainbow
+
+31
+00:01:50,130 --> 00:01:51,600
+and the new version, right?
+
+32
+00:01:51,600 --> 00:01:55,500
+The version from the last Commit in the version in my working directory.
+
+33
+00:01:55,500 --> 00:01:57,710
+But it could be different files.
+
+34
+00:01:57,720 --> 00:01:59,430
+You would have to set that up yourself.
+
+35
+00:01:59,430 --> 00:02:06,900
+Typically it's the same file just over time between commits, between branches, between your staging
+
+36
+00:02:06,900 --> 00:02:08,280
+area and your working directory.
+
+37
+00:02:08,280 --> 00:02:15,270
+It's the same file typically, so Git is going to call one A and the other one B, so you can see Rainbow
+
+38
+00:02:15,420 --> 00:02:15,900
+text.
+
+39
+00:02:15,930 --> 00:02:19,110
+The first one here is going to be a rainbow that text.
+
+40
+00:02:19,140 --> 00:02:25,710
+The second one will be B, so we may get an output that's a lot more complicated, but there's always
+
+41
+00:02:25,710 --> 00:02:30,090
+going to be the first line, the files that are being compared to files.
+
+42
+00:02:30,090 --> 00:02:34,440
+So helpers s compared to helpers tasks.
+
+43
+00:02:34,440 --> 00:02:38,280
+And here's what changed in that file and here's another file.
+
+44
+00:02:38,310 --> 00:02:40,860
+Main CSS, main CSS.
+
+45
+00:02:41,190 --> 00:02:47,940
+So if I just rerun the command that I had earlier, we can see it's telling me here is the diff between
+
+46
+00:02:47,940 --> 00:02:52,320
+index HTML and index HTML and then I keep going down.
+
+47
+00:02:52,500 --> 00:02:53,940
+Now we have a different file.
+
+48
+00:02:53,970 --> 00:02:58,920
+Griggs and Griggs if I keep going down, here's another file.
+
+49
+00:02:58,920 --> 00:03:00,000
+Main CSS.
+
+50
+00:03:00,000 --> 00:03:01,560
+Main CSS.
+
+51
+00:03:01,860 --> 00:03:04,800
+Okay, so it's just telling us the two files.
+
+52
+00:03:04,800 --> 00:03:06,960
+Usually they're the same file over time.
+
+53
+00:03:07,380 --> 00:03:09,210
+Then the next line does not matter.
+
+54
+00:03:09,210 --> 00:03:13,950
+For the most part, I've never needed to ever take a look or understand it.
+
+55
+00:03:14,220 --> 00:03:17,160
+It's metadata about the files that are being compared.
+
+56
+00:03:17,640 --> 00:03:19,680
+Each file actually gets its own hash.
+
+57
+00:03:19,680 --> 00:03:20,940
+That's what we're seeing here.
+
+58
+00:03:21,210 --> 00:03:22,740
+But really it doesn't matter.
+
+59
+00:03:22,740 --> 00:03:25,620
+And then this is an internal file mode identifier.
+
+60
+00:03:25,620 --> 00:03:27,090
+Again, not important.
+
+61
+00:03:27,450 --> 00:03:30,150
+Then we see two lines of markers.
+
+62
+00:03:30,150 --> 00:03:36,270
+This is its way of telling us that for file a, whatever that is, it's going to be indicated.
+
+63
+00:03:36,270 --> 00:03:41,940
+Changes in file A will be indicated with a minus sign and file B will be a plus sign.
+
+64
+00:03:41,940 --> 00:03:44,010
+So that part's hopefully straightforward.
+
+65
+00:03:44,580 --> 00:03:46,950
+Then we get to chunks.
+
+66
+00:03:47,670 --> 00:03:50,790
+So you might have a file that's 10,000 lines long.
+
+67
+00:03:50,790 --> 00:03:55,440
+You change one line, get diff is not going to show you the entire 10,000 lines.
+
+68
+00:03:55,440 --> 00:03:59,130
+It's going to show you the change, that part that was changed.
+
+69
+00:03:59,130 --> 00:04:02,100
+And then a little bit of context before and after.
+
+70
+00:04:02,490 --> 00:04:07,710
+So we can see here's what was changed and then there's some context before and it's at the end of the
+
+71
+00:04:07,710 --> 00:04:08,010
+file.
+
+72
+00:04:08,010 --> 00:04:10,380
+So there's nothing after here.
+
+73
+00:04:10,380 --> 00:04:16,440
+I change this line here, so we get a little bit of context before and then some after.
+
+74
+00:04:16,440 --> 00:04:18,089
+And then here's another change.
+
+75
+00:04:18,089 --> 00:04:20,279
+We got context before and after.
+
+76
+00:04:20,550 --> 00:04:25,830
+So this file itself might have been a couple of hundred lines, I think it is, but it's only showing
+
+77
+00:04:25,830 --> 00:04:29,280
+us a small selection, a small chunk around each change.
+
+78
+00:04:29,640 --> 00:04:35,670
+So each chunk starts with a chunk header, which looks like, oh, here's just multiple chunks.
+
+79
+00:04:35,670 --> 00:04:43,410
+By the way, this is one file main CSS, it has one chunk, and then a second chunk, just two different
+
+80
+00:04:43,410 --> 00:04:45,240
+areas in the file that were changed.
+
+81
+00:04:45,690 --> 00:04:51,390
+So a chunk header is the header at the beginning of each chunk and you can identify them by the two
+
+82
+00:04:51,390 --> 00:04:55,320
+at signs on either side and then some weird looking numbers inside.
+
+83
+00:04:55,620 --> 00:04:56,340
+All right.
+
+84
+00:04:56,340 --> 00:04:59,940
+So there are two pairs of numbers, one set of.
+
+85
+00:05:00,000 --> 00:05:03,600
+These numbers corresponds to file A, the other file B.
+
+86
+00:05:03,810 --> 00:05:06,630
+That's what the minus sign here indicates.
+
+87
+00:05:06,630 --> 00:05:10,230
+So minus minus as we see is for file.
+
+88
+00:05:10,260 --> 00:05:12,660
+A plus is for file B.
+
+89
+00:05:12,810 --> 00:05:18,150
+Anyway, what these numbers are telling us is how many lines have been extracted in this trunk.
+
+90
+00:05:18,150 --> 00:05:19,710
+So how big is this trunk from?
+
+91
+00:05:19,710 --> 00:05:23,340
+File A and what part of the file do they start from?
+
+92
+00:05:23,370 --> 00:05:24,840
+So it's kind of confusing.
+
+93
+00:05:25,020 --> 00:05:26,070
+You often don't.
+
+94
+00:05:26,070 --> 00:05:28,470
+I personally don't spend a lot of time looking at this.
+
+95
+00:05:28,470 --> 00:05:34,020
+I'm usually looking at the changes, but just so you understand how to read it, this first bit says
+
+96
+00:05:34,020 --> 00:05:39,180
+from file A because the minus sign four lines have been extracted starting from line three.
+
+97
+00:05:39,360 --> 00:05:42,390
+So this is not negative three, it's just three.
+
+98
+00:05:42,420 --> 00:05:46,290
+The minus indicates a so four lines starting from line three.
+
+99
+00:05:46,290 --> 00:05:51,990
+And so the next part from file B, we have five lines starting from line three.
+
+100
+00:05:52,260 --> 00:05:54,320
+So I'm going to diagram that out here.
+
+101
+00:05:54,330 --> 00:05:55,920
+This is what our files looked like.
+
+102
+00:05:55,920 --> 00:06:01,320
+This is file A, this is file B, old version from the last commit, new version, same file.
+
+103
+00:06:01,320 --> 00:06:02,880
+But just what's changed?
+
+104
+00:06:02,880 --> 00:06:09,000
+Well, the chunk says from file A, we get four lines starting from line three.
+
+105
+00:06:09,270 --> 00:06:09,900
+One, two, three.
+
+106
+00:06:09,900 --> 00:06:10,980
+This is line three.
+
+107
+00:06:10,980 --> 00:06:11,940
+We get four lines.
+
+108
+00:06:11,940 --> 00:06:13,170
+Yellow, green, blue, purple.
+
+109
+00:06:13,410 --> 00:06:18,660
+Then file B is going to include five lines starting from line three.
+
+110
+00:06:18,660 --> 00:06:19,530
+One, two, three.
+
+111
+00:06:19,740 --> 00:06:22,100
+So one, two, three, four, five.
+
+112
+00:06:22,110 --> 00:06:25,830
+Now, one thing that is kind of confusing is that it shows orange right here.
+
+113
+00:06:25,830 --> 00:06:27,690
+This is line two of our file.
+
+114
+00:06:27,720 --> 00:06:34,230
+Technically, this is not really part of the trunk itself, depending on the language of your file,
+
+115
+00:06:34,230 --> 00:06:39,630
+if it's Python or JavaScript or something else, sometimes it will display a little preview of a line.
+
+116
+00:06:39,630 --> 00:06:41,190
+Other times this is something else.
+
+117
+00:06:41,190 --> 00:06:44,100
+It's not reliably a line from the junk.
+
+118
+00:06:44,100 --> 00:06:44,820
+It's confusing.
+
+119
+00:06:44,820 --> 00:06:47,400
+So it starts here anyway.
+
+120
+00:06:47,580 --> 00:06:50,050
+So what we have here are the two ranges, right?
+
+121
+00:06:50,070 --> 00:06:55,590
+Those numbers three, comma, four, three, comma, five, and then down below we have the actual changes.
+
+122
+00:06:55,590 --> 00:07:01,710
+So this is the content of the file two files superimposed where we can see every line that starts with
+
+123
+00:07:01,710 --> 00:07:02,610
+the minus.
+
+124
+00:07:02,940 --> 00:07:08,910
+It was a change that came from file A and every line that starts with the plus comes from file B.
+
+125
+00:07:09,150 --> 00:07:13,200
+So these lines, yellow, green, blue are unchanged, right?
+
+126
+00:07:13,230 --> 00:07:14,400
+They exist in both.
+
+127
+00:07:14,490 --> 00:07:17,610
+But then purple, which is actually red.
+
+128
+00:07:17,610 --> 00:07:25,050
+But purple has that minus sign came from file A and it's not in file B and then Indigo and Violet came
+
+129
+00:07:25,050 --> 00:07:32,070
+from file B, they are not in file A, usually get picks A and B for us in such a way that you can think
+
+130
+00:07:32,070 --> 00:07:37,890
+of file A is like the old stuff and file B is the new stuff, but it doesn't always work out that way.
+
+131
+00:07:37,920 --> 00:07:42,420
+So this tells us, as we already know, that yellow, green and blue are in both files.
+
+132
+00:07:42,420 --> 00:07:43,770
+Nothing changed there, right?
+
+133
+00:07:43,770 --> 00:07:45,510
+Red orange are both in there, too.
+
+134
+00:07:45,540 --> 00:07:51,990
+They're just not part of this chunk because it just picks a small little bit of context around a change.
+
+135
+00:07:51,990 --> 00:07:53,610
+And the change happened right there.
+
+136
+00:07:53,610 --> 00:07:55,980
+Purple turn to indigo and violet.
+
+137
+00:07:55,980 --> 00:07:59,130
+So indigo and violet are new, purple gone.
+
+138
+00:07:59,130 --> 00:08:01,140
+So here's a more complicated example.
+
+139
+00:08:01,830 --> 00:08:04,410
+This is for a stylesheet CSS.
+
+140
+00:08:04,410 --> 00:08:10,230
+We can see up top same file just compared A and B, then we see the chunk header.
+
+141
+00:08:10,230 --> 00:08:16,530
+And then here's our chunk some context and we see that we ended up with four new lines in this chunk
+
+142
+00:08:16,530 --> 00:08:23,340
+added as part of file B and then here the second chunk in the same file, it just skips down.
+
+143
+00:08:23,340 --> 00:08:26,400
+We're starting at what line 63 now instead of 22.
+
+144
+00:08:26,700 --> 00:08:29,340
+There's a whole bunch of stuff in between that just doesn't show up.
+
+145
+00:08:29,340 --> 00:08:36,450
+We see that file a had these lines in red that are gone and file B has these what, six lines that are
+
+146
+00:08:36,450 --> 00:08:36,929
+new.
+
+147
+00:08:37,020 --> 00:08:40,679
+So that's a basic concept for how these diffs, these outputs work.
+
+148
+00:08:41,010 --> 00:08:45,990
+If we just go back here, I know it's kind of crazy to look at, but hopefully you can step through
+
+149
+00:08:45,990 --> 00:08:48,150
+and understand what each line does.
+
+150
+00:08:48,150 --> 00:08:54,150
+So this is telling us we're comparing two files, same name, just at different points in time.
+
+151
+00:08:54,600 --> 00:08:57,330
+What those points in time are, we can set up our self.
+
+152
+00:08:57,330 --> 00:09:01,890
+We'll learn how to do that in the next couple of videos and then we see this stuff, the metadata we
+
+153
+00:09:01,890 --> 00:09:03,240
+really don't need to care about.
+
+154
+00:09:03,270 --> 00:09:09,960
+Then we see each version A and B are both assigned a symbol, A gets minus, B gets plus.
+
+155
+00:09:10,170 --> 00:09:11,580
+Then we have the chunk header.
+
+156
+00:09:11,580 --> 00:09:18,450
+It tells us seven lines from line 25 are coming from file A and seven lines starting at line 25 are
+
+157
+00:09:18,450 --> 00:09:19,680
+coming from file B.
+
+158
+00:09:19,980 --> 00:09:25,440
+Then what we see here are those seven lines from file A, right, one, two, three.
+
+159
+00:09:25,440 --> 00:09:32,310
+This one came from A, so four, five, six, seven and the seven lines from file B one, two, three.
+
+160
+00:09:32,340 --> 00:09:35,820
+Skip that one, four, five, six, seven.
+
+161
+00:09:36,210 --> 00:09:42,690
+And then of course, the color coding is helpful, but this minus sign means it's a file, a line that
+
+162
+00:09:42,690 --> 00:09:43,560
+only exists in file.
+
+163
+00:09:43,590 --> 00:09:48,870
+A This means it only exists in file B Usually this means old versus new.
+
+164
+00:09:49,770 --> 00:09:54,840
+And then we've got a second chunk in the same file where there's just a line that I added chickens that
+
+165
+00:09:54,840 --> 00:09:55,770
+only exists in file.
+
+166
+00:09:55,800 --> 00:09:59,910
+B Nothing was removed or changed in file A at this point.
+
+167
+00:10:00,360 --> 00:10:01,860
+And then we've got other files, right?
+
+168
+00:10:01,860 --> 00:10:06,840
+The same sort of idea applies to this different file or to this JavaScript file.
+
+169
+00:10:07,200 --> 00:10:08,250
+There are different chunks.
+
+170
+00:10:08,250 --> 00:10:09,030
+Excerpted.
+
+171
+00:10:09,330 --> 00:10:09,990
+Excerpt.
+
+172
+00:10:10,200 --> 00:10:11,040
+Excerpted.
+
+173
+00:10:11,860 --> 00:10:12,060
+X.
+
+174
+00:10:12,270 --> 00:10:16,230
+I don't know how you say that for an excerpt from the files.
+
+175
+00:10:16,410 --> 00:10:16,830
+All right.
+
+176
+00:10:16,830 --> 00:10:20,790
+So in the next video, we'll talk about different ways that we can use get diff and to make different
+
+177
+00:10:20,790 --> 00:10:25,200
+comparisons where we will see very similar looking outputs that follow the same pattern.
+

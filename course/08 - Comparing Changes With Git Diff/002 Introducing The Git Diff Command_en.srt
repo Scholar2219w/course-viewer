@@ -1,0 +1,272 @@
+1
+00:00:00,120 --> 00:00:06,510
+In this video, I'll introduce the git diff command and we'll also learn how to read how to make sense
+
+2
+00:00:06,510 --> 00:00:10,710
+of its output, which can sometimes be a bit confusing when you're starting out.
+
+3
+00:00:11,250 --> 00:00:15,900
+So the get diff command is all about showing changes in Git.
+
+4
+00:00:15,900 --> 00:00:22,140
+So in a given repository, there are many situations where we might want to know what changed between
+
+5
+00:00:22,140 --> 00:00:25,030
+the last commit and our working directory.
+
+6
+00:00:25,050 --> 00:00:28,800
+What's changed between the staging area and the working directory?
+
+7
+00:00:28,830 --> 00:00:34,740
+What's changed between two branches or two different files over a certain number of commits?
+
+8
+00:00:35,250 --> 00:00:38,580
+What's changed between what we have locally versus what's on GitHub?
+
+9
+00:00:38,610 --> 00:00:44,100
+All these different scenarios where we may want to learn about changes, about comparisons.
+
+10
+00:00:44,100 --> 00:00:46,420
+So the git diff command does that.
+
+11
+00:00:46,440 --> 00:00:51,870
+The get diff command is powerful, but also sometimes a bit overwhelming when you're starting out.
+
+12
+00:00:52,500 --> 00:00:55,010
+It doesn't do anything to the repository.
+
+13
+00:00:55,010 --> 00:00:56,400
+It doesn't impact anything.
+
+14
+00:00:56,400 --> 00:00:58,440
+Just like get status and get log.
+
+15
+00:00:58,470 --> 00:01:04,290
+It's purely an informative command, so it's more about just taking a peek at changes and trying to
+
+16
+00:01:04,290 --> 00:01:06,420
+understand how things have changed.
+
+17
+00:01:06,550 --> 00:01:10,050
+Okay, so over here I've got a pretty large git repository.
+
+18
+00:01:10,380 --> 00:01:10,980
+I'll just show you.
+
+19
+00:01:10,980 --> 00:01:14,130
+There's a bunch of commits, there's a decent number of files.
+
+20
+00:01:14,130 --> 00:01:20,070
+So lots of commits here, lots of files, some HTML, some CSIS, some JavaScript.
+
+21
+00:01:20,610 --> 00:01:23,800
+And currently I haven't changed anything since the last commit.
+
+22
+00:01:23,820 --> 00:01:26,170
+Write on branch master up to date.
+
+23
+00:01:26,350 --> 00:01:26,780
+Okay.
+
+24
+00:01:26,910 --> 00:01:30,720
+So then let's say I spend a couple of hours making some changes.
+
+25
+00:01:31,200 --> 00:01:34,060
+I'm going to fast forward, but I'll show you an example.
+
+26
+00:01:34,080 --> 00:01:35,820
+For whatever reason, I decide, you know what?
+
+27
+00:01:35,820 --> 00:01:42,170
+I want this color to be magenta and this other color should be, let's go with cyan.
+
+28
+00:01:42,180 --> 00:01:49,080
+I'm just going to use, like, labeled named colors so they're easier to identify instead of this.
+
+29
+00:01:49,710 --> 00:01:52,470
+Let's do coral there anyway.
+
+30
+00:01:52,470 --> 00:01:54,060
+I'll make a bunch of changes.
+
+31
+00:01:54,390 --> 00:01:56,610
+Maybe I'll also change some HTML.
+
+32
+00:01:56,640 --> 00:02:01,710
+So in this HTML page, I'm going to change this h one to say Hey there.
+
+33
+00:02:02,190 --> 00:02:09,570
+And then down at the bottom I'll make a paragraph and it just says, Chicken's all right.
+
+34
+00:02:09,570 --> 00:02:11,460
+And then I go to this JavaScript file.
+
+35
+00:02:11,460 --> 00:02:18,480
+Griggs And somewhere maybe in the middle I'm going to print out a happy face.
+
+36
+00:02:21,100 --> 00:02:28,930
+And then back in the CSIS file, I changed some font size from 35 pixels to 65 pixels, and let's say
+
+37
+00:02:28,930 --> 00:02:32,650
+I do a whole bunch more, but this is just enough for this demonstration.
+
+38
+00:02:33,130 --> 00:02:36,940
+And I then realized, you know what, I should probably make a commit.
+
+39
+00:02:37,630 --> 00:02:40,930
+I don't remember exactly what I did in each of those files.
+
+40
+00:02:40,930 --> 00:02:45,730
+So if I just go back and look at this file, it's not immediately clear what's changed.
+
+41
+00:02:45,730 --> 00:02:49,530
+Unless I memorized or I exactly know what the file looked like.
+
+42
+00:02:49,540 --> 00:02:55,150
+It's difficult to pinpoint exactly where things changed across these three files, so that's where get
+
+43
+00:02:55,150 --> 00:02:56,340
+diff comes in.
+
+44
+00:02:56,350 --> 00:03:02,470
+The first usage of git diff, it's just get spaced diff without any additional options.
+
+45
+00:03:02,470 --> 00:03:07,750
+And this will list all the changes in our working directory that are not staged for the next commit.
+
+46
+00:03:08,050 --> 00:03:11,740
+So it compares the staging area and our working directory.
+
+47
+00:03:11,740 --> 00:03:13,240
+So I'll show you an example.
+
+48
+00:03:13,270 --> 00:03:16,830
+Currently I have not staged anything for commit, right.
+
+49
+00:03:16,870 --> 00:03:18,160
+If I type get status.
+
+50
+00:03:19,040 --> 00:03:24,070
+We see that there are three modifications, three different files, none of them staged.
+
+51
+00:03:24,080 --> 00:03:29,870
+And if I run this get diff command, we see this kind of crazy looking output.
+
+52
+00:03:30,200 --> 00:03:34,130
+It's another one of these windows where I'm not actually in my terminal.
+
+53
+00:03:34,130 --> 00:03:34,280
+I have.
+
+54
+00:03:34,430 --> 00:03:40,310
+Well, I guess I am, but I have to escape this view by typing Q just like with git log.
+
+55
+00:03:40,820 --> 00:03:46,760
+So anyway, I see all of this and it's a little bit crazy looking at first we see some of the stuff
+
+56
+00:03:46,760 --> 00:03:47,630
+that I changed.
+
+57
+00:03:47,630 --> 00:03:51,920
+We see some red, some green minus and pluses, but then what is this?
+
+58
+00:03:51,920 --> 00:03:58,040
+These at sign's -25, comma, seven minus minus, minus plus, plus plus.
+
+59
+00:03:58,040 --> 00:03:59,120
+But it's all this stuff.
+
+60
+00:03:59,480 --> 00:04:04,460
+I mean, it's just kind of crazy looking, but this is the output of git diff.
+
+61
+00:04:04,970 --> 00:04:09,830
+So what I'm going to do in the next video is walk you through how to read this, how to make sense of
+
+62
+00:04:09,830 --> 00:04:15,950
+what's going on here, what's this line doing, what's the minus and the plus mean and all that stuff
+
+63
+00:04:15,950 --> 00:04:16,670
+that's coming up.
+
+64
+00:04:16,670 --> 00:04:18,890
+But this is just an introduction to the concept.
+
+65
+00:04:18,890 --> 00:04:23,660
+You make a bunch of changes, then you want to try and understand more about what those changes were.
+
+66
+00:04:23,660 --> 00:04:26,030
+And this is one use case for git diff.
+
+67
+00:04:26,030 --> 00:04:28,460
+We just don't really know how to make sense of it yet.
+
+68
+00:04:28,460 --> 00:04:29,690
+So that's the next video.
+

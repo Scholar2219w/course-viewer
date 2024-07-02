@@ -1,0 +1,84 @@
+1
+00:00:00,060 --> 00:00:01,750
+One more quick note about the course.
+
+2
+00:00:01,770 --> 00:00:07,150
+I made a lot of diagrams in slides, and I'm sure some of you will want access to them yourself.
+
+3
+00:00:07,170 --> 00:00:12,240
+You can find the slides for every single section that has them, which is pretty much every section
+
+4
+00:00:12,630 --> 00:00:14,400
+attached to the first video.
+
+5
+00:00:14,430 --> 00:00:19,710
+So the very first video in each section is always titled What Really Matters in this section.
+
+6
+00:00:19,710 --> 00:00:24,990
+And it's a video where I walk through the different topics that I cover and I sort them into critical,
+
+7
+00:00:24,990 --> 00:00:26,610
+important, and nice to have.
+
+8
+00:00:26,790 --> 00:00:31,530
+And just give you a heads up about don't stress about this and do worry about this.
+
+9
+00:00:31,530 --> 00:00:36,300
+So attached to each one of those videos at the beginning of a section, there's a resource that says
+
+10
+00:00:36,300 --> 00:00:38,010
+slides for this section.
+
+11
+00:00:38,010 --> 00:00:39,660
+So you'll see that here.
+
+12
+00:00:39,870 --> 00:00:41,880
+Here's the installation slides.
+
+13
+00:00:43,490 --> 00:00:45,290
+And you have access to them, right?
+
+14
+00:00:45,290 --> 00:00:46,370
+The different commands.
+
+15
+00:00:46,640 --> 00:00:48,980
+And the same holds true for all of the different sections.
+
+16
+00:00:48,980 --> 00:00:55,130
+So if you want to learn more about the slides for working with GitHub, go to that first video in the
+
+17
+00:00:55,130 --> 00:00:59,330
+section, slides in the resources, and here you are.
+
+18
+00:00:59,690 --> 00:01:01,820
+OC So that's all I want to say.
+
+19
+00:01:01,820 --> 00:01:03,560
+First video of every section.
+
+20
+00:01:03,560 --> 00:01:08,180
+I explain what matters in that section, but also that's where you find the slides for the rest of that
+
+21
+00:01:08,180 --> 00:01:08,840
+section.
+

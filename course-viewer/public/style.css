@@ -1,0 +1,95 @@
+/* style.css */
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(240, 10%, 3.9%);
+  --muted: hsl(240, 4.8%, 95.9%);
+  --primary: hsl(240, 5.9%, 10%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 5.9%, 90%);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: var(--muted);
+  border-right: 1px solid var(--border);
+  padding: 16px;
+  width: 250px;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.sidebar nav button {
+  background: none;
+  border: none;
+  display: block;
+  padding: 8px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar nav button:hover, .sidebar nav button.active {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.main-content {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.main-content h2 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.topic {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.topic h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.topic p {
+  font-size: 0.875rem;
+  margin: 0;
+  color: var(--foreground);
+}
+
+.button-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-icon svg {
+  height: 24px;
+  width: 24px;
+}

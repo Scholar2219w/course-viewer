@@ -1,0 +1,140 @@
+1
+00:00:00,060 --> 00:00:03,380
+So this section is all oriented around installation and setup.
+
+2
+00:00:03,390 --> 00:00:07,980
+Nothing very glamorous, but a lot of critical content that will need to move forward.
+
+3
+00:00:08,130 --> 00:00:13,920
+So the first thing we cover are the two main ways of using Git from the command line and from graphical
+
+4
+00:00:13,920 --> 00:00:15,060
+user interfaces.
+
+5
+00:00:15,060 --> 00:00:17,610
+That isn't a very important distinction to understand.
+
+6
+00:00:17,610 --> 00:00:22,800
+We'll be playing around with both throughout the course and then we focus on installing Git.
+
+7
+00:00:22,800 --> 00:00:26,310
+So I have separate instructions for Mac versus Windows users.
+
+8
+00:00:26,670 --> 00:00:28,980
+That's definitely going to be critical.
+
+9
+00:00:29,010 --> 00:00:32,940
+I marked it as yellow just because it can take a little bit of time.
+
+10
+00:00:32,940 --> 00:00:34,980
+If you're on a Windows machine, it's not hard.
+
+11
+00:00:34,980 --> 00:00:37,680
+You just have to change some settings and watch the video.
+
+12
+00:00:37,680 --> 00:00:41,910
+You'll see we just click a bunch of times and hit next and then hit next and then hit next.
+
+13
+00:00:41,910 --> 00:00:43,500
+But obviously very critical.
+
+14
+00:00:43,500 --> 00:00:46,020
+We also install an application called Get Crackin.
+
+15
+00:00:46,020 --> 00:00:46,530
+It's a game.
+
+16
+00:00:46,530 --> 00:00:48,330
+We forget it's free.
+
+17
+00:00:49,080 --> 00:00:50,370
+I guess it's not critical.
+
+18
+00:00:50,370 --> 00:00:54,840
+You don't have to use it if you want to use Git, but I'm going to put it as important slash critical
+
+19
+00:00:54,840 --> 00:01:01,260
+because for this course we'll be using this, but it is not critical to get itself configuring your
+
+20
+00:01:01,260 --> 00:01:04,500
+git name and email, critical but also very quick and easy.
+
+21
+00:01:04,500 --> 00:01:09,810
+And then the biggest question mark in this section is the terminal crash course videos.
+
+22
+00:01:09,810 --> 00:01:14,490
+There are three videos at the end of this section that are absolutely critical.
+
+23
+00:01:14,490 --> 00:01:21,990
+If you have no experience working with terminal command, basic UNIX, Unix commands like LHS and CD
+
+24
+00:01:21,990 --> 00:01:22,950
+and Touch.
+
+25
+00:01:22,950 --> 00:01:27,630
+So if you're familiar with those, you can skip those videos and they're not critical.
+
+26
+00:01:27,630 --> 00:01:30,570
+They're not really get specific at all.
+
+27
+00:01:30,930 --> 00:01:34,500
+So if you have experience, you can skip those, but it's all new to you.
+
+28
+00:01:34,530 --> 00:01:37,230
+I 100% would sit through them.
+
+29
+00:01:37,230 --> 00:01:40,050
+You don't need to take notes, but practice along with those videos.
+
+30
+00:01:40,050 --> 00:01:41,640
+They are very important.
+
+31
+00:01:41,670 --> 00:01:44,100
+If you want to be able to use get down the line.
+
+32
+00:01:44,100 --> 00:01:46,440
+We have to be able to navigate through the terminal.
+
+33
+00:01:46,440 --> 00:01:49,650
+So most things in this section are critical, but no big concepts.
+
+34
+00:01:49,650 --> 00:01:53,580
+It's just installation plus this weird thing at the end with the terminal.
+
+35
+00:01:53,580 --> 00:01:55,800
+I highly recommend checking that out if you're new.
+

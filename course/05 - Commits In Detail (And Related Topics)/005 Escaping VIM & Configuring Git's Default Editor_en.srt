@@ -1,0 +1,664 @@
+1
+00:00:00,060 --> 00:00:06,000
+So if you recall when I first introduced Get Commit, I said that you could use this command, get commit
+
+2
+00:00:06,000 --> 00:00:11,610
+on its own, but I recommended against it for the time being because it will open up the default editor
+
+3
+00:00:11,610 --> 00:00:17,730
+and that default editor is likely to be VIM, which I'll just demonstrate very quickly so you can see
+
+4
+00:00:17,730 --> 00:00:19,230
+what that experience is like.
+
+5
+00:00:19,740 --> 00:00:26,040
+I'm going to come over to my little my first novel project and make a very simple change.
+
+6
+00:00:26,040 --> 00:00:31,470
+I don't think I have any changes at this moment, but I see a typo right here in my outline, so I'm
+
+7
+00:00:31,470 --> 00:00:32,310
+just going to fix it.
+
+8
+00:00:32,310 --> 00:00:39,390
+Nick goes home and sees Cat's B for the first time, so I'm going to save that get status.
+
+9
+00:00:40,020 --> 00:00:43,680
+Then I'm going to do a git add outline text.
+
+10
+00:00:44,460 --> 00:00:48,330
+Then I'm going to do get commit without the dash.
+
+11
+00:00:48,330 --> 00:00:48,540
+Hm.
+
+12
+00:00:48,570 --> 00:00:50,760
+I'm not going to pass in a message or any of that.
+
+13
+00:00:51,000 --> 00:00:52,950
+Now let's see what happens when I hit Enter.
+
+14
+00:00:53,900 --> 00:00:54,320
+Hmm.
+
+15
+00:00:55,040 --> 00:00:58,790
+Let me fullscreen this so you can get a better picture of what's going on.
+
+16
+00:00:59,090 --> 00:01:00,890
+This is called vim.
+
+17
+00:01:00,890 --> 00:01:01,970
+It's an editor.
+
+18
+00:01:02,060 --> 00:01:04,580
+It's built in to the terminal.
+
+19
+00:01:04,590 --> 00:01:09,620
+It's very it can be very confusing because I can't just start typing.
+
+20
+00:01:10,460 --> 00:01:12,620
+It's asking me to enter a commit message.
+
+21
+00:01:12,620 --> 00:01:16,210
+But if I try typing right now, it's actually not going to type a message.
+
+22
+00:01:16,220 --> 00:01:21,130
+First, I have to enter what's called the insert mode by typing I.
+
+23
+00:01:21,140 --> 00:01:22,730
+So if I just hit the letter i.
+
+24
+00:01:23,410 --> 00:01:24,700
+Now at the bottom left.
+
+25
+00:01:24,700 --> 00:01:25,510
+Can you see that here?
+
+26
+00:01:25,510 --> 00:01:26,620
+It says insert.
+
+27
+00:01:27,190 --> 00:01:30,640
+By the way, this really is not the time to be teaching you vim.
+
+28
+00:01:30,640 --> 00:01:34,180
+I'm not expecting you to learn it, but if you end up in this situation, I want you to know how to
+
+29
+00:01:34,180 --> 00:01:34,900
+get out of it.
+
+30
+00:01:35,320 --> 00:01:39,460
+But we're going to change our default editor so don't don't worry about the actual commands.
+
+31
+00:01:39,460 --> 00:01:45,010
+So I hit I so that I'm in insert mode and now I can start typing and leave a commit message.
+
+32
+00:01:45,010 --> 00:01:46,450
+So what did I do?
+
+33
+00:01:46,450 --> 00:01:47,440
+I fixed a typo.
+
+34
+00:01:47,440 --> 00:01:51,130
+So fix typo just like that.
+
+35
+00:01:51,370 --> 00:01:52,150
+All right.
+
+36
+00:01:52,180 --> 00:01:54,790
+Fix typo in outline, maybe.
+
+37
+00:01:55,810 --> 00:01:56,440
+Sure.
+
+38
+00:01:58,350 --> 00:01:58,860
+Now.
+
+39
+00:01:58,860 --> 00:02:00,240
+How do I get out of here?
+
+40
+00:02:00,270 --> 00:02:01,890
+Well, it's also confusing.
+
+41
+00:02:01,920 --> 00:02:03,690
+First, I hit the escape key.
+
+42
+00:02:03,720 --> 00:02:05,760
+One time to leave insert mode.
+
+43
+00:02:06,210 --> 00:02:09,270
+Next, I need to leave vim entirely.
+
+44
+00:02:09,270 --> 00:02:10,860
+And to do that, there's a couple of options.
+
+45
+00:02:10,860 --> 00:02:15,210
+But I'm going to do colon w and then Q.
+
+46
+00:02:15,540 --> 00:02:16,410
+Oh, gosh.
+
+47
+00:02:16,410 --> 00:02:17,430
+So W sent for.
+
+48
+00:02:17,430 --> 00:02:17,790
+Right.
+
+49
+00:02:17,820 --> 00:02:19,050
+Q stands for quit.
+
+50
+00:02:19,050 --> 00:02:20,270
+So this is right.
+
+51
+00:02:20,280 --> 00:02:23,850
+Basically save these changes and quit vim.
+
+52
+00:02:24,330 --> 00:02:25,380
+It's very confusing.
+
+53
+00:02:25,410 --> 00:02:32,340
+Now I'm going to hit enter woo and we made that commit and you can see fix typo and outline if I type
+
+54
+00:02:32,340 --> 00:02:36,120
+get log fix typo in outline so it looks exactly the same.
+
+55
+00:02:36,130 --> 00:02:37,350
+It's a commit.
+
+56
+00:02:37,500 --> 00:02:38,670
+Nothing different.
+
+57
+00:02:38,670 --> 00:02:42,960
+It's just the way that we made it and passed in that message was a lot worse.
+
+58
+00:02:42,990 --> 00:02:51,140
+Now there are times where using this message flag, the dash flag, is not going to cut it.
+
+59
+00:02:51,150 --> 00:02:56,160
+If we need to type a much longer commit message, I mean, you could cram it all into a single line,
+
+60
+00:02:56,160 --> 00:03:02,490
+but on larger projects and large code bases, open source projects, your commit messages might actually
+
+61
+00:03:02,490 --> 00:03:07,740
+look something like this multiple lines, maybe paragraphs, bullet points.
+
+62
+00:03:07,740 --> 00:03:09,840
+So that's not going to cut it.
+
+63
+00:03:10,020 --> 00:03:12,090
+Just passing it in instead of quotes.
+
+64
+00:03:12,090 --> 00:03:16,490
+You don't want to be typing something like that in your terminal on a single line.
+
+65
+00:03:16,500 --> 00:03:22,890
+So we do want to configure this version, get commit so that it opens up an editor where we actually
+
+66
+00:03:22,890 --> 00:03:26,340
+feel comfortable typing paragraphs where we could type something like this.
+
+67
+00:03:26,340 --> 00:03:31,500
+And for the majority of students and the majority of developers out there, Vim is not that editor.
+
+68
+00:03:31,500 --> 00:03:33,870
+So I'd like to use VTS code as my editor.
+
+69
+00:03:33,870 --> 00:03:35,240
+I've been using it in the course.
+
+70
+00:03:35,250 --> 00:03:36,330
+No surprise there.
+
+71
+00:03:36,510 --> 00:03:40,410
+But you can configure get to use any really any editor.
+
+72
+00:03:41,010 --> 00:03:45,570
+You can use voice code or sublime text or any of the other editors that are out there.
+
+73
+00:03:45,930 --> 00:03:47,870
+I'll show you how to do that right now.
+
+74
+00:03:47,880 --> 00:03:54,480
+So if you go to the Git documentation, there's this page called Git Command set up and config is on
+
+75
+00:03:54,480 --> 00:03:56,250
+the appendix for the book.
+
+76
+00:03:56,520 --> 00:03:59,360
+I'll just include a link to this if you're curious.
+
+77
+00:03:59,370 --> 00:04:06,480
+And just like before when we configured our username and the email address for our git configuration,
+
+78
+00:04:06,480 --> 00:04:08,520
+we can do the same thing for the editor.
+
+79
+00:04:08,520 --> 00:04:14,580
+So depending on what editor you're using, there's a table here and I'm looking for VS Code which is
+
+80
+00:04:14,580 --> 00:04:19,140
+right here, Visual Studio code and this is the command I need to type.
+
+81
+00:04:19,350 --> 00:04:26,760
+So get config will do global so that it applies to every repo, not just the current repo code editor
+
+82
+00:04:26,760 --> 00:04:33,090
+is what we're configuring and I want it to be code which is the name of VS Code, Visual Studio code.
+
+83
+00:04:33,090 --> 00:04:36,270
+And then I'll talk about this dash dash weight in a moment.
+
+84
+00:04:36,270 --> 00:04:38,190
+But basically we just copy this line.
+
+85
+00:04:38,310 --> 00:04:44,670
+So if you're using Sublime, copy this line on a mac or if you're on a PC, copy this line if you're
+
+86
+00:04:44,670 --> 00:04:45,660
+using something else.
+
+87
+00:04:45,660 --> 00:04:46,830
+Text edit on a mac.
+
+88
+00:04:46,860 --> 00:04:49,740
+This is the line, but I'm going to use vs code.
+
+89
+00:04:49,740 --> 00:04:51,870
+So now I'll head over to my terminal.
+
+90
+00:04:51,960 --> 00:04:53,370
+I'll paste this in here.
+
+91
+00:04:54,930 --> 00:04:58,290
+We don't see anything change, but now let's make another commit.
+
+92
+00:04:58,620 --> 00:05:01,560
+What could we do that won't take too much time?
+
+93
+00:05:01,680 --> 00:05:03,090
+Okay, here's a simple one.
+
+94
+00:05:03,090 --> 00:05:08,190
+I have some extra white space in chapter two, just at the top, so I'm just going to get rid of that
+
+95
+00:05:08,370 --> 00:05:12,030
+and save and now type get status.
+
+96
+00:05:13,370 --> 00:05:14,090
+All right.
+
+97
+00:05:14,090 --> 00:05:15,640
+It says I modified that file.
+
+98
+00:05:15,650 --> 00:05:19,250
+All I did was delete some empty lines, but that's still a modification.
+
+99
+00:05:19,250 --> 00:05:23,480
+So I'm going to add that get add chapter to text.
+
+100
+00:05:23,630 --> 00:05:29,540
+Now, I would usually just use get commit dash because it's really just a simple message.
+
+101
+00:05:29,540 --> 00:05:30,920
+We did something so simple.
+
+102
+00:05:30,920 --> 00:05:33,550
+There's no point in typing a paragraph, right?
+
+103
+00:05:33,560 --> 00:05:38,180
+You want to keep your messages as short as possible, but there are times where you need more information.
+
+104
+00:05:38,180 --> 00:05:43,760
+This is not really one, but I'm going to do just get commit without the dash flag just to demonstrate
+
+105
+00:05:43,760 --> 00:05:47,390
+that hopefully our editor is configured to be vs code.
+
+106
+00:05:47,870 --> 00:05:48,770
+Hmm.
+
+107
+00:05:48,770 --> 00:05:49,490
+Let's see.
+
+108
+00:05:49,490 --> 00:05:53,690
+There's a problem with the editor code dash dash weight.
+
+109
+00:05:53,690 --> 00:06:00,410
+So this is a problem stemming from the fact that my terminal does not know what code the command code
+
+110
+00:06:00,410 --> 00:06:01,370
+is referring to.
+
+111
+00:06:01,370 --> 00:06:03,380
+So what it's telling me here, command not found.
+
+112
+00:06:03,950 --> 00:06:06,950
+Basically if I go into vs code I can fix that.
+
+113
+00:06:06,980 --> 00:06:11,240
+I'm going to open the command palette which is command shift p.
+
+114
+00:06:11,860 --> 00:06:18,820
+And then I'm going to type code and I want this install code command in path.
+
+115
+00:06:20,410 --> 00:06:25,530
+Okay so it says show command code succesfully installed in path.
+
+116
+00:06:25,540 --> 00:06:27,580
+So now hopefully this works.
+
+117
+00:06:27,580 --> 00:06:30,600
+It knows what the command code is referring to.
+
+118
+00:06:30,610 --> 00:06:32,200
+So let's try committing again.
+
+119
+00:06:32,470 --> 00:06:33,150
+Aha.
+
+120
+00:06:33,400 --> 00:06:39,820
+Now it's opened up in VTS code and you can see over here it's waiting for me to close this file.
+
+121
+00:06:39,880 --> 00:06:44,260
+So that's why we had to add that dash dash weight right here.
+
+122
+00:06:44,740 --> 00:06:50,680
+We wanted to wait until we finish editing and save our commit message so I can type my commit in here.
+
+123
+00:06:50,890 --> 00:06:52,390
+Also, I didn't mention this earlier.
+
+124
+00:06:52,390 --> 00:06:56,350
+Everything that starts with the hash or the octave character will be ignored.
+
+125
+00:06:56,380 --> 00:06:57,160
+It's a comment.
+
+126
+00:06:57,160 --> 00:06:58,780
+It's not included in the commit.
+
+127
+00:06:59,560 --> 00:07:00,730
+So in here.
+
+128
+00:07:00,820 --> 00:07:01,510
+What did we just do?
+
+129
+00:07:01,510 --> 00:07:02,230
+Have already forgotten?
+
+130
+00:07:02,230 --> 00:07:04,330
+Oh, we removed whitespace from chapter two.
+
+131
+00:07:04,360 --> 00:07:13,540
+So, you know, remove extra extra whitespace or extra lines in chapter two or something.
+
+132
+00:07:14,580 --> 00:07:18,400
+Well, it kind of sounds like we actually deleted lines of chapter two.
+
+133
+00:07:18,420 --> 00:07:20,310
+How about extra blank lines?
+
+134
+00:07:21,230 --> 00:07:21,770
+Sure.
+
+135
+00:07:22,700 --> 00:07:24,860
+So now I'm going to save this file.
+
+136
+00:07:25,550 --> 00:07:26,930
+If that's the message I want.
+
+137
+00:07:26,930 --> 00:07:31,040
+But I could put a lot more in here and maybe just to demonstrate that I will.
+
+138
+00:07:31,820 --> 00:07:34,700
+Why don't I just copy one of these example?
+
+139
+00:07:34,700 --> 00:07:37,280
+Commit messages that I was talking about?
+
+140
+00:07:37,280 --> 00:07:39,380
+I'm just going to copy this entire thing over.
+
+141
+00:07:39,770 --> 00:07:42,850
+And this is just to show you that we can do this.
+
+142
+00:07:42,860 --> 00:07:43,280
+All right.
+
+143
+00:07:43,280 --> 00:07:46,160
+So here's my much longer commit message.
+
+144
+00:07:46,580 --> 00:07:52,580
+All these lines, paragraphs of text, some bullet points, they won't be formatted in any particular
+
+145
+00:07:52,580 --> 00:07:53,000
+way.
+
+146
+00:07:53,000 --> 00:07:55,760
+I have to do this manually if I want that bullet point.
+
+147
+00:07:55,760 --> 00:07:56,780
+It's just a dash.
+
+148
+00:07:57,380 --> 00:07:59,960
+But anyway, this is my commit message here.
+
+149
+00:08:00,290 --> 00:08:02,120
+Really just the first line that matters.
+
+150
+00:08:02,660 --> 00:08:03,800
+I'm going to save.
+
+151
+00:08:04,220 --> 00:08:05,750
+I'm going to close the file.
+
+152
+00:08:06,960 --> 00:08:08,160
+And then over here.
+
+153
+00:08:09,440 --> 00:08:12,650
+It now made the commit it was waiting and now it's not.
+
+154
+00:08:12,680 --> 00:08:13,400
+It finished.
+
+155
+00:08:13,400 --> 00:08:16,070
+So if I type get log, what do we see.
+
+156
+00:08:16,400 --> 00:08:23,960
+Oh well we made that commit it is here but it's taking up so much space that's really, really annoying.
+
+157
+00:08:23,960 --> 00:08:29,210
+So in the next video I'll show you how we can use git log with a small tweak so that we don't have to
+
+158
+00:08:29,210 --> 00:08:30,770
+see the entire commit message.
+
+159
+00:08:30,770 --> 00:08:33,049
+In the case of a very long commit message.
+
+160
+00:08:33,049 --> 00:08:38,030
+Anyway, we set up the editor, we configured it to use VS Code in this video.
+
+161
+00:08:38,059 --> 00:08:41,990
+If you're doing something else like Sublime text, follow the instructions here.
+
+162
+00:08:41,990 --> 00:08:45,560
+I'll include this link in the description if you want to check it out.
+
+163
+00:08:45,560 --> 00:08:51,020
+But you can avoid this for the most part by just using dash em until you really need to type a longer
+
+164
+00:08:51,020 --> 00:08:54,650
+commit message, which is not all that common when you're starting out.
+
+165
+00:08:54,650 --> 00:08:59,090
+Once you start working on larger projects, though, it's definitely important to be able to open up
+
+166
+00:08:59,240 --> 00:09:01,010
+and write messages in an editor.
+

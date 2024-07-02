@@ -1,0 +1,188 @@
+1
+00:00:00,060 --> 00:00:02,610
+The next version we'll look at is git diff head.
+
+2
+00:00:02,610 --> 00:00:08,100
+So this will list all changes in our working directory since the last commit since head.
+
+3
+00:00:08,100 --> 00:00:08,430
+Right.
+
+4
+00:00:08,430 --> 00:00:13,920
+Remember head is this pointer, this reference to the last commit and typically the last commit on a
+
+5
+00:00:13,920 --> 00:00:14,490
+branch.
+
+6
+00:00:14,490 --> 00:00:21,150
+So wherever head is when we do get diff head, we'll see the changes that we've made since head.
+
+7
+00:00:21,990 --> 00:00:31,350
+So that includes if we try this again here get diff head that includes staged and unstaged changes.
+
+8
+00:00:31,350 --> 00:00:38,490
+So right now we see the same exact output that we saw when I just did regular get diff.
+
+9
+00:00:38,880 --> 00:00:41,550
+This is showing all unstaged changes.
+
+10
+00:00:41,550 --> 00:00:46,560
+This is showing everything that has changed since our last commit since head.
+
+11
+00:00:46,560 --> 00:00:54,900
+However, if I stage something, if I do get add and then our file is called what colors text if I do
+
+12
+00:00:54,900 --> 00:00:57,930
+get diff again now we don't see any changes.
+
+13
+00:00:57,930 --> 00:00:58,180
+Right.
+
+14
+00:00:58,200 --> 00:01:02,610
+Nothing is showing up because this is supposed to show me the difference between my working directory
+
+15
+00:01:02,610 --> 00:01:03,720
+and the staging area.
+
+16
+00:01:03,720 --> 00:01:05,310
+And right now they're the same.
+
+17
+00:01:05,640 --> 00:01:12,120
+But if I do get diff head this is showing me the difference between the head and my working directory.
+
+18
+00:01:12,120 --> 00:01:14,550
+So now we see the same thing we were seeing earlier.
+
+19
+00:01:14,550 --> 00:01:16,500
+So now let's go ahead and commit.
+
+20
+00:01:16,500 --> 00:01:22,050
+So get commit m just add indigo and then I'm going to do something different.
+
+21
+00:01:22,050 --> 00:01:24,900
+Now I'm going to make what should I do?
+
+22
+00:01:24,900 --> 00:01:29,580
+I guess I'll make a new file and this new file will be called it doesn't really matter, but it will
+
+23
+00:01:29,580 --> 00:01:30,510
+be numbers.
+
+24
+00:01:30,510 --> 00:01:30,870
+All right.
+
+25
+00:01:30,870 --> 00:01:40,020
+So touch numbers dot txt and in this numbers file, I'm just going to add the number one to begin with.
+
+26
+00:01:40,680 --> 00:01:43,880
+So I'll just spell it out in all caps one OC.
+
+27
+00:01:44,190 --> 00:01:46,410
+So currently numbers is untracked.
+
+28
+00:01:46,410 --> 00:01:49,800
+So if I try and do get diff, I'm not going to see anything there.
+
+29
+00:01:49,800 --> 00:01:56,370
+However if I add that new change, so get add numbers dot txt.
+
+30
+00:01:56,460 --> 00:02:03,570
+Now if I do get diff head, we see that since our last commits we have some new stuff.
+
+31
+00:02:03,570 --> 00:02:04,080
+Right.
+
+32
+00:02:04,080 --> 00:02:10,470
+And it's just the fact that numbers text now exists and it has this line one inside of it.
+
+33
+00:02:10,979 --> 00:02:17,940
+The way that we can tell that there was nothing there before the version A is actually dev slash null.
+
+34
+00:02:17,940 --> 00:02:24,240
+That's gets a way of telling us nothing compared to now having the file numbers.
+
+35
+00:02:24,870 --> 00:02:28,620
+So there was nothing really to compare it before, but that doesn't break it.
+
+36
+00:02:28,620 --> 00:02:32,850
+We just end up seeing only the additions because they're only our additions.
+
+37
+00:02:33,510 --> 00:02:35,520
+So get diff head shows us that.
+
+38
+00:02:35,520 --> 00:02:37,620
+But just one more time get diff on its own.
+
+39
+00:02:37,650 --> 00:02:39,960
+It's only showing us unstaged changes.
+
+40
+00:02:39,960 --> 00:02:43,260
+Nothing has been or nothing is currently unstaged.
+
+41
+00:02:43,260 --> 00:02:51,270
+But if I add violet for example to colors and I do get diff, we only see a diff for colors because
+
+42
+00:02:51,270 --> 00:02:57,300
+that's the only file that changed that has not been staged versus get diff head.
+
+43
+00:02:57,570 --> 00:03:06,240
+If I just remind you here numbers is staged colors is not so if I do get diff head I see all changes
+
+44
+00:03:06,240 --> 00:03:07,380
+staged on stage.
+
+45
+00:03:07,380 --> 00:03:14,280
+It doesn't matter anything new in the working directory since head right and head if you ever forget
+
+46
+00:03:14,820 --> 00:03:21,900
+and head currently is pointing to this commit here so that's what we are comparing to so get diff shows
+
+47
+00:03:21,900 --> 00:03:28,680
+us all unstaged changes get diff head shows us all changes staged and unstaged since head.
+

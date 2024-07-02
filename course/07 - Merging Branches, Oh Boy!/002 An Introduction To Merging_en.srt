@@ -1,0 +1,312 @@
+1
+00:00:00,120 --> 00:00:05,190
+Now that we have a lot of practice making branches and switching between them, let's tackle merging
+
+2
+00:00:05,190 --> 00:00:08,570
+branches one of the essential features of working with branches.
+
+3
+00:00:08,580 --> 00:00:13,590
+So the whole idea here is that with branches we can work within these self contained context.
+
+4
+00:00:13,590 --> 00:00:19,110
+We can work on different things in parallel, but usually we want to incorporate some of what we've
+
+5
+00:00:19,110 --> 00:00:21,290
+done into another branch, right?
+
+6
+00:00:21,330 --> 00:00:25,290
+We don't just work in a separate context and continue to work in a new, separate context.
+
+7
+00:00:25,290 --> 00:00:29,460
+Every time we work on something, we need to combine some of the stuff we're doing.
+
+8
+00:00:29,460 --> 00:00:34,680
+If you're working on a feature and I'm working on a feature and we work at the same company, at some
+
+9
+00:00:34,680 --> 00:00:40,080
+point, if both of those features are are goes, they're good features, we want to incorporate them.
+
+10
+00:00:40,080 --> 00:00:44,910
+You're going to need to merge your feature into some branch that I can get and I need to merge my feature
+
+11
+00:00:44,910 --> 00:00:46,800
+in into some branch that you can get.
+
+12
+00:00:46,800 --> 00:00:51,420
+And then sometimes we do just abandon a branch and we don't merge it.
+
+13
+00:00:51,420 --> 00:00:55,860
+But if things go well, a lot of the time we combine work from one branch into another.
+
+14
+00:00:56,130 --> 00:00:58,830
+So there's a command we use called Git Merge.
+
+15
+00:00:58,830 --> 00:01:00,330
+I'll show it in just a moment.
+
+16
+00:01:00,750 --> 00:01:06,540
+But as I've said a couple of times, a really common workflow is to treat the master branch or the main
+
+17
+00:01:06,540 --> 00:01:08,700
+branch or whatever you call it.
+
+18
+00:01:08,790 --> 00:01:12,330
+Some people call it trunk, whatever you call that branch.
+
+19
+00:01:12,360 --> 00:01:20,310
+A lot of people treat it as the source of truth or the the most stable build of an application where
+
+20
+00:01:20,310 --> 00:01:24,390
+you don't want to screw anything up, you don't do any experiments on master.
+
+21
+00:01:24,600 --> 00:01:30,990
+So people work on a feature branch and then that work can then be incorporated back into the master
+
+22
+00:01:30,990 --> 00:01:33,090
+branch if it's deemed appropriate.
+
+23
+00:01:33,330 --> 00:01:37,890
+It's, it's solid and it's gone through some different checks and people like it, they can merge it
+
+24
+00:01:37,890 --> 00:01:42,150
+back into master, but the work itself is done on a feature branch.
+
+25
+00:01:42,150 --> 00:01:48,630
+So everybody at X company works on their own feature branch for each feature and then potentially merges
+
+26
+00:01:48,630 --> 00:01:49,890
+them back into master.
+
+27
+00:01:49,890 --> 00:01:53,880
+So there's a couple of things that can be confusing about merging.
+
+28
+00:01:54,420 --> 00:01:58,470
+And basically I try and boil it down to these two principles.
+
+29
+00:01:58,650 --> 00:02:05,790
+We merge branches, not specific commits, so we don't pick one commit and a second commit and join
+
+30
+00:02:05,790 --> 00:02:05,940
+them.
+
+31
+00:02:05,940 --> 00:02:08,370
+Together we merge branches.
+
+32
+00:02:08,370 --> 00:02:13,680
+And the second piece is that we always merge based on the current head branch.
+
+33
+00:02:13,680 --> 00:02:17,550
+We merge to where we are to where head is.
+
+34
+00:02:17,550 --> 00:02:19,080
+So here's a simple example.
+
+35
+00:02:19,080 --> 00:02:24,360
+I have two branches in this example, a master branch and a bug fixed branch.
+
+36
+00:02:24,360 --> 00:02:29,680
+And on this bug fixed branch, you can see down here I have some commits, right?
+
+37
+00:02:29,710 --> 00:02:35,610
+I've diverged, I've made a new branch for a master and I've added two commits as I'm fixing this bug
+
+38
+00:02:35,760 --> 00:02:39,900
+and it's now time for me to merge that work into master.
+
+39
+00:02:39,900 --> 00:02:44,370
+So I want these two commits, I want all of that work available on master.
+
+40
+00:02:44,490 --> 00:02:50,790
+So the workflow here is to first switch or check out the branch that we want to merge the changes into.
+
+41
+00:02:50,820 --> 00:02:54,030
+We need to move over to the receiving branch.
+
+42
+00:02:54,270 --> 00:02:58,020
+So I'm trying to merge these commits into master.
+
+43
+00:02:58,020 --> 00:03:00,480
+I need to switch to master.
+
+44
+00:03:00,480 --> 00:03:04,200
+So that's what I do get switch master head now points to master.
+
+45
+00:03:04,320 --> 00:03:10,350
+And then the second step is to actually use the git merge command and I'll show you an actual demo of
+
+46
+00:03:10,350 --> 00:03:11,580
+this in the next video.
+
+47
+00:03:11,580 --> 00:03:17,220
+But for now we're dealing with slides so we use git merge and then some branch name and that will merge
+
+48
+00:03:17,220 --> 00:03:21,090
+changes from this branch into the current branch that we're on.
+
+49
+00:03:21,390 --> 00:03:26,880
+So this right here get merged bug fix will take the commits from bug fix and merge them into whatever
+
+50
+00:03:26,880 --> 00:03:30,030
+branch we're on, which in these diagrams is master.
+
+51
+00:03:30,030 --> 00:03:37,830
+So we switch to master and then I run git merge bug fix and you can see that master is now pointing
+
+52
+00:03:37,830 --> 00:03:38,790
+at this commit.
+
+53
+00:03:39,120 --> 00:03:41,580
+So it went from there to there.
+
+54
+00:03:41,760 --> 00:03:44,220
+Now this is a very simple type of a merge.
+
+55
+00:03:44,370 --> 00:03:46,740
+The rest of this section deals with other types.
+
+56
+00:03:47,220 --> 00:03:49,530
+Here's an easier way to visualize this, right?
+
+57
+00:03:49,530 --> 00:03:55,290
+These colors in this diagonal line are just to help visually separate these branches for you.
+
+58
+00:03:55,290 --> 00:04:00,510
+But really, they're just commits with different pointers at different commits.
+
+59
+00:04:00,510 --> 00:04:00,650
+Right.
+
+60
+00:04:00,690 --> 00:04:03,900
+It's just a chain of these commits, at least with the way this branch works.
+
+61
+00:04:03,900 --> 00:04:08,100
+We had master, we branched off to bug fix and did two commits.
+
+62
+00:04:08,100 --> 00:04:11,970
+Now all that we did when we merged was catch up.
+
+63
+00:04:11,970 --> 00:04:14,970
+We moved master up to that same commit.
+
+64
+00:04:15,090 --> 00:04:20,970
+This is called a fast forward merge because that's all we had to do for this branch to catch up.
+
+65
+00:04:20,970 --> 00:04:23,250
+It just fast forwarded a couple of commits.
+
+66
+00:04:23,250 --> 00:04:26,700
+There wasn't additional work on the master branch.
+
+67
+00:04:26,700 --> 00:04:32,670
+Now sometimes that will be the case, so there'll be additional commits over here that don't exist on
+
+68
+00:04:32,670 --> 00:04:37,020
+bug fix and that is trickier to merge and that's what we're going to spend some time talking about.
+
+69
+00:04:37,020 --> 00:04:40,770
+But for our first example, we're dealing with these fast forward merges.
+
+70
+00:04:40,770 --> 00:04:47,220
+So you have two branches and one of the branches just has additional commits that the first branch doesn't
+
+71
+00:04:47,220 --> 00:04:47,790
+have.
+
+72
+00:04:47,790 --> 00:04:51,420
+So to catch up, it's just a matter of moving that pointer forward.
+
+73
+00:04:51,420 --> 00:04:54,330
+So that's what the Get Merge Command does in this example.
+
+74
+00:04:54,330 --> 00:04:59,760
+So get merge bug fix if we're on the master branch moves that pointer up to bug fix.
+
+75
+00:04:59,950 --> 00:05:02,410
+So now Master has all that history.
+
+76
+00:05:02,410 --> 00:05:06,430
+It has the work that it had from before, but also the work from bug fix.
+
+77
+00:05:07,510 --> 00:05:11,620
+So again, this is called a fast forward merge that are nice and simple.
+
+78
+00:05:11,620 --> 00:05:16,330
+In the next video I'm going to demonstrate one and we'll get some practice with our playlist example.
+

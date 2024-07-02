@@ -1,0 +1,528 @@
+1
+00:00:00,120 --> 00:00:05,640
+So now that we know that Git is a version control system, a popular one at that, let's talk more about
+
+2
+00:00:05,640 --> 00:00:06,770
+the specific features.
+
+3
+00:00:06,780 --> 00:00:08,140
+What does it do for us?
+
+4
+00:00:08,160 --> 00:00:13,380
+So in this slide we can see some of the main things get helps us with it helps track changes across
+
+5
+00:00:13,380 --> 00:00:18,300
+files, compare versions of a project, time travel back to old versions.
+
+6
+00:00:18,300 --> 00:00:20,880
+Take a peek at what something looks like a year ago.
+
+7
+00:00:20,910 --> 00:00:25,380
+Take a look at Facebook's code base today compared to two days ago.
+
+8
+00:00:25,890 --> 00:00:32,340
+Go back to a previous version if we messed something up, combine different changes between versions,
+
+9
+00:00:32,340 --> 00:00:35,100
+between different files, between different collaborators.
+
+10
+00:00:35,100 --> 00:00:36,960
+And that's probably the most important part.
+
+11
+00:00:36,960 --> 00:00:42,780
+Collaborate and share changes get facilitates collaboration between a team of users.
+
+12
+00:00:42,780 --> 00:00:48,780
+If developers of writers, whatever people are doing with Git Get facilitates collaboration and sharing
+
+13
+00:00:48,780 --> 00:00:51,330
+those changes between individual people.
+
+14
+00:00:51,780 --> 00:00:54,840
+So here's a very, very simple explanation.
+
+15
+00:00:55,440 --> 00:01:01,740
+If you've ever played video games like I have, there are some games that allow you to make save points
+
+16
+00:01:01,740 --> 00:01:03,900
+that will check points you can come back to.
+
+17
+00:01:04,019 --> 00:01:07,080
+And I guess this is supposed to be me.
+
+18
+00:01:08,280 --> 00:01:11,730
+I was always very, very nervous as a game player.
+
+19
+00:01:11,730 --> 00:01:15,660
+Some of the games I played as a kid where if you died, you would go all the way back to wherever your
+
+20
+00:01:15,660 --> 00:01:16,770
+last save was.
+
+21
+00:01:16,770 --> 00:01:21,060
+So I would always try and save before well, pretty much before anything.
+
+22
+00:01:21,630 --> 00:01:24,750
+So I would save and then get to some horrible boss battle.
+
+23
+00:01:24,750 --> 00:01:27,000
+I suck at video games even though I like them.
+
+24
+00:01:27,000 --> 00:01:27,780
+I die.
+
+25
+00:01:27,780 --> 00:01:29,190
+But that's okay.
+
+26
+00:01:29,190 --> 00:01:31,470
+I don't get angry because I saved my game.
+
+27
+00:01:31,470 --> 00:01:33,270
+I can just go back to that save point.
+
+28
+00:01:33,270 --> 00:01:39,300
+That is the simplest, simplest explanation of JIT and what it allows us to do.
+
+29
+00:01:39,330 --> 00:01:40,710
+Set up these checkpoints.
+
+30
+00:01:40,710 --> 00:01:46,200
+You can screw things up entirely, make a huge mess of a code base or of a project, empty all the files
+
+31
+00:01:46,200 --> 00:01:47,790
+out, delete the files.
+
+32
+00:01:47,790 --> 00:01:51,870
+But if you're using Git and you made these checkpoints, you can just go back.
+
+33
+00:01:51,870 --> 00:01:55,320
+So here's another explanation that I've used in high school.
+
+34
+00:01:55,320 --> 00:01:57,240
+In college I had to write a lot of essays.
+
+35
+00:01:57,240 --> 00:01:59,340
+I did not know Git really at the time.
+
+36
+00:01:59,340 --> 00:02:00,630
+So I did this.
+
+37
+00:02:00,630 --> 00:02:06,240
+I would start writing an essay and then I wanted to try something new so I'd save as I'd make a new
+
+38
+00:02:06,240 --> 00:02:14,070
+version that was V one or V two or even more variations v two with a new intro or a new conclusion or
+
+39
+00:02:14,070 --> 00:02:17,190
+reorder all sorts of different strategies.
+
+40
+00:02:17,190 --> 00:02:20,250
+And I would save all of them because I wanted to be able to compare.
+
+41
+00:02:20,250 --> 00:02:24,270
+I didn't want to just have one essay that I had to work in.
+
+42
+00:02:24,540 --> 00:02:29,520
+I want to be able to track versions and compare, and it's just part of the process.
+
+43
+00:02:29,520 --> 00:02:34,410
+And then I would end up with some final, but then inevitably actually final, final for real.
+
+44
+00:02:34,410 --> 00:02:36,330
+This is the one print, this one.
+
+45
+00:02:36,720 --> 00:02:40,080
+This was honestly what I did in high school and college all the time.
+
+46
+00:02:40,290 --> 00:02:42,810
+So get helps with this sort of issue.
+
+47
+00:02:42,810 --> 00:02:48,180
+Now this is a very trivial situation, but imagine thousands of developers collaborating on a project
+
+48
+00:02:48,180 --> 00:02:52,950
+where they're working on millions of lines of code all at the same time, and having these different
+
+49
+00:02:52,950 --> 00:02:55,110
+versions and sharing and combining them.
+
+50
+00:02:55,470 --> 00:02:58,470
+So here's a somewhat more realistic example.
+
+51
+00:02:58,500 --> 00:03:00,990
+I'm working on some project, a website.
+
+52
+00:03:00,990 --> 00:03:04,020
+This is the progress of the website up top.
+
+53
+00:03:04,230 --> 00:03:05,610
+So right now it's empty.
+
+54
+00:03:05,610 --> 00:03:11,820
+With Git, I create checkpoints, so checkpoints are like save files I can go back to.
+
+55
+00:03:12,000 --> 00:03:15,180
+So I have my first checkpoint initialize project.
+
+56
+00:03:15,180 --> 00:03:16,230
+There's nothing up there.
+
+57
+00:03:16,230 --> 00:03:17,520
+But then I do some work.
+
+58
+00:03:17,520 --> 00:03:22,620
+I add this nav bar up top, so I make a new checkpoint, add top nav bar.
+
+59
+00:03:22,620 --> 00:03:26,520
+Now I have two checkpoints and then I do more work, write some content.
+
+60
+00:03:26,820 --> 00:03:28,770
+So I add a new checkpoint.
+
+61
+00:03:28,770 --> 00:03:30,810
+We'll say Add first row, whatever this is.
+
+62
+00:03:30,810 --> 00:03:36,390
+Maybe I'm making YouTube or something, so I add some content and then I do more work, I add more content,
+
+63
+00:03:36,390 --> 00:03:37,620
+I add a new checkpoint.
+
+64
+00:03:37,800 --> 00:03:39,900
+This workflow is very, very common.
+
+65
+00:03:39,900 --> 00:03:41,250
+You do something in a project.
+
+66
+00:03:41,250 --> 00:03:44,370
+If you're using Git, you make one of these so called checkpoints.
+
+67
+00:03:44,370 --> 00:03:48,120
+We'll learn what they are and how you do it, of course, and then you keep working.
+
+68
+00:03:48,120 --> 00:03:50,130
+So here I changed the theme entirely.
+
+69
+00:03:50,130 --> 00:03:53,610
+A dark theme, new fonts, new colors, new everything.
+
+70
+00:03:53,760 --> 00:03:55,020
+I add a checkpoint.
+
+71
+00:03:55,350 --> 00:03:58,170
+So I forgot to mention I work not alone on this.
+
+72
+00:03:58,170 --> 00:03:59,280
+I'm working at a company.
+
+73
+00:03:59,280 --> 00:04:00,240
+I have a boss.
+
+74
+00:04:00,330 --> 00:04:02,460
+I'm not the one making these decisions.
+
+75
+00:04:02,460 --> 00:04:02,780
+Right?
+
+76
+00:04:02,790 --> 00:04:06,960
+What stays if we want this theme or not, or if we want this earlier theme here.
+
+77
+00:04:06,960 --> 00:04:08,910
+But anyway, I do some more work.
+
+78
+00:04:09,150 --> 00:04:15,570
+I alter the naff bar color, I make it yellow, I add a checkpoint, update nav bar, and then I show
+
+79
+00:04:15,570 --> 00:04:16,589
+it to my boss.
+
+80
+00:04:16,980 --> 00:04:21,959
+Realistically, you don't just show code to your boss, but there's a process for approving or rejecting
+
+81
+00:04:21,959 --> 00:04:22,410
+changes.
+
+82
+00:04:22,410 --> 00:04:27,030
+But anyway, in this simplistic world, my boss gets angry, or maybe not even angry.
+
+83
+00:04:27,030 --> 00:04:27,990
+She just says, You know what?
+
+84
+00:04:27,990 --> 00:04:28,860
+These colors suck.
+
+85
+00:04:28,860 --> 00:04:30,570
+We can't move forward with that.
+
+86
+00:04:30,570 --> 00:04:31,680
+But that's okay.
+
+87
+00:04:31,950 --> 00:04:32,820
+I use Git.
+
+88
+00:04:32,820 --> 00:04:34,320
+I have this series of checkpoints.
+
+89
+00:04:34,320 --> 00:04:37,020
+I can go back in time to earlier checkpoints.
+
+90
+00:04:37,020 --> 00:04:39,540
+So this is what it looked like at this checkpoint.
+
+91
+00:04:39,540 --> 00:04:41,700
+But I can go backwards too.
+
+92
+00:04:41,700 --> 00:04:44,760
+So from before the time I added the dark theme.
+
+93
+00:04:44,760 --> 00:04:48,630
+Now we're back to this light theme, and then I could even branch off.
+
+94
+00:04:48,630 --> 00:04:56,100
+I could start working from this point and create a new sort of fork where I can have an alternate timeline.
+
+95
+00:04:56,100 --> 00:04:56,790
+So this works.
+
+96
+00:04:56,790 --> 00:04:57,720
+Not lost.
+
+97
+00:04:57,720 --> 00:04:59,310
+I'm just not doing it right now.
+
+98
+00:04:59,310 --> 00:04:59,460
+I'm.
+
+99
+00:04:59,540 --> 00:05:01,160
+Working on a new version.
+
+100
+00:05:01,340 --> 00:05:04,220
+So I added more content if you can see that there.
+
+101
+00:05:05,000 --> 00:05:06,830
+So I had two rows of content.
+
+102
+00:05:06,830 --> 00:05:07,790
+I add more content.
+
+103
+00:05:07,820 --> 00:05:10,430
+Now I've picked up development at this point in time.
+
+104
+00:05:10,850 --> 00:05:15,260
+So I add a third row, maybe I add a new footer down there.
+
+105
+00:05:15,380 --> 00:05:16,790
+So we get a new check point.
+
+106
+00:05:16,790 --> 00:05:22,040
+If I want to add a check point then and then I could switch back to what I had earlier.
+
+107
+00:05:22,040 --> 00:05:24,770
+At this point, I can toggle between them.
+
+108
+00:05:24,770 --> 00:05:30,290
+I can use Git to say go all the way back to when I first added the nap bar or go all the way up to when
+
+109
+00:05:30,290 --> 00:05:31,760
+I updated the nap bar.
+
+110
+00:05:31,760 --> 00:05:34,070
+I made it yellow or go to add footer.
+
+111
+00:05:34,070 --> 00:05:38,030
+I can hop around and compare and I could present both to my boss.
+
+112
+00:05:38,030 --> 00:05:41,150
+They both can exist, which is the crazy part.
+
+113
+00:05:41,270 --> 00:05:46,970
+It helps us manage all of these different versions so I can switch back to this dark mode checkpoint.
+
+114
+00:05:46,970 --> 00:05:48,320
+But what's even crazier?
+
+115
+00:05:48,320 --> 00:05:52,700
+I can even combine these checkpoints, the work, the changes between the two.
+
+116
+00:05:53,000 --> 00:06:00,170
+So this dark mode had the dark colors and add footer, had all this extra content with a footer and
+
+117
+00:06:00,170 --> 00:06:01,040
+a third row.
+
+118
+00:06:01,040 --> 00:06:07,970
+So I combined them to end up with a footer and a third row of content and the dark mode colors.
+
+119
+00:06:07,970 --> 00:06:12,260
+So I now have a hybrid and that's exactly the sort of thing that it helps us with.
+
+120
+00:06:12,260 --> 00:06:16,430
+Now this is a simplified example, but imagine now I'm working on a project.
+
+121
+00:06:16,430 --> 00:06:17,480
+It's not just me.
+
+122
+00:06:17,480 --> 00:06:21,980
+There's ten people or 100 developers, lots of files, lots of versions.
+
+123
+00:06:21,980 --> 00:06:25,760
+How do we coordinate all those changes between all of us and combine them?
+
+124
+00:06:25,760 --> 00:06:25,990
+Right?
+
+125
+00:06:26,030 --> 00:06:28,340
+We don't all just work in silos on our own.
+
+126
+00:06:28,340 --> 00:06:33,470
+We need to combine that work back into some code base at some points or whatever we're working on.
+
+127
+00:06:33,470 --> 00:06:35,030
+We share those changes.
+
+128
+00:06:35,030 --> 00:06:39,800
+So it's this times hundreds and hundreds, often at a large company.
+
+129
+00:06:39,890 --> 00:06:44,600
+Okay, so that's the basic idea of Git and what it can help us with, just trying to visualize it for
+
+130
+00:06:44,600 --> 00:06:44,990
+you.
+
+131
+00:06:45,020 --> 00:06:47,240
+Next up, I guess totally optional.
+
+132
+00:06:47,240 --> 00:06:49,160
+I'm going to talk about the history of Git.
+

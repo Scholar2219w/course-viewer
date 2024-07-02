@@ -1,0 +1,204 @@
+1
+00:00:00,330 --> 00:00:00,870
+All right.
+
+2
+00:00:00,870 --> 00:00:03,090
+So now we get to talk about merge conflicts.
+
+3
+00:00:03,090 --> 00:00:09,030
+When we merge two branches, as we've seen get, we'll do its best to automatically merge those changes,
+
+4
+00:00:09,030 --> 00:00:14,190
+whether it's a fast forward or needs to make a merge commit as we saw in the last video, it tries to
+
+5
+00:00:14,190 --> 00:00:19,470
+do things automatically and so far it's succeeded in the two examples I've shown you.
+
+6
+00:00:19,470 --> 00:00:27,000
+But if we had conflicting changes, for example, on one branch, somebody modified a file and on a
+
+7
+00:00:27,000 --> 00:00:30,360
+second branch that we're merging, somebody deleted the same file.
+
+8
+00:00:30,390 --> 00:00:38,940
+Or another situation would be if on one branch I edit one line 77 of some file and somebody else on
+
+9
+00:00:38,940 --> 00:00:39,810
+the other branch.
+
+10
+00:00:39,810 --> 00:00:42,090
+Or maybe it's me two on the other branch.
+
+11
+00:00:42,090 --> 00:00:48,180
+I edit the same line line 77 in the same file get doesn't know how to automatically merge that.
+
+12
+00:00:48,180 --> 00:00:51,060
+How does it decide what to keep and what to get rid of?
+
+13
+00:00:51,090 --> 00:00:53,370
+So this is where merge conflicts come up.
+
+14
+00:00:53,700 --> 00:00:55,290
+You have to manually resolve them.
+
+15
+00:00:55,290 --> 00:00:56,370
+It's not a big deal.
+
+16
+00:00:56,670 --> 00:00:58,350
+Let me show you the process first.
+
+17
+00:00:58,560 --> 00:01:04,830
+When you run git merge and if there are conflicts you'll see something like this conflict and then merge
+
+18
+00:01:04,830 --> 00:01:11,220
+conflict in some file automatic merge failed, fix the conflicts and then commit the result.
+
+19
+00:01:11,430 --> 00:01:14,010
+So this is a multi step process.
+
+20
+00:01:14,220 --> 00:01:21,210
+Get tells us there's conflicts, then we have to go and open the files where there are conflicts and
+
+21
+00:01:21,210 --> 00:01:24,150
+fix them and then we commit those changes.
+
+22
+00:01:24,150 --> 00:01:28,740
+So the files where there are conflicts are actually decorated.
+
+23
+00:01:28,740 --> 00:01:33,480
+They, they have new content to indicate where there are conflicts.
+
+24
+00:01:33,480 --> 00:01:39,630
+So when we open up a file, we'll see this weird stuff in their head and then a branch name.
+
+25
+00:01:39,630 --> 00:01:43,950
+I will show a demo of this, of course, so it should make more sense than it does at the moment.
+
+26
+00:01:43,950 --> 00:01:51,270
+So what these markers indicate is what content came from my head branch, the branch I'm on, the recipient
+
+27
+00:01:51,270 --> 00:01:57,060
+branch I'm trying to merge into, and that's indicated by the less than the little arrow head and then
+
+28
+00:01:57,060 --> 00:01:58,050
+the equal sign.
+
+29
+00:01:58,050 --> 00:02:02,310
+So this is what I had in this diagram on my, let's say the master branch.
+
+30
+00:02:02,430 --> 00:02:03,870
+This is the change I made.
+
+31
+00:02:03,870 --> 00:02:08,759
+And then this is from the bug fixed branch that I'm trying to merge in.
+
+32
+00:02:08,940 --> 00:02:16,260
+So it's my job now to delete or keep both, figure out which part I want, which part I don't want.
+
+33
+00:02:16,260 --> 00:02:17,190
+It's totally up to me.
+
+34
+00:02:17,190 --> 00:02:22,890
+I resolve it and then I get rid of these conflict markers, these symbols, and then I save the file
+
+35
+00:02:23,070 --> 00:02:26,730
+and then I go back and add and commit the changes.
+
+36
+00:02:26,730 --> 00:02:28,590
+So here's a step by step guide.
+
+37
+00:02:28,590 --> 00:02:32,190
+You run into a conflict, get tells you what files there are conflicts in.
+
+38
+00:02:32,190 --> 00:02:35,370
+We open up those files, then we edit the files.
+
+39
+00:02:35,370 --> 00:02:38,460
+We figure out how do we want to resolve the conflict?
+
+40
+00:02:38,460 --> 00:02:40,560
+Do I want all three lines?
+
+41
+00:02:40,560 --> 00:02:43,230
+Do I want just these two or just this one?
+
+42
+00:02:43,230 --> 00:02:45,570
+You combine them, it's up to you, right?
+
+43
+00:02:45,570 --> 00:02:49,890
+And with code, usually you need to figure out what matters and what's supposed to be there.
+
+44
+00:02:49,890 --> 00:02:52,590
+And you know, you have to go through it and be careful.
+
+45
+00:02:52,980 --> 00:02:57,480
+But the point is you're doing it as a human get is not just deciding for you.
+
+46
+00:02:57,480 --> 00:03:02,550
+So it's very important we go through, we remove those conflicts, we decide what we want to keep,
+
+47
+00:03:02,550 --> 00:03:04,410
+and then we remove the markers.
+
+48
+00:03:04,410 --> 00:03:09,600
+As I mentioned, we get rid of this, we get rid of this and we get rid of this save.
+
+49
+00:03:09,780 --> 00:03:13,050
+Now we add our changes and make a commit and we're done.
+
+50
+00:03:13,050 --> 00:03:14,580
+We resolve the conflict.
+
+51
+00:03:15,390 --> 00:03:18,780
+So I know it seems complicated, but I'm going to show a demo in the next video.
+

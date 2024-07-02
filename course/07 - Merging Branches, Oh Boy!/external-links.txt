@@ -1,0 +1,9 @@
+
+001 SLIDES-FOR-THIS-SECTION
+https://www.canva.com/design/DAEUZEra8W0/b4I77uG1YJAu4q6UOTIG6Q/view?utm_content=DAEUZEra8W0&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+
+002 Git-Merge-Docs
+https://git-scm.com/docs/git-merge
+
+009 Merging-Exercise-Instructions
+https://www.notion.so/Git-Merging-Exercise-0236a17f04c847159a38f5efa978ce2c

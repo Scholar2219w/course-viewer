@@ -1,0 +1,672 @@
+1
+00:00:00,150 --> 00:00:05,820
+When you're working on a project and you're using Git, there are often situations where you have files,
+
+2
+00:00:05,820 --> 00:00:10,410
+directories that you just don't want get to know about or to track.
+
+3
+00:00:10,410 --> 00:00:15,630
+At any point you want them to be completely ignored, and there's a mechanism for doing this.
+
+4
+00:00:15,750 --> 00:00:19,560
+We can create a particular file called Dot Get Ignore.
+
+5
+00:00:19,740 --> 00:00:23,640
+But before we go into that, let's talk about why you might want this.
+
+6
+00:00:23,670 --> 00:00:28,320
+One of the most common situations is if you're working on an application, you're writing code where
+
+7
+00:00:28,320 --> 00:00:35,490
+you're using API keys, credentials, any sort of application secret that is tied potentially to a credit
+
+8
+00:00:35,490 --> 00:00:43,080
+card like from us or some API that you're using where you don't want those to get out into the world.
+
+9
+00:00:43,380 --> 00:00:45,420
+So you put them in a separate file.
+
+10
+00:00:45,570 --> 00:00:50,550
+And if you push your code up to GitHub, which I realized we haven't talked about, but if you share
+
+11
+00:00:50,550 --> 00:00:54,660
+that code and you make it public, you don't want that file to be included.
+
+12
+00:00:54,660 --> 00:00:58,980
+So you'll still have the file yourself locally, but you don't want get to track it.
+
+13
+00:00:59,190 --> 00:01:06,180
+Other things include operating system files, so on a mac there are these pesky DOS store files.
+
+14
+00:01:06,180 --> 00:01:09,240
+They have nothing to do with your project or your code.
+
+15
+00:01:09,270 --> 00:01:14,250
+They just show up in directories, their system, hidden files so you don't want to track those with
+
+16
+00:01:14,250 --> 00:01:14,700
+git.
+
+17
+00:01:14,730 --> 00:01:20,880
+There are similar files on windows with a different name, other things, log files or any files that
+
+18
+00:01:20,880 --> 00:01:25,320
+are output by your application that could easily be generated again.
+
+19
+00:01:25,620 --> 00:01:33,420
+So if you have an application when you run it, it generates some report every single day and you regenerate
+
+20
+00:01:33,420 --> 00:01:34,820
+that report on demand.
+
+21
+00:01:34,830 --> 00:01:40,290
+You really don't need Git to track that and save that report because you can regenerate that report
+
+22
+00:01:40,290 --> 00:01:41,200
+if that makes sense.
+
+23
+00:01:41,220 --> 00:01:45,510
+And then lastly, a really common scenario is dependencies or packages.
+
+24
+00:01:45,510 --> 00:01:51,630
+So if you've ever worked with Node or Python or really any any language and you work with a bunch of
+
+25
+00:01:51,630 --> 00:01:56,760
+dependencies that you download and install, those do not need to be tracked by git.
+
+26
+00:01:56,760 --> 00:02:01,710
+That could be hundreds or maybe thousands of different folders and files that you can easily go and
+
+27
+00:02:01,710 --> 00:02:02,810
+get at any point.
+
+28
+00:02:02,820 --> 00:02:06,240
+You don't need to bother tracking the dependencies themselves.
+
+29
+00:02:06,420 --> 00:02:08,840
+So I'm going to show you an example of how we do this.
+
+30
+00:02:08,850 --> 00:02:13,950
+As I mentioned, the mechanism is through this file with a very particular name.
+
+31
+00:02:13,950 --> 00:02:17,670
+It's a hidden file that we create, dot, get ignore.
+
+32
+00:02:18,120 --> 00:02:24,150
+And if we put that really anywhere in a repository, but traditionally we'll put it in the route of
+
+33
+00:02:24,150 --> 00:02:27,630
+the repository, the top of it, although it doesn't have to be there.
+
+34
+00:02:28,380 --> 00:02:35,220
+We create a file with that name, get we'll look for that file and inside of it we can tell get what
+
+35
+00:02:35,220 --> 00:02:38,640
+to ignore so we can put exact file names.
+
+36
+00:02:38,640 --> 00:02:44,850
+So the first bullet point here is dot ds store git will ignore file with that name.
+
+37
+00:02:45,120 --> 00:02:51,570
+We can give it folder names by putting a slash at the end and we can also do fancier patterns.
+
+38
+00:02:51,570 --> 00:02:56,060
+For example, this line here, asterisk, dot log.
+
+39
+00:02:56,070 --> 00:03:01,500
+This is a wild card that will match anything, I think anything except for a slash.
+
+40
+00:03:01,530 --> 00:03:05,670
+It will match any character followed by the extension dot log.
+
+41
+00:03:05,670 --> 00:03:09,600
+So this allows you to tell git ignore all log files.
+
+42
+00:03:09,600 --> 00:03:11,010
+I don't want to have to write them out.
+
+43
+00:03:11,010 --> 00:03:12,480
+I don't know what their names will be.
+
+44
+00:03:12,480 --> 00:03:14,190
+Just anything with dot log.
+
+45
+00:03:14,490 --> 00:03:16,740
+So I'll just quickly show you some examples.
+
+46
+00:03:16,740 --> 00:03:22,140
+Again, we haven't really gone into GitHub at all, but on GitHub there are projects and pretty much
+
+47
+00:03:22,140 --> 00:03:26,640
+every single project here is going to have a dot get ignore file.
+
+48
+00:03:26,760 --> 00:03:34,290
+And inside we see some of what I talked about RDS store, we see directories like the reports directory
+
+49
+00:03:34,290 --> 00:03:38,760
+node modules, if you ever work with Node, that's where all the packages are installed.
+
+50
+00:03:38,760 --> 00:03:40,230
+So we're ignoring that.
+
+51
+00:03:40,890 --> 00:03:42,300
+Here's another example.
+
+52
+00:03:42,300 --> 00:03:46,740
+The app signal, if you're familiar with that, get ignore.
+
+53
+00:03:46,770 --> 00:03:47,640
+There it is.
+
+54
+00:03:47,640 --> 00:03:51,600
+And there's stuff in here, particular files and folder names.
+
+55
+00:03:51,630 --> 00:03:56,160
+They're different because this is an Android application versus faker.
+
+56
+00:03:56,160 --> 00:03:57,930
+I was showing you as a JavaScript app.
+
+57
+00:03:57,930 --> 00:04:05,100
+Here's TensorFlow, another really popular open source project instead of here get ignore, right?
+
+58
+00:04:05,100 --> 00:04:06,810
+And then we see similar stuff.
+
+59
+00:04:06,810 --> 00:04:11,970
+But now some python specific files and folders that they're telling get to always ignore.
+
+60
+00:04:12,270 --> 00:04:17,910
+So I'm going to demonstrate this and to do this, I'm actually going to make a new repository.
+
+61
+00:04:17,910 --> 00:04:20,910
+It doesn't really make sense to ignore things in my novel.
+
+62
+00:04:21,180 --> 00:04:27,630
+Maybe it does, but I'm just going to make a new demo and make a simple node application so I'm not
+
+63
+00:04:27,630 --> 00:04:29,940
+in a git repository now I'm going to make a directory.
+
+64
+00:04:30,600 --> 00:04:36,750
+I'll just call this git ignore demo, I'll seed in there, I'll type get status.
+
+65
+00:04:37,110 --> 00:04:37,890
+Och good.
+
+66
+00:04:37,890 --> 00:04:45,210
+It's not one yet, but now I'm going to initialize get a net and I'm going to run NPM in it so that
+
+67
+00:04:45,210 --> 00:04:47,670
+I can use some node packages in here.
+
+68
+00:04:48,390 --> 00:04:51,750
+So if you're not familiar with Node, it really doesn't matter at this point.
+
+69
+00:04:52,470 --> 00:04:55,530
+I'm just going to install some stuff and I'm going to ignore it.
+
+70
+00:04:55,530 --> 00:04:59,520
+But you can ignore any other files using the same stuff that I'm going to show you.
+
+71
+00:04:59,610 --> 00:04:59,910
+So.
+
+72
+00:04:59,960 --> 00:05:01,190
+I'm going to make a file.
+
+73
+00:05:01,220 --> 00:05:04,550
+I'll pretend to write a basic JavaScript app in here.
+
+74
+00:05:04,580 --> 00:05:06,290
+Index js.
+
+75
+00:05:06,650 --> 00:05:08,960
+Maybe I'll make a secret file as well.
+
+76
+00:05:08,990 --> 00:05:10,550
+Secrets dot.
+
+77
+00:05:10,580 --> 00:05:15,170
+I'll make it a text file and then I open it up in my text editor.
+
+78
+00:05:15,200 --> 00:05:16,910
+Let's put some stuff in here.
+
+79
+00:05:17,030 --> 00:05:17,890
+So my index.
+
+80
+00:05:18,120 --> 00:05:24,020
+JS I'm just going to write some very basic JavaScript code like console.log.
+
+81
+00:05:24,050 --> 00:05:25,100
+Hello.
+
+82
+00:05:26,150 --> 00:05:26,730
+Hello world.
+
+83
+00:05:26,750 --> 00:05:27,590
+All right, so whatever.
+
+84
+00:05:27,590 --> 00:05:35,510
+This is my application code, then I'll have some secret like API key equals.
+
+85
+00:05:35,840 --> 00:05:41,390
+Just say that's some secret key I don't want anyone to know about, but I need it for my app.
+
+86
+00:05:41,390 --> 00:05:45,500
+And then let's go ahead and make our first commit.
+
+87
+00:05:46,400 --> 00:05:51,320
+So it would be nice if I could make it commit and just do get add dot.
+
+88
+00:05:51,320 --> 00:05:55,790
+But I can't because that will include secrets text.
+
+89
+00:05:55,820 --> 00:06:02,090
+So I need to add the index first and then I'll also add my package JSON.
+
+90
+00:06:02,090 --> 00:06:09,410
+It's just a generated file from Node and then I'll commit start project or something.
+
+91
+00:06:10,220 --> 00:06:11,390
+It doesn't matter what.
+
+92
+00:06:11,720 --> 00:06:12,290
+Okay.
+
+93
+00:06:12,470 --> 00:06:17,150
+And of course, we still have this file that's untracked and we wanted to stay that way.
+
+94
+00:06:17,150 --> 00:06:18,800
+We don't want it to be tracked.
+
+95
+00:06:18,800 --> 00:06:25,520
+So if I do some more work in here, I'm just going to copy that a couple of times.
+
+96
+00:06:25,520 --> 00:06:27,720
+We'll pretend I just wrote a lot of code.
+
+97
+00:06:28,100 --> 00:06:34,820
+Then I'm going to head over here again to my terminal and I need to add that change.
+
+98
+00:06:34,820 --> 00:06:36,470
+But I can't do it at DOT.
+
+99
+00:06:36,470 --> 00:06:38,360
+I need to add just the index.
+
+100
+00:06:38,360 --> 00:06:43,700
+JS Right, and then I can commit again, you know, add new feature.
+
+101
+00:06:43,700 --> 00:06:46,820
+This is a horrible commit message, but pretend it's not.
+
+102
+00:06:47,210 --> 00:06:47,840
+All right.
+
+103
+00:06:47,840 --> 00:06:51,200
+So now I'm going to go in install something with NPM.
+
+104
+00:06:51,230 --> 00:06:53,720
+I'll install React.
+
+105
+00:06:55,060 --> 00:07:02,320
+I'm using NPM in here and we can see I have a new directory node modules and it has react in there and
+
+106
+00:07:02,320 --> 00:07:04,090
+some of react dependencies.
+
+107
+00:07:04,420 --> 00:07:12,700
+So if I type get status now it also notices that node modules now exists and my secrets file is still
+
+108
+00:07:12,700 --> 00:07:13,190
+there.
+
+109
+00:07:13,210 --> 00:07:15,730
+There's this thing called package lock JSON.
+
+110
+00:07:15,970 --> 00:07:19,120
+The package JSON is modified, which I'm cool with.
+
+111
+00:07:19,120 --> 00:07:20,390
+I want to track that.
+
+112
+00:07:20,410 --> 00:07:22,600
+That's where the dependencies are listed.
+
+113
+00:07:22,840 --> 00:07:28,000
+So it tells anybody who gets this code I need react, but we don't actually need to track the folder
+
+114
+00:07:28,000 --> 00:07:29,120
+that includes React.
+
+115
+00:07:29,140 --> 00:07:31,610
+We can always go get that whenever necessary.
+
+116
+00:07:31,630 --> 00:07:36,190
+So now let's add in our get ignore file so that this will be ignored.
+
+117
+00:07:36,280 --> 00:07:38,520
+I'm going to make a new file.
+
+118
+00:07:38,530 --> 00:07:39,850
+I can do it from here.
+
+119
+00:07:40,630 --> 00:07:46,270
+I'll just do it from the command line, I guess to be consistent touch dot, get ignore.
+
+120
+00:07:46,300 --> 00:07:50,710
+And as I mentioned, it's conventional to put it in the route of your project directory.
+
+121
+00:07:50,890 --> 00:07:57,900
+So now I have that file and then in here I can write certain files and patterns that I want to be ignored.
+
+122
+00:07:57,910 --> 00:08:02,560
+So, for example, I don't know if there's a store file in here.
+
+123
+00:08:02,590 --> 00:08:06,910
+No, there's not at the moment, but I don't know why it pops up, but sometimes it just does.
+
+124
+00:08:06,910 --> 00:08:08,560
+So I'm saying ignore that.
+
+125
+00:08:09,010 --> 00:08:13,960
+Please also ignore the exact file secrets text.
+
+126
+00:08:14,890 --> 00:08:19,570
+That's the name of the file and the node modules directory.
+
+127
+00:08:19,570 --> 00:08:21,010
+So I need a slash.
+
+128
+00:08:21,100 --> 00:08:23,820
+If it's just node modules like this, it thinks it's a file.
+
+129
+00:08:23,830 --> 00:08:26,740
+This tells git it's a directory node modules.
+
+130
+00:08:27,160 --> 00:08:29,800
+So over here if I type get status now.
+
+131
+00:08:29,890 --> 00:08:31,250
+Whoa, look at that.
+
+132
+00:08:31,270 --> 00:08:34,730
+Very different now we no longer see.
+
+133
+00:08:34,750 --> 00:08:36,400
+Well, I got rid of it.
+
+134
+00:08:36,400 --> 00:08:41,270
+Unfortunately, I cleared, but earlier it was tracking node modules and secrets.
+
+135
+00:08:41,289 --> 00:08:47,260
+Now we just c get ignore because we did change that file and it exists.
+
+136
+00:08:47,260 --> 00:08:49,360
+We want to track the get ignore file.
+
+137
+00:08:49,990 --> 00:08:54,600
+Then also this package locked json and that's fine to track with git.
+
+138
+00:08:54,610 --> 00:09:02,830
+So now I can just do things like get add dot if I wanted to and I can commit and then I can make some
+
+139
+00:09:02,830 --> 00:09:03,550
+commit message.
+
+140
+00:09:03,550 --> 00:09:04,930
+In this case it doesn't really matter.
+
+141
+00:09:04,930 --> 00:09:08,500
+I haven't done any work, but I'll just say add get ignore file.
+
+142
+00:09:10,220 --> 00:09:16,520
+And now any time I make changes in those files, if I change my secrets file right there, I'll do something
+
+143
+00:09:16,520 --> 00:09:17,390
+else in here.
+
+144
+00:09:17,510 --> 00:09:24,430
+It's just add on to that key I save normally get would notice, but now it says nothing.
+
+145
+00:09:24,440 --> 00:09:26,390
+It's ignoring this file entirely.
+
+146
+00:09:26,810 --> 00:09:31,250
+So there's a lot to write and get ignored, especially for complicated projects.
+
+147
+00:09:31,580 --> 00:09:34,490
+You can have all sorts of stuff in there and to help out.
+
+148
+00:09:34,520 --> 00:09:36,140
+There are tools online.
+
+149
+00:09:36,570 --> 00:09:37,610
+Show you one quickly.
+
+150
+00:09:37,610 --> 00:09:39,680
+This is on the GitHub documentation.
+
+151
+00:09:40,040 --> 00:09:42,190
+They recommend this one site get ignored.
+
+152
+00:09:42,230 --> 00:09:45,340
+IO, where you can specify what you're working in.
+
+153
+00:09:45,350 --> 00:09:47,690
+For example, if you're working on a Python app.
+
+154
+00:09:50,270 --> 00:09:57,140
+This is a recommended starting place for get ignore and you may not have files with all of these patterns
+
+155
+00:09:57,140 --> 00:10:01,880
+or these extensions for these directory names, but they're common enough that you can just include
+
+156
+00:10:01,880 --> 00:10:02,000
+it.
+
+157
+00:10:02,000 --> 00:10:07,130
+It's really not adding a lot of overhead to your application and they have similar get ignored templates
+
+158
+00:10:07,130 --> 00:10:10,030
+for JavaScript and pretty much any other thing you can think of.
+
+159
+00:10:10,040 --> 00:10:12,200
+So that's an intro to get ignore files.
+
+160
+00:10:12,740 --> 00:10:14,330
+There's a lot to them, right?
+
+161
+00:10:14,330 --> 00:10:18,110
+The patterns you can write can actually go on the get docs and read about it.
+
+162
+00:10:18,740 --> 00:10:20,480
+There's more that we didn't even go into.
+
+163
+00:10:20,480 --> 00:10:24,800
+For example, two stars is different from one star.
+
+164
+00:10:24,830 --> 00:10:27,590
+A question mark is a way to match a single character.
+
+165
+00:10:27,620 --> 00:10:31,430
+If you're familiar with regular expressions notation, it's kind of similar here.
+
+166
+00:10:31,430 --> 00:10:36,950
+But anyway, most of the time it's good enough to just be able to ignore file names, directories and
+
+167
+00:10:36,950 --> 00:10:39,350
+file extensions using the wild card.
+
+168
+00:10:40,130 --> 00:10:41,090
+So that's get ignore.
+

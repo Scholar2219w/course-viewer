@@ -1,0 +1,308 @@
+1
+00:00:00,210 --> 00:00:00,690
+Okay.
+
+2
+00:00:00,690 --> 00:00:05,280
+So now that we have installed Git, whether you're on a mac or a Windows machine, the next thing we
+
+3
+00:00:05,280 --> 00:00:07,740
+need to do is configure our name and email.
+
+4
+00:00:07,890 --> 00:00:13,860
+So we need to tell Git who we are, who it should attribute work to on our machine.
+
+5
+00:00:14,010 --> 00:00:16,350
+So this is not tied to an account necessarily.
+
+6
+00:00:16,350 --> 00:00:17,520
+There's no password.
+
+7
+00:00:17,520 --> 00:00:19,110
+You can make this whatever you want.
+
+8
+00:00:19,110 --> 00:00:24,060
+But let me just demonstrate the significance of setting up our name.
+
+9
+00:00:24,330 --> 00:00:30,630
+So if I'm working on a project with a bunch of people, for example, this is a project I have I really
+
+10
+00:00:30,630 --> 00:00:32,280
+haven't done anything sort of faking it.
+
+11
+00:00:32,280 --> 00:00:36,090
+It's, it's React, which is a very large JavaScript library.
+
+12
+00:00:36,600 --> 00:00:41,310
+I'm going to just run a quick command here and what you're looking at right now, full screen.
+
+13
+00:00:41,310 --> 00:00:48,180
+This is a log of different work, different check points on this application and who did them.
+
+14
+00:00:48,480 --> 00:00:53,850
+So here's one made by me, Colt Steel, but I can go back and see.
+
+15
+00:00:54,120 --> 00:00:58,680
+Here's some other work done by someone named Andrew Clark and somebody else did some other work.
+
+16
+00:00:58,680 --> 00:00:59,070
+Here's more.
+
+17
+00:00:59,070 --> 00:00:59,940
+Andrew Clark.
+
+18
+00:00:59,940 --> 00:01:01,560
+Here's Brian Vaughn.
+
+19
+00:01:01,710 --> 00:01:05,820
+So the point here is that so here's Dan Abramoff, pretty famous developer.
+
+20
+00:01:05,820 --> 00:01:11,790
+Anyway, the idea is that Git knows who did what work and who is making these checkpoints and these
+
+21
+00:01:11,790 --> 00:01:12,420
+changes.
+
+22
+00:01:12,420 --> 00:01:14,070
+So we need to configure that.
+
+23
+00:01:14,310 --> 00:01:18,330
+So this does not have to match some account that you have somewhere else.
+
+24
+00:01:18,330 --> 00:01:22,950
+However, I recommend that you use the name that you want to be known by as a developer.
+
+25
+00:01:22,950 --> 00:01:27,690
+If you are going to publish your work and put it up on GitHub, you want to use a name that people know
+
+26
+00:01:27,690 --> 00:01:29,880
+you buy or that will be consistent.
+
+27
+00:01:29,880 --> 00:01:31,770
+You don't want to be changing this all the time.
+
+28
+00:01:31,860 --> 00:01:33,090
+And then your email.
+
+29
+00:01:33,090 --> 00:01:37,620
+I recommend configuring with the email that you'll set up for your GitHub account if you haven't done
+
+30
+00:01:37,620 --> 00:01:39,540
+so well ready later in the course.
+
+31
+00:01:39,540 --> 00:01:44,640
+When we talk about GitHub, we can cross that bridge and you can always reconfigure these two values.
+
+32
+00:01:44,640 --> 00:01:45,870
+So here's how we do it.
+
+33
+00:01:46,470 --> 00:01:48,450
+The first step we'll do our name.
+
+34
+00:01:48,450 --> 00:01:52,680
+So all we do is get config and then dash dash global.
+
+35
+00:01:52,680 --> 00:01:59,550
+That's a way of telling git to set our username or our user name to be the same name across every time
+
+36
+00:01:59,550 --> 00:02:01,020
+we use git every instance.
+
+37
+00:02:01,020 --> 00:02:02,370
+But you can always change this.
+
+38
+00:02:02,370 --> 00:02:08,460
+So get config global username and then in quotes the name you want get to know you by.
+
+39
+00:02:08,699 --> 00:02:10,199
+So I can try this right now.
+
+40
+00:02:10,199 --> 00:02:11,220
+I'm not going to configure it.
+
+41
+00:02:11,220 --> 00:02:12,240
+I want to show you.
+
+42
+00:02:12,240 --> 00:02:13,920
+I can actually just check.
+
+43
+00:02:14,190 --> 00:02:17,130
+Do you have a user name for me already get?
+
+44
+00:02:17,130 --> 00:02:19,290
+If I run this command, I'm not setting it.
+
+45
+00:02:19,290 --> 00:02:22,500
+I'm asking and it says Yep, you're cold steel.
+
+46
+00:02:22,530 --> 00:02:31,920
+However, on my windows side if I do get config username I haven't configured one so it shows me nothing.
+
+47
+00:02:31,920 --> 00:02:33,630
+So I'm going to set that now.
+
+48
+00:02:33,750 --> 00:02:39,090
+So get config dash dash global username and then in quotes the name I want.
+
+49
+00:02:39,090 --> 00:02:45,450
+So get config dash dash global user name and I'll do cold steel.
+
+50
+00:02:45,990 --> 00:02:47,790
+Obviously you should put your name there.
+
+51
+00:02:47,790 --> 00:02:48,900
+I'm going to hit enter.
+
+52
+00:02:49,080 --> 00:02:53,910
+We don't really see anything happen, but now if I try and retrieve it, that's what this line does
+
+53
+00:02:53,940 --> 00:02:56,430
+get what is username?
+
+54
+00:02:56,910 --> 00:03:00,090
+It tells me cold steel and we're good to go now.
+
+55
+00:03:00,090 --> 00:03:05,970
+We're going to do the same thing for email, so it's the exact same pattern except user email and then
+
+56
+00:03:05,970 --> 00:03:07,710
+provide your email address.
+
+57
+00:03:08,430 --> 00:03:09,600
+So we'll try this.
+
+58
+00:03:09,600 --> 00:03:11,070
+It's the same process.
+
+59
+00:03:11,220 --> 00:03:16,050
+I'll do this on the Windows side, but whatever platform you're on, you want to do this, we'll do
+
+60
+00:03:16,050 --> 00:03:18,630
+get config user email.
+
+61
+00:03:18,630 --> 00:03:19,770
+Nothing is there.
+
+62
+00:03:20,610 --> 00:03:28,140
+But now I'm going to say get config dash dash global user email and then set it to be this is not my
+
+63
+00:03:28,140 --> 00:03:31,270
+real email but cult at gmail dot co.
+
+64
+00:03:31,350 --> 00:03:37,590
+Again, not my real email, but I recommend you put an email you have access to and especially when
+
+65
+00:03:37,590 --> 00:03:39,030
+we sign up for a GitHub account.
+
+66
+00:03:39,360 --> 00:03:45,210
+If you can foresee the email you would use for GitHub, I would use that email now, but we can always
+
+67
+00:03:45,210 --> 00:03:45,730
+change it.
+
+68
+00:03:45,750 --> 00:03:47,730
+It's the exact same line to change it.
+
+69
+00:03:48,630 --> 00:03:51,210
+So now I can recall the line from earlier.
+
+70
+00:03:51,450 --> 00:03:53,610
+If you don't know how to do this, hit the up arrow.
+
+71
+00:03:53,640 --> 00:03:58,110
+I can scroll through different lines up and down and I'm just going to verify.
+
+72
+00:03:58,140 --> 00:03:59,130
+Did it set?
+
+73
+00:03:59,130 --> 00:04:00,000
+And it did.
+
+74
+00:04:00,480 --> 00:04:02,520
+OC So that's all we needed to do.
+
+75
+00:04:02,520 --> 00:04:08,610
+Those two lines are going to tell Git who we are so that for future work, when we make changes, they
+
+76
+00:04:08,610 --> 00:04:13,080
+are attributed to whatever that user name and user dot email are set to.
+
+77
+00:04:13,230 --> 00:04:13,800
+All right.
+

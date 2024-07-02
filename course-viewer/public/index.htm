@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+      <h2>Sections</h2>
+      <nav id="sectionsContainer" class="space-y-2">
+        <!-- Sections will be dynamically added here -->
+      </nav>
+    </div>
+    <div class="main-content">
+      <h2 id="selectedSectionTitle" class="text-xl font-bold mb-4">Introduction</h2>
+      <div id="topicsContainer" class="space-y-4">
+        <!-- Topics will be dynamically added here -->
+      </div>
+      <div class="mt-8">
+        <h3 class="text-lg font-medium mb-4">Video Player</h3>
+        <div class="relative" id="videoPlayerContainer">
+          <video id="videoPlayer" class="w-full rounded-md shadow-sm" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

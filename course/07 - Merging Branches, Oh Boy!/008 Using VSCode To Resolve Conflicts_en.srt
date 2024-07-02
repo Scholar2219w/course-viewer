@@ -1,0 +1,500 @@
+1
+00:00:00,120 --> 00:00:00,480
+All right.
+
+2
+00:00:00,480 --> 00:00:04,050
+So next up, I'd like to show another example of resolving conflicts.
+
+3
+00:00:04,050 --> 00:00:07,800
+But this time I'm going to show you how to do it using VTS code.
+
+4
+00:00:07,800 --> 00:00:13,470
+So VTS code has some nice built in functionality to help you resolve conflicts or it can help in some
+
+5
+00:00:13,470 --> 00:00:14,190
+scenarios.
+
+6
+00:00:14,190 --> 00:00:18,780
+So I'm just going to come up with another situation that will cause a merge conflict.
+
+7
+00:00:18,780 --> 00:00:22,770
+What I'm going to do is go to my master branch, which I'm currently on.
+
+8
+00:00:23,070 --> 00:00:25,740
+We'll ignore the combo, the Serena, the Bjorn branches.
+
+9
+00:00:25,740 --> 00:00:30,060
+For now, I'm going to go to the master branch and I'm going to make a new branch from here.
+
+10
+00:00:30,060 --> 00:00:36,780
+So currently on Master, we just have four songs and three podcasts in the podcast file, so I'm going
+
+11
+00:00:36,780 --> 00:00:37,950
+to make a new branch.
+
+12
+00:00:37,980 --> 00:00:39,390
+Let's do get switch.
+
+13
+00:00:39,390 --> 00:00:40,020
+You know what?
+
+14
+00:00:40,020 --> 00:00:48,600
+Why don't I just to be different, I'll use git checkout, dash b if you remember, this is another
+
+15
+00:00:48,600 --> 00:00:50,910
+way of making a branch and switching to it.
+
+16
+00:00:50,910 --> 00:00:53,500
+It's the old way of doing it before get switch.
+
+17
+00:00:53,550 --> 00:00:57,090
+It's Dash B to make the branch and switch to it.
+
+18
+00:00:57,120 --> 00:00:58,650
+It's kind of confusing.
+
+19
+00:00:58,650 --> 00:01:01,950
+The alternative is get switch dash c.
+
+20
+00:01:01,950 --> 00:01:06,660
+Anyway, I might be screwing you over by mixing and matching them.
+
+21
+00:01:06,660 --> 00:01:07,110
+I don't know.
+
+22
+00:01:07,110 --> 00:01:07,780
+Maybe I'm.
+
+23
+00:01:07,800 --> 00:01:12,030
+I'm telling myself it's better to expose you to them so that you see the different options.
+
+24
+00:01:12,030 --> 00:01:13,410
+But maybe it's just confusing.
+
+25
+00:01:13,410 --> 00:01:14,250
+I apologize.
+
+26
+00:01:14,250 --> 00:01:17,430
+Anyway, this branch is going to be called.
+
+27
+00:01:18,390 --> 00:01:21,240
+How about, I don't know, silence?
+
+28
+00:01:22,330 --> 00:01:22,960
+Okay.
+
+29
+00:01:22,960 --> 00:01:28,120
+So get check out Dash be silence and this playlist.
+
+30
+00:01:28,360 --> 00:01:30,610
+The person who wants silence.
+
+31
+00:01:31,130 --> 00:01:35,480
+They're going to go to their playlist and remove everything.
+
+32
+00:01:35,500 --> 00:01:40,360
+All songs and all podcasts like that.
+
+33
+00:01:40,780 --> 00:01:42,440
+And they're going to add and commit.
+
+34
+00:01:42,460 --> 00:01:43,720
+So get add.
+
+35
+00:01:43,870 --> 00:01:46,330
+Let's just add dot get commit.
+
+36
+00:01:48,930 --> 00:01:54,330
+Empty podcasts and songs files.
+
+37
+00:01:55,110 --> 00:01:58,710
+All right, so that's our first half, right?
+
+38
+00:01:58,710 --> 00:02:03,090
+We have our branch silence that we basically just emptied everything out of.
+
+39
+00:02:03,240 --> 00:02:04,260
+We still have the files.
+
+40
+00:02:04,260 --> 00:02:11,070
+So then I'm going to switch back to Master, get switch master and what should we do?
+
+41
+00:02:11,070 --> 00:02:13,470
+Let's add a podcast.
+
+42
+00:02:13,470 --> 00:02:21,840
+So the lead Radiolab, This American Life one I like recently is Recipe Club and another one is Broken
+
+43
+00:02:21,840 --> 00:02:25,800
+Record, a great music podcast, and then we'll add a song in here.
+
+44
+00:02:26,310 --> 00:02:30,120
+Should we do another Abba song about Waterloo by ABBA?
+
+45
+00:02:30,930 --> 00:02:36,300
+All right, so I'm going to add and commit those get add dot, get commit.
+
+46
+00:02:36,300 --> 00:02:41,760
+Let's just go with, I don't know something generic add podcasts and songs.
+
+47
+00:02:41,760 --> 00:02:47,520
+It's not a very it's not a good commit message at all, but just keeping it quick and simple.
+
+48
+00:02:47,670 --> 00:02:52,380
+Okay, so this is where we stand now on my master branch.
+
+49
+00:02:52,380 --> 00:02:55,350
+I have this new commit add podcast in songs.
+
+50
+00:02:55,350 --> 00:02:55,520
+Right?
+
+51
+00:02:55,530 --> 00:03:00,510
+I added this right here, Waterloo by ABBA and these two podcasts.
+
+52
+00:03:00,510 --> 00:03:06,120
+But before I did that, I branched off and that's where we created our branch called Silence.
+
+53
+00:03:06,120 --> 00:03:13,050
+And on the Silence Branch, I did one thing and one thing only, which was I emptied out those two files.
+
+54
+00:03:13,200 --> 00:03:17,370
+So I have a new commit on silence and I have a new commit on master.
+
+55
+00:03:17,370 --> 00:03:23,640
+I'm going to try and merge them and as we know, that should generate a conflict because it's not as
+
+56
+00:03:23,640 --> 00:03:30,000
+simple as a fast forward and get can't figure out automatically how to merge these because we edited
+
+57
+00:03:30,120 --> 00:03:36,870
+this podcast file both on this branch and on the Silence branch and we did the same thing for the songs
+
+58
+00:03:36,870 --> 00:03:37,380
+file.
+
+59
+00:03:37,650 --> 00:03:43,290
+So if I want to merge in the Silence branch to master, I'll check get status.
+
+60
+00:03:43,290 --> 00:03:46,500
+Okay we're good to go get merge silence.
+
+61
+00:03:47,670 --> 00:03:51,690
+And now we have an example where we have two files with conflicts.
+
+62
+00:03:51,690 --> 00:03:53,580
+So that's another thing I wanted to demonstrate.
+
+63
+00:03:53,580 --> 00:03:55,620
+You're not always just going to get one file.
+
+64
+00:03:56,640 --> 00:04:01,920
+Sometimes you can get a whole bunch of files, especially if, well, we can address that later.
+
+65
+00:04:01,920 --> 00:04:08,280
+If things have gone wrong or you're you're not really getting your coworkers code as frequently as you
+
+66
+00:04:08,280 --> 00:04:09,000
+should.
+
+67
+00:04:09,030 --> 00:04:14,460
+Let's say you do a whole bunch of work for like a year, and then you come back to the office and you
+
+68
+00:04:14,460 --> 00:04:15,720
+try and merge things into master.
+
+69
+00:04:15,720 --> 00:04:17,850
+It's not going to go well anyway.
+
+70
+00:04:17,880 --> 00:04:21,360
+Two files with conflicts, songs and podcasts.
+
+71
+00:04:21,390 --> 00:04:25,070
+Automatic Merge failed, fix them and then add and commit.
+
+72
+00:04:25,080 --> 00:04:30,900
+So I wanted to show how to do this with VS code where there's a built in interface.
+
+73
+00:04:30,900 --> 00:04:34,590
+So most editors, code editors have some support for this.
+
+74
+00:04:35,130 --> 00:04:41,970
+This is really nice if you have to resolve conflicts, we don't have to manually go and delete everything,
+
+75
+00:04:42,150 --> 00:04:42,480
+right?
+
+76
+00:04:42,480 --> 00:04:48,540
+If I if I want to accept silence, if that's what I want on this branch, I merge in the changes from
+
+77
+00:04:48,540 --> 00:04:51,660
+silence and I want the silence version.
+
+78
+00:04:51,660 --> 00:04:56,610
+So the empty files I can click accept incoming change.
+
+79
+00:04:56,610 --> 00:04:59,880
+This is the incoming change or I can accept the current change.
+
+80
+00:04:59,880 --> 00:05:04,800
+What we already have on Master or I can accept both changes which is not going to look like anything
+
+81
+00:05:04,800 --> 00:05:08,550
+because silence, as you can see, there's nothing here.
+
+82
+00:05:08,550 --> 00:05:10,830
+We deleted it right on that branch.
+
+83
+00:05:10,830 --> 00:05:12,510
+We committed an empty file.
+
+84
+00:05:12,720 --> 00:05:18,630
+So in each of these files where there's a conflict, I could go about it manually, delete these markers
+
+85
+00:05:18,630 --> 00:05:23,670
+myself, choose what I want, or I can just accept incoming change.
+
+86
+00:05:24,430 --> 00:05:25,540
+So it does it for me.
+
+87
+00:05:25,540 --> 00:05:30,280
+Not that impressive because it just deletes what was in there, but that's only because our incoming
+
+88
+00:05:30,280 --> 00:05:31,780
+branch was empty in this file.
+
+89
+00:05:32,800 --> 00:05:34,030
+So I could do that.
+
+90
+00:05:34,030 --> 00:05:36,520
+Or if I wanted to, I can put anything in here.
+
+91
+00:05:36,520 --> 00:05:39,040
+Just I can add changes in here.
+
+92
+00:05:39,040 --> 00:05:42,010
+Silence and save that and add and commit.
+
+93
+00:05:42,010 --> 00:05:42,940
+It's totally up to me.
+
+94
+00:05:42,940 --> 00:05:45,310
+I'm not limited to just either or.
+
+95
+00:05:45,340 --> 00:05:51,040
+Sometimes when you're resolving conflicts, you may need to go in and add additional code or a comment
+
+96
+00:05:51,040 --> 00:05:52,360
+to explain something.
+
+97
+00:05:52,540 --> 00:05:55,660
+So it's not always just a binary, this one, that one.
+
+98
+00:05:55,660 --> 00:05:59,980
+Sometimes there's a bit of a grey area, so I'm going to accept the incoming change again.
+
+99
+00:05:59,980 --> 00:06:02,860
+Or maybe I'll just show you if you click Accept Current Change.
+
+100
+00:06:03,920 --> 00:06:08,090
+We end up with what we currently had on Master, but I'm going to delete that.
+
+101
+00:06:08,240 --> 00:06:10,790
+We've now gone to silence in both of them.
+
+102
+00:06:10,790 --> 00:06:15,260
+We merged in those changes that was coming from our Silence branch.
+
+103
+00:06:15,260 --> 00:06:17,660
+And now I can go over to my terminal.
+
+104
+00:06:18,600 --> 00:06:25,020
+Oh, by the way, here, the guy also shows me that there's conflicts, and specifically it will even
+
+105
+00:06:25,020 --> 00:06:28,560
+show me where the conflicts are, and I guess I can resolve them here.
+
+106
+00:06:28,650 --> 00:06:32,010
+I've never used get cracking to do that, but it's kind of cool.
+
+107
+00:06:32,520 --> 00:06:38,030
+Anyway, I'm going to go to my terminal and get status.
+
+108
+00:06:38,040 --> 00:06:43,680
+We have those two files we modified, so I'm going to add them and get commit and just do something
+
+109
+00:06:43,680 --> 00:06:46,410
+like merge silence branch.
+
+110
+00:06:47,690 --> 00:06:48,830
+And there we go.
+
+111
+00:06:49,280 --> 00:06:54,380
+Now we take a look at the guy and we can see we merge that silence branch into master.
+
+112
+00:06:54,380 --> 00:06:59,780
+And with that merge it doesn't look like much because our files are both empty.
+
+113
+00:06:59,870 --> 00:07:02,450
+But that did indeed come from the Silence branch.
+
+114
+00:07:03,410 --> 00:07:07,100
+We still have this whole history on Master, a whole bunch of commits that came before it.
+
+115
+00:07:07,610 --> 00:07:13,190
+You can see that with git log, write all these commits and then we have merge silence branch and we
+
+116
+00:07:13,190 --> 00:07:15,380
+can see empty podcasts and songs files.
+
+117
+00:07:15,380 --> 00:07:18,950
+That is the commit that came from the Silence branch right there.
+
+118
+00:07:20,090 --> 00:07:22,340
+So that's just another example of resolving conflicts.
+
+119
+00:07:22,340 --> 00:07:24,750
+In this case, we had two files that we resolved.
+
+120
+00:07:24,770 --> 00:07:27,800
+You can have, I mean, as many as there are.
+
+121
+00:07:27,830 --> 00:07:29,090
+There's no limit on that.
+
+122
+00:07:29,090 --> 00:07:30,610
+And we fix them all in the same way.
+
+123
+00:07:30,620 --> 00:07:34,940
+You open each one up, figure out what you want to keep, keep the incoming branch changes, the current
+
+124
+00:07:34,940 --> 00:07:36,410
+branch changes or both.
+
+125
+00:07:36,440 --> 00:07:40,860
+Save your files and then make that new commit to merge them OC.
+

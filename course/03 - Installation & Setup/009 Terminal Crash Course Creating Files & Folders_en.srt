@@ -1,0 +1,740 @@
+1
+00:00:00,120 --> 00:00:00,540
+All right.
+
+2
+00:00:00,540 --> 00:00:06,450
+So the next group of commands I'm going to show you have to do with file and folder creation as well
+
+3
+00:00:06,450 --> 00:00:08,730
+as deletion or destruction.
+
+4
+00:00:08,910 --> 00:00:11,160
+So we've seen how to navigate around.
+
+5
+00:00:11,220 --> 00:00:14,860
+But another really important piece is being able to make new files.
+
+6
+00:00:14,880 --> 00:00:20,130
+So normally the way we would make a new file without the terminal would probably involve opening up
+
+7
+00:00:20,730 --> 00:00:21,810
+some application.
+
+8
+00:00:21,810 --> 00:00:28,710
+Like I use VS code, I have it open Visual Studio code and then I could go file new or just command
+
+9
+00:00:28,710 --> 00:00:32,490
+n and then start making a file, whatever type of file this is.
+
+10
+00:00:32,490 --> 00:00:34,800
+Let's say it's a JavaScript file.
+
+11
+00:00:34,800 --> 00:00:36,780
+I can put some JavaScript in it.
+
+12
+00:00:36,810 --> 00:00:37,740
+Hello.
+
+13
+00:00:38,550 --> 00:00:44,370
+It doesn't matter if you don't know JavaScript and then I can save this file and then I pick a destination.
+
+14
+00:00:44,370 --> 00:00:44,760
+Right.
+
+15
+00:00:44,760 --> 00:00:53,040
+And I give it a name like app JS with a dot JS extension and then I select somewhere for that to go.
+
+16
+00:00:53,220 --> 00:00:56,280
+That's the typical workflow for creating a new file.
+
+17
+00:00:56,280 --> 00:01:02,610
+If you're not doing it from a text editor or from some whatever, Excel or Photoshop or something,
+
+18
+00:01:02,610 --> 00:01:06,150
+you open an application and you create a file in the application.
+
+19
+00:01:06,300 --> 00:01:11,630
+But instead we can use a command called Touch Touch to Use.
+
+20
+00:01:12,330 --> 00:01:16,350
+It doesn't actually stand for anything like the other commands where we have CD is changed.
+
+21
+00:01:16,350 --> 00:01:18,810
+Directory touch is just touch.
+
+22
+00:01:19,350 --> 00:01:20,760
+It has a secondary use.
+
+23
+00:01:20,760 --> 00:01:26,190
+We're not really going to go into where you can touch a file that already exists and you're simply updating
+
+24
+00:01:26,190 --> 00:01:27,300
+the modified time.
+
+25
+00:01:27,300 --> 00:01:30,150
+It really doesn't matter for now if it helps.
+
+26
+00:01:30,150 --> 00:01:33,240
+Just think of it as a very weird name because it is very odd.
+
+27
+00:01:33,240 --> 00:01:38,340
+If I were designing it, there'd be a command called, I don't know, create or make or something.
+
+28
+00:01:38,970 --> 00:01:46,470
+Anyway, so all that we need to do is run, touch and then a space and then a file name or multiple
+
+29
+00:01:46,470 --> 00:01:47,730
+that we want to create.
+
+30
+00:01:47,730 --> 00:01:53,250
+And when we hit enter, wherever we currently are, whatever directory we're in, there will now be
+
+31
+00:01:53,250 --> 00:01:56,550
+a file in this case called Purple Text.
+
+32
+00:01:57,030 --> 00:01:59,520
+So I'll demonstrate this, I'll clear.
+
+33
+00:02:00,360 --> 00:02:06,180
+And I'm currently in my home directory so I can just make a file right here if I want to.
+
+34
+00:02:06,720 --> 00:02:10,800
+Why don't I open finder just so you have it, so you can see it over there?
+
+35
+00:02:10,800 --> 00:02:11,700
+I know it's not.
+
+36
+00:02:12,240 --> 00:02:13,230
+It's not that easy to read.
+
+37
+00:02:13,230 --> 00:02:15,840
+Unfortunately, this is the largest I can make these icons.
+
+38
+00:02:15,840 --> 00:02:17,160
+But you're not missing much.
+
+39
+00:02:17,400 --> 00:02:21,420
+Anyway, over here, I'm going to create a file.
+
+40
+00:02:21,420 --> 00:02:22,650
+What should we call this one?
+
+41
+00:02:23,190 --> 00:02:26,460
+How about Purple Dot?
+
+42
+00:02:26,490 --> 00:02:29,940
+JS So it's a JavaScript file called Purple.
+
+43
+00:02:31,350 --> 00:02:32,730
+So we don't really see anything changed.
+
+44
+00:02:32,730 --> 00:02:41,040
+But if I type LZ now we see a file that's been created and over here in my finder window I can see purple
+
+45
+00:02:41,340 --> 00:02:45,210
+JS so I can also make multiple at once.
+
+46
+00:02:45,210 --> 00:02:50,940
+I could do red text for a text file and orange.
+
+47
+00:02:51,120 --> 00:02:54,150
+What's another dot pi for a python file?
+
+48
+00:02:54,180 --> 00:02:56,250
+I could even make a PDF file.
+
+49
+00:02:56,280 --> 00:02:58,620
+These are all going to be completely empty.
+
+50
+00:02:58,620 --> 00:03:02,610
+Just an empty shell of a file with a name and an extension.
+
+51
+00:03:03,060 --> 00:03:04,030
+So what can I do?
+
+52
+00:03:04,050 --> 00:03:09,720
+Yellow dot pdf that just made me three files in one go.
+
+53
+00:03:09,750 --> 00:03:11,190
+Red, orange and yellow.
+
+54
+00:03:11,220 --> 00:03:18,660
+I can see them here if I run LZ or I can see them over here by inspecting them with my eyes.
+
+55
+00:03:18,660 --> 00:03:20,940
+I guess navigating.
+
+56
+00:03:21,150 --> 00:03:24,780
+I can see them purple, orange, red and yellow.
+
+57
+00:03:24,960 --> 00:03:25,890
+PDF.
+
+58
+00:03:25,950 --> 00:03:27,840
+It is a true pdf file.
+
+59
+00:03:27,870 --> 00:03:30,270
+My Mac is displaying the PDF icon.
+
+60
+00:03:30,540 --> 00:03:34,740
+I can do the same thing of course over here on my windows side.
+
+61
+00:03:35,160 --> 00:03:35,910
+Let's see.
+
+62
+00:03:35,910 --> 00:03:36,510
+We're just.
+
+63
+00:03:36,510 --> 00:03:36,990
+Whoops.
+
+64
+00:03:36,990 --> 00:03:40,650
+LS we're in the home directory, so I could make a file.
+
+65
+00:03:40,650 --> 00:03:44,310
+Here, let me clear this touch.
+
+66
+00:03:44,850 --> 00:03:48,120
+How about magenta dot txt?
+
+67
+00:03:49,230 --> 00:03:52,590
+If I type LZ, that will show up right there.
+
+68
+00:03:52,590 --> 00:03:56,190
+And if I go to the file explorer start.
+
+69
+00:03:57,560 --> 00:04:00,890
+Here it is magenta and it's a totally empty file.
+
+70
+00:04:00,890 --> 00:04:02,300
+And I could open it from here.
+
+71
+00:04:02,330 --> 00:04:03,740
+Select what to open it with.
+
+72
+00:04:03,740 --> 00:04:04,940
+Sure, notepad.
+
+73
+00:04:05,270 --> 00:04:06,920
+And then I can start working on it.
+
+74
+00:04:07,700 --> 00:04:10,940
+But I don't have anything to work on, so I'm just going to ignore that.
+
+75
+00:04:11,750 --> 00:04:14,090
+So that's the basic concept of touch.
+
+76
+00:04:14,690 --> 00:04:21,050
+The next thing I want to show you is how we can make new folders so touches, how we make new files.
+
+77
+00:04:21,200 --> 00:04:23,570
+We can make as many as we want in a single go.
+
+78
+00:04:23,600 --> 00:04:25,610
+Just separate the names by spaces.
+
+79
+00:04:25,610 --> 00:04:27,350
+Specify an extension.
+
+80
+00:04:28,080 --> 00:04:31,540
+And those files will be created in your current directory.
+
+81
+00:04:31,560 --> 00:04:33,060
+So I guess I should illustrate.
+
+82
+00:04:33,240 --> 00:04:38,610
+If I change directories into something else, for example, uh, what should I do?
+
+83
+00:04:38,760 --> 00:04:40,240
+Let's go on the window side.
+
+84
+00:04:40,260 --> 00:04:42,090
+I don't have anything on my desktop.
+
+85
+00:04:42,270 --> 00:04:45,570
+If I seed into desktop, I type LHS.
+
+86
+00:04:45,570 --> 00:04:46,590
+There's nothing there.
+
+87
+00:04:46,590 --> 00:04:53,090
+But if I touch a file, how about touch cyan dot js?
+
+88
+00:04:53,520 --> 00:04:58,380
+Now I have a file on my desktop and I'm sure I could show that to you.
+
+89
+00:04:58,410 --> 00:05:01,500
+Here it is the only file on my desktop.
+
+90
+00:05:01,950 --> 00:05:08,010
+So where I am when I run this command touch, that is where the file will be created.
+
+91
+00:05:08,040 --> 00:05:13,800
+Although you can actually create a file somewhere else that you're currently not inside.
+
+92
+00:05:13,830 --> 00:05:16,640
+For example, I could create a file instead of pets.
+
+93
+00:05:16,650 --> 00:05:18,580
+I am not in the pets directory.
+
+94
+00:05:18,600 --> 00:05:22,620
+All I need to do is touch and then the path to get to pets.
+
+95
+00:05:22,620 --> 00:05:28,500
+From where I am, I am in this folder so I would reference pets, which is somewhere here.
+
+96
+00:05:29,130 --> 00:05:29,790
+Where are you?
+
+97
+00:05:30,300 --> 00:05:31,050
+Here it is.
+
+98
+00:05:31,350 --> 00:05:34,920
+And then maybe inside of horses.
+
+99
+00:05:35,070 --> 00:05:37,530
+I could create a file so I could do touch pets.
+
+100
+00:05:37,530 --> 00:05:38,910
+Slash horses.
+
+101
+00:05:38,910 --> 00:05:39,960
+Slash.
+
+102
+00:05:39,990 --> 00:05:42,850
+How about Rocky Dot?
+
+103
+00:05:42,870 --> 00:05:43,230
+I don't know.
+
+104
+00:05:43,230 --> 00:05:49,740
+A PNG file which you normally wouldn't create an empty PNG, but there we go and we see it created over
+
+105
+00:05:49,740 --> 00:05:50,270
+here.
+
+106
+00:05:50,280 --> 00:05:53,520
+I'm not going to see it in my home directory.
+
+107
+00:05:53,520 --> 00:05:54,350
+It's not here.
+
+108
+00:05:54,360 --> 00:05:56,130
+I could seed into pets.
+
+109
+00:05:56,490 --> 00:05:57,710
+I still won't see it.
+
+110
+00:05:57,720 --> 00:06:00,810
+I could seed into horses and now I see it.
+
+111
+00:06:00,930 --> 00:06:04,260
+All right, so that's the basics of making files.
+
+112
+00:06:04,260 --> 00:06:08,700
+You can make them in a different location as long as you reference the correct path from where you are,
+
+113
+00:06:08,880 --> 00:06:12,870
+or you just make them in the current location where you are, whatever you see when you type.
+
+114
+00:06:13,860 --> 00:06:20,490
+If you try and create a new file with touch, dot, text or whatever the file is, you're creating it
+
+115
+00:06:20,490 --> 00:06:21,690
+in this location.
+
+116
+00:06:21,690 --> 00:06:22,790
+And there you are.
+
+117
+00:06:22,800 --> 00:06:27,250
+There's our second horse, good old Rocky, and asked your architect.
+
+118
+00:06:28,710 --> 00:06:31,680
+The next thing we need to know how to do is make folders.
+
+119
+00:06:31,680 --> 00:06:36,340
+So to make a directory the command is make dear or make dir.
+
+120
+00:06:36,360 --> 00:06:37,200
+I guess.
+
+121
+00:06:37,830 --> 00:06:40,290
+I guess you pronounce it directory.
+
+122
+00:06:40,290 --> 00:06:41,260
+So make dir.
+
+123
+00:06:41,280 --> 00:06:43,110
+I always say make dear in my head.
+
+124
+00:06:43,110 --> 00:06:43,860
+It doesn't matter.
+
+125
+00:06:43,860 --> 00:06:45,330
+MGK d i r.
+
+126
+00:06:45,540 --> 00:06:49,740
+So this command you follow it up with the name of directory you want to create.
+
+127
+00:06:49,770 --> 00:06:51,270
+It works in the same way as touch.
+
+128
+00:06:51,270 --> 00:06:56,610
+You can pass in multiple, separate them by spaces and by default they'll be created in your current
+
+129
+00:06:56,610 --> 00:06:58,920
+location, in your working directory.
+
+130
+00:06:59,520 --> 00:07:03,000
+So let's go to the pets directory right now.
+
+131
+00:07:03,000 --> 00:07:10,230
+I'm in this horses directory, so I'm going to back out and I want to make a new type of pet in this
+
+132
+00:07:10,230 --> 00:07:11,100
+directory.
+
+133
+00:07:11,910 --> 00:07:13,350
+So what should I do?
+
+134
+00:07:13,590 --> 00:07:14,760
+Frogs.
+
+135
+00:07:14,760 --> 00:07:16,020
+How about turtles?
+
+136
+00:07:16,020 --> 00:07:17,910
+So we'll make a new directory.
+
+137
+00:07:17,910 --> 00:07:22,950
+So not touch, but dear turtles and it doesn't have to be capitalized.
+
+138
+00:07:22,950 --> 00:07:25,890
+I'm just doing that because all these other directories are.
+
+139
+00:07:26,340 --> 00:07:29,670
+And if I show you over here, there's no turtles folder.
+
+140
+00:07:31,050 --> 00:07:33,180
+But now there is and it's empty.
+
+141
+00:07:33,690 --> 00:07:40,140
+So if I type ls I see turtles, I can see into turtles I can create a file in here.
+
+142
+00:07:40,710 --> 00:07:42,060
+What's a famous turtle?
+
+143
+00:07:42,810 --> 00:07:47,580
+I guess there's Lonesome George, who technically is a tortoise, but we'll make a file for him.
+
+144
+00:07:47,580 --> 00:07:48,930
+How about a Python file?
+
+145
+00:07:50,010 --> 00:07:50,700
+Great.
+
+146
+00:07:50,700 --> 00:07:56,400
+And then I could even make another folder in here, which I call this folder instead of turtles.
+
+147
+00:07:56,400 --> 00:07:57,990
+Let's make two directories.
+
+148
+00:07:58,410 --> 00:08:00,630
+How about sea turtles?
+
+149
+00:08:01,260 --> 00:08:03,000
+And this is actually an important note.
+
+150
+00:08:03,000 --> 00:08:06,540
+You don't want to put spaces in your names of files.
+
+151
+00:08:07,290 --> 00:08:09,930
+We want to, especially if we're using make directory.
+
+152
+00:08:09,930 --> 00:08:12,960
+It's going to think this is two directories we want to make.
+
+153
+00:08:12,990 --> 00:08:14,550
+See Space Turtles.
+
+154
+00:08:14,760 --> 00:08:18,030
+If you really wanted a space, you could do this with quotes.
+
+155
+00:08:18,030 --> 00:08:20,130
+But I don't recommend having spaces in there.
+
+156
+00:08:20,130 --> 00:08:21,480
+It just causes problems.
+
+157
+00:08:21,480 --> 00:08:23,640
+So do sea turtles.
+
+158
+00:08:23,640 --> 00:08:26,010
+Sea turtles like this sea underscore turtles.
+
+159
+00:08:26,010 --> 00:08:26,850
+It doesn't matter.
+
+160
+00:08:27,330 --> 00:08:32,100
+So I'll make a directory for sea turtles and then we'll just call them land turtles.
+
+161
+00:08:33,630 --> 00:08:34,049
+Sure.
+
+162
+00:08:34,049 --> 00:08:37,650
+I don't think that's the right term, actually, but here we are.
+
+163
+00:08:37,650 --> 00:08:41,010
+I now have two directories and a file inside of turtles.
+
+164
+00:08:42,080 --> 00:08:45,980
+So two empty folders I just made and then I can fill out their contents.
+
+165
+00:08:46,130 --> 00:08:48,040
+So let's make directory.
+
+166
+00:08:48,050 --> 00:08:49,170
+You just pass in a name.
+
+167
+00:08:49,190 --> 00:08:51,610
+I'll quickly demonstrate this on a Windows machine.
+
+168
+00:08:51,620 --> 00:08:52,910
+I'm on the desktop.
+
+169
+00:08:52,940 --> 00:08:55,550
+I'll make a folder here mkdir.
+
+170
+00:08:55,580 --> 00:08:58,550
+How about I don't know, cars?
+
+171
+00:08:58,910 --> 00:09:00,950
+And I'll do two at a time.
+
+172
+00:09:00,950 --> 00:09:02,780
+Cars and bikes.
+
+173
+00:09:04,230 --> 00:09:06,870
+And then if I want to view them, I could do LZ.
+
+174
+00:09:06,870 --> 00:09:08,100
+I see them right.
+
+175
+00:09:08,100 --> 00:09:13,770
+And they are visually represented differently, a different color, and then also a slash after their
+
+176
+00:09:13,770 --> 00:09:14,220
+name.
+
+177
+00:09:14,820 --> 00:09:20,790
+But I could also view my desktop and then I see the two empty folders plus my cyan file.
+
+178
+00:09:21,930 --> 00:09:24,960
+So that is make directory as well as touch.
+
+179
+00:09:24,960 --> 00:09:27,270
+Those are the two commands we saw in this video.
+
+180
+00:09:27,270 --> 00:09:30,680
+Just remember that they run relative to where you are.
+
+181
+00:09:30,690 --> 00:09:36,900
+So if you want to make a file in some folder, it's easiest if you navigate to that folder and you can
+
+182
+00:09:36,900 --> 00:09:42,420
+make 100 files at once using touch and then open up an editor or something to actually work on those
+
+183
+00:09:42,420 --> 00:09:43,080
+files.
+
+184
+00:09:43,490 --> 00:09:43,970
+Okay.
+
+185
+00:09:44,070 --> 00:09:47,760
+So next up, the last piece we're going to talk about deleting stuff.
+

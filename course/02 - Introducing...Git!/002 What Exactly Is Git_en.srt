@@ -1,0 +1,200 @@
+1
+00:00:00,210 --> 00:00:00,720
+Okay.
+
+2
+00:00:00,720 --> 00:00:03,390
+So let's begin with a very important question.
+
+3
+00:00:03,390 --> 00:00:05,340
+What exactly is get?
+
+4
+00:00:05,700 --> 00:00:12,380
+So get is what's known as a version control system, sometimes abbreviated as VCs.
+
+5
+00:00:12,390 --> 00:00:17,820
+Not only is it a VCs, it's actually the world's most popular version control system.
+
+6
+00:00:18,060 --> 00:00:21,120
+So what exactly is a version control system?
+
+7
+00:00:21,120 --> 00:00:22,800
+It doesn't sound all that glamorous.
+
+8
+00:00:22,920 --> 00:00:29,340
+Essentially, version control is software that helps track and manage changes to a set of files over
+
+9
+00:00:29,340 --> 00:00:29,940
+time.
+
+10
+00:00:30,210 --> 00:00:34,920
+Also, doesn't sound all that glamorous or exciting, but hugely important.
+
+11
+00:00:34,920 --> 00:00:41,730
+Think of companies like Facebook or Google with huge code bases, thousands of files and thousands of
+
+12
+00:00:41,730 --> 00:00:42,540
+developers.
+
+13
+00:00:42,540 --> 00:00:45,480
+They're all working in parallel and making changes day to day.
+
+14
+00:00:45,480 --> 00:00:50,550
+How do you manage those and track those changes and combine them and undo changes?
+
+15
+00:00:50,550 --> 00:00:54,420
+That is the role of a version control system like Git.
+
+16
+00:00:54,420 --> 00:01:02,100
+In general, most version control systems allow things like revisiting earlier versions of files, comparing
+
+17
+00:01:02,100 --> 00:01:05,129
+changes made between different versions and different files.
+
+18
+00:01:05,129 --> 00:01:10,800
+Undoing changes, sharing changes with other people get does this and more.
+
+19
+00:01:10,800 --> 00:01:15,810
+We're going to go into this in just a little bit, but that's a general intro to this concept of version
+
+20
+00:01:15,810 --> 00:01:16,470
+control.
+
+21
+00:01:16,470 --> 00:01:23,130
+And to be clear, Git is just one of many version control options out there over the years.
+
+22
+00:01:23,250 --> 00:01:30,630
+They've kind of come and gone, but some of the more well-known ones include Subversion, CVS and Mercurial,
+
+23
+00:01:30,630 --> 00:01:36,780
+and they all have similar goals of helping developers or helping users track changes to projects over
+
+24
+00:01:36,780 --> 00:01:37,320
+time.
+
+25
+00:01:37,320 --> 00:01:41,970
+But they do have significant differences in how they operate, the syntax and how they achieve those
+
+26
+00:01:41,970 --> 00:01:42,600
+goals.
+
+27
+00:01:42,600 --> 00:01:47,640
+But the good news for us, I mean, obviously this is a good course, so we're going to learn git but
+
+28
+00:01:47,640 --> 00:01:53,580
+there's a good reason to learn get it is the clear winner if there ever was a version control system
+
+29
+00:01:53,610 --> 00:01:57,840
+war get is clearly the most popular these days.
+
+30
+00:01:57,840 --> 00:02:03,750
+This is the most recent data I could find from three years ago 2018 StackOverflow Developer Survey.
+
+31
+00:02:03,780 --> 00:02:09,060
+Nearly 90% of respondents reported that Git was their version control system of choice.
+
+32
+00:02:09,060 --> 00:02:14,370
+And the thing is, in the last few years, this survey has just stopped asking this question.
+
+33
+00:02:14,370 --> 00:02:21,990
+It's abandoned it because it's just so clear the number is probably more like 95% these days of developers
+
+34
+00:02:21,990 --> 00:02:22,920
+that use Git.
+
+35
+00:02:22,920 --> 00:02:24,240
+So we're here to learn Git.
+
+36
+00:02:24,240 --> 00:02:25,620
+That's good news for us.
+
+37
+00:02:25,920 --> 00:02:31,410
+I'll end by just showing you what Git calls itself on the Get Home page.
+
+38
+00:02:31,410 --> 00:02:36,300
+It's a free and open source distributed version control system designed to handle everything from small
+
+39
+00:02:36,300 --> 00:02:39,000
+to very large projects with speed and efficiency.
+
+40
+00:02:39,000 --> 00:02:40,470
+It's easy to learn.
+
+41
+00:02:41,850 --> 00:02:42,930
+We'll see about that.
+
+42
+00:02:42,930 --> 00:02:47,940
+It's not bad to learn, but I wouldn't say it's painless and it has a tiny footprint with lightning
+
+43
+00:02:47,940 --> 00:02:48,960
+fast performance.
+
+44
+00:02:48,960 --> 00:02:52,230
+It outclasses other tools like subversion cves.
+
+45
+00:02:52,260 --> 00:02:53,370
+Oh boy, look at that.
+
+46
+00:02:53,370 --> 00:02:54,960
+Trash talking, the competition.
+
+47
+00:02:54,960 --> 00:02:57,060
+Anyway, the stuff we care about is up here.
+
+48
+00:02:57,060 --> 00:03:00,600
+It is a version control system that is git at its core.
+
+49
+00:03:00,600 --> 00:03:04,410
+It helps users manage changes to projects over time.
+
+50
+00:03:04,410 --> 00:03:08,670
+In the next video, we'll talk in more concrete terms about what Git actually does.
+

@@ -1,0 +1,668 @@
+1
+00:00:00,090 --> 00:00:03,990
+So as I've mentioned a couple of times, not all marriages are fast forward marriages.
+
+2
+00:00:03,990 --> 00:00:06,550
+I'm going to show you an example of that in this video.
+
+3
+00:00:06,570 --> 00:00:08,070
+So imagine you're working.
+
+4
+00:00:08,370 --> 00:00:08,880
+I don't know.
+
+5
+00:00:08,880 --> 00:00:15,060
+You're on a team, two people and you have your master branch on a project and then you create your
+
+6
+00:00:15,060 --> 00:00:18,570
+own branch to fix a bug or try some experiment out or whatever it is.
+
+7
+00:00:18,570 --> 00:00:22,860
+And you're working over there for a few hours and then you're happy with it and you want to merge it
+
+8
+00:00:22,860 --> 00:00:24,570
+back in to the master branch.
+
+9
+00:00:24,570 --> 00:00:29,300
+But then you realize, Hey, somebody's already done some work on the master branch.
+
+10
+00:00:29,310 --> 00:00:33,360
+My teammate, my partner has done work since I created my branch.
+
+11
+00:00:33,360 --> 00:00:40,020
+So there's a commit over here or maybe ten commits that I don't have on my branch on bug fix but is
+
+12
+00:00:40,020 --> 00:00:40,830
+on master.
+
+13
+00:00:40,830 --> 00:00:44,340
+So when I try and merge it's no longer a fast forward.
+
+14
+00:00:44,340 --> 00:00:49,590
+If I just try and take these two bug fixed branch commits, it's not a matter of just having master
+
+15
+00:00:49,590 --> 00:00:50,460
+catch up.
+
+16
+00:00:50,550 --> 00:00:56,280
+Now there's new information that I don't have on bug fix and there's information on bug fix that master
+
+17
+00:00:56,280 --> 00:00:57,080
+does not have.
+
+18
+00:00:57,090 --> 00:01:00,930
+So to make this merge happen, it's not terribly complicated or anything.
+
+19
+00:01:00,930 --> 00:01:05,489
+We use the exact same commands but get may not be able to do it automatically.
+
+20
+00:01:05,489 --> 00:01:10,950
+For us it depends on the particulars of our commits and if there's conflicting information.
+
+21
+00:01:10,950 --> 00:01:17,910
+For example, what happens if on the master branch my partner edited line 59 of a file and on the bug
+
+22
+00:01:17,910 --> 00:01:21,750
+fixed branch I edited the same line to be something else.
+
+23
+00:01:21,750 --> 00:01:24,660
+Which one wins when there's a conflict?
+
+24
+00:01:24,660 --> 00:01:27,390
+Well, that's something we're going to address in the next video.
+
+25
+00:01:27,390 --> 00:01:32,670
+For now, I'm going to show you an example where we don't arrive at a conflict and instead get is able
+
+26
+00:01:32,670 --> 00:01:34,620
+to make the merge for us automatically.
+
+27
+00:01:34,620 --> 00:01:40,560
+So what happens in these scenarios when it's not a fast forward merge, something called a merge commit
+
+28
+00:01:40,590 --> 00:01:41,580
+is generated.
+
+29
+00:01:41,580 --> 00:01:47,790
+Basically get just makes a commit for us on the branch that we're merging into the recipient branch.
+
+30
+00:01:47,790 --> 00:01:52,110
+It makes a new commit for us and it will prompt us to include a message.
+
+31
+00:01:52,440 --> 00:01:58,890
+And one thing I'll just call your attention to really quickly is that this new merge commit is the first
+
+32
+00:01:58,890 --> 00:02:03,180
+commit we've seen that actually has two different parent commits.
+
+33
+00:02:03,180 --> 00:02:05,040
+Remember, every commit has a parent.
+
+34
+00:02:05,040 --> 00:02:11,009
+So if we take this commit here, it has one parent, this one has one parent, this one has this parent
+
+35
+00:02:11,009 --> 00:02:13,170
+and this parent from bug fix.
+
+36
+00:02:13,170 --> 00:02:17,420
+So commits can have multiple parent and in fact they do whenever we make a merge commit.
+
+37
+00:02:17,430 --> 00:02:19,380
+I just want to point that out really quickly.
+
+38
+00:02:19,380 --> 00:02:21,630
+This is something that will come up later on anyway.
+
+39
+00:02:21,630 --> 00:02:24,450
+For now let's try making a merge commit so I'll show you this.
+
+40
+00:02:24,450 --> 00:02:29,760
+However, with our road trip playlist, as great as this repo is, there's quite a few branches going
+
+41
+00:02:29,760 --> 00:02:34,410
+on and it's kind of difficult to just visually show you with all this other clutter.
+
+42
+00:02:34,410 --> 00:02:38,670
+So what I'm going to do is just duplicate some of what we've done.
+
+43
+00:02:38,670 --> 00:02:42,720
+I'm just going to make a new repo really quickly, so I'm going to back out of here.
+
+44
+00:02:46,120 --> 00:02:47,140
+I'll call it playlist.
+
+45
+00:02:47,140 --> 00:02:48,100
+Take two.
+
+46
+00:02:48,370 --> 00:02:51,620
+I'll seed into that, make sure I'm not in a repo.
+
+47
+00:02:51,640 --> 00:02:55,690
+I'll initialize and then I'm going to make a single file on my master branch.
+
+48
+00:02:55,690 --> 00:03:00,610
+I'm going to call this song's txt and I'm going to open this up in my editor.
+
+49
+00:03:00,640 --> 00:03:02,350
+Okay, so here's that file.
+
+50
+00:03:02,530 --> 00:03:10,510
+I'll add a new commit here, get add songs, text, get commit, add songs file.
+
+51
+00:03:11,230 --> 00:03:11,530
+All right.
+
+52
+00:03:11,530 --> 00:03:14,050
+So I'm just going to quickly add two songs in here.
+
+53
+00:03:14,500 --> 00:03:16,540
+I added two songs by ABBA again.
+
+54
+00:03:17,510 --> 00:03:20,460
+I've opened this repo and get crackin so you can see.
+
+55
+00:03:20,480 --> 00:03:24,280
+Master Branch has exactly one commit add songs file.
+
+56
+00:03:24,290 --> 00:03:28,040
+Now I'll make my commit in here just to show you again.
+
+57
+00:03:28,040 --> 00:03:29,450
+I can do it visually.
+
+58
+00:03:29,450 --> 00:03:35,480
+I click stage for that file instead of get ad and then add to ABA songs.
+
+59
+00:03:36,650 --> 00:03:37,910
+Commit changes to one file.
+
+60
+00:03:37,910 --> 00:03:39,080
+I'm on the master branch.
+
+61
+00:03:39,110 --> 00:03:39,800
+Great.
+
+62
+00:03:39,800 --> 00:03:45,830
+So I'm now going to branch off from this master branch and I'll make a branch called ABA.
+
+63
+00:03:45,860 --> 00:03:46,450
+Sure.
+
+64
+00:03:46,460 --> 00:03:51,050
+It's going to include more ABA songs, so I'll go ahead and do that.
+
+65
+00:03:51,260 --> 00:03:59,120
+I'll do it from here, get branch aba and then I can switch to it, get switched to ABA.
+
+66
+00:03:59,870 --> 00:04:02,150
+So I'll add another couple ABA songs.
+
+67
+00:04:02,160 --> 00:04:03,770
+I'll make a commit on this branch.
+
+68
+00:04:04,040 --> 00:04:14,300
+All right, so I'll do Mama mia by ABA and then I'll stage that file and then add Mama mia and I'll
+
+69
+00:04:14,300 --> 00:04:15,680
+do one more commit.
+
+70
+00:04:16,220 --> 00:04:17,180
+What's another song?
+
+71
+00:04:17,180 --> 00:04:17,690
+I guess?
+
+72
+00:04:17,690 --> 00:04:18,800
+Dancing queen.
+
+73
+00:04:19,430 --> 00:04:21,800
+Dancing Queen ABA.
+
+74
+00:04:22,280 --> 00:04:23,810
+And I'll do the same thing.
+
+75
+00:04:24,140 --> 00:04:28,340
+Definitely do not need to do this with the guy, but I'm just trying to show it in two different ways.
+
+76
+00:04:28,340 --> 00:04:30,290
+So add mama mia.
+
+77
+00:04:31,380 --> 00:04:31,890
+Okay.
+
+78
+00:04:31,890 --> 00:04:37,560
+So now we have what, two commits on master branch and two commits in addition that are only on the
+
+79
+00:04:37,560 --> 00:04:38,510
+ABA branch.
+
+80
+00:04:38,520 --> 00:04:44,970
+So if I were to merge right now, it would just be a fast forward if I merged the APA changes into master.
+
+81
+00:04:44,970 --> 00:04:52,170
+Master just catches up, but I'm going to go back to master and do some more work.
+
+82
+00:04:52,170 --> 00:04:57,990
+So this is the same idea that I showed here where what if I'm working on a branch and then a coworker
+
+83
+00:04:57,990 --> 00:05:00,420
+does a new commit on master in the meantime?
+
+84
+00:05:00,420 --> 00:05:01,680
+So let's do that.
+
+85
+00:05:01,980 --> 00:05:05,010
+Let's add a completely new file to master.
+
+86
+00:05:05,010 --> 00:05:08,430
+Remember I said we can run into conflicts which complicate things.
+
+87
+00:05:08,430 --> 00:05:10,050
+I'm going to show that in the next video.
+
+88
+00:05:10,050 --> 00:05:12,210
+So that's why I'm going to do it in a separate file.
+
+89
+00:05:12,210 --> 00:05:15,780
+I'm going to make a new commit maybe instead of just songs.
+
+90
+00:05:15,780 --> 00:05:22,170
+I also want a playlist for podcasts, so I'm going to make a podcast file on the master branch.
+
+91
+00:05:22,170 --> 00:05:25,360
+So podcasts dot txt.
+
+92
+00:05:25,590 --> 00:05:31,200
+Okay, so now I have this new file and I'll make a commit just to commemorate that.
+
+93
+00:05:31,200 --> 00:05:33,600
+I'll do it this time from the command line.
+
+94
+00:05:33,600 --> 00:05:42,690
+So get add podcasts, text, get commit, add podcasts file so back and get cracking.
+
+95
+00:05:42,720 --> 00:05:48,540
+We see now master has this new commit that ABA does not know about.
+
+96
+00:05:48,570 --> 00:05:54,480
+ABA knows about these four commits, the two ABA commits plus the two prior on master.
+
+97
+00:05:54,480 --> 00:05:58,800
+But now master has a new commit and so merging is going to be slightly different.
+
+98
+00:05:58,800 --> 00:06:00,840
+It's not a fast forward as we've discussed.
+
+99
+00:06:01,080 --> 00:06:07,380
+I am just going to add one commit to master, maybe one more, go to the podcast file and add something
+
+100
+00:06:07,380 --> 00:06:08,100
+to the podcast.
+
+101
+00:06:08,100 --> 00:06:10,740
+So I'll how about some good podcasts?
+
+102
+00:06:10,740 --> 00:06:13,440
+I like one called the lead a sports podcast.
+
+103
+00:06:14,370 --> 00:06:15,570
+Radiolab obvious.
+
+104
+00:06:15,570 --> 00:06:18,420
+Well, I shouldn't say obviously, but a lot of people know that one.
+
+105
+00:06:18,420 --> 00:06:19,770
+This American Life.
+
+106
+00:06:19,770 --> 00:06:30,660
+We'll just stop there three podcasts and I'll add the podcast file and commit add three podcasts.
+
+107
+00:06:32,130 --> 00:06:38,070
+So now on Master, we have two commits that APA doesn't know about, and on ABA we have two commits
+
+108
+00:06:38,070 --> 00:06:39,660
+that master doesn't know about.
+
+109
+00:06:39,660 --> 00:06:42,240
+So I'm going to do the merge just like before.
+
+110
+00:06:42,240 --> 00:06:46,050
+I'm going to merge the ABA branch onto master.
+
+111
+00:06:46,320 --> 00:06:50,370
+I shouldn't say just like before because we haven't had an ABA branch, but I'm just going to do the
+
+112
+00:06:50,370 --> 00:06:56,970
+same process where I go to master, I'll switch to master and then I'll merge the ABA branch in to master.
+
+113
+00:06:57,090 --> 00:06:58,740
+So this is what it looks like right now.
+
+114
+00:06:58,740 --> 00:07:00,030
+Just keep keep dry on this.
+
+115
+00:07:00,030 --> 00:07:06,150
+And remember, right, we split off to make ABA and then I kept going on the master branch and I added
+
+116
+00:07:06,150 --> 00:07:07,500
+the podcast file.
+
+117
+00:07:07,860 --> 00:07:10,500
+So now I'm on the master branch, right?
+
+118
+00:07:10,500 --> 00:07:13,260
+Just double check and I'm going to merge ABA.
+
+119
+00:07:13,260 --> 00:07:15,570
+So get merge aba.
+
+120
+00:07:15,570 --> 00:07:17,580
+Did I capitalize the branch name.
+
+121
+00:07:17,670 --> 00:07:18,630
+Yes, I did.
+
+122
+00:07:18,870 --> 00:07:19,920
+Okay, there we are.
+
+123
+00:07:19,950 --> 00:07:21,000
+Get merge aba.
+
+124
+00:07:22,320 --> 00:07:24,030
+Oh, and take a look at this.
+
+125
+00:07:24,270 --> 00:07:30,840
+It opened up my editor because I've set my default text editor and get to be V's code, and it's waiting
+
+126
+00:07:30,840 --> 00:07:32,040
+for me to close that file.
+
+127
+00:07:32,040 --> 00:07:33,600
+Just like when I make a commit.
+
+128
+00:07:33,600 --> 00:07:36,930
+If I don't use the dash m flag, it opens up V's code.
+
+129
+00:07:37,110 --> 00:07:39,750
+And so this tells us we have a new commit.
+
+130
+00:07:39,750 --> 00:07:43,370
+Remember, I talked about this idea of a merge commit being made for us.
+
+131
+00:07:43,380 --> 00:07:45,300
+That's exactly what's going on.
+
+132
+00:07:45,420 --> 00:07:51,410
+Get made a commit for me and it suggested a method message merge branch aba.
+
+133
+00:07:51,420 --> 00:07:54,600
+I can add other stuff in here if I want to.
+
+134
+00:07:55,200 --> 00:08:00,540
+Usually I just leave this alone because you're just merging the branch and that's pretty self explanatory.
+
+135
+00:08:00,540 --> 00:08:03,030
+But we could edit this commit message.
+
+136
+00:08:03,030 --> 00:08:04,950
+All we need to do is close.
+
+137
+00:08:05,100 --> 00:08:10,020
+So if you did configure your editor just close out and that will make our new commit.
+
+138
+00:08:10,830 --> 00:08:11,580
+There we are.
+
+139
+00:08:11,610 --> 00:08:14,160
+It says Merge made by the recursive strategy.
+
+140
+00:08:14,160 --> 00:08:15,330
+We'll learn more about that.
+
+141
+00:08:15,660 --> 00:08:20,160
+Well, you can in an appendix a bit where I talk about how it works.
+
+142
+00:08:20,160 --> 00:08:21,410
+Totally optional, though.
+
+143
+00:08:21,420 --> 00:08:24,000
+Let's take a look over here and get crackin.
+
+144
+00:08:24,120 --> 00:08:25,290
+What do we see now?
+
+145
+00:08:25,440 --> 00:08:27,480
+Well, this line is new.
+
+146
+00:08:27,510 --> 00:08:28,650
+See that right there?
+
+147
+00:08:28,650 --> 00:08:33,570
+And a new commit right there that says Merge Branch ABA.
+
+148
+00:08:33,990 --> 00:08:36,630
+So I can also view this with git log.
+
+149
+00:08:36,900 --> 00:08:38,179
+I'm on master.
+
+150
+00:08:38,190 --> 00:08:43,620
+We can see I have the original master commits and then I have the commits from our ABA branch.
+
+151
+00:08:44,130 --> 00:08:45,630
+By the way, I screwed up.
+
+152
+00:08:45,930 --> 00:08:48,210
+You probably saw this before me I named.
+
+153
+00:08:48,330 --> 00:08:49,860
+I gave them the same commit message.
+
+154
+00:08:49,860 --> 00:08:50,730
+Add Mamma mia!
+
+155
+00:08:50,730 --> 00:08:51,800
+Add Mamma mia.
+
+156
+00:08:51,810 --> 00:08:57,060
+Even though one of them was actually adding dancing queen and the other was adding Mamma mia.
+
+157
+00:08:57,210 --> 00:09:03,540
+Anyway, we have those two and I have my commits from the master branch, add podcast file, add three
+
+158
+00:09:03,540 --> 00:09:09,270
+podcasts and then I have this merge commit that get made for me and I just left the default message.
+
+159
+00:09:09,570 --> 00:09:15,880
+So that's an example of a non fast forward merge where things were still automatically merged.
+
+160
+00:09:15,900 --> 00:09:17,570
+I just had to provide a message.
+
+161
+00:09:17,580 --> 00:09:19,950
+There was no conflicting changes.
+
+162
+00:09:19,950 --> 00:09:21,900
+There was no problems that arose.
+
+163
+00:09:21,900 --> 00:09:24,960
+For example, I wasn't changing two things in the same file.
+
+164
+00:09:24,990 --> 00:09:32,230
+Git was able to figure out oh it just merge in that new stuff into the actual songs, file this APA
+
+165
+00:09:32,250 --> 00:09:36,600
+stuff and keep the podcast changes that are on the master branch already.
+
+166
+00:09:37,440 --> 00:09:39,510
+So that's one example of a merge commit.
+
+167
+00:09:39,510 --> 00:09:43,800
+In the next video I'll talk about what happens when there is a conflict and how we resolve that.
+

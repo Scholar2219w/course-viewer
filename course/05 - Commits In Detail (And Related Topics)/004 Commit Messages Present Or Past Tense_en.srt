@@ -1,0 +1,188 @@
+1
+00:00:00,090 --> 00:00:06,900
+Next up, a quick video on commit messages and which tense, present or past tense you should use while
+
+2
+00:00:06,900 --> 00:00:07,380
+writing them?
+
+3
+00:00:07,380 --> 00:00:08,820
+And does it even matter?
+
+4
+00:00:08,910 --> 00:00:13,560
+This is kind of a weird thing and get it always baffled me when I was starting out.
+
+5
+00:00:13,650 --> 00:00:20,700
+But the git documentation officially recommends that you use present tense imperative style commit messages.
+
+6
+00:00:20,700 --> 00:00:32,549
+So present tense meaning verbs like make something or change x fix x instead of past tense fixed changed
+
+7
+00:00:32,549 --> 00:00:33,540
+updated.
+
+8
+00:00:33,600 --> 00:00:40,290
+So imperative style though or the imperative mood is best illustrated probably by the quote from the
+
+9
+00:00:40,290 --> 00:00:41,400
+documentation.
+
+10
+00:00:41,430 --> 00:00:43,770
+Describe your changes in imperative mood.
+
+11
+00:00:43,770 --> 00:00:54,240
+Make Zizzi do frosts instead of makes zizzi do frost's or I changed zizzi to do Frost's right things
+
+12
+00:00:54,240 --> 00:00:57,570
+as if you're giving orders to the code base to change its behavior.
+
+13
+00:00:58,350 --> 00:01:00,690
+Personally, I always found this weird.
+
+14
+00:01:00,690 --> 00:01:01,800
+I still do.
+
+15
+00:01:02,220 --> 00:01:06,600
+Even if I follow this a lot of the time, it just doesn't seem natural to me.
+
+16
+00:01:06,720 --> 00:01:08,040
+You don't have to do this.
+
+17
+00:01:08,070 --> 00:01:12,150
+Of course, this is all just convention, just a practice you can get in the habit of.
+
+18
+00:01:12,720 --> 00:01:17,250
+There's a lot of debate over this, but again, this is sort of the official recommendation from the
+
+19
+00:01:17,250 --> 00:01:18,060
+Get Docs.
+
+20
+00:01:18,060 --> 00:01:23,070
+Here's a blog post written by Eumir Gaspar where he talks about the two.
+
+21
+00:01:23,370 --> 00:01:27,600
+Well, I guess there's more than two options, but the two common options using the present tense or
+
+22
+00:01:27,600 --> 00:01:32,520
+the past tense and the present tense, as we've already talked about, is what get recommends.
+
+23
+00:01:32,520 --> 00:01:37,800
+And one of the main reasons people use it is that it actually generates its own messages.
+
+24
+00:01:37,800 --> 00:01:43,320
+At some point when we talk about merging, it will generate a commit message that looks like this merge,
+
+25
+00:01:43,320 --> 00:01:44,630
+pull, request, blah blah blah.
+
+26
+00:01:44,640 --> 00:01:47,010
+So it says merge in present tense.
+
+27
+00:01:47,430 --> 00:01:53,700
+But honestly, in my opinion I kind of feel like past tense makes more sense to me because you're making
+
+28
+00:01:53,700 --> 00:01:55,800
+a commit with the work that you have done.
+
+29
+00:01:55,800 --> 00:01:57,630
+It's finished, you're committing it.
+
+30
+00:01:57,630 --> 00:02:00,600
+But honestly, at the end of the day, it doesn't really matter.
+
+31
+00:02:00,600 --> 00:02:06,000
+As long as you are consistent, or more importantly, as long as you're following the pattern set out
+
+32
+00:02:06,000 --> 00:02:11,280
+by whatever organization you're working with, if it's a company or an open source project, if everyone
+
+33
+00:02:11,280 --> 00:02:15,300
+else is doing present tense and they ask you to do present tense, you should do present tense.
+
+34
+00:02:15,300 --> 00:02:18,210
+So I try and stick with present tense when I'm teaching.
+
+35
+00:02:18,930 --> 00:02:26,670
+If we type git log the commit messages I have been writing our split exe or rename or create or begin.
+
+36
+00:02:26,820 --> 00:02:31,680
+So those are present tense imperative, but the community is somewhat split on this.
+
+37
+00:02:31,680 --> 00:02:38,580
+If you look at this popular StackOverflow post from ten years ago, the top answer says you definitely
+
+38
+00:02:38,580 --> 00:02:39,810
+should use present tense.
+
+39
+00:02:39,810 --> 00:02:44,910
+But then the second answer says you should almost always use the past tense.
+
+40
+00:02:45,120 --> 00:02:46,770
+So that's number one.
+
+41
+00:02:46,770 --> 00:02:49,290
+And number two directly in conflict.
+
+42
+00:02:49,290 --> 00:02:52,170
+Anyway, this video is going on longer than it needs to.
+
+43
+00:02:52,170 --> 00:02:57,780
+I just wanted to make that point that in the real world you'll likely come across present tense, imperative
+
+44
+00:02:57,780 --> 00:02:58,800
+commit messages.
+
+45
+00:02:58,800 --> 00:03:03,090
+And as I mentioned, you don't have to follow this pattern, especially in your own personal use.
+
+46
+00:03:03,090 --> 00:03:08,520
+But if you're working at a company or on an open source project, definitely pay attention to the guidelines
+
+47
+00:03:08,520 --> 00:03:09,840
+for writing commit messages.
+

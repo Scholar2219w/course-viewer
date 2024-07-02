@@ -1,0 +1,332 @@
+1
+00:00:00,330 --> 00:00:00,810
+All right.
+
+2
+00:00:00,810 --> 00:00:06,270
+So next up, I want to talk about a different command you may come across that we can use to switch
+
+3
+00:00:06,270 --> 00:00:06,810
+branches.
+
+4
+00:00:06,810 --> 00:00:08,580
+It's called git checkout.
+
+5
+00:00:08,610 --> 00:00:09,620
+You can see it here.
+
+6
+00:00:09,630 --> 00:00:11,700
+Get checkout with a branch name.
+
+7
+00:00:11,700 --> 00:00:16,400
+Will do the exact same thing as git switch with the same branch name.
+
+8
+00:00:16,410 --> 00:00:20,070
+It just switches us to whatever this branch name is.
+
+9
+00:00:20,670 --> 00:00:23,820
+So this command git checkout existed for a long time.
+
+10
+00:00:23,820 --> 00:00:29,400
+It still exists in GITS and it does a lot more than just switching branches.
+
+11
+00:00:29,760 --> 00:00:33,960
+So it's kind of a Swiss army knife of git that doesn't do everything.
+
+12
+00:00:34,140 --> 00:00:37,560
+I guess neither does a Swiss army knife, but it does a lot more.
+
+13
+00:00:37,560 --> 00:00:43,950
+And for a lot of users, this was confusing and just it felt like it did too many things.
+
+14
+00:00:43,950 --> 00:00:46,110
+So get switched was introduced.
+
+15
+00:00:46,110 --> 00:00:47,010
+It's newer.
+
+16
+00:00:47,010 --> 00:00:51,570
+So the command we've been using Git switch is the newer, fancier way of switching branches.
+
+17
+00:00:51,570 --> 00:00:54,030
+But this is the old school way and it still works.
+
+18
+00:00:54,030 --> 00:00:59,010
+And I'm showing it to you because you'll still see this for sure all over the place in documentation
+
+19
+00:00:59,280 --> 00:01:02,310
+or on blog posts, YouTube videos, that sort of thing.
+
+20
+00:01:02,460 --> 00:01:09,780
+Coworkers might use get check out to switch branches plus git switch is still liable to change, although
+
+21
+00:01:09,780 --> 00:01:11,610
+it's been around now for a little while.
+
+22
+00:01:11,610 --> 00:01:13,140
+I don't expect it to.
+
+23
+00:01:13,290 --> 00:01:15,120
+So let me just demonstrate this.
+
+24
+00:01:15,120 --> 00:01:17,130
+I'm on empty playlist.
+
+25
+00:01:17,220 --> 00:01:19,380
+I can see I've got my four branches.
+
+26
+00:01:19,380 --> 00:01:21,120
+Let's switch to oldies.
+
+27
+00:01:21,300 --> 00:01:25,170
+So instead of get switch, I'll do get checkouts oldies.
+
+28
+00:01:26,560 --> 00:01:28,540
+And the same behavior I'm now on.
+
+29
+00:01:28,540 --> 00:01:34,330
+The oldest branch, as we can see there in my file, has been updated to reflect what's on the oldest
+
+30
+00:01:34,330 --> 00:01:34,960
+branch.
+
+31
+00:01:35,200 --> 00:01:39,820
+So that's kind of all there is to using git checkout in that one particular way.
+
+32
+00:01:39,820 --> 00:01:41,920
+But remember, git checkout does a lot more.
+
+33
+00:01:42,100 --> 00:01:46,090
+You can read about it on the docs, although I really recommend you don't read it right now.
+
+34
+00:01:46,510 --> 00:01:48,000
+Just know this first part.
+
+35
+00:01:48,010 --> 00:01:53,230
+We can use it to switch branches, but then there's this whole other thing restore working tree files,
+
+36
+00:01:53,260 --> 00:01:55,660
+look at all the different options for how we use it.
+
+37
+00:01:55,660 --> 00:01:57,850
+We will get into check out later on.
+
+38
+00:01:58,210 --> 00:02:01,360
+But in terms of switching branches, it's very, very simple.
+
+39
+00:02:01,390 --> 00:02:03,880
+With that said, I still prefer get switch.
+
+40
+00:02:04,000 --> 00:02:10,449
+Now, another thing that we can do is instead of creating a branch and then switching to it in two separate
+
+41
+00:02:10,449 --> 00:02:13,290
+steps, we can do it all in one go.
+
+42
+00:02:13,300 --> 00:02:19,480
+We can do it with git switch if we add dash C as an option for create.
+
+43
+00:02:19,630 --> 00:02:26,350
+So we provide a branch name and it will create that branch and then switch us over to it all at once.
+
+44
+00:02:26,350 --> 00:02:28,240
+So this can be pretty useful in my opinion.
+
+45
+00:02:28,240 --> 00:02:34,630
+Let's make a new branch from let's go back to master maybe so we'll go back to master.
+
+46
+00:02:34,660 --> 00:02:36,490
+Will you switch or check out?
+
+47
+00:02:36,490 --> 00:02:37,360
+It doesn't matter.
+
+48
+00:02:37,690 --> 00:02:38,230
+All right.
+
+49
+00:02:38,230 --> 00:02:41,470
+So I'm going to make my new branch with this shortcut I showed you.
+
+50
+00:02:41,500 --> 00:02:46,960
+Get switch dash C and then a branch name that doesn't exist yet.
+
+51
+00:02:46,960 --> 00:02:48,100
+So I'll switch.
+
+52
+00:02:48,100 --> 00:02:52,360
+I'm going to call it recent ish music.
+
+53
+00:02:53,640 --> 00:02:57,600
+Like that and notice it made it and I switched to it.
+
+54
+00:02:57,930 --> 00:03:01,280
+So without the dash C it would give me an error, right?
+
+55
+00:03:01,350 --> 00:03:02,940
+Just like this error.
+
+56
+00:03:02,970 --> 00:03:04,890
+It can't find that branch to switch to.
+
+57
+00:03:04,890 --> 00:03:12,090
+But with dash see it makes the branch for me and then switches over and I'll just add two songs for
+
+58
+00:03:12,090 --> 00:03:12,810
+some recent music.
+
+59
+00:03:12,810 --> 00:03:18,600
+I'll remove Abba, Phoebe, Bridgers, by the way, if you don't know her, a very talented singer songwriter
+
+60
+00:03:18,600 --> 00:03:24,030
+and I'll just add and commit that I'll do it in two steps this time.
+
+61
+00:03:24,480 --> 00:03:26,070
+Add to Phoebe Bridgers songs.
+
+62
+00:03:26,070 --> 00:03:26,940
+There we go.
+
+63
+00:03:27,300 --> 00:03:29,580
+And that's kind of all I wanted to show you here.
+
+64
+00:03:29,580 --> 00:03:35,800
+Now there is an equivalent command if you use git checkout, but unfortunately it's git checkout dash.
+
+65
+00:03:35,820 --> 00:03:38,070
+B b as in boy.
+
+66
+00:03:38,100 --> 00:03:39,120
+B for branch.
+
+67
+00:03:39,120 --> 00:03:40,080
+It's very confusing.
+
+68
+00:03:40,080 --> 00:03:44,310
+I don't know why they went with Dash B, but it's just how it works.
+
+69
+00:03:44,310 --> 00:03:50,400
+If you want to make a branch and check it out in one, go get checkout dash B or get switched dash C
+
+70
+00:03:50,400 --> 00:03:54,000
+and again, I prefer this, but you'll see git checkout used.
+
+71
+00:03:54,270 --> 00:03:58,620
+All right, so we've got some pretty good practice now, making branches and switching, making new
+
+72
+00:03:58,620 --> 00:04:01,260
+commits on separate branches, switching between them.
+
+73
+00:04:01,260 --> 00:04:05,400
+Hopefully it's clear or at least becoming clear how this all works.
+
+74
+00:04:05,400 --> 00:04:12,450
+One thing, though, that my limited example has not illustrated is that we can have as many files as
+
+75
+00:04:12,450 --> 00:04:12,960
+needed.
+
+76
+00:04:12,960 --> 00:04:13,340
+Right?
+
+77
+00:04:13,350 --> 00:04:17,850
+I don't want you to think that branches exist on a per file basis.
+
+78
+00:04:17,850 --> 00:04:23,670
+We do see this one file being updated, but I could make another file on one of these branches and git
+
+79
+00:04:23,670 --> 00:04:29,040
+will make sure that it exists on that branch and does not exist on the other branches or get will update
+
+80
+00:04:29,040 --> 00:04:35,010
+all relevant files and folders depending on the branch, so it's not limited to just one file, even
+
+81
+00:04:35,010 --> 00:04:36,750
+though my simple demo has been.
+
+82
+00:04:36,900 --> 00:04:37,320
+All right.
+
+83
+00:04:37,320 --> 00:04:38,610
+So that's it for this video.
+

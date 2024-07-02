@@ -1,0 +1,516 @@
+1
+00:00:00,150 --> 00:00:03,070
+Next up, let's talk about deleting files and folders.
+
+2
+00:00:03,090 --> 00:00:04,970
+This is the last important thing.
+
+3
+00:00:04,980 --> 00:00:09,660
+Well, there are other important commands, but this is the last of the fundamentals of working with
+
+4
+00:00:09,660 --> 00:00:11,070
+files and navigating.
+
+5
+00:00:11,490 --> 00:00:15,260
+So to delete a file, we have a command arm.
+
+6
+00:00:15,270 --> 00:00:22,530
+I assume it stands for remove and all we need to do is RAM and then a space and then reference a file
+
+7
+00:00:22,530 --> 00:00:23,070
+name.
+
+8
+00:00:23,250 --> 00:00:28,350
+Assuming that the file is in our current directory or we need to reference the correct path to get to
+
+9
+00:00:28,350 --> 00:00:29,040
+that file.
+
+10
+00:00:29,340 --> 00:00:34,350
+Now the thing you need to know up front is that this is not going to put it in your trashcan or your
+
+11
+00:00:34,350 --> 00:00:36,090
+recycling bin or whatever it's called.
+
+12
+00:00:36,090 --> 00:00:37,710
+This deletes the file.
+
+13
+00:00:37,710 --> 00:00:38,730
+It is gone.
+
+14
+00:00:38,910 --> 00:00:41,120
+So you want to be careful with this, right?
+
+15
+00:00:41,160 --> 00:00:46,650
+You don't want to go around deleting crucial files, although this is a good course and get can help
+
+16
+00:00:46,650 --> 00:00:49,920
+solve or alleviate these issues if you delete something accidentally.
+
+17
+00:00:49,920 --> 00:00:53,520
+If it was being tracked by Git, we can restore it with a single command.
+
+18
+00:00:53,520 --> 00:00:54,930
+It's very easy and painless.
+
+19
+00:00:54,930 --> 00:00:57,150
+Anyway, that's getting ahead of ourselves.
+
+20
+00:00:57,330 --> 00:00:58,830
+Let me demonstrate how this works.
+
+21
+00:00:58,830 --> 00:01:02,220
+Just remember this permanently deletes the file.
+
+22
+00:01:03,000 --> 00:01:04,800
+So what should we delete?
+
+23
+00:01:04,920 --> 00:01:09,360
+If you want to follow along, you might want to just make something to delete first so you could do
+
+24
+00:01:09,360 --> 00:01:10,860
+touch delete me.
+
+25
+00:01:11,940 --> 00:01:14,310
+So I didn't even give it a file extension.
+
+26
+00:01:14,670 --> 00:01:16,650
+If we look at it, where am I?
+
+27
+00:01:16,650 --> 00:01:18,300
+I'm in the turtles directory.
+
+28
+00:01:18,480 --> 00:01:20,760
+I could always do P to verify.
+
+29
+00:01:20,790 --> 00:01:21,780
+So that's right.
+
+30
+00:01:21,780 --> 00:01:22,470
+Here.
+
+31
+00:01:22,470 --> 00:01:24,000
+Here's the file I made.
+
+32
+00:01:24,000 --> 00:01:25,440
+I could even rename it from here.
+
+33
+00:01:25,440 --> 00:01:32,280
+How about we make it a dot d dock exe file which is Microsoft Word?
+
+34
+00:01:32,280 --> 00:01:34,590
+And it's going to ask me, are you sure you want to do that?
+
+35
+00:01:35,520 --> 00:01:36,150
+It doesn't matter.
+
+36
+00:01:36,150 --> 00:01:37,050
+I'm going to delete it.
+
+37
+00:01:37,050 --> 00:01:41,130
+But I wanted to show you, if you make modifications here, I could even rename this.
+
+38
+00:01:41,130 --> 00:01:45,450
+Delete me with a bunch of M or with a bunch of eas at the end if I type ls.
+
+39
+00:01:45,450 --> 00:01:52,500
+Now this is up to date as well, so to delete it it's just arm and then the name of the file.
+
+40
+00:01:52,500 --> 00:01:57,030
+And that's because I'm in this folder, so I don't need to reference some other path.
+
+41
+00:01:57,060 --> 00:01:58,830
+This is exactly what I need.
+
+42
+00:01:58,830 --> 00:02:01,230
+If I hit enter, you can see it disappears.
+
+43
+00:02:02,070 --> 00:02:04,050
+Whoops, that's not ls I meant to type?
+
+44
+00:02:04,050 --> 00:02:06,780
+LS It's gone so it's not coming back.
+
+45
+00:02:06,780 --> 00:02:08,310
+We're not using git right now.
+
+46
+00:02:08,789 --> 00:02:09,900
+So that is gone.
+
+47
+00:02:09,900 --> 00:02:11,880
+That that file is totally gone.
+
+48
+00:02:12,090 --> 00:02:15,450
+So let's make two more files to delete just really quickly.
+
+49
+00:02:15,450 --> 00:02:20,880
+How about delete dot txt and remove dot xls?
+
+50
+00:02:20,910 --> 00:02:22,500
+That's I think that's excel.
+
+51
+00:02:23,710 --> 00:02:24,550
+Maybe not.
+
+52
+00:02:24,700 --> 00:02:27,040
+Well, whatever that extension is, I thought it was Excel.
+
+53
+00:02:27,070 --> 00:02:27,850
+It doesn't matter.
+
+54
+00:02:28,180 --> 00:02:30,790
+I'm going to delete them, so I'll do them together.
+
+55
+00:02:30,880 --> 00:02:31,930
+They're both here.
+
+56
+00:02:31,930 --> 00:02:32,590
+You can see them.
+
+57
+00:02:32,590 --> 00:02:34,600
+There are them.
+
+58
+00:02:34,600 --> 00:02:38,900
+Delete text space removed xls.
+
+59
+00:02:39,580 --> 00:02:40,600
+They're both gone.
+
+60
+00:02:42,130 --> 00:02:43,660
+Quickly, I'll show it over here.
+
+61
+00:02:43,660 --> 00:02:47,740
+Let's delete this cyan file that I made on my windows side.
+
+62
+00:02:47,950 --> 00:02:50,020
+So here it is.
+
+63
+00:02:50,020 --> 00:02:57,910
+Cyan JS RMB Cyan JS if I type ls it does not show up here.
+
+64
+00:02:57,910 --> 00:03:02,080
+And if I look over here and the file explorer, it's not here.
+
+65
+00:03:02,080 --> 00:03:02,710
+I don't.
+
+66
+00:03:02,860 --> 00:03:04,630
+Maybe there's a way to make this larger.
+
+67
+00:03:04,660 --> 00:03:05,350
+There we go.
+
+68
+00:03:05,350 --> 00:03:07,030
+Well, still, it's not here.
+
+69
+00:03:07,300 --> 00:03:11,470
+Okay, so the next thing I want to talk about is deleting folders.
+
+70
+00:03:11,470 --> 00:03:16,930
+If I want to delete this folder, land turtles right there.
+
+71
+00:03:17,380 --> 00:03:20,350
+I cannot use the M command as it stands.
+
+72
+00:03:20,380 --> 00:03:23,320
+Land turtles like that it says nope.
+
+73
+00:03:23,320 --> 00:03:29,350
+Land turtles is a directory rmm delete files or at least our RAM the way we used it.
+
+74
+00:03:29,710 --> 00:03:38,530
+So we actually have a variation of RAM in order to delete a folder or a directory or RAM dash.
+
+75
+00:03:38,530 --> 00:03:41,950
+RF We haven't talked about flags.
+
+76
+00:03:41,950 --> 00:03:47,620
+This is just a crash course in the basic terminal navigation, the essential commands you need to know.
+
+77
+00:03:47,620 --> 00:03:53,050
+But all of the commands we've used actually accept a bunch of options that modify how they behave.
+
+78
+00:03:53,410 --> 00:03:58,750
+So as a quick example, LS actually has a couple of other variations.
+
+79
+00:03:58,750 --> 00:04:05,860
+One is LS Dash A which is going to show me hidden files so that Dash A modifies the behavior of LRS.
+
+80
+00:04:05,860 --> 00:04:09,490
+It says list all files including hidden hidden files.
+
+81
+00:04:09,490 --> 00:04:11,440
+Start with a dot so there's a hidden file.
+
+82
+00:04:12,310 --> 00:04:15,190
+This will actually come up when we make a git repository.
+
+83
+00:04:15,190 --> 00:04:18,550
+It makes a hidden directory for us anyway, getting ahead of myself.
+
+84
+00:04:19,149 --> 00:04:25,540
+So these flags are different options we can pass in and there are two we will use on prem if we want
+
+85
+00:04:25,540 --> 00:04:30,520
+to delete a directory r and F, we don't need to go too much into what they mean.
+
+86
+00:04:30,580 --> 00:04:31,840
+They stand for recursive.
+
+87
+00:04:31,840 --> 00:04:34,150
+That's the R and force is the F.
+
+88
+00:04:34,150 --> 00:04:36,250
+Basically this is how we delete a folder.
+
+89
+00:04:36,250 --> 00:04:41,890
+But you want to be careful with this because just like with deleting a file from the command line or
+
+90
+00:04:41,890 --> 00:04:43,720
+from the terminal, it's gone.
+
+91
+00:04:43,810 --> 00:04:48,250
+So if you delete a directory that's full of important stuff and it's not backed up somewhere, it's
+
+92
+00:04:48,250 --> 00:04:50,860
+not in the cloud, it's gone.
+
+93
+00:04:50,860 --> 00:04:52,600
+That's kind of end of story.
+
+94
+00:04:52,930 --> 00:04:56,860
+So let's say I want to delete the entire turtles directory.
+
+95
+00:04:57,520 --> 00:04:59,980
+Why don't I start by deleting land turtles?
+
+96
+00:04:59,980 --> 00:05:04,210
+I didn't mean to type this, by the way, so I want to delete land turtles again.
+
+97
+00:05:04,300 --> 00:05:10,180
+REM land turtles does not work, but rem dash r f land turtles will.
+
+98
+00:05:10,780 --> 00:05:11,770
+It's gone.
+
+99
+00:05:11,770 --> 00:05:13,390
+There's no land turtles here.
+
+100
+00:05:14,410 --> 00:05:16,090
+But that was an empty directory.
+
+101
+00:05:16,210 --> 00:05:23,860
+If I try and delete turtles, which itself has it doesn't have a lot but turtles has sea turtles folder
+
+102
+00:05:23,860 --> 00:05:25,990
+and george p a file.
+
+103
+00:05:26,350 --> 00:05:28,330
+I'm now in the directory above it.
+
+104
+00:05:28,330 --> 00:05:31,210
+I'm in pets so I'm going to try deleting it.
+
+105
+00:05:31,750 --> 00:05:38,560
+So I'll clear, by the way on a mac that shortcut, if I have a bunch of stuff to clear is command k.
+
+106
+00:05:38,830 --> 00:05:45,370
+Anyway, I'm in the pets directory and if I want to delete turtles ram dash, R.F. Turtles.
+
+107
+00:05:45,820 --> 00:05:47,860
+So you'll see it over here.
+
+108
+00:05:47,860 --> 00:05:48,910
+There it is.
+
+109
+00:05:50,060 --> 00:05:51,270
+And there it goes.
+
+110
+00:05:51,290 --> 00:05:52,040
+It's gone.
+
+111
+00:05:52,040 --> 00:05:52,880
+And that's it.
+
+112
+00:05:52,910 --> 00:05:54,780
+I can't navigate into turtles.
+
+113
+00:05:54,800 --> 00:05:55,880
+It doesn't exist.
+
+114
+00:05:56,120 --> 00:05:58,010
+No such file or directory.
+
+115
+00:05:58,160 --> 00:06:02,060
+But remember, I need the dash ref to do that if it's a folder.
+
+116
+00:06:02,180 --> 00:06:03,830
+If it's just a file, I just do.
+
+117
+00:06:04,430 --> 00:06:07,110
+And either way, those are gone.
+
+118
+00:06:07,130 --> 00:06:08,380
+They're gone for good.
+
+119
+00:06:08,390 --> 00:06:09,500
+So be careful.
+
+120
+00:06:09,540 --> 00:06:14,240
+You know, don't go around running this command on very important files and folders.
+
+121
+00:06:14,690 --> 00:06:18,770
+Just always take a moment to think about what you're doing because you don't have that intermediate
+
+122
+00:06:18,770 --> 00:06:21,070
+step of dragging something to the trash.
+
+123
+00:06:21,080 --> 00:06:24,070
+But not much of this course really relies on deleting stuff.
+
+124
+00:06:24,080 --> 00:06:29,840
+To be honest, it's mostly creating things and tracking those things with get and changing those files.
+
+125
+00:06:29,840 --> 00:06:32,320
+So it's not like we're going around deleting a bunch of stuff.
+
+126
+00:06:32,330 --> 00:06:35,870
+I just figured you should know about those commands because they will come up every so often.
+
+127
+00:06:36,080 --> 00:06:38,720
+All right, so that's our M and our M dash RF.
+
+128
+00:06:38,720 --> 00:06:40,070
+They're both the same command.
+
+129
+00:06:40,070 --> 00:06:42,560
+Just a variation to delete folders.
+

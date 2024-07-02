@@ -1,0 +1,132 @@
+1
+00:00:00,270 --> 00:00:00,690
+Okay.
+
+2
+00:00:00,690 --> 00:00:02,410
+So I hope you made it through merging.
+
+3
+00:00:02,430 --> 00:00:06,780
+Now we move on to a section all about one command called git diff.
+
+4
+00:00:06,960 --> 00:00:11,670
+And honestly, most of this section is going to go under important, not critical.
+
+5
+00:00:11,790 --> 00:00:16,920
+These commands that I'm going to show you are useful or the command I'm going to show you is useful.
+
+6
+00:00:16,920 --> 00:00:18,630
+But it's not something that's going to come up.
+
+7
+00:00:18,630 --> 00:00:23,700
+Every single time you use Git, it's like every moment you turn to get throughout the day.
+
+8
+00:00:24,120 --> 00:00:29,010
+On the job, for example, it might come up once in a day or maybe a couple of times in a day, or maybe
+
+9
+00:00:29,010 --> 00:00:29,940
+never in a day.
+
+10
+00:00:29,940 --> 00:00:34,410
+So unlike things like adding and committing and get status and all of that stuff, which is like the
+
+11
+00:00:34,410 --> 00:00:36,030
+bread and butter, you can't get around it.
+
+12
+00:00:36,030 --> 00:00:37,200
+Same with branching.
+
+13
+00:00:37,200 --> 00:00:40,110
+The git diff command is just not as important.
+
+14
+00:00:40,380 --> 00:00:42,240
+With that said, it is very useful.
+
+15
+00:00:42,240 --> 00:00:44,280
+So the whole section is all about get diff.
+
+16
+00:00:44,280 --> 00:00:46,410
+This command that works in different ways.
+
+17
+00:00:46,410 --> 00:00:52,680
+It helps us make comparisons between different commits, different branches, between different files,
+
+18
+00:00:52,680 --> 00:00:58,800
+between the staging area and the working directory and all these different areas and different things
+
+19
+00:00:58,800 --> 00:01:00,480
+that we can compare in a repo.
+
+20
+00:01:00,630 --> 00:01:07,110
+So it's one command and the most important thing at the beginning is understanding how to read the outputs
+
+21
+00:01:07,110 --> 00:01:11,730
+of the git diff command, which is probably the most complicated part of the section.
+
+22
+00:01:11,730 --> 00:01:13,920
+So it's in yellow, but it's not too bad.
+
+23
+00:01:13,920 --> 00:01:16,290
+I worked pretty hard on the slides, I think it turned out well.
+
+24
+00:01:16,830 --> 00:01:22,770
+If I do say so myself then understanding the basics of using git diff I'll say is critical.
+
+25
+00:01:23,010 --> 00:01:30,060
+Everything else important, important, important, important but not critical.
+
+26
+00:01:30,090 --> 00:01:32,760
+So hopefully that gives you a good picture of the section.
+
+27
+00:01:32,760 --> 00:01:37,290
+Focus on the basics of git diff, what it does, how to read the output.
+
+28
+00:01:37,290 --> 00:01:38,550
+That part is critical.
+
+29
+00:01:38,670 --> 00:01:43,770
+And then there's like, I don't know what, five or six additional videos where I show different ways
+
+30
+00:01:43,770 --> 00:01:45,000
+of using the command.
+
+31
+00:01:45,000 --> 00:01:47,460
+They're important, but I wouldn't lose sleep over them.
+
+32
+00:01:47,460 --> 00:01:49,320
+You don't need to study them or anything.
+
+33
+00:01:49,350 --> 00:01:51,600
+Okay, so let's get started with git diff.
+

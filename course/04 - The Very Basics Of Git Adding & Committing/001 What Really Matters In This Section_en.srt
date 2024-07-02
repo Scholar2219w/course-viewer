@@ -1,0 +1,92 @@
+1
+00:00:00,210 --> 00:00:00,690
+All right.
+
+2
+00:00:00,690 --> 00:00:02,480
+So hopefully you now have get installed.
+
+3
+00:00:02,490 --> 00:00:07,410
+We're now moving on to what is probably the most essential section in this course.
+
+4
+00:00:07,560 --> 00:00:10,290
+We're talking about some of the core get commands.
+
+5
+00:00:10,290 --> 00:00:13,190
+So there's going to be a lot in the critical column here.
+
+6
+00:00:13,200 --> 00:00:18,480
+First, we're going to talk about this this concept of git repositories, repos for short, what are
+
+7
+00:00:18,480 --> 00:00:18,870
+they?
+
+8
+00:00:19,080 --> 00:00:21,900
+And then we'll learn a bunch of commands, get init.
+
+9
+00:00:21,900 --> 00:00:24,150
+That's going to be critical and kit status.
+
+10
+00:00:24,150 --> 00:00:31,800
+These are things you'll use non stop if you use git understanding the dot get folder I'll say is important
+
+11
+00:00:31,800 --> 00:00:33,180
+but not a critical thing.
+
+12
+00:00:33,180 --> 00:00:37,830
+You could go your whole life as a get user without really understanding it and what's inside of it.
+
+13
+00:00:38,310 --> 00:00:44,130
+The committing workflow, a very important concept, sort of an overview that we'll do and then we'll
+
+14
+00:00:44,130 --> 00:00:49,260
+dive into three more commands get, add, get commit and get log.
+
+15
+00:00:49,260 --> 00:00:55,350
+None of them are terribly difficult or anything like that, but they are very, very important, essential
+
+16
+00:00:55,350 --> 00:00:58,530
+to working with Git and they'll come up throughout the rest of the course.
+
+17
+00:00:58,530 --> 00:01:00,390
+So take your time with this section.
+
+18
+00:01:00,390 --> 00:01:01,620
+Don't speed through it.
+
+19
+00:01:01,620 --> 00:01:07,710
+Remember how much is in the critical column because for future sections, that really won't be the case.
+
+20
+00:01:07,710 --> 00:01:09,450
+So let's go ahead and get started.
+
+21
+00:01:09,450 --> 00:01:10,410
+What really matters?
+
+22
+00:01:10,410 --> 00:01:11,250
+Pretty much everything.
+
+23
+00:01:11,260 --> 00:01:12,270
+Okay, here we go.
+

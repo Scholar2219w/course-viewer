@@ -1,0 +1,132 @@
+1
+00:00:00,240 --> 00:00:04,470
+In this section we cover one of the most useful features in git branching.
+
+2
+00:00:04,680 --> 00:00:07,680
+So everything in this section has to do with branching.
+
+3
+00:00:07,680 --> 00:00:13,590
+And branching is really one of the last topics I would say that you have to master and have to be comfortable
+
+4
+00:00:13,590 --> 00:00:16,260
+with in order to use git day to day.
+
+5
+00:00:16,290 --> 00:00:21,900
+There are plenty of other topics we cover in this course, but those may not come up as frequently.
+
+6
+00:00:21,900 --> 00:00:27,030
+Branching will come up on a daily basis, just like committing if you work with Git daily at least.
+
+7
+00:00:27,030 --> 00:00:30,110
+So we start by covering branching at a conceptual level.
+
+8
+00:00:30,120 --> 00:00:31,020
+What is it?
+
+9
+00:00:31,410 --> 00:00:32,310
+What are the benefits?
+
+10
+00:00:32,310 --> 00:00:33,410
+Why would you use it?
+
+11
+00:00:33,420 --> 00:00:35,610
+And that is going to be critical.
+
+12
+00:00:35,640 --> 00:00:40,440
+I've marked it in yellow, not because it's hard, but it does take up a little bit more time than learning
+
+13
+00:00:40,440 --> 00:00:41,430
+a single command.
+
+14
+00:00:41,430 --> 00:00:45,750
+But I really recommend you don't skip through the videos before the commands.
+
+15
+00:00:45,750 --> 00:00:49,170
+Everyone likes to just get to the the midi stuff, show me the commands.
+
+16
+00:00:49,170 --> 00:00:52,530
+But with branching it really helps to understand with diagrams.
+
+17
+00:00:52,920 --> 00:00:56,820
+Plus I introduced a couple of concepts, including something called Get Head.
+
+18
+00:00:56,850 --> 00:00:59,370
+You've probably seen that term so far on your terminal.
+
+19
+00:00:59,820 --> 00:01:05,550
+That's also going to be critical understanding what head is and the fact that it points to something
+
+20
+00:01:05,550 --> 00:01:08,240
+called a branch reference and a branch reference points to a commit.
+
+21
+00:01:08,250 --> 00:01:14,490
+All this stuff we cover in these two videos, other crucial things understanding the git branch command,
+
+22
+00:01:14,490 --> 00:01:17,580
+the get switch command, the git checkout command.
+
+23
+00:01:17,580 --> 00:01:23,700
+Then I'll say that deleting and renaming branches is important, but not as important as this other
+
+24
+00:01:23,700 --> 00:01:24,390
+stuff.
+
+25
+00:01:25,260 --> 00:01:27,150
+Head in reps behind the scenes.
+
+26
+00:01:27,150 --> 00:01:32,880
+I'm going to say it's nice to have this is just an explanation of or it's proof of how some of these
+
+27
+00:01:32,880 --> 00:01:33,630
+concepts work.
+
+28
+00:01:33,630 --> 00:01:39,780
+I actually show you in the git directory, so it's nice to have it'll make you a more, I guess, well-rounded
+
+29
+00:01:39,780 --> 00:01:43,740
+or informed ticket developer, but you don't need to know it in order to use Git.
+
+30
+00:01:43,740 --> 00:01:50,430
+And then we spend a little bit of time, not a whole lot talking about branch naming and the issue that
+
+31
+00:01:50,430 --> 00:01:57,240
+came up in late 2020 or early 2021 around renaming the default branch from master to main.
+
+32
+00:01:57,240 --> 00:02:00,330
+So that will make more sense once we talk about branches.
+
+33
+00:02:00,330 --> 00:02:05,100
+But I'm going to say it's important, but it's not critical to understand in order to use Git.
+

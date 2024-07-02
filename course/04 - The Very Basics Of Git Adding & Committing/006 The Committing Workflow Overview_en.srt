@@ -1,0 +1,376 @@
+1
+00:00:00,090 --> 00:00:02,940
+Well, it is lovely being able to initialize a new repo.
+
+2
+00:00:02,969 --> 00:00:07,680
+We still don't know how to do anything inside of those repos, but that's going to change because we're
+
+3
+00:00:07,680 --> 00:00:10,780
+about to talk about the most fundamental git workflow.
+
+4
+00:00:10,800 --> 00:00:13,740
+The bread and butter of git which is committing.
+
+5
+00:00:13,860 --> 00:00:18,720
+So just like before, we're going to start with a quick high level conceptual overview and intro to
+
+6
+00:00:18,720 --> 00:00:21,660
+the concept of committing, which is what this video is.
+
+7
+00:00:21,660 --> 00:00:23,870
+And then I'll show you the associated commands.
+
+8
+00:00:23,880 --> 00:00:27,420
+There's two that we need to talk about in the next couple of videos.
+
+9
+00:00:27,420 --> 00:00:33,270
+So let's begin by answering a simple question What is committing or what is a git commit?
+
+10
+00:00:33,360 --> 00:00:36,150
+Well, early in this course, I showed these slides.
+
+11
+00:00:36,150 --> 00:00:40,470
+I spent kind of a long time making them on the top right hand corner.
+
+12
+00:00:40,470 --> 00:00:45,480
+We have a website that I'm building and you can see as I progress feature by feature, I'm building
+
+13
+00:00:45,480 --> 00:00:47,250
+this site out and modifying it.
+
+14
+00:00:47,250 --> 00:00:52,350
+And then as I go, as I make some progress, I'm adding these checkpoints.
+
+15
+00:00:52,350 --> 00:00:55,140
+That was a term I used when I first introduced these.
+
+16
+00:00:55,170 --> 00:00:58,230
+A checkpoint, a snapshot of my project.
+
+17
+00:00:58,230 --> 00:01:05,370
+And it's new changes at a moment in time, along with a little message like add top nav bar or add first
+
+18
+00:01:05,370 --> 00:01:07,830
+row of content or finish bottom row of content.
+
+19
+00:01:07,830 --> 00:01:09,330
+Change to dark theme.
+
+20
+00:01:09,330 --> 00:01:14,580
+Well, each one of these checkpoints is actually in Git, what we would call a commit.
+
+21
+00:01:14,580 --> 00:01:19,170
+I just used the term checkpoint early on before we actually start learning git because it actually makes
+
+22
+00:01:19,170 --> 00:01:20,240
+sense on its own.
+
+23
+00:01:20,250 --> 00:01:23,610
+A commit doesn't really sound like much, at least in my experience.
+
+24
+00:01:23,610 --> 00:01:30,480
+Anyway, a get commit is one of these checkpoints in a git repository and typically a single git repository
+
+25
+00:01:30,480 --> 00:01:36,780
+has tons and tons of these commits one after another, and eventually we'll learn how to go back to
+
+26
+00:01:36,780 --> 00:01:42,300
+earlier commits, how to undo commits, how to just take a peek at an earlier commit.
+
+27
+00:01:42,300 --> 00:01:46,050
+But for now, we're just going to focus on making these checkpoints.
+
+28
+00:01:46,050 --> 00:01:48,840
+How do we do some stuff in a project?
+
+29
+00:01:48,840 --> 00:01:54,870
+How do we add a new feature to a website and then make a commit and then repeat, do some more stuff,
+
+30
+00:01:54,870 --> 00:01:57,710
+make it commit, do some more stuff, make a commits.
+
+31
+00:01:57,720 --> 00:01:58,680
+That is our goal.
+
+32
+00:01:58,680 --> 00:02:04,290
+For the next couple of videos, I'll quickly show you an existing repository that I have in this is
+
+33
+00:02:04,290 --> 00:02:06,900
+Git Kraken, Yelp, Camp 2.0.
+
+34
+00:02:06,900 --> 00:02:08,400
+I've shown this a couple of times.
+
+35
+00:02:08,400 --> 00:02:14,280
+What I'm looking at right here with this gooey is a list of all of the commits that I've made in order.
+
+36
+00:02:14,280 --> 00:02:16,050
+And actually there's more than one contributor.
+
+37
+00:02:16,050 --> 00:02:17,190
+So it's not just me.
+
+38
+00:02:17,340 --> 00:02:21,900
+So you can see here's the very first commit all the way up to some of the more recent ones.
+
+39
+00:02:21,900 --> 00:02:29,070
+So there's what, over 100, maybe 150 at least individual commits and each one of them is a checkpoint
+
+40
+00:02:29,070 --> 00:02:35,280
+in time, a snapshot of the repository and the new work that I did, the new changes, and it includes
+
+41
+00:02:35,280 --> 00:02:42,120
+a little message like refactor async error handler in post methods or something very silly and boring
+
+42
+00:02:42,120 --> 00:02:47,760
+like initial commits or add mapbox CSS back to some stylesheet.
+
+43
+00:02:47,760 --> 00:02:49,800
+Whatever that message is is up to me.
+
+44
+00:02:49,800 --> 00:02:54,390
+But there is a message along with this snapshot of my project in time.
+
+45
+00:02:54,660 --> 00:02:59,910
+Now, the next thing that's crucial to understand about making a commit is that it's not the same as
+
+46
+00:02:59,910 --> 00:03:01,530
+just saving a file.
+
+47
+00:03:01,650 --> 00:03:06,390
+It's actually think of it as something that's built on top of saving files.
+
+48
+00:03:06,390 --> 00:03:11,850
+We have to make changes first and save them to our files before we can even commit.
+
+49
+00:03:11,850 --> 00:03:18,540
+So we might use the term check point or save point, but we're not talking about just saving a file
+
+50
+00:03:18,540 --> 00:03:20,280
+that has nothing to do with Git.
+
+51
+00:03:20,310 --> 00:03:27,600
+We save files all the time, but once we have made changes we can then group them together into a commit.
+
+52
+00:03:27,600 --> 00:03:33,090
+So on the right hand side, I'm showing a potentially a commit that I may have made that includes changes
+
+53
+00:03:33,090 --> 00:03:40,020
+to five or four different files, plus a folder called Logos, and I can group that all together into
+
+54
+00:03:40,020 --> 00:03:40,980
+a new commit.
+
+55
+00:03:41,070 --> 00:03:46,470
+But first I would have written some new code in one of these files and saved it and then written more
+
+56
+00:03:46,470 --> 00:03:48,090
+code and another one and saved it.
+
+57
+00:03:48,090 --> 00:03:49,860
+Then I make that commit.
+
+58
+00:03:50,160 --> 00:03:55,620
+And the next thing that you need to know about making a commit is that it's actually a multistep process.
+
+59
+00:03:55,620 --> 00:03:59,910
+It's not as simple as just hitting a button that says Commit, commit, commit.
+
+60
+00:03:59,910 --> 00:04:05,610
+Instead, there's an intermediate step where we actually call out the particular changes that we've
+
+61
+00:04:05,610 --> 00:04:08,160
+made that we want to include in a commit.
+
+62
+00:04:08,160 --> 00:04:12,720
+And this allows us to selectively make commits, which is really, really nice.
+
+63
+00:04:12,720 --> 00:04:18,570
+For example, imagine I've been working all day or all morning on some project.
+
+64
+00:04:19,079 --> 00:04:23,850
+I spent a lot of time working on this project and I made changes to seven different files.
+
+65
+00:04:23,850 --> 00:04:29,970
+As you can see on the left hand side, I deleted a file, I modified two files, I created four files,
+
+66
+00:04:29,970 --> 00:04:37,260
+and instead of just making one generic commit that just says checkpoint right now, instead I can actually
+
+67
+00:04:37,260 --> 00:04:42,750
+call out some of these and group them together based upon the actual stuff that I did.
+
+68
+00:04:42,750 --> 00:04:46,890
+For example, I might group together those first three changes.
+
+69
+00:04:46,890 --> 00:04:54,600
+I deleted a file called Team HTML and then I changed two files called about HTML and about CSS.
+
+70
+00:04:54,600 --> 00:04:58,110
+Those were one thing that I did across three files.
+
+71
+00:04:58,110 --> 00:04:59,850
+I added some new team members.
+
+72
+00:04:59,890 --> 00:05:03,780
+First two are about page whatever the about page looks like.
+
+73
+00:05:03,790 --> 00:05:05,740
+So that was one commit.
+
+74
+00:05:05,740 --> 00:05:11,860
+And then I can take these other four changes and group them together into a separate standalone commit.
+
+75
+00:05:11,980 --> 00:05:13,810
+So this is what I'm talking about.
+
+76
+00:05:13,810 --> 00:05:19,210
+When I say there's an intermediate step, we can select certain changes and make it commit with those
+
+77
+00:05:19,210 --> 00:05:19,870
+changes.
+
+78
+00:05:19,870 --> 00:05:22,350
+So we don't just say commit, commit, commit.
+
+79
+00:05:22,360 --> 00:05:27,360
+Instead, we're getting in there with tweezers and we're saying, All right, this and this and this.
+
+80
+00:05:27,370 --> 00:05:29,400
+Now we're going to commit those changes.
+
+81
+00:05:29,410 --> 00:05:33,970
+So to actually make a commit, there are two associated commands.
+
+82
+00:05:33,970 --> 00:05:36,820
+And we're going to talk about the first one in the next video.
+
+83
+00:05:36,850 --> 00:05:43,630
+It's called Get Add, and then the second command is get commit and we'll use get ADD in order to highlight
+
+84
+00:05:43,630 --> 00:05:47,710
+or select those changes that we want to include in the upcoming commit.
+
+85
+00:05:48,010 --> 00:05:52,180
+So just to reiterate all of this, a commit is a check point in time.
+
+86
+00:05:52,180 --> 00:05:54,850
+It's a snapshot of changes in our repository.
+
+87
+00:05:54,880 --> 00:05:59,650
+Eventually we'll be able to go back to earlier commits, undo commits, merge commits.
+
+88
+00:05:59,650 --> 00:06:01,350
+There's a whole bunch of things that we can do.
+
+89
+00:06:01,360 --> 00:06:06,580
+For now, we're just focused on plotting ahead and leaving a trail of commits behind a trail of checkpoints.
+
+90
+00:06:06,580 --> 00:06:12,280
+And when we make one of these snapshots, one of these commits, we can call out the specific changes
+
+91
+00:06:12,280 --> 00:06:17,980
+that we want to include in a commit, rather than just automatically including all changes in our project.
+
+92
+00:06:17,980 --> 00:06:19,330
+We can select them.
+
+93
+00:06:19,330 --> 00:06:21,730
+That's the first step and then commit them.
+
+94
+00:06:21,730 --> 00:06:24,490
+So in the next video I'll show you how to do that first bit.
+

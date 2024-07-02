@@ -1,0 +1,404 @@
+1
+00:00:00,060 --> 00:00:04,290
+So there's one more concept we need to get out of the way before we can talk about creating branches,
+
+2
+00:00:04,290 --> 00:00:06,260
+which is this thing right here.
+
+3
+00:00:06,270 --> 00:00:08,580
+Head You've probably seen this before.
+
+4
+00:00:08,820 --> 00:00:12,980
+When we type git log, for example, every commit shows up.
+
+5
+00:00:12,990 --> 00:00:14,270
+Hopefully that's review.
+
+6
+00:00:14,280 --> 00:00:21,450
+And in our case we see the most recent commit the top one, this thing head arrow master.
+
+7
+00:00:21,660 --> 00:00:23,340
+So what exactly is that thing?
+
+8
+00:00:23,610 --> 00:00:24,780
+Head in all caps.
+
+9
+00:00:24,780 --> 00:00:25,740
+What does it mean?
+
+10
+00:00:26,280 --> 00:00:28,590
+Well, it's just a term in git.
+
+11
+00:00:28,920 --> 00:00:35,250
+Specifically, it is a pointer that refers to our current location in the repository and it points to
+
+12
+00:00:35,250 --> 00:00:37,530
+a particular branch reference.
+
+13
+00:00:37,530 --> 00:00:41,070
+So there's some terminology in there, branch reference we have not discussed.
+
+14
+00:00:41,070 --> 00:00:42,510
+So I'm going to break it down here.
+
+15
+00:00:43,020 --> 00:00:47,130
+I like to think of branches as bookmarks.
+
+16
+00:00:47,130 --> 00:00:47,970
+In a book.
+
+17
+00:00:47,970 --> 00:00:52,260
+We can have a whole bunch of different bookmarks, different places in a book.
+
+18
+00:00:52,260 --> 00:00:58,140
+So let's say this is where I left off in the book and this is where I'm sharing it with my friend.
+
+19
+00:00:58,140 --> 00:01:02,250
+This is where Fitz left off and this is where Ethel left off in the book.
+
+20
+00:01:02,250 --> 00:01:03,600
+Three different spots.
+
+21
+00:01:04,430 --> 00:01:09,380
+At any given point in time, only one of those spots can be open.
+
+22
+00:01:09,570 --> 00:01:09,950
+Right.
+
+23
+00:01:09,950 --> 00:01:12,140
+We can't have the book open to multiple pages.
+
+24
+00:01:12,290 --> 00:01:14,570
+So only one is active.
+
+25
+00:01:14,570 --> 00:01:17,000
+Only one is being read or being viewed.
+
+26
+00:01:18,090 --> 00:01:19,920
+It's actually open to that bookmark.
+
+27
+00:01:20,310 --> 00:01:22,740
+So that is what head refers to.
+
+28
+00:01:22,770 --> 00:01:28,950
+Head is our current location that we are viewing or that we are checking out is a common term you'll
+
+29
+00:01:28,950 --> 00:01:29,430
+hear.
+
+30
+00:01:29,820 --> 00:01:33,930
+So in our case, we haven't done anything with head, we haven't made any branches.
+
+31
+00:01:33,930 --> 00:01:39,870
+So Head always is referring to our master branch, the last commit on our master branch.
+
+32
+00:01:39,870 --> 00:01:40,950
+And that's what we see here.
+
+33
+00:01:40,950 --> 00:01:42,560
+Everything's on our master branch.
+
+34
+00:01:42,570 --> 00:01:45,270
+Head refers to master.
+
+35
+00:01:45,960 --> 00:01:47,180
+That's what this arrow means.
+
+36
+00:01:47,190 --> 00:01:49,140
+Head pointing to the master branch.
+
+37
+00:01:49,140 --> 00:01:51,570
+And this is all master branch.
+
+38
+00:01:51,690 --> 00:01:53,730
+This is what we call the tip of the branch.
+
+39
+00:01:53,730 --> 00:01:55,830
+It's the last commit, the most recent one.
+
+40
+00:01:55,830 --> 00:01:59,340
+So head refers to the branch pointer.
+
+41
+00:01:59,700 --> 00:02:01,380
+I know it's crazy terminology.
+
+42
+00:02:01,380 --> 00:02:08,310
+Then if I had more branches, if I switch to a different branch like I switched to Ethel's branch head
+
+43
+00:02:08,310 --> 00:02:12,890
+points to the tip of Ethel Branch, or I take a look at Fitz's branch.
+
+44
+00:02:12,900 --> 00:02:13,820
+I've switched there.
+
+45
+00:02:13,830 --> 00:02:16,490
+This is what I have open in our massive book.
+
+46
+00:02:16,500 --> 00:02:20,250
+This is the thing I currently have active in my repository.
+
+47
+00:02:20,280 --> 00:02:21,650
+Head points there.
+
+48
+00:02:21,660 --> 00:02:28,650
+I believe the term originates from a play head I think is what it's called on an old tape machine or
+
+49
+00:02:28,650 --> 00:02:29,460
+tape recorder.
+
+50
+00:02:29,520 --> 00:02:30,330
+I don't know.
+
+51
+00:02:30,330 --> 00:02:34,500
+I'm out of my depth here, but it had some analogue meaning in the real world.
+
+52
+00:02:34,500 --> 00:02:37,260
+So one more diagram to make this clear.
+
+53
+00:02:37,380 --> 00:02:40,260
+It probably won't make it clear just yet, but more practice will.
+
+54
+00:02:40,680 --> 00:02:42,810
+I want to reiterate, head is a pointer.
+
+55
+00:02:42,810 --> 00:02:51,090
+It's a reference to a branch pointer and a branch pointer is where a branch currently is.
+
+56
+00:02:51,090 --> 00:02:57,540
+It's like that bookmark in a book we can have a whole bunch of branches and each one has a branch reference
+
+57
+00:02:57,540 --> 00:03:00,000
+that just refers to where that branch is.
+
+58
+00:03:00,000 --> 00:03:01,890
+So let me demonstrate this.
+
+59
+00:03:01,890 --> 00:03:03,270
+We started on our master branch.
+
+60
+00:03:03,270 --> 00:03:04,200
+That's where we are now.
+
+61
+00:03:04,200 --> 00:03:08,520
+And every project we've done, we're on master head points to master.
+
+62
+00:03:08,880 --> 00:03:11,850
+I do some more work, I make a commit, I'm still on master.
+
+63
+00:03:12,210 --> 00:03:18,090
+So this branch pointer updates to my new commit and head stays the same.
+
+64
+00:03:18,090 --> 00:03:22,980
+It's still master, but then I decide I want to try something experimental.
+
+65
+00:03:22,980 --> 00:03:28,740
+I'm going to make a new branch, so I want to try adding a dark mode to my website so I make a new branch.
+
+66
+00:03:28,740 --> 00:03:30,150
+We'll learn how to do that soon.
+
+67
+00:03:30,540 --> 00:03:34,290
+Dark Mode still refers to the same commit as master.
+
+68
+00:03:34,290 --> 00:03:36,510
+They are at the same point, right?
+
+69
+00:03:36,540 --> 00:03:42,360
+They are two branch references pointing at the same thing and head points to dark mode, which means
+
+70
+00:03:42,360 --> 00:03:44,910
+I'm on the dark mode branch.
+
+71
+00:03:45,210 --> 00:03:48,120
+So now if I make a new commit, I do some new work.
+
+72
+00:03:48,750 --> 00:03:49,980
+Things diverge.
+
+73
+00:03:49,980 --> 00:03:51,840
+Master stays where it was.
+
+74
+00:03:51,840 --> 00:03:55,920
+It's pointing to this commit but dark mode now has a new commit.
+
+75
+00:03:55,920 --> 00:03:59,340
+It refers to and head still points to dark mode.
+
+76
+00:03:59,340 --> 00:04:02,610
+So if I do new work, I'm on dark mode.
+
+77
+00:04:02,610 --> 00:04:04,560
+That's the branch I currently am on.
+
+78
+00:04:05,400 --> 00:04:08,210
+So that new commit is on dark mode.
+
+79
+00:04:08,220 --> 00:04:12,390
+This dark mode pointer updates to this commit instead of that one.
+
+80
+00:04:12,840 --> 00:04:16,860
+And then I can switch back at any point I could go back to master.
+
+81
+00:04:16,890 --> 00:04:21,149
+Remember, I think of it as a bookmark in a book, so we still have that bookmark.
+
+82
+00:04:21,149 --> 00:04:26,910
+That's what this reference is, and I can open to that page by switching over to this branch.
+
+83
+00:04:27,210 --> 00:04:34,650
+Head is pointing to master and I could go back to dark mode go back to master head is just the thing
+
+84
+00:04:34,650 --> 00:04:41,520
+that is currently open that I'm currently checking out in my repository so we can have hundreds of these
+
+85
+00:04:41,520 --> 00:04:42,330
+different branches.
+
+86
+00:04:42,330 --> 00:04:45,690
+Each branch has a branch reference pointing to where we left off.
+
+87
+00:04:45,690 --> 00:04:47,400
+That's really the key takeaway here.
+
+88
+00:04:47,400 --> 00:04:52,620
+A branch is just a reference to some commit and as we make more commits, even if we're just on the
+
+89
+00:04:52,620 --> 00:04:54,630
+master branch, I make a new commit.
+
+90
+00:04:54,900 --> 00:05:00,630
+That master pointer now reflects that change it updates to point to that new commit.
+
+91
+00:05:00,630 --> 00:05:07,110
+So over here originally when this was the only commit master was pointing to this commit and then to
+
+92
+00:05:07,110 --> 00:05:08,700
+this commit and then to this commit.
+
+93
+00:05:08,700 --> 00:05:11,700
+And now it's all the way up to this commit here.
+
+94
+00:05:11,700 --> 00:05:12,930
+They're all in the master branch.
+
+95
+00:05:12,930 --> 00:05:15,060
+This is the tip of the master branch here.
+
+96
+00:05:15,060 --> 00:05:20,100
+And then at any point we can create different branches and splinter off into different directions.
+
+97
+00:05:20,130 --> 00:05:24,900
+You can have all these different branch pointers referring to different commits and then switch between
+
+98
+00:05:24,900 --> 00:05:27,270
+them by moving ahead.
+
+99
+00:05:27,840 --> 00:05:28,200
+All right.
+
+100
+00:05:28,200 --> 00:05:33,510
+So conceptually, it's kind of a dense video I know I think will make a lot more sense when I show you
+
+101
+00:05:33,510 --> 00:05:36,870
+how to do this with the relevant commands, which is coming up next.
+

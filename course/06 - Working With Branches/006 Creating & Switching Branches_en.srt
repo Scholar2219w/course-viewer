@@ -1,0 +1,576 @@
+1
+00:00:00,180 --> 00:00:00,660
+All right.
+
+2
+00:00:00,660 --> 00:00:03,630
+So next up, we're going to learn how to make our first branch.
+
+3
+00:00:03,630 --> 00:00:10,770
+And we actually use the same command that we just saw get branch, except now we add on a branch name.
+
+4
+00:00:10,770 --> 00:00:16,860
+So get branch with a branch name, we'll create a branch with that name versus Git branch without anything
+
+5
+00:00:16,860 --> 00:00:17,280
+else.
+
+6
+00:00:17,280 --> 00:00:19,590
+Just lists the current branches.
+
+7
+00:00:19,950 --> 00:00:23,130
+So get branch branch name and your branch name.
+
+8
+00:00:23,250 --> 00:00:26,670
+We'll talk a little bit more about later, but it shouldn't include spaces.
+
+9
+00:00:26,670 --> 00:00:28,200
+Let's just start with that.
+
+10
+00:00:28,560 --> 00:00:34,230
+And generally you want it to make sense and be informative, but you don't need to write a whole sentence
+
+11
+00:00:34,230 --> 00:00:35,610
+to explain what the branch is.
+
+12
+00:00:35,610 --> 00:00:38,940
+Also, this simply makes a branch for us.
+
+13
+00:00:38,970 --> 00:00:41,580
+It does not switch to the branch.
+
+14
+00:00:41,580 --> 00:00:43,830
+So I'm on my master branch here.
+
+15
+00:00:43,830 --> 00:00:46,230
+As you can see, head points at master.
+
+16
+00:00:46,230 --> 00:00:51,810
+I have two commits on the master branch when I run this command to get branch bug fix.
+
+17
+00:00:51,810 --> 00:00:54,660
+That makes me a new branch called Bug Fix.
+
+18
+00:00:54,870 --> 00:01:00,810
+It's based off of the head where I currently was, so it points to the same exact spot.
+
+19
+00:01:01,460 --> 00:01:02,800
+But I have a new branch.
+
+20
+00:01:02,810 --> 00:01:04,640
+I have not switched to it.
+
+21
+00:01:04,640 --> 00:01:06,380
+I'm still on, master.
+
+22
+00:01:06,410 --> 00:01:08,390
+So I'll demonstrate this to you.
+
+23
+00:01:08,780 --> 00:01:10,520
+Let's make a new branch.
+
+24
+00:01:10,520 --> 00:01:14,450
+But first, I'm actually going to work on a separate project, a separate repo.
+
+25
+00:01:14,720 --> 00:01:16,400
+Instead of working on the novel.
+
+26
+00:01:16,400 --> 00:01:18,260
+We were writing The Great Gatsby.
+
+27
+00:01:18,470 --> 00:01:19,940
+I'm going to make a new repo.
+
+28
+00:01:19,970 --> 00:01:20,690
+I'm in a folder.
+
+29
+00:01:20,690 --> 00:01:23,890
+I'm just calling it branching and I'm going to make a directory.
+
+30
+00:01:23,900 --> 00:01:27,170
+I'm going to make a road trip playlist folder.
+
+31
+00:01:28,310 --> 00:01:32,990
+So often when I'm teaching this stuff, I'm torn if I should do something.
+
+32
+00:01:33,080 --> 00:01:34,700
+Very easy to follow along with.
+
+33
+00:01:34,700 --> 00:01:36,320
+Something simple to understand.
+
+34
+00:01:36,320 --> 00:01:39,740
+Or if I should do something realistic, I'm going to try and do both.
+
+35
+00:01:39,740 --> 00:01:43,910
+But I'm going to start with the super simple, easy to understand project.
+
+36
+00:01:43,920 --> 00:01:45,190
+So it's not really a project.
+
+37
+00:01:45,200 --> 00:01:50,060
+We're going on a road trip and I want a playlist of songs and I'm going to use Git for whatever reason
+
+38
+00:01:50,060 --> 00:01:53,630
+to track those songs and I'll make some different branches.
+
+39
+00:01:53,630 --> 00:01:56,180
+So I'm going to start by making my repository.
+
+40
+00:01:56,180 --> 00:01:58,250
+So I'm in a folder, road trip playlist.
+
+41
+00:01:58,250 --> 00:01:59,990
+I'm going to run, get it.
+
+42
+00:02:00,080 --> 00:02:01,640
+So I have an empty repo.
+
+43
+00:02:01,670 --> 00:02:06,650
+I know that I wasn't in a git repo, but I should have checked to see with git status.
+
+44
+00:02:06,650 --> 00:02:07,880
+But I know that I wasn't.
+
+45
+00:02:08,120 --> 00:02:11,030
+And then I'm going to go ahead and make a file.
+
+46
+00:02:11,030 --> 00:02:12,560
+I'm going to call it playlist.
+
+47
+00:02:13,620 --> 00:02:17,460
+Dot txt and I'll open this up in my editor.
+
+48
+00:02:18,300 --> 00:02:19,410
+So here it is.
+
+49
+00:02:19,620 --> 00:02:24,960
+I'm just going to start by adding a very simple heading like song artist.
+
+50
+00:02:25,500 --> 00:02:28,710
+So it's just the header heading for the playlist.
+
+51
+00:02:29,060 --> 00:02:32,940
+All right, I'm going to add that file, get add playlist, get commit.
+
+52
+00:02:32,940 --> 00:02:35,700
+I'm on the master branch, of course, just by default.
+
+53
+00:02:36,090 --> 00:02:38,640
+Add playlist header.
+
+54
+00:02:39,420 --> 00:02:40,980
+All right, we type get log.
+
+55
+00:02:40,980 --> 00:02:43,920
+We see head is pointing to the master branch.
+
+56
+00:02:44,070 --> 00:02:49,230
+Now I'm going to add two songs just to add songs to start that I happen to like.
+
+57
+00:02:49,260 --> 00:02:50,750
+There they are songs.
+
+58
+00:02:51,030 --> 00:02:53,940
+Great song, one of us also great song.
+
+59
+00:02:54,450 --> 00:02:55,710
+I'm going to add those.
+
+60
+00:02:55,710 --> 00:02:58,590
+I just want to have one or two commits on my master branch.
+
+61
+00:02:58,590 --> 00:03:05,850
+So I'm going to do git add playlist, get commit, add to Abi's songs.
+
+62
+00:03:05,850 --> 00:03:06,540
+All righty.
+
+63
+00:03:06,540 --> 00:03:08,880
+So I'm on the master branch, right?
+
+64
+00:03:09,030 --> 00:03:10,350
+Head points to master.
+
+65
+00:03:10,350 --> 00:03:11,490
+We have two commits.
+
+66
+00:03:11,640 --> 00:03:13,680
+Now let's make a new branch.
+
+67
+00:03:13,680 --> 00:03:19,830
+For whatever reason I decide I want to make a different playlist based on this one that only contains
+
+68
+00:03:19,860 --> 00:03:20,640
+oldies.
+
+69
+00:03:20,640 --> 00:03:26,460
+So maybe I'm not sure what I want on my main playlist, so I'm going to try a couple of options, and
+
+70
+00:03:26,460 --> 00:03:30,510
+that's exactly what I'm going to do, is make some different branches and I'm going to make a branch
+
+71
+00:03:30,510 --> 00:03:35,910
+called oldies, and it's just going to include songs that are they're not technically what the radio
+
+72
+00:03:35,910 --> 00:03:42,480
+would classify as oldies, but let's just say anything from before, like 2000, which I recognize for
+
+73
+00:03:42,480 --> 00:03:43,590
+most people is not oldies.
+
+74
+00:03:43,590 --> 00:03:47,910
+So to make a branch, get branch and then a branch name.
+
+75
+00:03:48,210 --> 00:03:52,590
+So let's make that oldest branch get branch, I'll make this full screen.
+
+76
+00:03:52,920 --> 00:03:56,010
+And then actually before I do that, let's just do Git Branch.
+
+77
+00:03:56,430 --> 00:03:57,240
+We're on master.
+
+78
+00:03:57,240 --> 00:04:01,080
+It's the only branch now if I do get branch oldies.
+
+79
+00:04:01,820 --> 00:04:02,870
+And hit enter.
+
+80
+00:04:04,110 --> 00:04:04,380
+Hmm.
+
+81
+00:04:04,410 --> 00:04:05,600
+It doesn't seem like anything happened.
+
+82
+00:04:05,610 --> 00:04:07,130
+I'm still on, Master.
+
+83
+00:04:07,440 --> 00:04:09,590
+If I type get status, I'm still on master.
+
+84
+00:04:09,600 --> 00:04:10,680
+No surprise there.
+
+85
+00:04:10,710 --> 00:04:12,390
+It doesn't switch us over.
+
+86
+00:04:12,390 --> 00:04:17,399
+But if I type get branch, we do see we have a new branch oldies.
+
+87
+00:04:17,399 --> 00:04:18,959
+We're just not on it.
+
+88
+00:04:18,990 --> 00:04:21,420
+Head is still pointing to master.
+
+89
+00:04:21,820 --> 00:04:25,770
+You can see that again type get log head is pointing to master.
+
+90
+00:04:25,770 --> 00:04:28,470
+But now we have this new reference oldies.
+
+91
+00:04:28,470 --> 00:04:34,110
+It's at the same commit right to branch references pointing to the same thing.
+
+92
+00:04:34,500 --> 00:04:36,630
+We just happen to be on master.
+
+93
+00:04:36,630 --> 00:04:39,750
+So we're at this stage two branches.
+
+94
+00:04:39,750 --> 00:04:44,070
+They're both referring to the same point, the same commit and we're on master.
+
+95
+00:04:44,250 --> 00:04:48,870
+So to switch branches, there's a command that we can use called get switch.
+
+96
+00:04:49,080 --> 00:04:51,750
+So this is actually a newer command in Git.
+
+97
+00:04:51,810 --> 00:04:54,720
+I'll do a separate video on the older command.
+
+98
+00:04:54,720 --> 00:04:57,930
+We used something called Git Checkout to do the same thing.
+
+99
+00:04:57,930 --> 00:04:59,160
+We'll talk about that.
+
+100
+00:04:59,340 --> 00:05:05,310
+It's still used in other contexts, but get switch was introduced to switch between branches, so get
+
+101
+00:05:05,310 --> 00:05:06,810
+switch and then a branch name.
+
+102
+00:05:06,990 --> 00:05:14,670
+So in our example here, if I do get switch bug fix head is now pointing to that bug fix branch.
+
+103
+00:05:14,700 --> 00:05:17,280
+It was on master, now it's on bug fix.
+
+104
+00:05:17,520 --> 00:05:21,090
+So in our case we have this oldest branch, we are not on it.
+
+105
+00:05:21,090 --> 00:05:24,870
+We see that we're on master type get status, we're on master.
+
+106
+00:05:24,870 --> 00:05:30,630
+But if I do get switch oldies and I do need to spell it correctly so if I reference something that doesn't
+
+107
+00:05:30,630 --> 00:05:33,360
+exist, it tells me there's no branch with that name.
+
+108
+00:05:33,360 --> 00:05:36,120
+But if I do get switch oldies.
+
+109
+00:05:37,290 --> 00:05:39,480
+Hey switch to branch oldies.
+
+110
+00:05:39,690 --> 00:05:42,210
+My terminal shows oldies over here.
+
+111
+00:05:42,210 --> 00:05:50,730
+If I type get status on branch oldies and if I type git log you can now see head is pointing to oldies.
+
+112
+00:05:50,730 --> 00:05:53,490
+Still the same commit though I haven't done any new work.
+
+113
+00:05:53,520 --> 00:05:58,530
+However, if I do some new work and make a new commit here, this is the oldies playlist.
+
+114
+00:05:58,530 --> 00:05:59,960
+So what should we add?
+
+115
+00:05:59,970 --> 00:06:04,590
+Let's add to good great George Jones songs.
+
+116
+00:06:04,590 --> 00:06:05,760
+He stopped loving her today.
+
+117
+00:06:06,090 --> 00:06:06,570
+Great song.
+
+118
+00:06:06,570 --> 00:06:07,230
+Great song.
+
+119
+00:06:08,370 --> 00:06:15,300
+So I'm going to save and I'm going to commit now when I commit here, remember, I'm on the Old East
+
+120
+00:06:15,300 --> 00:06:26,430
+Branch, so get add playlist, get commit, add to George Jones songs just like that.
+
+121
+00:06:27,860 --> 00:06:30,370
+And we just made our first commit on a new branch.
+
+122
+00:06:30,380 --> 00:06:35,900
+We're on the oldest branch and if I type get log, we're going to see something we haven't yet seen.
+
+123
+00:06:35,900 --> 00:06:38,420
+We see head referring to oldies.
+
+124
+00:06:38,420 --> 00:06:40,010
+That's what we expect to see.
+
+125
+00:06:40,010 --> 00:06:41,330
+It's our most recent commit.
+
+126
+00:06:41,330 --> 00:06:44,330
+That's where oldest is because we're on the oldest branch.
+
+127
+00:06:44,330 --> 00:06:48,410
+But we see Master now has been left behind on this previous commit.
+
+128
+00:06:48,410 --> 00:06:52,250
+Master is still remember this idea of a bookmark in the book.
+
+129
+00:06:52,250 --> 00:06:54,140
+It's still bookmarking this commit.
+
+130
+00:06:54,140 --> 00:06:58,730
+This is master, this is oldies and we happen to be on the oldest branch.
+
+131
+00:06:58,730 --> 00:07:02,000
+But I can switch as we've seen with git switch.
+
+132
+00:07:02,000 --> 00:07:06,770
+So if I switch right now this is what we have on our oldest branch.
+
+133
+00:07:06,770 --> 00:07:09,800
+If I switch over, get switch to master.
+
+134
+00:07:11,350 --> 00:07:12,160
+Take a look.
+
+135
+00:07:12,310 --> 00:07:15,730
+Now we have just two lines, just two songs, rather.
+
+136
+00:07:16,000 --> 00:07:19,000
+We don't have the George Jones stuff that we did.
+
+137
+00:07:19,030 --> 00:07:21,700
+If I type, get log on the master branch.
+
+138
+00:07:21,700 --> 00:07:28,030
+We only have these two commits, add the playlist header, add two ABBA songs, but when I switch back,
+
+139
+00:07:28,060 --> 00:07:30,220
+get switch to oldies.
+
+140
+00:07:30,910 --> 00:07:37,300
+We now have our two George Jones songs in addition and I type get log, we have that extra commit.
+
+141
+00:07:37,300 --> 00:07:40,360
+So that was just our first example of making a branch and switching.
+
+142
+00:07:40,360 --> 00:07:47,200
+We will get more practice in the next video, but just to remind you, get branch on its own, we'll
+
+143
+00:07:47,200 --> 00:07:53,260
+list branches, get branch with a branch name, makes a branch and then to switch to a branch we use
+
+144
+00:07:53,290 --> 00:07:55,870
+git switch followed by the branch name.
+

@@ -1,0 +1,564 @@
+1
+00:00:00,150 --> 00:00:00,570
+All right.
+
+2
+00:00:00,570 --> 00:00:04,620
+So it's time for an exercise to get some practice with get branches.
+
+3
+00:00:04,620 --> 00:00:10,380
+So this is going to be a simple exercise in terms of the files we're working with, kind of silly.
+
+4
+00:00:10,410 --> 00:00:15,150
+It's Harry Potter themed, but it doesn't matter if you know Harry Potter or don't if you just follow
+
+5
+00:00:15,150 --> 00:00:16,770
+the instructions and make the branches.
+
+6
+00:00:16,770 --> 00:00:21,030
+When you're prompted to make branches and switch branches, when you're prompted to switch, you should
+
+7
+00:00:21,030 --> 00:00:21,890
+be good to go.
+
+8
+00:00:21,900 --> 00:00:28,620
+Now, the theme of this, aside from Harry Potter, is of Harry Potter Patronages, which are like,
+
+9
+00:00:28,620 --> 00:00:31,230
+I guess a Harry Potter version of a spirit animal.
+
+10
+00:00:31,230 --> 00:00:35,790
+If you've seen the movie or read the books, the spell expected petroleum, I don't even know why I'm
+
+11
+00:00:35,790 --> 00:00:36,300
+going into it.
+
+12
+00:00:36,300 --> 00:00:37,440
+It doesn't matter anyway.
+
+13
+00:00:37,440 --> 00:00:39,810
+Wizards have their own patronus different animals.
+
+14
+00:00:39,810 --> 00:00:46,350
+So you will be putting some animals in files on different branches for different characters.
+
+15
+00:00:47,280 --> 00:00:49,830
+So again, I strongly recommend you do this on your own.
+
+16
+00:00:49,830 --> 00:00:55,800
+Follow the instructions you can find this file link to in the resources for this video.
+
+17
+00:00:55,830 --> 00:01:00,000
+You're going to make a new directory, make a new git repo inside of it, make sure you're not already
+
+18
+00:01:00,000 --> 00:01:05,730
+in one, then you'll create a new file called Petronas txt and you'll leave it empty for now.
+
+19
+00:01:05,880 --> 00:01:10,770
+So this will be on your default branch, the master branch or if you've changed the default name, whatever
+
+20
+00:01:10,770 --> 00:01:11,610
+it is main.
+
+21
+00:01:11,610 --> 00:01:14,400
+But for now the default is just master.
+
+22
+00:01:14,730 --> 00:01:17,280
+Then we'll make our first commit with this message.
+
+23
+00:01:17,280 --> 00:01:18,900
+Add empty patronus file.
+
+24
+00:01:19,140 --> 00:01:26,010
+Then we'll make a new branch called Hairy and at the same time, or in the next line, a second new
+
+25
+00:01:26,010 --> 00:01:27,330
+branch called Snape.
+
+26
+00:01:27,330 --> 00:01:29,730
+Both of them should be based on the master branch.
+
+27
+00:01:29,730 --> 00:01:31,890
+They should contain this empty patronus file.
+
+28
+00:01:32,460 --> 00:01:35,670
+Then you will move to the hairy branch that you just made.
+
+29
+00:01:35,670 --> 00:01:40,950
+And there are two different ways we've talked about for moving to new branches or moving between branches.
+
+30
+00:01:40,950 --> 00:01:44,040
+So I would like you to use the new command.
+
+31
+00:01:44,430 --> 00:01:47,520
+If you don't remember which one is new and old, it's not a big deal.
+
+32
+00:01:47,520 --> 00:01:52,710
+Just use one of the commands that we talked about and then later on use the other command that you didn't
+
+33
+00:01:52,710 --> 00:01:53,310
+use.
+
+34
+00:01:54,090 --> 00:01:58,550
+So on the hairy branch, we are going to put this inside of the Patronus file.
+
+35
+00:01:58,560 --> 00:02:05,400
+Harry Potter's Patronus is a stag, so copy all of this and put it in that file, save it, add and
+
+36
+00:02:05,400 --> 00:02:08,039
+commit the changes and then use this message.
+
+37
+00:02:08,039 --> 00:02:12,180
+Add Harry Stag Patronus and again this is on the Harry branch.
+
+38
+00:02:12,180 --> 00:02:16,740
+Then you will move over to the other branch you already made called Snape.
+
+39
+00:02:17,160 --> 00:02:22,230
+So this branch again should be based off of master when you made it early on, at the same time as the
+
+40
+00:02:22,230 --> 00:02:28,080
+Harry branch, when you move over to that branch, use the other command, the older command, to switch
+
+41
+00:02:28,080 --> 00:02:32,580
+or to change branches and then open up the Patronus file again.
+
+42
+00:02:32,580 --> 00:02:34,530
+And this time put this in there.
+
+43
+00:02:34,530 --> 00:02:41,010
+Snape's Patronus is a doe, so this is what you'll put in there, save it, add in commits and then
+
+44
+00:02:41,400 --> 00:02:42,930
+use this message if you'd like.
+
+45
+00:02:43,440 --> 00:02:45,390
+Then something different.
+
+46
+00:02:45,390 --> 00:02:51,060
+We will make a new branch based upon the Snape branch and we're going to call it Lily.
+
+47
+00:02:52,020 --> 00:02:54,630
+If you don't know any of these characters, it really doesn't matter.
+
+48
+00:02:54,660 --> 00:02:57,570
+All you need to know is that Snape and Lily have the same patronus.
+
+49
+00:02:57,570 --> 00:03:03,330
+So we are branching off of Snape to a new branch called Lily, and then we will move to that branch,
+
+50
+00:03:03,330 --> 00:03:08,670
+to the Lily branch, and we'll edit this file and we're going to keep the DOE in there because they
+
+51
+00:03:08,670 --> 00:03:09,690
+have the same patronus.
+
+52
+00:03:09,690 --> 00:03:15,480
+But we will edit this little header so that it says Lily's patronus instead of Snape's.
+
+53
+00:03:15,480 --> 00:03:16,830
+You can leave the DOE alone.
+
+54
+00:03:16,830 --> 00:03:17,460
+That's the point.
+
+55
+00:03:17,460 --> 00:03:19,770
+They share the same patronus the same form.
+
+56
+00:03:19,770 --> 00:03:21,150
+Then you'll add and commit.
+
+57
+00:03:21,510 --> 00:03:23,010
+You can use this message if you want.
+
+58
+00:03:23,010 --> 00:03:24,660
+So this is on the lily branch.
+
+59
+00:03:24,660 --> 00:03:27,480
+Then run a command to list all the branches.
+
+60
+00:03:27,480 --> 00:03:28,470
+You should see four.
+
+61
+00:03:28,500 --> 00:03:30,630
+So just making sure you remember that command.
+
+62
+00:03:30,630 --> 00:03:33,660
+And then as a bonus, delete the Snape branch.
+
+63
+00:03:33,660 --> 00:03:34,500
+Poor Snape.
+
+64
+00:03:35,220 --> 00:03:35,760
+Okay.
+
+65
+00:03:35,760 --> 00:03:39,600
+So if you're still here, I really recommend.
+
+66
+00:03:39,600 --> 00:03:41,880
+I insist that you try it on your own.
+
+67
+00:03:42,060 --> 00:03:43,840
+But if you want to, just watch me do it.
+
+68
+00:03:43,860 --> 00:03:44,580
+Here we go.
+
+69
+00:03:44,880 --> 00:03:47,130
+So I'm going to make a new folder called Petronas.
+
+70
+00:03:48,720 --> 00:03:49,920
+Let's just do that here.
+
+71
+00:03:50,670 --> 00:03:51,240
+Petronas.
+
+72
+00:03:51,270 --> 00:03:52,620
+I'll seed into it.
+
+73
+00:03:52,650 --> 00:03:55,860
+I'm going to initialize a repo, but first make sure I'm not in one.
+
+74
+00:03:56,430 --> 00:03:56,850
+Okay.
+
+75
+00:03:57,360 --> 00:04:03,810
+So now I have this folder and a new repo in it and I'm going to create a file called Petronas txt,
+
+76
+00:04:04,590 --> 00:04:14,010
+Petronas Dot txt and then I'm going to add and commit with this message add empty Petronas file.
+
+77
+00:04:14,100 --> 00:04:20,220
+So get add that file, get commit m there's my message and there we go.
+
+78
+00:04:20,220 --> 00:04:21,269
+That's the first bit.
+
+79
+00:04:21,510 --> 00:04:26,910
+Now immediately make a new branch called Hairy and another new branch called snip, both based on the
+
+80
+00:04:26,910 --> 00:04:31,190
+master branch I'm currently on master, so that works to our advantage.
+
+81
+00:04:31,200 --> 00:04:37,410
+I'm going to make a new branch called Hairy and another one called Snake OC.
+
+82
+00:04:37,770 --> 00:04:41,970
+Next step move to the hairy branch using the new way of doing it.
+
+83
+00:04:41,970 --> 00:04:49,500
+The new command is get switch so we'll move over using git switch to the hairy branch and now we see
+
+84
+00:04:49,500 --> 00:04:50,490
+that we're on hairy.
+
+85
+00:04:51,150 --> 00:04:54,090
+Then in the Petronas file add the following.
+
+86
+00:04:54,090 --> 00:05:00,510
+So I need to open up that file so I'll do a copied all of that first of all, but then I'll use my code
+
+87
+00:05:00,510 --> 00:05:02,050
+shortcut code.
+
+88
+00:05:02,070 --> 00:05:03,600
+Just do the whole folder.
+
+89
+00:05:03,600 --> 00:05:05,220
+Here's that Petronas File.
+
+90
+00:05:05,250 --> 00:05:07,020
+I will paste that in there.
+
+91
+00:05:07,620 --> 00:05:08,670
+Let me zoom out a bit.
+
+92
+00:05:08,700 --> 00:05:09,190
+Okay.
+
+93
+00:05:09,600 --> 00:05:15,300
+So I'll save that and then it wants me to add and commit the changes with this commit message.
+
+94
+00:05:15,870 --> 00:05:16,590
+All right.
+
+95
+00:05:16,590 --> 00:05:24,360
+So we'll do a git, add Petronas, get commit m and paste in that message.
+
+96
+00:05:25,300 --> 00:05:25,720
+Okay.
+
+97
+00:05:25,720 --> 00:05:28,330
+So we should now have two commits on this branch.
+
+98
+00:05:29,400 --> 00:05:34,890
+Next, we are going to move over to the snake branch using the other the older command, which is git
+
+99
+00:05:34,890 --> 00:05:35,700
+checkout.
+
+100
+00:05:36,210 --> 00:05:37,410
+So we'll do that.
+
+101
+00:05:37,440 --> 00:05:40,360
+Get checkout snip.
+
+102
+00:05:40,410 --> 00:05:41,940
+You could use switch that right there.
+
+103
+00:05:41,940 --> 00:05:43,020
+Both going to work.
+
+104
+00:05:43,410 --> 00:05:45,530
+But I just want you to get practice with both.
+
+105
+00:05:45,540 --> 00:05:53,130
+So I'm now on the snake branch as my terminal tells me and I'm going to put this in the Patronus file.
+
+106
+00:05:53,940 --> 00:05:56,460
+Now, if I take a look, the Patronus file is empty, right?
+
+107
+00:05:56,460 --> 00:05:59,510
+Because I branched off of Master before anything was in here.
+
+108
+00:05:59,520 --> 00:06:02,640
+I didn't branch from the Harry Potter or the Harry Branch.
+
+109
+00:06:03,360 --> 00:06:04,440
+I'll save that.
+
+110
+00:06:05,190 --> 00:06:06,870
+And then I'm going to make a new commit.
+
+111
+00:06:07,860 --> 00:06:09,780
+With that change and this message.
+
+112
+00:06:12,080 --> 00:06:21,530
+So get add Petronas get commit dash em on the snake branch, add Snape's Doe, Petronas and then I need
+
+113
+00:06:21,530 --> 00:06:26,690
+to make a new branch based on the snake branch called Lili and then move to it.
+
+114
+00:06:27,470 --> 00:06:29,620
+So I could just do git branch.
+
+115
+00:06:29,630 --> 00:06:32,180
+Lily I'm on snake and that's where I should be.
+
+116
+00:06:32,180 --> 00:06:35,210
+If I want to branch based on Snape, I want this history.
+
+117
+00:06:35,630 --> 00:06:43,070
+Just to remind you, if I do a get log to commits, add empty file, add snape's doe patronus.
+
+118
+00:06:43,070 --> 00:06:49,490
+So if I do a git branch lily that will work or I can make the branch and switch to it in one go like
+
+119
+00:06:49,490 --> 00:06:55,190
+this get switched dash see lily and that made it and it switched me over.
+
+120
+00:06:55,280 --> 00:06:58,520
+I still see add snape's doe patronus.
+
+121
+00:06:58,520 --> 00:06:58,740
+Right.
+
+122
+00:06:58,820 --> 00:07:00,740
+The file contains the doe.
+
+123
+00:07:01,040 --> 00:07:05,750
+Now I'm going to edit it so that it says Lily's Patronus instead of snape's.
+
+124
+00:07:06,510 --> 00:07:09,930
+So I'll put that up top and then I will add and commit.
+
+125
+00:07:10,850 --> 00:07:12,770
+So just copy this message.
+
+126
+00:07:13,680 --> 00:07:14,730
+Get status.
+
+127
+00:07:15,480 --> 00:07:20,580
+We modified Petronas so we add, we commit and we'll give it that message.
+
+128
+00:07:21,330 --> 00:07:27,390
+OC Next and almost at the end run a get command to list all branches we should see four.
+
+129
+00:07:27,540 --> 00:07:29,060
+So what does that command?
+
+130
+00:07:29,070 --> 00:07:31,260
+It's just get branch and nothing else.
+
+131
+00:07:31,260 --> 00:07:32,460
+Just get branch.
+
+132
+00:07:32,460 --> 00:07:39,240
+We see four I'm currently on Lily and then bonus delete the Snape branch.
+
+133
+00:07:39,270 --> 00:07:40,680
+Oh poor Snape.
+
+134
+00:07:41,130 --> 00:07:49,380
+Well to delete a branch we saw that we use the exact same command get branch and then a branch name
+
+135
+00:07:49,380 --> 00:07:55,770
+but we pass in this dash dx, get branch dash dx and then Snape, that's the name of the branch.
+
+136
+00:07:55,770 --> 00:07:57,210
+Make sure I'm not on that branch.
+
+137
+00:07:57,210 --> 00:07:58,440
+I'm currently not.
+
+138
+00:07:58,620 --> 00:07:59,940
+And there we go.
+
+139
+00:07:59,970 --> 00:08:00,990
+It was deleted.
+
+140
+00:08:00,990 --> 00:08:06,270
+So now if I do just regular get branch only three branches and that's it.
+
+141
+00:08:06,270 --> 00:08:09,280
+That's the end of the branching exercise OC.
+

@@ -1,0 +1,304 @@
+1
+00:00:00,210 --> 00:00:00,600
+Okay.
+
+2
+00:00:00,600 --> 00:00:02,860
+So one other tool I recommend you install.
+
+3
+00:00:02,880 --> 00:00:08,250
+Definitely not necessary to use gids, but I am going to use it throughout the course to illustrate
+
+4
+00:00:08,250 --> 00:00:13,410
+and to help visualise what's happening at times is a guy we called get crackin.
+
+5
+00:00:13,590 --> 00:00:18,180
+So as I mentioned earlier, there are lots of options for graphical user interfaces.
+
+6
+00:00:18,180 --> 00:00:27,270
+GIs for Git Get Crackin is a great free one that I think looks pretty nice here it is in action so I've
+
+7
+00:00:27,270 --> 00:00:28,800
+already installed it on my Mac.
+
+8
+00:00:28,800 --> 00:00:33,870
+It's a single click to download it and then there's an installer, so I'll demonstrate that, but I
+
+9
+00:00:33,870 --> 00:00:35,160
+think it looks pretty good.
+
+10
+00:00:35,370 --> 00:00:38,970
+It's just a nice tool to help us visualize what's happening here.
+
+11
+00:00:38,970 --> 00:00:44,670
+All this history and these weird branches and merging things and stuff we haven't covered at all, of
+
+12
+00:00:44,670 --> 00:00:46,920
+course that we will soon.
+
+13
+00:00:47,160 --> 00:00:53,100
+And then we can compare and see changes between files, see if I can demonstrate some of that anyway.
+
+14
+00:00:53,100 --> 00:00:54,300
+It's just a nice tool.
+
+15
+00:00:54,300 --> 00:00:55,110
+It's free.
+
+16
+00:00:55,110 --> 00:01:01,650
+There is a paid version that includes some other features, but the bulk of what we need or everything
+
+17
+00:01:01,650 --> 00:01:02,640
+we need is free.
+
+18
+00:01:02,970 --> 00:01:06,960
+So click on the link in the description or the resource I've included.
+
+19
+00:01:06,960 --> 00:01:12,000
+Get crack and download for free and then follow the instructions.
+
+20
+00:01:12,000 --> 00:01:14,100
+So I'm doing this on my windows side.
+
+21
+00:01:14,100 --> 00:01:19,650
+It's hard to tell maybe, but I'm on windows and I'm going to wait for that to finish up.
+
+22
+00:01:20,430 --> 00:01:22,170
+Oh, did we open it?
+
+23
+00:01:22,170 --> 00:01:24,540
+If you're on the Mac or on a mac, do the same thing.
+
+24
+00:01:24,570 --> 00:01:25,320
+Of course.
+
+25
+00:01:25,350 --> 00:01:26,550
+Open the file.
+
+26
+00:01:26,550 --> 00:01:27,390
+Are you opening?
+
+27
+00:01:27,690 --> 00:01:28,500
+Here it is.
+
+28
+00:01:28,500 --> 00:01:29,760
+It's installing.
+
+29
+00:01:29,850 --> 00:01:34,620
+And let's see you get this cute animation of a squid.
+
+30
+00:01:35,910 --> 00:01:38,640
+So it does prompt us for an email and a password.
+
+31
+00:01:38,640 --> 00:01:41,850
+This is not tied to get itself.
+
+32
+00:01:42,120 --> 00:01:47,790
+It's asking you to make a git crack account or if you happen to have a github account already, this
+
+33
+00:01:47,790 --> 00:01:49,140
+will be the easiest option.
+
+34
+00:01:49,380 --> 00:01:55,200
+But I don't have I do have a GitHub account, but just to simulate the fact that I don't on this machine,
+
+35
+00:01:55,230 --> 00:01:58,170
+on my windows side, I could create a get crackin account.
+
+36
+00:01:58,170 --> 00:02:04,780
+I've got to just put in a name and an email so I'll just do Colt and then, I don't know, Colt at gmail.com.
+
+37
+00:02:04,920 --> 00:02:06,180
+Not my real email.
+
+38
+00:02:06,180 --> 00:02:06,750
+I'll do it.
+
+39
+00:02:06,750 --> 00:02:07,890
+Silly password.
+
+40
+00:02:08,610 --> 00:02:09,330
+Purple.
+
+41
+00:02:09,570 --> 00:02:10,710
+Horrible password.
+
+42
+00:02:11,610 --> 00:02:11,990
+It's even.
+
+43
+00:02:11,990 --> 00:02:12,770
+Let me do that.
+
+44
+00:02:12,800 --> 00:02:13,090
+Okay.
+
+45
+00:02:13,100 --> 00:02:14,210
+How about purple?
+
+46
+00:02:15,470 --> 00:02:16,130
+Green.
+
+47
+00:02:17,000 --> 00:02:17,690
+All right.
+
+48
+00:02:17,960 --> 00:02:19,380
+I've read and I've agreed.
+
+49
+00:02:19,400 --> 00:02:20,060
+Okay.
+
+50
+00:02:20,090 --> 00:02:26,270
+Now, of course, if you're not comfortable signing up for another account, another service, well,
+
+51
+00:02:26,300 --> 00:02:27,740
+you're going to need GitHub through the course.
+
+52
+00:02:27,740 --> 00:02:30,300
+So I recommend just registering for that anyway.
+
+53
+00:02:30,320 --> 00:02:32,900
+Otherwise, we'll run into some issues down the line.
+
+54
+00:02:32,900 --> 00:02:34,750
+But there are alternative GIs.
+
+55
+00:02:34,760 --> 00:02:40,190
+I'm using this not as an integral part of the course that you have to follow along with, but more as
+
+56
+00:02:40,190 --> 00:02:43,090
+a tool to help teach and help illustrate things.
+
+57
+00:02:43,100 --> 00:02:46,340
+It's just much more visual and hopefully more engaging.
+
+58
+00:02:46,780 --> 00:02:50,450
+Okay, so then it's asking me to put a name and email in here.
+
+59
+00:02:50,450 --> 00:02:53,270
+I always make sure this matches what I've configured.
+
+60
+00:02:53,270 --> 00:02:56,480
+Get with what we did just a little while ago.
+
+61
+00:02:56,480 --> 00:02:57,350
+So we configured.
+
+62
+00:02:57,350 --> 00:02:59,240
+Get to have a name and an email.
+
+63
+00:02:59,240 --> 00:03:04,520
+I would do the same thing, so same name and same email, but it also here will actually update your
+
+64
+00:03:04,520 --> 00:03:07,310
+get config if you want it to update from here.
+
+65
+00:03:07,460 --> 00:03:11,120
+Anyway, this is not a big deal, so I would just make them match.
+
+66
+00:03:11,360 --> 00:03:13,070
+So I'll do what I did earlier.
+
+67
+00:03:13,370 --> 00:03:16,100
+Called at gmail dot co.
+
+68
+00:03:17,800 --> 00:03:18,180
+Okay.
+
+69
+00:03:18,280 --> 00:03:22,750
+Save changes, and now I'm in and we don't really have anything to do yet.
+
+70
+00:03:23,380 --> 00:03:24,970
+But you should see something like this.
+
+71
+00:03:24,970 --> 00:03:28,780
+And eventually, once we start working, we'll see something more like this.
+
+72
+00:03:28,930 --> 00:03:32,740
+So I believe the Windows and Mac versions are very, very similar.
+
+73
+00:03:32,740 --> 00:03:36,760
+I have both of them open here, although I don't have a repository open over here.
+
+74
+00:03:36,790 --> 00:03:38,650
+The UI I think is identical.
+
+75
+00:03:38,920 --> 00:03:41,500
+If there are any changes, I'll do my best to point them out.
+
+76
+00:03:41,770 --> 00:03:46,870
+All right, so we have get cracking and now let's get cracking on the rest of the course.
+

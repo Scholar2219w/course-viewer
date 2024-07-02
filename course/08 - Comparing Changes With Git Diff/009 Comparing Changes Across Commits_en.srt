@@ -1,0 +1,148 @@
+1
+00:00:00,120 --> 00:00:03,990
+The last variation we'll take a look at is comparing to comets.
+
+2
+00:00:04,019 --> 00:00:08,780
+If you want to know what changed between two comets, not necessarily head right.
+
+3
+00:00:08,790 --> 00:00:10,530
+It could be any comet in the past.
+
+4
+00:00:10,890 --> 00:00:17,640
+We can use the same syntax, get dif and then some commit hash, dot, dot, some other comet hash.
+
+5
+00:00:18,060 --> 00:00:23,430
+So why don't we go back to master get log.
+
+6
+00:00:23,430 --> 00:00:28,710
+Let's do one line if I want to know what changed between I don't know.
+
+7
+00:00:28,710 --> 00:00:34,400
+Add red so that commit and add blue and purple.
+
+8
+00:00:34,410 --> 00:00:34,920
+Sure.
+
+9
+00:00:35,100 --> 00:00:39,270
+If I want to know what changed there, I need to start by copying one of these comet hashes.
+
+10
+00:00:39,270 --> 00:00:42,960
+It's kind of annoying actually to keep track of both of them.
+
+11
+00:00:43,020 --> 00:00:44,550
+I'm just going to paste it in this file.
+
+12
+00:00:44,550 --> 00:00:47,340
+And then the second one I wanted was this comet hash.
+
+13
+00:00:47,940 --> 00:00:49,890
+All right, let's see what happened there.
+
+14
+00:00:49,890 --> 00:00:53,040
+So get diff and then the first one.
+
+15
+00:00:54,020 --> 00:00:55,220
+Dot, dot.
+
+16
+00:00:56,270 --> 00:00:57,230
+The second one.
+
+17
+00:00:58,250 --> 00:01:01,050
+And we see the only file that changed was colors.
+
+18
+00:01:01,070 --> 00:01:02,300
+That's the only file, really?
+
+19
+00:01:02,300 --> 00:01:02,700
+Well.
+
+20
+00:01:02,720 --> 00:01:06,530
+We did introduce the numbers file, but after this commit.
+
+21
+00:01:06,530 --> 00:01:09,470
+So it didn't even exist in either of these commits.
+
+22
+00:01:09,470 --> 00:01:11,370
+But you can see the changes, right?
+
+23
+00:01:11,420 --> 00:01:18,410
+We added all this stuff into the file between those two commits and they're not necessarily consecutive
+
+24
+00:01:18,410 --> 00:01:18,770
+commits.
+
+25
+00:01:18,770 --> 00:01:21,500
+It's just all changes between those two commits.
+
+26
+00:01:21,500 --> 00:01:24,710
+And this also works if I have a space just like with two branches.
+
+27
+00:01:25,470 --> 00:01:26,520
+Same diff.
+
+28
+00:01:26,550 --> 00:01:27,270
+All right.
+
+29
+00:01:27,270 --> 00:01:31,350
+So to recap those different versions, you can compare changes between two commits.
+
+30
+00:01:31,350 --> 00:01:34,410
+The order matters just like it does with two branches.
+
+31
+00:01:34,410 --> 00:01:40,590
+So all changes between all files for two different branches or two different commits.
+
+32
+00:01:41,250 --> 00:01:46,380
+Then we saw that we can do the same thing but actually narrow it down to one file or two or three.
+
+33
+00:01:46,380 --> 00:01:48,690
+We just call those files out afterwards.
+
+34
+00:01:48,690 --> 00:01:54,570
+So that also works for branches and commits and we saw that we can use the dash, dash staged or cached
+
+35
+00:01:54,570 --> 00:02:02,550
+option to only see the changes that are staged to see unstaged changes only we can use get diff and
+
+36
+00:02:02,550 --> 00:02:05,040
+then to see all changes since the last commit.
+
+37
+00:02:05,040 --> 00:02:09,840
+So everything that's new in the working directory staged or unstaged get diff head.
+

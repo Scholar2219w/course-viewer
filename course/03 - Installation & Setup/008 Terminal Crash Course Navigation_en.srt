@@ -1,0 +1,920 @@
+1
+00:00:00,180 --> 00:00:00,660
+All right.
+
+2
+00:00:00,660 --> 00:00:05,640
+So in this video, I'm going to run through some of the essential terminal commands for navigation for
+
+3
+00:00:05,640 --> 00:00:07,800
+moving around on your machine.
+
+4
+00:00:07,800 --> 00:00:09,960
+We need this in order to work with Git.
+
+5
+00:00:09,960 --> 00:00:17,340
+If you already know these commands, things like LZ and WD and CD, if you know those commands, feel
+
+6
+00:00:17,340 --> 00:00:18,810
+free to skip this, of course.
+
+7
+00:00:18,810 --> 00:00:21,690
+But if you don't, I'm going to run through this quickly.
+
+8
+00:00:21,690 --> 00:00:27,180
+But also I recommend you take some time to practice and just keep a reference or a cheat sheet up that
+
+9
+00:00:27,180 --> 00:00:31,410
+you can look back at because I'll be using a lot of these commands throughout the course, but nothing
+
+10
+00:00:31,410 --> 00:00:32,880
+super difficult, I promise.
+
+11
+00:00:32,880 --> 00:00:34,680
+The hardest part is just remembering them.
+
+12
+00:00:34,980 --> 00:00:37,800
+Okay, so I've got my Mac window here.
+
+13
+00:00:37,800 --> 00:00:40,650
+I've got my terminal open, just the terminal app on Mac.
+
+14
+00:00:40,650 --> 00:00:43,860
+So if you're following along with a mac, you'll look at this screen.
+
+15
+00:00:43,860 --> 00:00:49,650
+And then occasionally when there is a small deviation or difference on a windows machine, here is my
+
+16
+00:00:49,650 --> 00:00:50,850
+windows terminal.
+
+17
+00:00:50,850 --> 00:00:54,120
+This is the bash or bash shell that I've opened up.
+
+18
+00:00:54,120 --> 00:00:57,990
+So if you installed that on a Windows machine, it will look something like this.
+
+19
+00:00:57,990 --> 00:01:04,590
+So the first command we'll talk about is called LS It is short for list list the contents of a folder
+
+20
+00:01:04,590 --> 00:01:06,450
+or of the current directory.
+
+21
+00:01:06,870 --> 00:01:12,990
+So if you type ls into your terminal and you hit enter wherever you currently are and we haven't learned
+
+22
+00:01:12,990 --> 00:01:17,760
+how to move yet, so we'll talk about where we currently are, wherever that location is, we will see
+
+23
+00:01:17,760 --> 00:01:19,230
+the contents printed out.
+
+24
+00:01:19,590 --> 00:01:23,190
+So in this case I'm in a folder that contains some JavaScript files.
+
+25
+00:01:23,580 --> 00:01:28,440
+HTML file, a CSS file, a llamas python file a folder called Secret.
+
+26
+00:01:28,440 --> 00:01:31,080
+That is what's printed out, at least in this slide.
+
+27
+00:01:31,410 --> 00:01:34,710
+So if I try it over here, this is a brand new terminal window.
+
+28
+00:01:34,710 --> 00:01:35,760
+I just made a new tab.
+
+29
+00:01:35,760 --> 00:01:36,720
+I haven't moved.
+
+30
+00:01:36,720 --> 00:01:38,370
+I haven't talked about moving.
+
+31
+00:01:39,000 --> 00:01:40,290
+Where am I?
+
+32
+00:01:40,320 --> 00:01:47,460
+Well, I'm at a location called the Home Directory and it's abbreviated or it's symbolized by this tilde
+
+33
+00:01:47,490 --> 00:01:48,240
+character.
+
+34
+00:01:48,240 --> 00:01:51,300
+You can find that above a tab key on most keyboards.
+
+35
+00:01:51,300 --> 00:01:55,200
+Anyway, my home directory contains a lot of a lot of things.
+
+36
+00:01:55,200 --> 00:01:58,980
+If I hit LRS, you won't see all of these.
+
+37
+00:01:59,100 --> 00:02:05,490
+Some of them are standard on a mac like applications, desktop documents, downloads, public pictures.
+
+38
+00:02:05,490 --> 00:02:11,790
+Some of them are my folders I've made, like, you know, get demo and get stuff.
+
+39
+00:02:12,390 --> 00:02:13,080
+What else?
+
+40
+00:02:13,080 --> 00:02:13,920
+Pets.
+
+41
+00:02:15,340 --> 00:02:16,300
+Terminal demo.
+
+42
+00:02:16,330 --> 00:02:18,290
+Those are my folders I've made.
+
+43
+00:02:18,310 --> 00:02:20,190
+Anyway, you'll see something, right?
+
+44
+00:02:20,200 --> 00:02:22,870
+You'll see contents of your home directory.
+
+45
+00:02:22,870 --> 00:02:25,840
+And if you're on a Windows machine, we can do the same thing you can get.
+
+46
+00:02:25,840 --> 00:02:32,110
+BASH So, LZ, now I see different things because there are different files and folders on a Windows
+
+47
+00:02:32,110 --> 00:02:36,000
+machine, but I'm in the same location on this Windows machine.
+
+48
+00:02:36,010 --> 00:02:38,590
+TILDE That is my home directory.
+
+49
+00:02:39,070 --> 00:02:41,470
+All right, so we can't move right now.
+
+50
+00:02:41,500 --> 00:02:46,270
+We're just simply looking at files and folders in one location.
+
+51
+00:02:46,270 --> 00:02:49,960
+And I'm going to show you a command that I don't have a slide for on a mac.
+
+52
+00:02:49,990 --> 00:02:51,250
+The command is open.
+
+53
+00:02:51,250 --> 00:02:57,190
+If we type open dot, it's actually going to open up in Finder on a mac.
+
+54
+00:02:57,190 --> 00:03:01,600
+The file explorer is called Finder, the same directory where I currently am.
+
+55
+00:03:01,600 --> 00:03:03,520
+So this is my home directory.
+
+56
+00:03:03,520 --> 00:03:08,350
+And if you've never used a terminal, you're probably familiar with this sort of navigation, right?
+
+57
+00:03:08,710 --> 00:03:11,950
+If I want to look at my courses folder, I double click.
+
+58
+00:03:12,310 --> 00:03:15,100
+If I want to go back, I click the back arrow.
+
+59
+00:03:16,180 --> 00:03:19,450
+That's kind of the basic navigation without the terminal.
+
+60
+00:03:19,480 --> 00:03:23,260
+Now if I'm on a Windows machine, the open command actually does not work.
+
+61
+00:03:24,640 --> 00:03:30,100
+It tells me command not found, but instead I can do start dot.
+
+62
+00:03:30,100 --> 00:03:33,010
+This is really the one major difference I can think of so far.
+
+63
+00:03:33,340 --> 00:03:36,220
+And then this opens up the windows equivalent of finder.
+
+64
+00:03:36,220 --> 00:03:37,720
+I think it's called file.
+
+65
+00:03:37,750 --> 00:03:39,070
+Is it file explorer?
+
+66
+00:03:39,070 --> 00:03:41,750
+I'm not much of a Windows user anyway.
+
+67
+00:03:41,770 --> 00:03:45,850
+Probably shouldn't admit that you can see the folders and files that are listed here.
+
+68
+00:03:45,850 --> 00:03:48,070
+So we've got pictures as an example.
+
+69
+00:03:48,100 --> 00:03:50,290
+And if I do start Dot, I can see.
+
+70
+00:03:50,290 --> 00:03:51,820
+All right, here's the pictures folder.
+
+71
+00:03:51,820 --> 00:03:55,330
+We have videos, there's a videos folder there.
+
+72
+00:03:55,330 --> 00:03:59,200
+So all of those things that we see represented here are also here.
+
+73
+00:03:59,200 --> 00:04:03,700
+It's just two different ways of interacting or viewing the contents of this folder.
+
+74
+00:04:04,210 --> 00:04:04,900
+All right.
+
+75
+00:04:04,900 --> 00:04:07,090
+So that's LZ on its own.
+
+76
+00:04:07,090 --> 00:04:08,650
+Just LZ, nothing.
+
+77
+00:04:08,650 --> 00:04:12,850
+Afterwards you hit enter and it shows us what is in the current directory.
+
+78
+00:04:12,850 --> 00:04:15,940
+But I can also use LZ on a folder.
+
+79
+00:04:16,420 --> 00:04:22,360
+So I could say, you know, what's inside this pets folder and all I need to do is reference the path.
+
+80
+00:04:22,360 --> 00:04:24,790
+So the name in this case is pets.
+
+81
+00:04:24,790 --> 00:04:26,140
+So, LZ, pets.
+
+82
+00:04:26,910 --> 00:04:29,580
+And that's what's inside that pets folder.
+
+83
+00:04:30,390 --> 00:04:34,020
+And I can actually open that folder, too, if I just do open pets.
+
+84
+00:04:35,040 --> 00:04:37,180
+And it opened on my other screen.
+
+85
+00:04:37,200 --> 00:04:38,170
+Let me drag this up.
+
+86
+00:04:38,190 --> 00:04:38,820
+There we are.
+
+87
+00:04:38,850 --> 00:04:40,040
+You can see those contents.
+
+88
+00:04:40,050 --> 00:04:41,970
+Cats, chickens, hamsters and so on.
+
+89
+00:04:42,330 --> 00:04:43,140
+All right.
+
+90
+00:04:43,440 --> 00:04:45,120
+I'll do that on a Windows machine as well.
+
+91
+00:04:45,120 --> 00:04:52,470
+Let's say I want to know what is inside of this git course directory so I can do ls get and I need to
+
+92
+00:04:52,470 --> 00:04:57,930
+spell it correctly, but I can also hit tab to autocomplete and it looks like it's an empty directory.
+
+93
+00:04:57,930 --> 00:04:59,800
+Well, that's my fault for picking that one.
+
+94
+00:04:59,820 --> 00:05:00,930
+Let's try another one.
+
+95
+00:05:00,930 --> 00:05:04,250
+How about what is in git stuff?
+
+96
+00:05:04,260 --> 00:05:05,250
+I don't know.
+
+97
+00:05:05,400 --> 00:05:07,110
+I don't remember making that.
+
+98
+00:05:07,110 --> 00:05:07,890
+But we'll try.
+
+99
+00:05:07,890 --> 00:05:09,540
+LS get stuff.
+
+100
+00:05:10,300 --> 00:05:10,640
+Okay.
+
+101
+00:05:10,660 --> 00:05:12,580
+There's one folder called Demo.
+
+102
+00:05:12,610 --> 00:05:15,670
+Not very exciting, but hopefully you get the idea here.
+
+103
+00:05:15,670 --> 00:05:18,310
+We can use RLS with nothing afterwards.
+
+104
+00:05:18,610 --> 00:05:20,440
+Also there's a command called the clear.
+
+105
+00:05:20,440 --> 00:05:22,000
+I'll just show because I'll be using.
+
+106
+00:05:22,000 --> 00:05:26,560
+This kind of annoys me when I have a lot of stuff in my terminal, so that goes away.
+
+107
+00:05:27,310 --> 00:05:29,350
+So that has nothing to do with navigation.
+
+108
+00:05:29,800 --> 00:05:33,740
+So as I was saying LZ on its own, we'll list the contents of our current directory.
+
+109
+00:05:33,850 --> 00:05:39,470
+LS Followed by the name of a directory like I could do pets as I've shown you.
+
+110
+00:05:39,490 --> 00:05:41,530
+I see the files in pets.
+
+111
+00:05:41,560 --> 00:05:43,320
+It's a bunch of folders, actually.
+
+112
+00:05:43,330 --> 00:05:49,240
+And if I wanted to look at, let's say, the goats directory or how about the cats directory?
+
+113
+00:05:49,450 --> 00:05:54,640
+I can't do LZ cats because there is no cats directory where I currently am.
+
+114
+00:05:54,700 --> 00:05:56,680
+Remember, this is what I see.
+
+115
+00:05:56,860 --> 00:06:00,520
+I currently am viewing or I'm inside this home directory.
+
+116
+00:06:00,520 --> 00:06:02,170
+That's what I see when I type ls.
+
+117
+00:06:02,350 --> 00:06:05,960
+I have to type out the path to access cats.
+
+118
+00:06:05,980 --> 00:06:07,540
+It's inside of pets.
+
+119
+00:06:07,540 --> 00:06:11,200
+So it's actually this ls pets slash cats.
+
+120
+00:06:12,040 --> 00:06:12,850
+And there we are.
+
+121
+00:06:12,880 --> 00:06:13,840
+It's one of my cats.
+
+122
+00:06:13,840 --> 00:06:18,600
+Her name is Blue Blue Steel and that's all I'll show you with RLS.
+
+123
+00:06:18,610 --> 00:06:21,640
+We can reference these paths where we chain things together.
+
+124
+00:06:22,090 --> 00:06:25,450
+Anyway, the next command I'll show you is pretty simple.
+
+125
+00:06:25,630 --> 00:06:29,710
+It's called P wd for print working directory.
+
+126
+00:06:29,710 --> 00:06:32,440
+And what this will do, it's very simple.
+
+127
+00:06:32,440 --> 00:06:34,650
+It just prints out your current location.
+
+128
+00:06:34,660 --> 00:06:37,870
+It prints out the path to where you currently are.
+
+129
+00:06:37,960 --> 00:06:39,860
+So we haven't been able to move, right?
+
+130
+00:06:39,880 --> 00:06:41,980
+We haven't changed locations yet.
+
+131
+00:06:42,400 --> 00:06:50,350
+We've been able to like peek into other folders with LLS, but p wd is if I just type it like that,
+
+132
+00:06:50,350 --> 00:06:53,640
+it's going to give me the exact location where I am right now.
+
+133
+00:06:53,650 --> 00:06:56,350
+So the home directory here is just short.
+
+134
+00:06:56,350 --> 00:07:00,160
+That little utility is a short way of referencing this location.
+
+135
+00:07:00,400 --> 00:07:02,650
+My user on here is called Cold Steel.
+
+136
+00:07:02,680 --> 00:07:04,540
+That is where I currently am.
+
+137
+00:07:04,540 --> 00:07:08,370
+But if I'm on my windows machine, it's going to be it's quite different.
+
+138
+00:07:08,380 --> 00:07:12,780
+It's similar, but it's different because on a Windows machine we've got this C drive, right?
+
+139
+00:07:12,790 --> 00:07:18,550
+So see slash users slash Colt Steel and that's obviously going to be your username.
+
+140
+00:07:18,820 --> 00:07:20,650
+So probably not Colt Steel.
+
+141
+00:07:20,830 --> 00:07:23,160
+So that is where we currently are.
+
+142
+00:07:23,170 --> 00:07:25,840
+If I type DWD, that's my location.
+
+143
+00:07:25,840 --> 00:07:30,720
+And that brings me to our next command, which is CD for Change Directory.
+
+144
+00:07:30,730 --> 00:07:32,630
+This is how we move around.
+
+145
+00:07:32,650 --> 00:07:38,720
+It's the equivalent if I do open, it's the equivalent of double clicking on one of these things, right?
+
+146
+00:07:38,740 --> 00:07:40,180
+And moving between folders.
+
+147
+00:07:40,180 --> 00:07:42,880
+I'm now in a different folder you can think of.
+
+148
+00:07:42,880 --> 00:07:44,460
+This is my current directory.
+
+149
+00:07:44,470 --> 00:07:50,440
+Now if I click here, this is my current directory and if I click in pictures, that's my current directory.
+
+150
+00:07:50,440 --> 00:07:52,500
+And there's one of my chickens, Stevie Chicks.
+
+151
+00:07:52,510 --> 00:07:53,170
+All right.
+
+152
+00:07:53,320 --> 00:07:58,570
+So if I want to change directories from the terminal, which I'll be doing all the time in the course,
+
+153
+00:07:58,570 --> 00:08:03,310
+I use CD followed by the directory that I'm trying to change into.
+
+154
+00:08:04,980 --> 00:08:07,240
+So I often use LZ first.
+
+155
+00:08:07,260 --> 00:08:08,420
+What do we have?
+
+156
+00:08:08,430 --> 00:08:10,740
+Let's go into this code directory.
+
+157
+00:08:10,770 --> 00:08:15,510
+You probably don't have that, but you could pick any other folder of yours and CD into it.
+
+158
+00:08:16,080 --> 00:08:18,060
+So CD code.
+
+159
+00:08:19,250 --> 00:08:21,590
+All right, so my prompt changes.
+
+160
+00:08:21,590 --> 00:08:23,480
+It tells me I'm in the code folder.
+
+161
+00:08:23,750 --> 00:08:25,460
+Your prompt will look different, but it should.
+
+162
+00:08:25,670 --> 00:08:28,190
+It likely will reveal to you where you are.
+
+163
+00:08:28,430 --> 00:08:30,110
+But if not, you can always type.
+
+164
+00:08:31,130 --> 00:08:35,390
+And we see, oh, now I'm in users code style slash code.
+
+165
+00:08:35,809 --> 00:08:42,110
+So just to illustrate this, if I were to open the current folder, now I'm in the code folder, not
+
+166
+00:08:42,110 --> 00:08:45,370
+the home directory, and I can continue to move.
+
+167
+00:08:45,380 --> 00:08:47,450
+But first if I type LHS.
+
+168
+00:08:48,070 --> 00:08:50,200
+Now we see completely different contents.
+
+169
+00:08:50,440 --> 00:08:52,600
+A lot of stuff in this code folder.
+
+170
+00:08:52,960 --> 00:08:58,360
+This is from one of my other courses and I could take a look at any of these other locations.
+
+171
+00:08:58,360 --> 00:09:00,340
+How about CSIS?
+
+172
+00:09:00,340 --> 00:09:02,850
+Intro for CSIS intro?
+
+173
+00:09:02,860 --> 00:09:07,450
+So CD oh four and I'm just going to hit tab to Autocomplete for me.
+
+174
+00:09:08,200 --> 00:09:12,820
+And if I seed into that, I type if I can spell it.
+
+175
+00:09:13,500 --> 00:09:20,340
+Notice my working directory, my current location has changed and if I type ls we now see the contents
+
+176
+00:09:20,340 --> 00:09:21,360
+and if I open?
+
+177
+00:09:22,050 --> 00:09:24,220
+This is what we're looking at in Finder.
+
+178
+00:09:24,240 --> 00:09:29,160
+Text Properties, CSS intro and then a zip file right there.
+
+179
+00:09:29,760 --> 00:09:34,410
+Same thing on a windows machine if I pick some folder to CD into.
+
+180
+00:09:34,770 --> 00:09:35,760
+How about.
+
+181
+00:09:36,630 --> 00:09:37,200
+I don't really know.
+
+182
+00:09:37,200 --> 00:09:41,100
+I don't have much on here, but let's go into desktop.
+
+183
+00:09:41,100 --> 00:09:41,430
+Maybe.
+
+184
+00:09:41,430 --> 00:09:42,570
+I'm not sure if it's on there.
+
+185
+00:09:42,570 --> 00:09:47,850
+So CD desktop and I'm going to clear.
+
+186
+00:09:48,510 --> 00:09:53,350
+And now if I type my working directory, my location has changed.
+
+187
+00:09:53,370 --> 00:09:55,980
+I'm now on my home directory.
+
+188
+00:09:56,010 --> 00:10:01,890
+See slash user slash called steal on a windows machine slash desktop if I type ls.
+
+189
+00:10:02,130 --> 00:10:03,510
+Oh, there's nothing on here.
+
+190
+00:10:03,510 --> 00:10:04,800
+Well, that's underwhelming.
+
+191
+00:10:05,640 --> 00:10:13,270
+And that actually leads me to my next command, which is a variation of CD, CD, followed by two dots.
+
+192
+00:10:13,290 --> 00:10:15,030
+This is how we move backwards.
+
+193
+00:10:15,270 --> 00:10:17,850
+So remember I showed you this example in Finder?
+
+194
+00:10:17,880 --> 00:10:25,290
+If I open this up, if I want to CD into this CD, if I want to double click in and then I decide I
+
+195
+00:10:25,290 --> 00:10:27,570
+want to go back, I just click the back arrow.
+
+196
+00:10:27,990 --> 00:10:35,610
+But using CD, what we actually can do is CD, dot, dot, and this will take us back one level, one
+
+197
+00:10:35,610 --> 00:10:37,920
+folder, so we back up.
+
+198
+00:10:37,950 --> 00:10:41,550
+So currently I'm in this CSS intro folder.
+
+199
+00:10:42,330 --> 00:10:43,680
+This is what's inside of it.
+
+200
+00:10:43,890 --> 00:10:47,490
+If I do CD Dot, dot and I type P CD.
+
+201
+00:10:48,200 --> 00:10:49,520
+This is where I am now.
+
+202
+00:10:49,820 --> 00:10:51,200
+That's where I was before.
+
+203
+00:10:51,230 --> 00:10:55,370
+I'm now one level back right here and I could do it again.
+
+204
+00:10:55,410 --> 00:10:57,080
+CD Dot, dot first.
+
+205
+00:10:57,080 --> 00:10:58,560
+Let me just show you the contents.
+
+206
+00:10:58,580 --> 00:10:59,810
+All that stuff.
+
+207
+00:11:00,800 --> 00:11:02,090
+CD Dot, dot.
+
+208
+00:11:02,750 --> 00:11:04,820
+Now I'm back in my home directory.
+
+209
+00:11:05,150 --> 00:11:06,510
+So same thing over here.
+
+210
+00:11:06,530 --> 00:11:07,970
+I'm in the desktop.
+
+211
+00:11:08,030 --> 00:11:08,960
+I'm on the desktop.
+
+212
+00:11:08,960 --> 00:11:10,280
+There's nothing to look at.
+
+213
+00:11:10,310 --> 00:11:11,210
+It's empty.
+
+214
+00:11:11,240 --> 00:11:12,680
+CD Dot, dot.
+
+215
+00:11:13,650 --> 00:11:15,540
+And now I'm in my home directory.
+
+216
+00:11:15,660 --> 00:11:18,070
+So that's the very basics of navigation.
+
+217
+00:11:18,090 --> 00:11:23,340
+We'll get more practice in the next video as we talk more about some other commands, like making folders
+
+218
+00:11:23,340 --> 00:11:25,740
+and files and deleting folders and files.
+
+219
+00:11:25,770 --> 00:11:31,410
+Along with those commands we still need to use CD and LS all the time.
+
+220
+00:11:31,410 --> 00:11:33,270
+So you'll get practice if you're new to this.
+
+221
+00:11:33,270 --> 00:11:39,840
+But also keep in mind you're not going to just memorize it and become a terminal genius overnight.
+
+222
+00:11:39,870 --> 00:11:44,190
+It takes time and it feels a little bit clunky when you're starting out.
+
+223
+00:11:44,190 --> 00:11:47,940
+You don't need to feel like an expert before you move on to learn git.
+
+224
+00:11:47,970 --> 00:11:53,460
+Just make a cheat sheet some sticky notes to remind yourself of the five or six commands that we cover
+
+225
+00:11:53,460 --> 00:11:56,550
+and stick them on your computer and just look at that if needed.
+
+226
+00:11:56,640 --> 00:11:59,670
+Anyway, that's the basics of navigation we covered.
+
+227
+00:11:59,670 --> 00:12:07,950
+LS for list for print, working directory and CD for change directory cd dot dot backs out one folder.
+
+228
+00:12:07,950 --> 00:12:10,350
+And the other thing we did was open.
+
+229
+00:12:11,070 --> 00:12:13,020
+Open Dot will open a folder.
+
+230
+00:12:13,050 --> 00:12:17,500
+The current folder that we're looking at and on a windows machine it start dot.
+

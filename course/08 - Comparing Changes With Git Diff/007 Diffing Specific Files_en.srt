@@ -1,0 +1,148 @@
+1
+00:00:00,150 --> 00:00:06,140
+Another thing we can do is narrow down the diff to a specific file or files.
+
+2
+00:00:06,150 --> 00:00:11,970
+So instead of just everything right, all on stage changes or are all stage changes or all changes since
+
+3
+00:00:11,970 --> 00:00:17,430
+head whatever we're actually looking at, we can narrow it down and say only in this one file.
+
+4
+00:00:17,490 --> 00:00:21,990
+So currently we don't have a lot going on here that we would want to narrow down.
+
+5
+00:00:21,990 --> 00:00:29,370
+But if I do get def, get def, get diff staged as we saw in the last video, I'm getting two files.
+
+6
+00:00:29,850 --> 00:00:37,230
+I'm looking at all changes that are currently staged, but I could say actually only show me the numbers
+
+7
+00:00:37,230 --> 00:00:41,310
+file how that has changed and that's exactly what we see.
+
+8
+00:00:42,030 --> 00:00:47,010
+So as an example, let's say I have this really large project I've been working on.
+
+9
+00:00:47,010 --> 00:00:53,430
+I showed a couple of videos ago where there's a lot of CSS and I made a lot of changes in this main
+
+10
+00:00:53,610 --> 00:00:58,920
+CSS, and I want to see what those changes are since the last commit so I can do get diff head.
+
+11
+00:00:59,280 --> 00:01:05,550
+But there are other files I changed to right index html main css.
+
+12
+00:01:05,550 --> 00:01:09,570
+But also there's another file I changed JavaScript file here.
+
+13
+00:01:09,570 --> 00:01:12,420
+You can see that and this is still not a whole lot of changes.
+
+14
+00:01:12,420 --> 00:01:13,980
+Let's say it's been a couple of hours.
+
+15
+00:01:13,980 --> 00:01:20,190
+I just want to see the changes since my last commit to my CSS file main CSS.
+
+16
+00:01:20,190 --> 00:01:23,730
+So this is the path style slash main CSS.
+
+17
+00:01:24,150 --> 00:01:30,600
+I can narrow it down, get diff and then style slash main CSS.
+
+18
+00:01:30,600 --> 00:01:37,020
+And specifically what I want is get diff head because I want to see all changes staged over on Unstaged
+
+19
+00:01:37,020 --> 00:01:41,490
+since the last commit in that one file and that's what we see.
+
+20
+00:01:41,490 --> 00:01:49,320
+So these changes are specifically from this file and we can see right since the last commit I added
+
+21
+00:01:49,320 --> 00:01:53,550
+these lines, I added this line and I added this line.
+
+22
+00:01:53,550 --> 00:01:55,650
+Really it's I modified, right?
+
+23
+00:01:55,650 --> 00:01:58,530
+I edited a line, but it doesn't show it that way.
+
+24
+00:01:58,530 --> 00:02:05,130
+It says this came from file A, it's gone in file B and this came from file B.
+
+25
+00:02:05,160 --> 00:02:06,480
+It's not in file A.
+
+26
+00:02:07,140 --> 00:02:07,680
+All right.
+
+27
+00:02:07,680 --> 00:02:10,289
+So that's how we can narrow it down to a particular file.
+
+28
+00:02:10,320 --> 00:02:12,960
+I can also do multiple, for example.
+
+29
+00:02:13,260 --> 00:02:15,630
+There's also an index, that HTML file.
+
+30
+00:02:15,660 --> 00:02:19,350
+I just separate them by spaces and now I have two files.
+
+31
+00:02:19,350 --> 00:02:24,360
+I'm looking at the diff for the main css and for index html.
+
+32
+00:02:24,780 --> 00:02:25,800
+So this also works.
+
+33
+00:02:25,800 --> 00:02:29,340
+If I want to see the stage changes, I don't think I have any.
+
+34
+00:02:30,150 --> 00:02:30,570
+Nope.
+
+35
+00:02:30,570 --> 00:02:31,710
+They're all unstaged.
+
+36
+00:02:31,920 --> 00:02:37,110
+But if I wanted to, I could do dash dash stage or dash dash cache and other variations.
+
+37
+00:02:37,110 --> 00:02:39,900
+I can narrow it down to a particular file or files.
+

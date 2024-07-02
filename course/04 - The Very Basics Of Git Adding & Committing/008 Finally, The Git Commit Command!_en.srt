@@ -1,0 +1,320 @@
+1
+00:00:00,210 --> 00:00:00,750
+Okay.
+
+2
+00:00:00,750 --> 00:00:05,700
+So now we're going to talk about the git commit command, which is the command we actually use to make
+
+3
+00:00:05,700 --> 00:00:09,600
+a commit using whatever changes we have previously staged.
+
+4
+00:00:09,600 --> 00:00:14,490
+But before we actually run the command and I definitely recommend you don't run get commit just yet,
+
+5
+00:00:14,490 --> 00:00:15,540
+I'll explain why.
+
+6
+00:00:15,540 --> 00:00:20,490
+Before we run it, we need to discuss commit messages whenever we make a commit.
+
+7
+00:00:20,520 --> 00:00:27,390
+Get expects us to include a message that describes or summarizes the changes included in that snapshot
+
+8
+00:00:27,390 --> 00:00:28,650
+in the given commit.
+
+9
+00:00:28,650 --> 00:00:33,840
+For example, when I group together these files, the nav bar changes, I stage them.
+
+10
+00:00:33,840 --> 00:00:42,090
+When I committed in this example, I added a message add branded nav bar or here I change three files,
+
+11
+00:00:42,090 --> 00:00:43,080
+I stage them.
+
+12
+00:00:43,080 --> 00:00:47,430
+I committed with the message add team members to about page.
+
+13
+00:00:47,430 --> 00:00:51,870
+So we'll talk more about writing good commit messages and what makes a good commit message.
+
+14
+00:00:51,870 --> 00:00:57,360
+But for now, just know that a commit message should summarize the changes included in that commit.
+
+15
+00:00:57,360 --> 00:01:04,319
+So over here on our first novel, the project that I've been working on, these two files, these two
+
+16
+00:01:04,319 --> 00:01:07,920
+changes are really just the creation of those files.
+
+17
+00:01:07,920 --> 00:01:13,980
+So a commit message might be something like start novel or initialize characters and outline or begin
+
+18
+00:01:13,980 --> 00:01:15,720
+work on characters and outline.
+
+19
+00:01:15,750 --> 00:01:19,410
+Nothing super detailed because it's a very minor commit.
+
+20
+00:01:19,440 --> 00:01:23,280
+So now let's talk about actually running the git commit command.
+
+21
+00:01:23,280 --> 00:01:27,150
+And again, I want to emphasize I recommend you don't run it just yet.
+
+22
+00:01:27,150 --> 00:01:34,410
+This is one option get space commits and this will make a commit with whatever changes have been staged.
+
+23
+00:01:34,410 --> 00:01:40,530
+However, it's going to try and use your default editor, whatever your default editor is on your machine.
+
+24
+00:01:40,530 --> 00:01:46,500
+And most or many students don't have one configured, which is problematic because it will open up in
+
+25
+00:01:46,500 --> 00:01:52,260
+something called VIM, which is a very, very, not beginner friendly, very crazy, confusing editor
+
+26
+00:01:52,260 --> 00:01:53,220
+in your terminal.
+
+27
+00:01:53,220 --> 00:01:56,130
+And if you don't know how to get out of them, it can be very confusing.
+
+28
+00:01:56,580 --> 00:01:58,560
+If you happen to get in there, it's colon.
+
+29
+00:01:58,560 --> 00:02:00,690
+Q We'll get you out of there anyway.
+
+30
+00:02:00,690 --> 00:02:02,490
+I don't recommend you run this yet.
+
+31
+00:02:02,490 --> 00:02:08,639
+There's another variant rather than get commit which will pop up your editor and ask you for your message.
+
+32
+00:02:08,639 --> 00:02:12,030
+We can just give get the message at the same time.
+
+33
+00:02:12,360 --> 00:02:20,730
+So this dash m flag get commit dash m and then we provide a message in quotes, get will use that message
+
+34
+00:02:20,730 --> 00:02:27,870
+that we provide and make a commit with it rather than this flavor which asks us for message as a secondary
+
+35
+00:02:27,870 --> 00:02:28,530
+step.
+
+36
+00:02:28,530 --> 00:02:33,900
+At the end of the day, there is no difference in the generated commit assuming you type the same message.
+
+37
+00:02:33,900 --> 00:02:37,110
+It's just two different ways of getting to that same destination.
+
+38
+00:02:37,230 --> 00:02:38,970
+So I always recommend beginners.
+
+39
+00:02:38,970 --> 00:02:39,930
+Start with this.
+
+40
+00:02:40,050 --> 00:02:41,370
+You don't have to configure an editor.
+
+41
+00:02:41,370 --> 00:02:44,070
+You don't have to worry about Vim or another text editor.
+
+42
+00:02:44,100 --> 00:02:47,160
+All you do is provide your message and hit enter.
+
+43
+00:02:47,760 --> 00:02:52,440
+So Dash M I believe it stands for message, or at least that's what I tell myself it stands for.
+
+44
+00:02:52,440 --> 00:02:55,950
+It makes sense, get, commit, dash m and then a message.
+
+45
+00:02:55,980 --> 00:02:58,290
+So let's try it over here.
+
+46
+00:02:58,440 --> 00:03:00,750
+I have my my changes are staged.
+
+47
+00:03:00,750 --> 00:03:02,640
+I'm ready to make my first commit.
+
+48
+00:03:02,640 --> 00:03:04,830
+So that's exactly what I'm going to do.
+
+49
+00:03:04,860 --> 00:03:11,280
+Get, commit, dash m and then something simple that summarizes what I've done in this commit.
+
+50
+00:03:11,280 --> 00:03:16,650
+How about something like start work on outline and basic characters?
+
+51
+00:03:16,650 --> 00:03:19,170
+Or maybe just main characters?
+
+52
+00:03:21,000 --> 00:03:21,690
+Sure.
+
+53
+00:03:21,870 --> 00:03:25,440
+Start work on the outline and main characters and then I'll hit enter.
+
+54
+00:03:26,570 --> 00:03:27,210
+Okay.
+
+55
+00:03:27,360 --> 00:03:28,920
+So now what happens here?
+
+56
+00:03:29,130 --> 00:03:31,520
+Well, let's type get status.
+
+57
+00:03:31,530 --> 00:03:33,320
+This is what I saw a moment ago.
+
+58
+00:03:33,330 --> 00:03:34,980
+Changes to be committed.
+
+59
+00:03:34,980 --> 00:03:36,210
+No commits yet.
+
+60
+00:03:36,360 --> 00:03:41,190
+Now when I type get status, nothing to commit working tree clean.
+
+61
+00:03:41,370 --> 00:03:47,220
+So this phrase working tree clean means that basically everything I've done in my folder in the working
+
+62
+00:03:47,220 --> 00:03:52,380
+directory get knows about and get has been tracking and it's up to date.
+
+63
+00:03:52,380 --> 00:03:57,900
+Everything is in sync, but as soon as I change a file, the working tree is no longer clean, which
+
+64
+00:03:57,900 --> 00:03:58,770
+is not a bad thing.
+
+65
+00:03:58,770 --> 00:04:00,810
+But yeah, that's all that it means.
+
+66
+00:04:00,810 --> 00:04:03,330
+So I've now made my very first commit.
+
+67
+00:04:03,420 --> 00:04:08,820
+First of many in the next video will continue by adding and committing and adding and committing, we'll
+
+68
+00:04:08,820 --> 00:04:10,000
+get more practice.
+
+69
+00:04:10,020 --> 00:04:12,810
+I'm going to stop this video here just to keep it brief.
+
+70
+00:04:12,930 --> 00:04:17,310
+But just to reiterate, when we make a commit, we provide a message.
+
+71
+00:04:17,310 --> 00:04:22,320
+I recommend for now using the dash flag to provide the message in line.
+
+72
+00:04:22,470 --> 00:04:27,900
+Otherwise, if you use the regular old git commit command, you can run into some trouble if you haven't
+
+73
+00:04:27,900 --> 00:04:29,100
+configured your editor.
+
+74
+00:04:29,100 --> 00:04:33,180
+And I'll include a video to show you how to configure that if you're interested.
+
+75
+00:04:33,180 --> 00:04:35,400
+But it's not something you need to worry about for now.
+
+76
+00:04:35,400 --> 00:04:39,720
+Whatever message you do provide should summarize the changes that are included in the commit.
+
+77
+00:04:39,720 --> 00:04:43,830
+And later on I'll have a video on best practices for commit messages.
+
+78
+00:04:43,830 --> 00:04:45,540
+So that's it for this video.
+
+79
+00:04:45,540 --> 00:04:48,720
+Next up, we'll get more practice doing the same process.
+
+80
+00:04:48,720 --> 00:04:51,030
+Change something, add commit.
+

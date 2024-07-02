@@ -1,0 +1,15 @@
+
+001 SLIDES-FOR-THIS-SECTION
+https://www.canva.com/design/DAETQyFE6pM/mLt1oYF8gP_mqBS3ghb-BA/view?utm_content=DAETQyFE6pM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+
+002 Official-Git-Homepage
+https://git-scm.com/
+
+005 Stackshare-Git-Breakdown
+https://stackshare.io/git
+
+005 Github-Government-Community
+https://government.github.com/community/
+
+005 Textbook-Written-With-Git
+https://github.com/HoTT/book
