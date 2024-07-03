@@ -55,7 +55,7 @@ function renderTopics(topics, sectionName) {
     playButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3" /></svg>';
 
     const videoContainer = document.createElement('div');
-    videoContainer.classList.add('video-container', 'hidden', 'w-full');
+    videoContainer.classList.add('video-container', 'hidden', 'w-full', 'overflow-hidden', 'transition-max-height', 'duration-300');
     const videoSource = `/videos/${sectionName}/${topic.title}.mp4`;
     videoContainer.innerHTML = `
       <video class="w-full rounded-md shadow-sm" controls>
@@ -63,10 +63,9 @@ function renderTopics(topics, sectionName) {
         Your browser does not support the video tag.
       </video>
     `;
-    console.log('Video source:', videoSource);
 
-    topicTitle.addEventListener('click', () => toggleVideoPlayer(videoContainer, topicsContainer));
-    playButton.addEventListener('click', () => toggleVideoPlayer(videoContainer, topicsContainer));
+    topicTitle.addEventListener('click', () => toggleVideoPlayer(videoContainer));
+    playButton.addEventListener('click', () => toggleVideoPlayer(videoContainer));
 
     topicInfo.appendChild(topicTitle);
     topicInfo.appendChild(playButton);
@@ -77,21 +76,12 @@ function renderTopics(topics, sectionName) {
   });
 }
 
-function toggleVideoPlayer(videoContainer, topicsContainer) {
-  const currentlyOpen = topicsContainer.querySelector('.video-container:not(.hidden)');
-  if (currentlyOpen && currentlyOpen !== videoContainer) {
-    currentlyOpen.classList.add('hidden');
-    const videoElement = currentlyOpen.querySelector('video');
-    videoElement.pause();
-  }
+function toggleVideoPlayer(videoContainer) {
   videoContainer.classList.toggle('hidden');
-
   if (!videoContainer.classList.contains('hidden')) {
-    const videoElement = videoContainer.querySelector('video');
-    videoElement.play();
+    videoContainer.style.maxHeight = videoContainer.scrollHeight + 'px';
   } else {
-    const videoElement = videoContainer.querySelector('video');
-    videoElement.pause();
+    videoContainer.style.maxHeight = '0px';
   }
 }
 

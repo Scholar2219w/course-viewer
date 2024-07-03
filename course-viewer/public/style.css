@@ -91,6 +91,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .button-icon svg {
@@ -100,7 +101,9 @@ body {
 
 .video-container {
   width: 100%;
-  box-sizing: border-box;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
 }
 
 video {
@@ -109,4 +112,12 @@ video {
   max-width: 100%;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transition-max-height {
+  transition-property: max-height;
+}
+
+.duration-300 {
+  transition-duration: 0.3s;
 }
