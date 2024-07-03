@@ -1,5 +1,3 @@
-// script.js
-
 async function fetchCourseData() {
   try {
     const response = await fetch('/api/course-data');
@@ -17,10 +15,8 @@ async function fetchCourseData() {
 async function renderSectionsAndTopics() {
   const courseData = await fetchCourseData();
   const sectionsContainer = document.getElementById('sectionsContainer');
-  const topicsContainer = document.getElementById('topicsContainer');
   const selectedSectionTitle = document.getElementById('selectedSectionTitle');
 
-  // Render sections
   Object.keys(courseData).forEach(section => {
     const button = document.createElement('button');
     button.textContent = section;
@@ -33,7 +29,6 @@ async function renderSectionsAndTopics() {
     sectionsContainer.appendChild(button);
   });
 
-  // Default render topics for the first section
   const initialSection = Object.keys(courseData)[0];
   if (initialSection) {
     renderTopics(courseData[initialSection], initialSection);
@@ -43,32 +38,61 @@ async function renderSectionsAndTopics() {
 
 function renderTopics(topics, sectionName) {
   const topicsContainer = document.getElementById('topicsContainer');
-  topicsContainer.innerHTML = ''; // Clear previous topics
+  topicsContainer.innerHTML = '';
 
   topics.forEach(topic => {
     const topicDiv = document.createElement('div');
-    topicDiv.classList.add('topic', 'bg-background', 'rounded-md', 'shadow-sm', 'p-4', 'flex', 'items-center', 'justify-between');
+    topicDiv.classList.add('topic', 'bg-background', 'rounded-md', 'shadow-sm', 'p-4', 'flex', 'flex-col', 'space-y-2');
 
     const topicInfo = document.createElement('div');
+    topicInfo.classList.add('flex', 'items-center', 'justify-between');
     const topicTitle = document.createElement('h3');
     topicTitle.textContent = topic.title;
-    topicTitle.classList.add('text-lg', 'font-medium');
+    topicTitle.classList.add('text-lg', 'font-medium', 'cursor-pointer');
 
     const playButton = document.createElement('button');
     playButton.classList.add('button-icon');
     playButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3" /></svg>';
-    playButton.addEventListener('click', () => {
-      const videoPlayer = document.getElementById('videoPlayer');
-      videoPlayer.src = `/videos/${sectionName}/${topic.title}.mp4`;
-      videoPlayer.play();
-    });
+
+    const videoContainer = document.createElement('div');
+    videoContainer.classList.add('video-container', 'hidden', 'w-full');
+    const videoSource = `/videos/${sectionName}/${topic.title}.mp4`;
+    videoContainer.innerHTML = `
+      <video class="w-full rounded-md shadow-sm" controls>
+        <source src="${videoSource}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    `;
+    console.log('Video source:', videoSource);
+
+    topicTitle.addEventListener('click', () => toggleVideoPlayer(videoContainer, topicsContainer));
+    playButton.addEventListener('click', () => toggleVideoPlayer(videoContainer, topicsContainer));
 
     topicInfo.appendChild(topicTitle);
+    topicInfo.appendChild(playButton);
     topicDiv.appendChild(topicInfo);
-    topicDiv.appendChild(playButton);
+    topicDiv.appendChild(videoContainer);
 
     topicsContainer.appendChild(topicDiv);
   });
+}
+
+function toggleVideoPlayer(videoContainer, topicsContainer) {
+  const currentlyOpen = topicsContainer.querySelector('.video-container:not(.hidden)');
+  if (currentlyOpen && currentlyOpen !== videoContainer) {
+    currentlyOpen.classList.add('hidden');
+    const videoElement = currentlyOpen.querySelector('video');
+    videoElement.pause();
+  }
+  videoContainer.classList.toggle('hidden');
+
+  if (!videoContainer.classList.contains('hidden')) {
+    const videoElement = videoContainer.querySelector('video');
+    videoElement.play();
+  } else {
+    const videoElement = videoContainer.querySelector('video');
+    videoElement.pause();
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

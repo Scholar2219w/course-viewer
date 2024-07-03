@@ -8,18 +8,18 @@ const port = 3000;
 const courseDir = "D:/PreProg/WebD/Course Viewer/course";
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/videos', express.static(path.join(__dirname, 'videos')));
+app.use('/videos', express.static(courseDir));
 
 function processDirectory(dirPath) {
   const sections = {};
   const dirItems = fs.readdirSync(dirPath, { withFileTypes: true });
-  
+
   for (const item of dirItems) {
     if (item.isDirectory()) {
       const sectionPath = path.join(dirPath, item.name);
       const videoFiles = fs.readdirSync(sectionPath).filter(file => file.endsWith('.mp4'));
       const topics = [];
-      
+
       for (const videoFile of videoFiles) {
         topics.push({
           title: path.parse(videoFile).name,
